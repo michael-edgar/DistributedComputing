@@ -1,0 +1,178 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0038)http://www.ibiblio.org/ais/siberia.htm -->
+<HTML><HEAD><TITLE>I sit in Siberia</TITLE>
+<META content="text/html; charset=iso-8859-1" http-equiv=Content-Type>
+<META name=robots content=noarchive><!--
+Copyright 1998 by AIS. All rights reserved.
+ais@ibiblio.org
+// -->
+<META name=GENERATOR content="MSHTML 9.00.8112.16448"></HEAD>
+<BODY aLink=#cccc00 bgColor=#ffffff text=#333333 vLink=#0066ff link=#0066ff>
+<P>
+<CENTER><IMG border=0 alt="I sit in Siberia and have only telnet" align=middle 
+src="Using%20telnet%20to%20access%20internet%20protocols_files/sibcyril.gif" 
+width=601 height=36> &nbsp; <IMG border=0 align=middle 
+src="Using%20telnet%20to%20access%20internet%20protocols_files/teapot.gif" 
+width=50 height=50> </CENTER><BR>
+<P><BR>
+<P>
+<BLOCKQUOTE><TT><B>I sit in Siberia and have only Telnet and want to <FONT 
+  color=#0066ff>get a web page?</FONT></B><BR>
+  <P>Set in your telnet options <B>local echo</B> to <B>on</B>.<BR>Type address 
+  of the web server you want a page from.<BR>For example: www.siberia.int<BR>The 
+  default port for telnet is usually port 23.<BR>Set <B>port</B> to <B>80</B> 
+  and press Enter to connect.<BR><BR>If you use a telnet program without a 
+  graphical interface you would<BR>type <B>telnet</B> then <B>set echo</B> and 
+  <B>open www.siberia.int 80</B><BR><BR>Type: <B>GET / HTTP/1.0</B><BR>Press the 
+  Enter-key two times and you get the default page of the server.<BR>After 
+  transmission of the page you are automatically disconnected.<BR><BR>If you 
+  want to get the page http://www.siberia.int/teatips.htm<BR>you would type 
+  <B>GET /teatips.htm HTTP/1.0</B> and press Enter two times.<BR><BR>
+  <P>
+  <HR>
+  <BR>
+  <P><B>I sit in Siberia and have only Telnet and want to <FONT 
+  color=#0066ff>send an e-mail?</FONT></B><BR>
+  <P>Set in your telnet options <B>local echo</B> to <B>on</B>.<BR>Type the 
+  address of your SMTP mail server.<BR>Set <B>port</B> to <B>25</B> and press 
+  Enter to connect.<BR>Type: <B>helo</B><BR>To see available commands or 
+  possible syntax differences type: <B>help</B><BR>Type: <B>mail 
+  from:your@address</B><BR>Type: <B>rcpt to:recipient@address</B><BR>Writing the 
+  message:<BR>Type: <B>data</B><BR>Date and time ( GMT or offset e.g. 14:01:00 
+  +0600 )<BR>Type: <B>Date: 8 Jan 2007 18:45:00 GMT</B><BR>Type: <B>From: 
+  your@address</B><BR>Type: <B>To: recipient@address</B><BR>Type: <B>Subject: 
+  Let's have a cup of tea.</B><BR><!--
+Type: <b>Reply-To: your@address</b><br>
+// -->Type: Just press Enter to insert a blank line.<BR>Now you can type the 
+  main text of your message.<BR>When finished type on a new line a <B>.</B> dot 
+  and press Enter.<BR>You should get a message that your mail has been 
+  accepted.<BR>To disconnect from the mail server type: <B>quit</B><BR><BR>
+  <P>
+  <HR>
+  <BR>
+  <P><B>I sit in Siberia and have only Telnet and want to <FONT 
+  color=#0066ff>check mail on my pop mail account?</FONT></B><BR>
+  <P>Set in your telnet options <B>local echo</B> to <B>on</B>.<BR>Type the 
+  address of your pop mail server.<BR>Set <B>port</B> to <B>110</B> and press 
+  Enter to connect.<BR>Type: <B>user your_accountname</B><BR>Type: <B>pass 
+  your_password</B><BR>To get a list of numbers and size of messages type: 
+  <B>list</B><BR>To read one of the mails type: <B>retr</B> number (of the 
+  message)<BR>To tag a mail for deletion on exit: <B>dele</B> number (of the 
+  message)<BR>To end connection type: <B>quit</B><BR><BR>
+  <P>Other pop server commands <B>top x y</B> shows of message number x the 
+  first y lines<BR><B>rset</B> removes deletion tag of files<BR><B>stat</B> for 
+  details about the mailbox<BR><B>uidl number</B> information about that 
+  message<BR><B>noop</B> to test if connection to pop server still 
+exists<BR><BR>
+  <P>
+  <HR>
+  <BR>
+  <P><B>I sit in Siberia and have only Telnet and want to <FONT 
+  color=#0066ff>read a newsgroup?</FONT></B><BR>
+  <P>Set in your telnet options <B>local echo</B> to <B>on</B>.<BR>Type the 
+  address of a NNTP news server.<BR>Set <B>port</B> to <B>119</B> and press 
+  Enter to connect.<BR>To see available commands or possible syntax differences 
+  type: <B>help</B><BR>To list available newsgroups type:<BR><B>list</B> for a 
+  list of all newsgroups<BR><B>list active</B> to get a list of active 
+  newsgroups<BR><!--
+<b>list newsgroups</b> to get a discriptions of newsgroups<br>
+// -->These lists can be very long. Its a good idea to narrow<BR>the listing. 
+  To list groups that were created<BR>after January 12, 2007, 9 o'clock, type: 
+  <B>newgroups 011207 090000</B><BR><BR>For the message numbers in a group type: 
+  <B>group your.favoured.group</B><BR>Some numbers are returned. The second is 
+  the number of messages in that group.<BR>The third is the message number of 
+  the first message in that group.<BR>The fourth is the message number of the 
+  last message in that group.<BR><BR>To see only the header of a message type 
+  <B>head message_number</B><BR>To read a message type <B>article 
+  message_number</B><BR>Type: <B>Next</B> to select next message<BR>Type: 
+  <B>Last</B> to select previous message<BR>To list new messages in a group 
+  since January 14, 2007, 17:30,<BR>type: <B>newnews your.favoured.group 011407 
+  173000</B><BR>To disconnect from the news server type: <B>quit</B><BR><BR>
+  <P>
+  <HR>
+  <BR>
+  <P><B>I sit in Siberia and have only Telnet and want to <FONT 
+  color=#0066ff>post an article to a newsgroup?</FONT></B><BR>
+  <P>Set in your telnet options <B>local echo</B> to <B>on</B>.<BR>Type the 
+  address of a NNTP news server where posting is allowed.<BR>Set <B>port</B> to 
+  <B>119</B> and press Enter to connect.<BR>To see available commands or 
+  possible syntax differences type: <B>help</B><BR>Type: <B>post</B><BR>Type: 
+  <B>From: your@address</B><BR>Type: <B>Date: 14 Jan 2007 18:45:00 
+  GMT</B><BR>Type: <B>Newsgroups: your.destination.group</B><BR>Type: 
+  <B>Subject: Choosing a tea-pot</B><BR>Type: <B>Message-ID: 
+  &lt;011407184500your@address&gt;</B><BR>(Composition of this Message-ID: Date, 
+  time, your e-mail address)<BR>Type: Just press Enter to insert a blank 
+  line.<BR>Now you can type the main text of your message.<BR>When finished type 
+  on a new line a <B>.</B> dot and press Enter.<BR>The server should confirm 
+  that your message has been accepted.<BR>To disconnect from the news server 
+  type: <B>quit</B><BR><BR>
+  <P>
+  <HR>
+  <BR>
+  <P><B>I sit in Siberia and have only Telnet and want to <FONT 
+  color=#0066ff>search for a program?</FONT></B><BR>
+  <P><FONT color=#a00c00>Archie servers went the way of the 
+  mammoth</FONT><BR><STRIKE>Type the address of an Archie server.<BR>For 
+  example: <B>archie.rutgers.edu</B> or <B>archie.hensa.ac.uk</B>.<BR>For the 
+  login name type: <B>archie</B><BR><BR>To see available commands or possible 
+  syntax differences type: <B>help</B><BR>To leave help type: 
+  <B>done</B><BR><BR>Example: Looking for locations were the WWW browser 
+  <B>Netscape Navigator 4.08</B><BR>is available for download. The name of the 
+  distributed file is <B>n16e408.exe</B>.<BR>Type: <B>prog 
+  n16e408.exe</B><BR>The result is a list of FTP servers with this 
+  program.<BR>To modify the search method use the <B>set</B> command:<BR><B>set 
+  exact</B> to search exactly for the name entered with <B>prog</B><BR><B>set 
+  sub</B> to search for file names which contain the search string<BR><B>set 
+  subcase</B> to search file names for a case sensitive sub string<BR><B>set 
+  regex</B> for regular expression search<BR>To check the present setting type: 
+  <B>show search</B><BR>To see a list of Archie servers to pick one closer to 
+  you type: <B>servers</B><BR>To disconnect from the Archie server type: 
+  <B>quit</B><BR></STRIKE><!--
+version mail list find
+// --><BR>
+  <P>
+  <HR>
+  <BR>
+  <P><B><A href="mailto:ais@ibiblio.org?subject=Telnet series">Additions to this 
+  series can be sent by e-mail.</A></B> </TT><BR>
+  <P>
+  <HR>
+  <BR>
+  <P><FONT face="arial, verdana, trebuchet ms, helvetica, futura">Ports are 
+  addresses of services available on a server.<BR><B><A 
+  href="http://www.iana.org/assignments/port-numbers">Ports commonly used</A> 
+  (&gt;560k):</B></FONT><BR>
+  <P><PRE>No.  Name                        No.  Name
+ 
+11   systat                      79   finger 
+13   daytime                     80   HTTP World Wide Web 
+15   netstat                    110   pop3
+20   ftp-data                   119   nntp
+21   ftp                        517   talk
+22   sshd
+23   telnet                    6667   irc 
+25   stmp                      
+43   whois                     
+53   domain                      
+70   gopher                      
+
+
+</PRE><BR>
+  <P>
+  <HR>
+  <BR>
+  <P>
+  <CENTER>
+  <TABLE cellSpacing=0 cellPadding=0 width="99%">
+    <TBODY>
+    <TR>
+      <TD vAlign=bottom width="33%"><A 
+        href="http://www.ibiblio.org/ais/net-lab.htm"><TT><B>Net 
+      lab</B></TT></A></TD>
+      <TD width="33%" align=center><A 
+        href="http://www.byedesign.freeserve.co.uk/npd/npd1.htm"><IMG border=0 
+        alt="Image of walking polar bear" 
+        src="Using%20telnet%20to%20access%20internet%20protocols_files/cybear.gif"></A></TD>
+      <TD width="33%">&nbsp;</TD></TR></TBODY></TABLE></CENTER><!--br><p>
+<font face="arial, verdana, trebuchet ms, helvetica, futura" size=2>last modified 2000-01-22</font//--><BR>
+  <P></P></BLOCKQUOTE></BODY></HTML>

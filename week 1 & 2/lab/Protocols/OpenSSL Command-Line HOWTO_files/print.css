@@ -1,0 +1,183 @@
+body {
+	padding: 0px; color: black; background-color: white;
+}
+div.article {
+	font-family: optima, utopia, georgia, "dejavu serif", "bitstream charter", serif; font-size: 11pt;
+}
+div.bibliography {
+	font-family: optima, utopia, georgia, "dejavu serif", "bitstream charter", serif; font-size: 11pt;
+}
+div.chordpro {
+	font-family: optima, utopia, georgia, "dejavu serif", "bitstream charter", serif; font-size: 11pt;
+}
+div.bottommenu {
+	display: none;
+}
+div.footer {
+	display: none;
+}
+div.menu {
+	display: none;
+}
+div.pageheader {
+	display: none;
+}
+div.topspace {
+	display: none;
+}
+div.license {
+	text-align: center; font-family: verdana, arial, helvetica, "dejavu sans", sans-serif; font-size: 8pt;
+}
+a {
+	text-decoration: none;
+}
+a:link {
+	color: black;
+}
+a:visited {
+	color: black;
+}
+a:hover {
+	color: black;
+}
+div.fivepix {
+	margin: 0px; padding: 0px; height: 5px;
+}
+div.informaltable th {
+	padding-right: 15px; border-bottom-color: black; border-bottom-width: 1px; border-bottom-style: solid;
+}
+div.informaltable td {
+	padding-right: 15px;
+}
+div.toc {
+	font-size: 10pt;
+}
+h1 {
+	font-family: verdana, arial, helvetica, "dejavu sans", sans-serif;
+}
+h2 {
+	font-family: verdana, arial, helvetica, "dejavu sans", sans-serif;
+}
+h3 {
+	font-family: verdana, arial, helvetica, "dejavu sans", sans-serif;
+}
+h4 {
+	font-family: verdana, arial, helvetica, "dejavu sans", sans-serif;
+}
+h1.title {
+	font-size: 16pt;
+}
+h2.title {
+	font-size: 14pt;
+}
+h3.title {
+	font-size: 12pt;
+}
+h3.author {
+	color: black; font-size: 100%;
+}
+hr.pageinfo {
+	border: 0px currentColor; height: 1px; color: black; background-color: black;
+}
+img {
+	border: 0px currentColor;
+}
+p.arttitle {
+	margin-top: 10px; margin-bottom: 0px;
+}
+p.updated {
+	font-size: 10pt;
+}
+pre {
+	font-family: monaco, "dejavu sans mono", "luxi mono", monospace;
+}
+tt {
+	font-family: monaco, "dejavu sans mono", "luxi mono", monospace;
+}
+code {
+	font-family: monaco, "dejavu sans mono", "luxi mono", monospace;
+}
+pre.programlisting {
+	border-width: 1px 2px 2px 1px; border-style: solid; border-color: black; padding: 5px; background-color: white;
+}
+span.symbol {
+	font-family: monospace;
+}
+.rightward {
+	text-align: right;
+}
+.w3cimg {
+	width: 88px; height: 31px;
+}
+div.artabstract p {
+	font-size: 10pt; margin-top: 0px; margin-bottom: 0px;
+}
+div.article pre {
+	font-size: 10pt;
+}
+div.article div.toc {
+	font-size: 10pt; border-bottom-color: black; border-bottom-width: 1px; border-bottom-style: solid;
+}
+div.article div.titlepage {
+	font-size: 10pt;
+}
+div.pageheader .moniker {
+	margin: 10px 0px 0px 10px; text-transform: lowercase; letter-spacing: 1ex; font-family: "times new roman", times, serif; font-size: 20pt;
+}
+div.titlepage .releaseinfo {
+	margin-top: 0px; margin-bottom: 0px;
+}
+div.titlepage .copyright {
+	margin-top: 0px; margin-bottom: 0px;
+}
+div.titlepage .pubdate {
+	margin-top: 0px; margin-bottom: 0px;
+}
+div.titlepage .author {
+	margin-top: 0px; margin-bottom: 0px;
+}
+table.simplelist tr {
+	margin-top: 0px; margin-bottom: 0px;
+}
+table.simplelist td {
+	margin-top: 0px; margin-bottom: 0px;
+}
+div.biblioentry div.abstract {
+	border-top-color: black; border-top-width: 1px; border-top-style: solid;
+}
+div.biblioentry div.reviewdate {
+	font-size: 10pt; font-style: italic; margin-left: 1cm;
+}
+div.biblioentry span.subtitle {
+	font-style: italic;
+}
+p.booklist {
+	margin-top: 0px; margin-bottom: 6pt;
+}
+div.chordpro td.chords {
+	text-align: left; color: black; font-family: verdana, arial, helvetica, "dejavu sans", sans-serif; font-size: 10pt;
+}
+div.chordpro .lyrics {
+	text-align: left; color: black; font-size: 12pt;
+}
+div.chordpro p.lyrics {
+	margin-top: 0px; margin-bottom: 0px;
+}
+div.chordpro p.comment {
+	font-size: 10pt; font-style: italic; margin-top: 0px; margin-bottom: 0px;
+}
+div.chordpro p.spacer {
+	font-size: 10pt; font-style: italic; margin-top: 0px; margin-bottom: 0px;
+}
+div.chordpro div.chorus {
+	margin-left: 1cm;
+}
+div.chordpro div.chorus .lyrics {
+	font-style: italic;
+}
+td.t1 {
+	padding-right: 25px;
+}
+td.t2 {
+	padding-right: 25px;
+}

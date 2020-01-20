@@ -1,0 +1,210 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0037)http://www.dgate.org/~brg/bvtelnet80/ -->
+<HTML><HEAD><TITLE>Best Viewed with telnet to port 80</TITLE>
+<META content="text/html; charset=windows-1252" http-equiv=Content-Type>
+<META name=GENERATOR content="MSHTML 9.00.8112.16448"></HEAD>
+<BODY>
+<H1>Best Viewed with telnet to port 80</H1>
+<P align=center><IMG border=0 alt=[Logo] 
+src="Best%20Viewed%20with%20telnet%20to%20port%2080_files/bvtelnet80.png"> 
+</P>Some people are against the practice of some less-enlightened Webmasters of 
+designing Web pages that are tailored specifically to one or another browser's 
+own version of HTML, or which work only with one particular browser. The worst 
+offenders are certainly <A href="http://www.netscape.com/">Netscape 
+Communications Corp.</A>'s Navigator and <A 
+href="http://www.microsoft.com/">Microsoft</A>'s Internet Explorer. In response, 
+then, those more-enlightened HTML hackers decided to create the 'Best Viewed 
+with Any Browser' campaign, which more or less says (in one of many ways) that 
+browser-specificity in HTML is a Bad Thing, and we should all design to the spec 
+instead of being bug-compatible with whatever beta version is currently shipping 
+from the major software houses. This is basically the right idea, but really, it 
+could be refined a bit, in my opinion. 
+<P>Therefore, I have decided to institute the <B>Best Viewed with telnet to port 
+80</B> initiative. This is a name which refers to the common system 
+administration practice of connecting to server ports with telnet to verify that 
+they are listening for connections and functioning properly. Port 80 is the 
+standard port for HyperText Transport Protocol, the protocol used for 
+transferring Web pages over the Internet. (Contrary to popular belief, the terms 
+'Web' and 'Internet' are *not* synonymous or even generally interchangeable.) 
+For more information about port numbers, please check <A 
+href="http://www.faqs.org/rfcs/rfc1700.html">RFC 1700</A>, Internet Assigned 
+Numbers, J. Reynolds &amp; J. Postel, October 1994. 
+<P>It is fairly simple to view the HTML source to a web page by means of telnet 
+to port 80. For example, suppose you have the following URL (Uniform Resource 
+Locator also known as a Web address): 
+<ADDRESS>&nbsp;&nbsp;http://www.csua.berkeley.edu/officers.html</ADDRESS>
+<P>The various parts of the URL are as follows: 
+<DL>
+  <DT><CODE>http://</CODE> 
+  <DD>Means that the protocol "http", or HyperText Transport Protocol, is to be 
+  used to retrieve this item. 
+  <DT><CODE>www.csua.berkeley.edu</CODE> 
+  <DD>Means that the item is stored on the host with the address 
+  "www.csua.berkeley.edu". 
+  <DT><CODE>/officers.html</CODE> 
+  <DD>Means that, according to the Web server, the name of this item is 
+  "/officers.html". </DD></DL>So, therefore, to retrieve the Web page with the 
+address shown above, you must first connect to the HyperText Transport Protocol 
+server on the host <CODE>www.csua.berkeley.edu</CODE>, which is canonically 
+located on port 80, as noted above. The command or sequence of commands for 
+connecting to ports other than 23 (the Telnet server port) using your Telnet 
+client vary from system to system. 
+<P>For example, if you are connecting from a VMS system running UCX, give this 
+command at your DCL prompt: <PRE>   $ TELNET www.csua.berkeley.edu /PORT=80
+</PRE>to connect to the host www.csua.berkeley.edu on port 80. Unix users, or 
+users of systems like Unix, should consult the on-line manual page 
+<B><CODE>telnet</CODE>(1)</B> for details; if you are not familiar with the Unix 
+online manual, type <PRE>   % man man
+</PRE>for details. 
+<P>Once you have connected to the HTTP server on the server host, you will not 
+be prompted to enter any information; however, the Web server is awaiting your 
+request. You have to issue a HTTP request in order to retrieve the page, which 
+in our example is named "/officers.html" on the server. 
+<P>To retrieve Web documents using HTTP, the client (you) must issue a GET 
+request. The syntax of a GET request is as follows: <BR><B>GET</B> document-name 
+HTTP-version<BR>where: 
+<DL>
+  <DT><B><CODE>document-name</CODE></B> 
+  <DD>is the name of the Web page you are retrieving as it is known by the 
+  server; in our example, that is "/officers.html". 
+  <DT><B><CODE>HTTP-version</CODE></B> 
+  <DD>is the version of HTTP your client understands. Mostly this does not 
+  matter when you are viewing pages using telnet to port 80; therefore, it is 
+  sufficient to specify "HTTP/1.0" as the version. </DD></DL>
+<P>Note, however, that all HTTP requests must end in a CRLF sequence (carriage 
+return and line feed); how you do this depends somewhat on the keyboard, 
+terminal or terminal emulator, and Telnet client you are using; there are enough 
+combinations of these that the reader is advised to try different combinations 
+of RETURN, Control-J, Enter, and/or Control-J until something works; note that 
+it is nontrivial to do this from NCSA Telnet 2.7b4 for the Macintosh if 
+"Berkeley 4.3 CR mode" is set in the Sessions preference box. (This particular 
+option relies on a bug in the TCP/IP stack of early versions of 4.3 BSD Unix, 
+which expected an ASCII NUL (0) to be sent after carriage return characters.) 
+<P>What works to send requests on my machine, which is probably but not 
+necessarily unlike your machine, is a sequence of Control-M then Control-J. So 
+when you have typed the GET request, which in the example shown above should 
+look like: <PRE>  GET /officers.html HTTP/1.0
+</PRE>type a CRLF, and then you should be rewarded by a HTTP response, which may 
+or may not include an arbitrary amount of HTML. 
+<P>You should also make sure to enter GET and HTTP in all uppercase; many web 
+servers require this. 
+<P>The first thing to check is whether you have actually received the document 
+you wanted. You can usually tell by looking at the first line of the HTTP 
+response, which should include a line like the following: <PRE>  HTTP/1.0 Nnn Response text
+</PRE>where 
+<DL>
+  <DT><B>Nnn</B> 
+  <DD>is a three-digit code that specifies the response type. Codes that start 
+  with 2 are responses (the most common type being 200 (Document follows)), 
+  codes that start with 3 are deferred successes (for example, 301 (Moved 
+  permanently)), and codes that start with 4 or 5 are failures (again, a common 
+  type is 404 (Page not found.)) 
+  <DT><B>Response text</B> 
+  <DD>is a human-readable response type that corresponds to the three-digit code 
+  explained above. Some common response texts are shown in the previous 
+  definition. </DD></DL>
+<P>You know that you received the correct document by two simple heuristics: 
+<UL>
+  <LI>You see the message '200 Document follows' in the beginning of the HTTP 
+  response. 
+  <LI>You see the document you expected to see. (This is more of a common-sense 
+  operation than anything else.) </LI></UL>You know that you did <EM>not</EM> 
+receive the correct document by another simple heuristic: 
+<UL>
+  <LI>A response code other than 200 (Document follows) was sent by the server. 
+  <LI>This is usually one of the following responses: 
+  <UL>
+    <LI>301 Moved Permanently 
+    <LI>302 Moved Temporarily - <BR>The document exists, and the server knows 
+    its actual location, but it is not where you thought it was. Rather than 
+    actually just giving you the document, it is being stubborn and making you 
+    go get it yourself. The body of the HTML text returned by the server, if 
+    any, should reference the new location of the document; the HTTP response 
+    header should contain a Refresh: or Location: tag whose value should 
+    reference the new URL as well. 
+    <LI>403 Forbidden - <BR>The document is not available to you, either by 
+    administrative fiat or by Webmaster brain-damage. Most likely this 
+    translates into some rule which is preventing your access; most likely it is 
+    a rule implemented on the server. Oftentimes it is merely a question of 
+    access privilege. Indeed, it could simply be the rule that you cannot obtain 
+    a document whose URL you cannot spell. In any case, if you are sure of the 
+    address you had better check the settings on the server before complaining 
+    to the administrator. 
+    <LI>404 Not Found - <BR>The document you requested does not exist on the 
+    server under the name by which you requested it. You should <EM>NOT</EM>, 
+    however, complain to the Webmaster of the server before verifying that the 
+    document is supposed to be at the address you supplied, or before making a 
+    good-faith effort to determine whether the document is located somewhere 
+    else on the same server, or perhaps on another server. This error could also 
+    indicate that you cannot type very well, but it is up to you to determine 
+    whether this is indeed the case. 
+    <LI>500 Server Error - <BR>The server is failing due to some configuration 
+    problem on its own part, or the webmaster's; there is nothing you can do and 
+    you should close up your Telnet client and go home, preferably hitting 
+    several squirrels out of sheer rage during your commute. </LI></UL></LI></UL>
+<P>If you have not been able to access the document, you should make sure the 
+URL is spelled correctly; then and only then contact the webmaster if and only 
+if you are <EM>certain</EM> that the document is supposed to be on that server 
+<EM>and</EM> you have made reasonable attempts to search for it elsewhere on the 
+server as well as elsewhere on the network. 
+<P>Assuming that you have successfully retrieved something from the server, one 
+of the last header lines will be of the format: <PRE>  Content-type: mime-type
+</PRE>where <B>mime-type</B> is some data-type defined by MIME, the Multipurpose 
+Internet Mail Extensions. Most likely, if you have requested a HTML (HyperText 
+Markup Language) document, you will get a Content-type tag of 
+<CODE>text/html</CODE>, and after a blank line, will follow the HTML you 
+requested. If you were unlucky, you will have a Content-type of 
+<CODE>image/gif</CODE> or <CODE>image/jpeg</CODE>, and the data returned by the 
+HTTP request will be some sort of compressed raster image data. Implementing 
+parsers for CompuServe(R) GIF data is a violation of the LZW patent held by 
+Unisys, and is not recommended; implementing parsers for JPEG compressed images 
+in the human brain is beyond the scope of this document. 
+<P>For a guide to interpreting HTML, the reader is advised to check out any of 
+the many good on-line documentations of HTML which are available from the <A 
+href="http://www.w3.org/">World Wide Web Consortium</A>'s official <A 
+href="http://www.w3.org/TR/REC-html40/">HTML page</A>; using the SGML DTD to 
+parse HTML if you are not yourself a SGML parser is not advised. 
+<P>
+<H3>Goal of the 'Best viewed with telnet to port 80' campaign</H3>There are 
+several advantages to not using a browser to read Web pages. One of the most 
+obvious is that it lets the user debug erroneous HTML code into a form which 
+<EM>can</EM> be read by a less sophisticated parser, such as that found in a 
+browser. 
+<P>Another important point is that the Web browsers of today are exceedingly 
+inefficient in terms of both RAM and disk footprint, and tend to use grossly 
+bloated object-oriented coding styles. Many computers cannot run the latest Web 
+browsers, such as 68020-based Macintoshes; some cannot run Web browsers at all, 
+such as those based on the PIC microcontroller, the Z80 or the Motorola 68HC09. 
+Using a bare TCP/IP stack and a Telnet client is much more efficient, especially 
+as Telnet clients come with most implementations of TCP/IP (and, indeed, most 
+modern operating systems); therefore no additional investment of disk space is 
+necessary. 
+<P>Probably the most important reason for the <B>Best Viewed with telnet to port 
+80 </B>campaign is that it is time to realize what it means to disregard 
+standards documents when implementing popular protocols: it is an undercutting 
+of the standard itself, such that if enough people attempt to use the 
+implementation you have written which does not conform to the standard, then 
+they will start to design against your bugs and/or shortcomings, and to employ 
+features that are not specified in the standard (thus making the protocol you 
+have implemented only partially compatible with the standard, which is the 
+definition of the protocol.) 
+<P>Feel free to use the <B>Best Viewed by telnet to port 80</B> button on your 
+web page, if you wish; just please don't modify it, because then it wouldn't 
+conform to the standard. <CODE>;-)</CODE> 
+<P><A href="http://www.dgate.org/~brg/bvtelnet80/concerns.txt">Some concerns</A> 
+about the initiative are addressed here.
+<P>Some people are <B>really</B> impressed with the Best Viewed with Telnet to 
+Port 80 initiative. I even got some hate mail about it. Nevertheless, I have 
+since received an apology from the sender; apparently it was a case of someone 
+using someone else's account for mischief. So the letter is no longer online. 
+I'm always interested in people's comments. You can send them to me at <I>brg at 
+dgate dot org</I>. 
+<HR>
+This web page was created using <A 
+href="http://www.dgate.org/~brg/bvtelnet80/ed.std.txt">ed</A>, the standard Unix 
+text editor as defined in POSIX.1. 
+<HR>
+Brought to you by <A href="http://www.dgate.org/~brg/">Brian R. Gaeke</A> (whose 
+e-mail address sounds like <I>brg at dgate dot org</I>). Web hosting graciously 
+subsidized by <A href="http://www.johncompanies.com/">JohnCompanies</A>. 
+<BR>Copyright 1997 and 2001. All rights reserved. </BODY></HTML>

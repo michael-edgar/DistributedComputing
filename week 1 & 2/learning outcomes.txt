@@ -1,0 +1,8 @@
+1. Describe IPC and Sockets 
+2. Describe SSL/TLS and HTTPS
+3. Write Datagram and Stream socket programs
+4. Write a wrapper class to make working with Sockets easier.
+5. Write SSL Sockets program and HTTPS program in Java and Python
+6. (Write a Java NIO echo program using Netty framework - 2020)
+7. Read Chapters 1 (intro), 2 (architectures)from Coulouris (for weeks 1,2)
+              

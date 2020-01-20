@@ -1,0 +1,2015 @@
+From: "Saved by Windows Internet Explorer 9"
+Subject: HTTP Messages
+Date: Tue, 18 Sep 2012 17:31:10 +0100
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_0000_01CD95C3.6491A3C0"
+X-MimeOLE: Produced By Microsoft MimeOLE V6.1.7601.17609
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0000_01CD95C3.6491A3C0
+Content-Type: text/html;
+	charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.w3schools.com/tags/ref_httpmessages.asp
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!DOCTYPE html><HTML lang=3D"en-US"><HEAD><TITLE>HTTP Messages</TITLE>
+<META charset=3D"windows-1252">
+<META name=3D"Keywords" =
+content=3D"html,css,tutorial,html5,dhtml,css3,xsl,xslt,xhtml,javascript,j=
+query,asp,ado,net,vbscript,dom,sql,colors,soap,php,rss,authoring,programm=
+ing,training,learning,quiz,beginner's =
+guide,primer,lessons,school,howto,reference,examples,samples,source =
+code,tags,demos,tips,links,FAQ,tag list,forms,frames,color =
+table,w3c,cascading style sheets,active server pages,dynamic =
+html,internet,database,development,Web building,Webmaster,html guide">
+<META name=3D"Description" content=3D"Free HTML XHTML CSS JavaScript =
+jQuery XML DOM XSL XSLT RSS AJAX ASP .NET PHP SQL tutorials, references, =
+examples for web building.">
+<LINK rel=3D"shortcut icon" type=3D"image/x-icon" href=3D"/favicon.ico">
+<SCRIPT type=3D"text/javascript">=0A=
+<!--=0A=
+var gaJsHost =3D (("https:" =3D=3D document.location.protocol) ? =
+"https://ssl." : "http://www.");=0A=
+document.write(unescape("%3Cscript src=3D'" + gaJsHost + =
+"google-analytics.com/ga.js' type=3D'text/javascript'%3E%3C/script%3E"));=0A=
+//-->=0A=
+</SCRIPT>
+
+<SCRIPT type=3D"text/javascript">=0A=
+<!--=0A=
+function searchfield_focus(obj)=0A=
+{=0A=
+obj.style.color=3D""=0A=
+obj.style.fontStyle=3D""=0A=
+if (obj.value=3D=3D"Search w3schools.com")=0A=
+	{obj.value=3D""}=0A=
+}=0A=
+var pageTracker =3D _gat._getTracker("UA-3855518-1");=0A=
+pageTracker._initData();=0A=
+pageTracker._trackPageview();=0A=
+var addr=3Ddocument.location.href;=0A=
+function displayError()=0A=
+{=0A=
+document.getElementById("err_url").value=3Daddr;=0A=
+document.getElementById("err_form").style.display=3D"block";=0A=
+document.getElementById("err_desc").focus();=0A=
+hideSent();=0A=
+}=0A=
+function hideError()=0A=
+{=0A=
+document.getElementById("err_form").style.display=3D"none";=0A=
+}=0A=
+function hideSent()=0A=
+{=0A=
+document.getElementById("err_sent").style.display=3D"none";=0A=
+}=0A=
+function sendErr()=0A=
+{=0A=
+var xmlhttp;=0A=
+var err_url=3Ddocument.getElementById("err_url").value;=0A=
+var err_email=3Ddocument.getElementById("err_email").value;=0A=
+var err_desc=3Ddocument.getElementById("err_desc").value;=0A=
+if (window.XMLHttpRequest)=0A=
+  {// code for IE7+, Firefox, Chrome, Opera, Safari=0A=
+  xmlhttp=3Dnew XMLHttpRequest();=0A=
+  }=0A=
+else=0A=
+  {// code for IE6, IE5=0A=
+  xmlhttp=3Dnew ActiveXObject("Microsoft.XMLHTTP");=0A=
+  }=0A=
+xmlhttp.open("POST","/err_sup.asp",true);=0A=
+xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencode=
+d");=0A=
+xmlhttp.send("err_url=3D" + err_url + "&err_email=3D" + err_email + =
+"&err_desc=3D" + escape(err_desc));=0A=
+hideError();=0A=
+document.getElementById("err_sent").style.display=3D"block";=0A=
+}=0A=
+function click_expandingMenuHeader(obj,sectionName)=0A=
+{=0A=
+var x=3Ddocument.getElementById("cssprop_" + =
+sectionName).parentNode.className;=0A=
+if (x.indexOf("expandingMenuNotSelected")>-1)=0A=
+	{=0A=
+	x=3Dx.replace("expandingMenuNotSelected","expandingMenuSelected");=0A=
+	document.getElementById("cssprop_" + =
+sectionName).parentNode.className=3Dx;=0A=
+	document.getElementById("cssprop_" + =
+sectionName).style.display=3D"block";=0A=
+	}=0A=
+else=0A=
+	{=0A=
+	x=3Dx.replace("expandingMenuSelected","expandingMenuNotSelected");=0A=
+	document.getElementById("cssprop_" + =
+sectionName).parentNode.className=3Dx;=0A=
+	document.getElementById("cssprop_" + =
+sectionName).style.display=3D"none";=0A=
+	}=0A=
+}=0A=
+//-->=0A=
+</SCRIPT>
+<!--[if lt IE 7]>
+<style>
+#leftcolumn{margin-left:0}
+</style>
+<![endif]-->
+<SCRIPT type=3D"text/javascript">=0A=
+(function() {=0A=
+var useSSL =3D 'https:' =3D=3D document.location.protocol;=0A=
+var src =3D (useSSL ? 'https:' : 'http:') +=0A=
+'//www.googletagservices.com/tag/js/gpt.js';=0A=
+document.write('<scr' + 'ipt src=3D"' + src + '"></scr' + 'ipt>');=0A=
+})();=0A=
+</SCRIPT>
+
+<SCRIPT type=3D"text/javascript">=0A=
+googletag.defineSlot('/16833175/BottomRectangle', [336, 280], =
+'div-gpt-ad-1343810007679-0').addService(googletag.pubads());=0A=
+googletag.defineSlot('/16833175/LargePS', [600, 350], =
+'div-gpt-ad-1343810007679-1').addService(googletag.pubads());=0A=
+googletag.defineSlot('/16833175/MainLeaderboard', [728, 90], =
+'div-gpt-ad-1343810007679-2').addService(googletag.pubads());=0A=
+googletag.defineSlot('/16833175/SkyScraper', [120, 600], =
+'div-gpt-ad-1343810007679-3').addService(googletag.pubads());=0A=
+googletag.defineSlot('/16833175/SmallPS', [600, 100], =
+'div-gpt-ad-1343810007679-4').addService(googletag.pubads());=0A=
+googletag.defineSlot('/16833175/TopRectangle', [227, 90], =
+'div-gpt-ad-1343810007679-5').addService(googletag.pubads());=0A=
+googletag.pubads().setTargeting("content","tags");=0A=
+googletag.pubads().enableSyncRendering();=0A=
+googletag.pubads().enableSingleRequest();=0A=
+googletag.enableServices();=0A=
+</SCRIPT>
+<LINK rel=3D"stylesheet" type=3D"text/css" =
+href=3D"http://www.w3schools.com/stdtheme.css">
+<META name=3D"GENERATOR" content=3D"MSHTML 9.00.8112.16448"></HEAD>
+<BODY>
+<DIV style=3D"width: 100%; margin-top: 0px; margin-bottom: 0px; =
+position: relative;">
+<A id=3D"top"></A>
+<DIV style=3D"width: 960px; margin-top: 5px; margin-right: auto; =
+margin-left: auto;">
+<DIV style=3D"margin: 0px; padding: 0px; width: 960px; height: 74px;">
+<DIV style=3D"width: 340px; text-align: left; float: left;"><A =
+href=3D"http://www.w3schools.com/"><IMG=20
+style=3D"border: 0px currentColor; margin-top: 5px;" =
+alt=3D"W3Schools.com" =
+src=3D"http://www.w3schools.com/images/w3schoolslogo.gif"=20
+width=3D"336" height=3D"69"></A></DIV>
+<DIV style=3D"width: 300px; text-align: right; margin-top: 20px; =
+margin-right: 14px; margin-bottom: 5px; float: right;">
+<DIV style=3D"display: none;" id=3D"google_translate_element"></DIV>
+<DIV style=3D"margin-bottom: 14px;" id=3D"translate_link"><A =
+class=3D"topnav" =
+onclick=3D"document.getElementById('google_translate_element').style.disp=
+lay=3D'inline';document.getElementById('translate_link').style.display=3D=
+'none';return false;"=20
+href=3D"http://www.w3schools.com/tags/ref_httpmessages.asp#">TRANSLATE</A=
+></DIV>
+<FORM style=3D"font-size: 11px;" method=3D"get" name=3D"searchform" =
+action=3D"http://www.google.com/search"=20
+target=3D"_blank"><INPUT name=3D"sitesearch" value=3D"www.w3schools.com" =
+
+type=3D"hidden"><INPUT style=3D"margin: 0px; width: 150px; color: =
+rgb(128, 128, 128); font-style: italic;"=20
+onfocus=3D"searchfield_focus(this)" name=3D"as_q" value=3D"Search =
+w3schools.com" size=3D"20"=20
+type=3D"text"><INPUT style=3D"margin: 0px;" title=3D"Search" =
+value=3D"Search" type=3D"submit"></FORM>
+</DIV></DIV>
+<DIV style=3D"width: 960px; height: 25px; clear: both;" id=3D"topnav">
+<DIV style=3D"width: 400px; text-align: left; padding-top: 6px; =
+padding-left: 15px; font-size: 90%; word-spacing: 12px; float: left; =
+white-space: nowrap;"><A=20
+class=3D"topnav" href=3D"http://www.w3schools.com/default.asp" =
+target=3D"_top">HOME=20
+</A><A class=3D"topnav" =
+href=3D"http://www.w3schools.com/html/default.asp" target=3D"_top">HTML=20
+</A><A class=3D"topnav" =
+href=3D"http://www.w3schools.com/css/default.asp" target=3D"_top">CSS=20
+</A><A class=3D"topnav" href=3D"http://www.w3schools.com/js/default.asp" =
+target=3D"_top">JAVASCRIPT=20
+</A><A class=3D"topnav" =
+href=3D"http://www.w3schools.com/jquery/default.asp" =
+target=3D"_top">JQUERY=20
+</A><A class=3D"topnav" =
+href=3D"http://www.w3schools.com/xml/default.asp" target=3D"_top">XML=20
+</A><A class=3D"topnav" =
+href=3D"http://www.w3schools.com/aspnet/default.asp" =
+target=3D"_top">ASP.NET=20
+</A><A class=3D"topnav" =
+href=3D"http://www.w3schools.com/php/default.asp" target=3D"_top">PHP=20
+</A><A class=3D"topnav" =
+href=3D"http://www.w3schools.com/sql/default.asp" target=3D"_top">SQL=20
+</A><A class=3D"topnav" =
+href=3D"http://www.w3schools.com/sitemap/default.asp"=20
+target=3D"_top">MORE...</A></DIV>
+<DIV style=3D"width: 280px; text-align: right; color: rgb(136, 136, =
+136); padding-top: 7px; padding-right: 13px; font-size: 80%; =
+word-spacing: 6px; float: right; white-space: nowrap;"><A=20
+class=3D"topnav" =
+href=3D"http://www.w3schools.com/sitemap/default.asp#references"=20
+target=3D"_top">REFERENCES</A> |	<A class=3D"topnav" =
+href=3D"http://www.w3schools.com/sitemap/default.asp#examples"=20
+target=3D"_top">EXAMPLES</A> |	<A class=3D"topnav" =
+href=3D"http://www.w3schools.com/forum/default.asp"=20
+target=3D"_top">FORUM</A> |	<A class=3D"topnav" =
+href=3D"http://www.w3schools.com/about/default.asp"=20
+target=3D"_top">ABOUT</A></DIV></DIV>
+<DIV style=3D"margin: 0px; padding: 0px; width: 960px; height: 94px; =
+overflow: hidden; position: relative;"><!-- TopRectangle -->
+<DIV style=3D"width: 227px; height: 90px;" =
+id=3D"div-gpt-ad-1343810007679-5">
+<SCRIPT type=3D"text/javascript">=0A=
+googletag.display('div-gpt-ad-1343810007679-5');=0A=
+</SCRIPT>
+</DIV>
+<DIV style=3D"margin: 0px; padding: 0px; top: 0px; width: 728px; height: =
+90px; right: 0px; overflow: hidden; position: absolute;"><!-- =
+MainLeaderboard -->
+<DIV style=3D"width: 728px; height: 90px;" =
+id=3D"div-gpt-ad-1343810007679-2">
+<SCRIPT type=3D"text/javascript">=0A=
+googletag.display('div-gpt-ad-1343810007679-2');=0A=
+</SCRIPT>
+</DIV></DIV></DIV>
+<DIV style=3D"margin: 0px; padding: 0px; width: 960px;">
+<DIV style=3D"margin: 5px 0px 0px; padding: 0px; width: 170px; float: =
+left;" id=3D"leftcolumn">
+<H2 class=3D"left"><SPAN class=3D"left_h2">HTML</SPAN> Reference</H2><A =
+href=3D"http://www.w3schools.com/tags/default.asp"=20
+target=3D"_top">HTML by Alphabet</A><BR><A =
+href=3D"http://www.w3schools.com/tags/ref_byfunc.asp"=20
+target=3D"_top">HTML by Function</A><BR><A =
+href=3D"http://www.w3schools.com/tags/ref_standardattributes.asp"=20
+target=3D"_top">HTML Attributes</A><BR><A =
+href=3D"http://www.w3schools.com/tags/ref_eventattributes.asp"=20
+target=3D"_top">HTML Events</A><BR><A =
+href=3D"http://www.w3schools.com/tags/ref_canvas.asp"=20
+target=3D"_top">HTML Canvas</A><BR><A =
+href=3D"http://www.w3schools.com/tags/ref_html_dtd.asp"=20
+target=3D"_top">HTML Valid DTDs</A><BR><A =
+href=3D"http://www.w3schools.com/tags/ref_colornames.asp"=20
+target=3D"_top">HTML Colornames</A><BR><A =
+href=3D"http://www.w3schools.com/tags/ref_colorpicker.asp"=20
+target=3D"_top">HTML Colorpicker</A><BR><A =
+href=3D"http://www.w3schools.com/tags/ref_colormixer.asp"=20
+target=3D"_top">HTML Colormixer</A><BR><A =
+href=3D"http://www.w3schools.com/tags/ref_charactersets.asp"=20
+target=3D"_top">HTML Character Sets</A><BR><A =
+href=3D"http://www.w3schools.com/tags/ref_ascii.asp"=20
+target=3D"_top">HTML ASCII</A><BR><A =
+href=3D"http://www.w3schools.com/tags/ref_entities.asp"=20
+target=3D"_top">HTML ISO-8859-1</A><BR><A =
+href=3D"http://www.w3schools.com/tags/ref_symbols.asp"=20
+target=3D"_top">HTML Symbols</A><BR><A =
+href=3D"http://www.w3schools.com/tags/ref_urlencode.asp"=20
+target=3D"_top">HTML URL Encode</A><BR><A =
+href=3D"http://www.w3schools.com/tags/ref_language_codes.asp"=20
+target=3D"_top">HTML Lang Codes</A><BR><A style=3D"font-weight: bold;" =
+href=3D"http://www.w3schools.com/tags/ref_httpmessages.asp"=20
+target=3D"_top">HTTP Messages</A><BR><BR>
+<H2 class=3D"left"><SPAN class=3D"left_h2">HTML</SPAN> Tags</H2><A =
+href=3D"http://www.w3schools.com/tags/tag_comment.asp"=20
+target=3D"_top">&lt;!--&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_doctype.asp"=20
+target=3D"_top">&lt;!DOCTYPE&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_a.asp"=20
+target=3D"_top">&lt;a&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_abbr.asp"=20
+target=3D"_top">&lt;abbr&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_acronym.asp"=20
+target=3D"_top">&lt;acronym&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_address.asp"=20
+target=3D"_top">&lt;address&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_applet.asp"=20
+target=3D"_top">&lt;applet&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_area.asp"=20
+target=3D"_top">&lt;area&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_font_style.asp"=20
+target=3D"_top">&lt;b&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_base.asp"=20
+target=3D"_top">&lt;base&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_basefont.asp"=20
+target=3D"_top">&lt;basefont&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_bdo.asp"=20
+target=3D"_top">&lt;bdo&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_font_style.asp"=20
+target=3D"_top">&lt;big&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_blockquote.asp"=20
+target=3D"_top">&lt;blockquote&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_body.asp"=20
+target=3D"_top">&lt;body&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_br.asp"=20
+target=3D"_top">&lt;br&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_button.asp"=20
+target=3D"_top">&lt;button&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_canvas.asp"=20
+target=3D"_top">&lt;canvas&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_caption.asp"=20
+target=3D"_top">&lt;caption&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_center.asp"=20
+target=3D"_top">&lt;center&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_phrase_elements.asp"=20
+target=3D"_top">&lt;cite&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_phrase_elements.asp"=20
+target=3D"_top">&lt;code&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_col.asp"=20
+target=3D"_top">&lt;col&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_colgroup.asp"=20
+target=3D"_top">&lt;colgroup&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_dd.asp"=20
+target=3D"_top">&lt;dd&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_del.asp"=20
+target=3D"_top">&lt;del&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_phrase_elements.asp"=20
+target=3D"_top">&lt;dfn&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_dir.asp"=20
+target=3D"_top">&lt;dir&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_div.asp"=20
+target=3D"_top">&lt;div&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_dl.asp"=20
+target=3D"_top">&lt;dl&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_dt.asp"=20
+target=3D"_top">&lt;dt&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_phrase_elements.asp"=20
+target=3D"_top">&lt;em&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_fieldset.asp"=20
+target=3D"_top">&lt;fieldset&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_font.asp"=20
+target=3D"_top">&lt;font&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_form.asp"=20
+target=3D"_top">&lt;form&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_frame.asp"=20
+target=3D"_top">&lt;frame&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_frameset.asp"=20
+target=3D"_top">&lt;frameset&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_head.asp"=20
+target=3D"_top">&lt;head&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_hn.asp"=20
+target=3D"_top">&lt;h1&gt; - &lt;h6&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_hr.asp"=20
+target=3D"_top">&lt;hr&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_html.asp"=20
+target=3D"_top">&lt;html&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_font_style.asp"=20
+target=3D"_top">&lt;i&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_iframe.asp"=20
+target=3D"_top">&lt;iframe&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_img.asp"=20
+target=3D"_top">&lt;img&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_input.asp"=20
+target=3D"_top">&lt;input&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_ins.asp"=20
+target=3D"_top">&lt;ins&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_phrase_elements.asp"=20
+target=3D"_top">&lt;kbd&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_label.asp"=20
+target=3D"_top">&lt;label&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_legend.asp"=20
+target=3D"_top">&lt;legend&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_li.asp"=20
+target=3D"_top">&lt;li&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_link.asp"=20
+target=3D"_top">&lt;link&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_map.asp"=20
+target=3D"_top">&lt;map&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_menu.asp"=20
+target=3D"_top">&lt;menu&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_meta.asp"=20
+target=3D"_top">&lt;meta&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_noframes.asp"=20
+target=3D"_top">&lt;noframes&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_noscript.asp"=20
+target=3D"_top">&lt;noscript&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_object.asp"=20
+target=3D"_top">&lt;object&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_ol.asp"=20
+target=3D"_top">&lt;ol&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_optgroup.asp"=20
+target=3D"_top">&lt;optgroup&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_option.asp"=20
+target=3D"_top">&lt;option&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_p.asp"=20
+target=3D"_top">&lt;p&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_param.asp"=20
+target=3D"_top">&lt;param&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_pre.asp"=20
+target=3D"_top">&lt;pre&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_q.asp"=20
+target=3D"_top">&lt;q&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_strike.asp"=20
+target=3D"_top">&lt;s&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_phrase_elements.asp"=20
+target=3D"_top">&lt;samp&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_script.asp"=20
+target=3D"_top">&lt;script&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_select.asp"=20
+target=3D"_top">&lt;select&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_font_style.asp"=20
+target=3D"_top">&lt;small&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_span.asp"=20
+target=3D"_top">&lt;span&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_strike.asp"=20
+target=3D"_top">&lt;strike&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_phrase_elements.asp"=20
+target=3D"_top">&lt;strong&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_style.asp"=20
+target=3D"_top">&lt;style&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_sup.asp"=20
+target=3D"_top">&lt;sub&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_sup.asp"=20
+target=3D"_top">&lt;sup&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_table.asp"=20
+target=3D"_top">&lt;table&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_tbody.asp"=20
+target=3D"_top">&lt;tbody&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_td.asp"=20
+target=3D"_top">&lt;td&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_textarea.asp"=20
+target=3D"_top">&lt;textarea&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_tfoot.asp"=20
+target=3D"_top">&lt;tfoot&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_th.asp"=20
+target=3D"_top">&lt;th&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_thead.asp"=20
+target=3D"_top">&lt;thead&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_title.asp"=20
+target=3D"_top">&lt;title&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_tr.asp"=20
+target=3D"_top">&lt;tr&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_font_style.asp"=20
+target=3D"_top">&lt;tt&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_u.asp"=20
+target=3D"_top">&lt;u&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_ul.asp"=20
+target=3D"_top">&lt;ul&gt;</A><BR><A =
+href=3D"http://www.w3schools.com/tags/tag_phrase_elements.asp"=20
+target=3D"_top">&lt;var&gt;</A><BR></DIV>
+<DIV style=3D"margin: 0px; padding: 4px 5px 8px 0px; width: 634px; =
+color: rgb(0, 0, 0); float: left; background-color: rgb(255, 255, =
+255);">
+<H1>HTTP <SPAN class=3D"color_h1">Status Messages</SPAN></H1>
+<DIV class=3D"chapter">
+<DIV class=3D"prev"><A class=3D"chapter" =
+href=3D"http://www.w3schools.com/tags/ref_language_codes.asp">=AB=20
+Previous</A></DIV>
+<DIV class=3D"next"><A class=3D"chapter" =
+href=3D"http://www.w3schools.com/tags/default.asp">Next=20
+Reference =BB</A></DIV></DIV>
+<HR>
+
+<P class=3D"intro">When a browser requests a service from a web server, =
+an error=20
+might occur.</P>
+<P class=3D"intro">This is a list of HTTP status messages that might be=20
+returned:</P>
+<HR>
+
+<H2>1xx: Information</H2>
+<TABLE class=3D"reference">
+  <TBODY>
+  <TR>
+    <TH width=3D"40%" align=3D"left">Message:</TH>
+    <TH width=3D"60%" align=3D"left">Description:</TH></TR>
+  <TR>
+    <TD>100 Continue</TD>
+    <TD> The server has received the request headers, and the client =
+should=20
+      	proceed to send the request body</TD></TR>
+  <TR>
+    <TD>101 Switching Protocols</TD>
+    <TD>The requester has asked the server to switch protocols</TD></TR>
+  <TR>
+    <TD>103 Checkpoint</TD>
+    <TD>Used in the resumable requests proposal to resume aborted PUT or =
+POST=20
+      	requests</TD></TR></TBODY></TABLE>
+<H2>2xx: Successful</H2>
+<TABLE class=3D"reference">
+  <TBODY>
+  <TR>
+    <TH width=3D"40%" align=3D"left">Message:</TH>
+    <TH width=3D"60%" align=3D"left">Description:</TH></TR>
+  <TR>
+    <TD>200 OK</TD>
+    <TD>The request is OK (this is the standard response for successful =
+HTTP=20
+      	requests)</TD></TR>
+  <TR>
+    <TD>201 Created</TD>
+    <TD>The request has been fulfilled, and a new resource is     =20
+      created&nbsp;    </TD></TR>
+  <TR>
+    <TD>202 Accepted</TD>
+    <TD>The request has been accepted for processing, but the processing =
+    =20
+      has not been completed    </TD></TR>
+  <TR>
+    <TD>203 Non-Authoritative Information</TD>
+    <TD>The request has been successfully processed, but is returning=20
+      	information that may be from another source</TD></TR>
+  <TR>
+    <TD>204 No Content</TD>
+    <TD>The request has been successfully processed, but is not =
+returning any=20
+      	content</TD></TR>
+  <TR>
+    <TD>205 Reset Content</TD>
+    <TD>The request has been successfully processed, but is not =
+returning any=20
+      	content, and requires that the requester reset the document =
+view</TD></TR>
+  <TR>
+    <TD>206 Partial Content</TD>
+    <TD>The server is delivering only part of the resource due to a =
+range=20
+      header 	sent by the client</TD></TR></TBODY></TABLE>
+<H2>3xx: Redirection</H2>
+<TABLE class=3D"reference">
+  <TBODY>
+  <TR>
+    <TH width=3D"40%" align=3D"left">Message:</TH>
+    <TH width=3D"60%" align=3D"left">Description:</TH></TR>
+  <TR>
+    <TD>300 Multiple Choices</TD>
+    <TD>A link list. The user can select a link and go to that      =
+location.=20
+      Maximum five addresses &nbsp;</TD></TR>
+  <TR>
+    <TD>301 Moved Permanently</TD>
+    <TD>The requested page has moved to a new URL&nbsp;    </TD></TR>
+  <TR>
+    <TD>302 Found</TD>
+    <TD>The requested page has moved temporarily to a new URL&nbsp;    =
+</TD></TR>
+  <TR>
+    <TD>303 See Other</TD>
+    <TD>The requested page can be found under a different URL</TD></TR>
+  <TR>
+    <TD>304 Not Modified</TD>
+    <TD>Indicates the requested page has not been modified since last=20
+    requested</TD></TR>
+  <TR>
+    <TD>306 Switch Proxy</TD>
+    <TD><I>No longer used</I></TD></TR>
+  <TR>
+    <TD>307 Temporary Redirect</TD>
+    <TD>The requested page has moved temporarily to a new URL</TD></TR>
+  <TR>
+    <TD>308 Resume Incomplete</TD>
+    <TD>Used in the resumable requests proposal to resume aborted PUT or =
+POST=20
+      	requests</TD></TR></TBODY></TABLE>
+<H2>4xx: Client Error</H2>
+<TABLE class=3D"reference">
+  <TBODY>
+  <TR>
+    <TH width=3D"40%" align=3D"left">Message:</TH>
+    <TH width=3D"60%" align=3D"left">Description:</TH></TR>
+  <TR>
+    <TD>400&nbsp;Bad Request</TD>
+    <TD>The request cannot be fulfilled due to bad syntax</TD></TR>
+  <TR>
+    <TD>401 Unauthorized</TD>
+    <TD>The request was a legal request, but the server is refusing to =
+respond=20
+      	to it. For use when authentication is possible but has failed or =
+not yet=20
+      	been provided</TD></TR>
+  <TR>
+    <TD>402 Payment Required</TD>
+    <TD><I>Reserved for future use</I></TD></TR>
+  <TR>
+    <TD>403 Forbidden</TD>
+    <TD>The request was a legal request, but the server is refusing to =
+respond=20
+      	to it</TD></TR>
+  <TR>
+    <TD>404 Not Found</TD>
+    <TD>The requested page could not be found but may be available again =
+in=20
+      the 	future</TD></TR>
+  <TR>
+    <TD>405 Method Not Allowed</TD>
+    <TD>A request was made of a page using a request method not =
+supported by=20
+      	that page</TD></TR>
+  <TR>
+    <TD>406 Not Acceptable</TD>
+    <TD>The server can only generate a response that is not      =
+accepted by=20
+      the client    </TD></TR>
+  <TR>
+    <TD>407 Proxy Authentication Required</TD>
+    <TD>The client must first authenticate itself with the proxy    =
+</TD></TR>
+  <TR>
+    <TD>408 Request Timeout</TD>
+    <TD>The server timed out waiting for the request    </TD></TR>
+  <TR>
+    <TD>409 Conflict</TD>
+    <TD>The request could not be completed because of a conflict    in =
+the=20
+      request</TD></TR>
+  <TR>
+    <TD>410 Gone</TD>
+    <TD>The requested page is no longer available</TD></TR>
+  <TR>
+    <TD>411 Length Required</TD>
+    <TD>The "Content-Length" is not defined. The server      will not =
+accept=20
+      the request without it&nbsp;    </TD></TR>
+  <TR>
+    <TD>412 Precondition Failed</TD>
+    <TD>The precondition given in the request evaluated to false by      =
+the=20
+      server    </TD></TR>
+  <TR>
+    <TD>413 Request Entity Too Large</TD>
+    <TD>The server will not accept the request, because the request =
+entity is =20
+          too large    </TD></TR>
+  <TR>
+    <TD>414 Request-URI Too Long</TD>
+    <TD>The server will not accept the request, because the URL is      =
+too=20
+      long. Occurs when you convert a POST request to a GET request with =
+     a=20
+      long query information&nbsp;    </TD></TR>
+  <TR>
+    <TD>415 Unsupported Media Type</TD>
+    <TD>The server will not accept the request, because the media      =
+type is=20
+      not supported&nbsp;    </TD></TR>
+  <TR>
+    <TD>416&nbsp;Requested Range Not Satisfiable</TD>
+    <TD>The client has asked for a portion of the file, but the server =
+cannot=20
+      	supply that portion</TD></TR>
+  <TR>
+    <TD>417 Expectation Failed</TD>
+    <TD>The server cannot meet the requirements of the Expect =
+request-header=20
+      	field</TD></TR></TBODY></TABLE>
+<H2>5xx: Server Error</H2>
+<TABLE class=3D"reference">
+  <TBODY>
+  <TR>
+    <TH width=3D"40%" align=3D"left">Message:</TH>
+    <TH width=3D"60%" align=3D"left">Description:</TH></TR>
+  <TR>
+    <TD>500&nbsp;Internal Server Error</TD>
+    <TD>A generic error message, given when no more specific message is=20
+      suitable</TD></TR>
+  <TR>
+    <TD>501 Not Implemented</TD>
+    <TD>The server either does not recognize the request method, or it =
+lacks=20
+      the 	ability to fulfill the request</TD></TR>
+  <TR>
+    <TD>502 Bad Gateway</TD>
+    <TD>The server was acting as a gateway or proxy and received an =
+invalid=20
+      	response from the upstream server</TD></TR>
+  <TR>
+    <TD>503 Service Unavailable</TD>
+    <TD>The server is currently unavailable (overloaded or down)    =
+</TD></TR>
+  <TR>
+    <TD>504 Gateway Timeout</TD>
+    <TD>The server was acting as a gateway or proxy and did not receive =
+a=20
+      timely 	response from the upstream server</TD></TR>
+  <TR>
+    <TD>505 HTTP Version Not Supported</TD>
+    <TD>The server does not support the HTTP protocol version used in =
+the=20
+      	request    </TD></TR>
+  <TR>
+    <TD>511 Network Authentication Required</TD>
+    <TD>The client needs to authenticate to gain network =
+access</TD></TR>
+</TBODY></TABLE><BR>
+<DIV class=3D"chapter">
+<DIV class=3D"prev"><A class=3D"chapter" =
+href=3D"http://www.w3schools.com/tags/ref_language_codes.asp">=AB=20
+Previous</A></DIV>
+<DIV class=3D"next"><A class=3D"chapter" =
+href=3D"http://www.w3schools.com/tags/default.asp">Next=20
+Reference =BB</A></DIV></DIV>
+<HR>
+<!-- SmallPS -->
+<DIV style=3D"width: 630px; margin-right: auto; margin-left: auto;" =
+id=3D"div-gpt-ad-1343810007679-4">
+<SCRIPT type=3D"text/javascript">=0A=
+googletag.display('div-gpt-ad-1343810007679-4');=0A=
+</SCRIPT>
+</DIV><!-- LargePS -->
+<DIV style=3D"width: 630px; margin-right: auto; margin-left: auto;" =
+id=3D"div-gpt-ad-1343810007679-1">
+<SCRIPT type=3D"text/javascript">=0A=
+googletag.display('div-gpt-ad-1343810007679-1');=0A=
+</SCRIPT>
+</DIV><!-- BottomRectangle -->
+<DIV style=3D"width: 336px; height: 280px; margin-right: auto; =
+margin-left: auto;"=20
+id=3D"div-gpt-ad-1343810007679-0">
+<SCRIPT type=3D"text/javascript">=0A=
+googletag.display('div-gpt-ad-1343810007679-0');=0A=
+</SCRIPT>
+</DIV>
+<DIV style=3D"display: none;" id=3D"err_form">
+<H2>Your suggestion:</H2>
+<P><LABEL for=3D"err_email">Your E-mail (optional):</LABEL> <INPUT =
+id=3D"err_email"=20
+name=3D"err_email" type=3D"text"></P>
+<P><LABEL for=3D"err_url">Page address:</LABEL> <INPUT id=3D"err_url" =
+disabled=3D"disabled"=20
+name=3D"err_url" type=3D"text"></P>
+<P><LABEL for=3D"err_desc">Description:</LABEL> <TEXTAREA =
+id=3D"err_desc" cols=3D"92" rows=3D"20" =
+name=3D"err_desc"></TEXTAREA></P>
+<P class=3D"submit"><INPUT onclick=3D"sendErr()" value=3D"Submit" =
+type=3D"button"></P>
+<DIV class=3D"err_close" onclick=3D"hideError()">Close [X]</DIV></DIV>
+<DIV style=3D"display: none;" id=3D"err_sent">
+<H2>Thank you for your support.</H2>
+<DIV class=3D"err_close" onclick=3D"hideSent()">Close =
+[X]</DIV></DIV></DIV>
+<DIV style=3D"margin: 0px; padding: 0px; width: 150px; float: left;" =
+id=3D"rightcolumn">
+<TABLE>
+  <TBODY>
+  <TR>
+    <TH>WEB HOSTING</TH></TR>
+  <TR>
+    <TD><A =
+href=3D"http://www.lunarpages.com/id/w3schools/goto/w3schools" =
+rel=3D"nofollow"=20
+      target=3D"_blank">Best Web Hosting</A></TD></TR>
+  <TR>
+    <TD><A href=3D"http://www.eukhost.com/" rel=3D"nofollow" =
+target=3D"_blank">PHP=20
+      MySQL Hosting</A></TD></TR>
+  <TR>
+    <TD><A href=3D"http://www.web-hosting-top.com/coupons" =
+rel=3D"nofollow"=20
+      target=3D"_blank">Best Hosting Coupons</A></TD></TR>
+  <TR>
+    <TD><A href=3D"http://www.heartinternet.co.uk/" rel=3D"nofollow" =
+target=3D"_blank">UK=20
+      Reseller Hosting</A></TD></TR>
+  <TR>
+    <TD><A href=3D"http://www.webhosting.uk.com/cloud-hosting.php" =
+rel=3D"nofollow"=20
+      target=3D"_blank">Cloud Hosting</A></TD></TR>
+  <TR>
+    <TD><A href=3D"http://www.justhost.com/track/w3schools/textlink" =
+rel=3D"nofollow"=20
+      target=3D"_blank">Top Web Hosting</A></TD></TR>
+  <TR>
+    <TD><A href=3D"http://www.doteasy.com/index.cfm?A=3Dw3text" =
+rel=3D"nofollow"=20
+      target=3D"_blank">$3.98 Unlimited Hosting</A></TD></TR>
+  <TR>
+    <TD><A href=3D"http://www.doteasy.com/index.cfm?A=3Dw3schools1" =
+rel=3D"nofollow"=20
+      target=3D"_blank">250+ Hosting Apps</A></TD></TR></TBODY></TABLE>
+<TABLE>
+  <TBODY>
+  <TR>
+    <TH>WEB BUILDING</TH></TR>
+  <TR>
+    <TD><A =
+href=3D"http://www.altova.com/ref/?s=3Dw3s_text2&amp;q=3Dxmlspy" =
+rel=3D"nofollow"=20
+      target=3D"_blank">XML Editor - Free Trial!</A></TD></TR>
+  <TR>
+    <TD><A =
+href=3D"http://www.wix.com/eteamhtml/400?utm_campaign=3Dma_w3schools.com&=
+amp;experiment_id=3Dma_w3schools.comlink1_400Html&amp;embed_tags=3Dcamp&a=
+mp;utm_camp=3DhOUdCO-AmAMQm__j8AM"=20
+      rel=3D"nofollow" target=3D"_blank">FREE Website =
+BUILDER</A></TD></TR>
+  <TR>
+    <TD><A =
+href=3D"http://www.wix.com/eteamhtml/400?utm_campaign=3Dma_w3schools.com&=
+amp;experiment_id=3Dma_w3schools.comlink2_400Html&amp;embed_tags=3Dcamp&a=
+mp;utm_camp=3DhOUdCO-AmAMQm__j8AM"=20
+      rel=3D"nofollow" target=3D"_blank">FREE Website =
+Creator</A></TD></TR>
+</TBODY></TABLE>
+<TABLE>
+  <TBODY>
+  <TR>
+    <TH>W3SCHOOLS EXAMS</TH></TR>
+  <TR>
+    <TD><A href=3D"http://www.w3schools.com/cert/default.asp"=20
+      target=3D"_blank">Get Certified in:<BR>HTML, CSS, JavaScript, XML, =
+PHP, and=20
+      ASP</A></TD></TR></TBODY></TABLE>
+<TABLE>
+  <TBODY>
+  <TR>
+    <TH>W3SCHOOLS BOOKS</TH></TR>
+  <TR>
+    <TD><A href=3D"http://www.w3schools.com/books/default.asp" =
+target=3D"_blank">
+      New Books:<BR>HTML, CSS<BR>JavaScript, and =
+Ajax</A></TD></TR></TBODY></TABLE>
+<TABLE>
+  <TBODY>
+  <TR>
+    <TH>STATISTICS</TH></TR>
+  <TR>
+    <TD><A href=3D"http://www.w3schools.com/browsers/browsers_stats.asp" =
+target=3D"_top">Browser=20
+      Statistics</A><BR><A =
+href=3D"http://www.w3schools.com/browsers/browsers_os.asp"=20
+      target=3D"_top">Browser OS</A><BR><A =
+href=3D"http://www.w3schools.com/browsers/browsers_display.asp"=20
+      target=3D"_top">Browser Display</A></TD></TR></TBODY></TABLE>
+<SCRIPT type=3D"text/javascript">=0A=
+<!--=0A=
+function sharethis()=0A=
+{=0A=
+txt=3D'<a =
+href=3D"http://www.facebook.com/sharer.php?u=3D'+document.URL+'" =
+target=3D"_blank" title=3D"Facebook">'=0A=
+txt=3Dtxt+'<img src=3D"/images/share_facebook.gif" width=3D"16px" =
+height=3D"16px" style=3D"margin-right:4px" /></a>';=0A=
+txt=3Dtxt+'<a href=3D"http://twitter.com/home?status=3DCurrently reading =
+'+document.URL+'" target=3D"_blank" title=3D"Twitter">';=0A=
+txt=3Dtxt+'<img src=3D"/images/share_twitter.gif" width=3D"16px" =
+height=3D"16px" style=3D"margin-right:4px" /></a>';=0A=
+txt=3Dtxt+'<a =
+href=3D"mailto:?&amp;subject=3D'+document.title+'&amp;body=3DTake%20a%20l=
+ook%20at%20this%20page%20at%20W3Schools.com:%20'+document.URL+'" =
+target=3D"_blank" title=3D"E-mail">';=0A=
+txt=3Dtxt+'<img src=3D"/images/share_email.gif" width=3D"16px" =
+height=3D"16px" style=3D"margin-right:4px" /></a>';=0A=
+txt=3Dtxt+'<a =
+href=3D"http://delicious.com/save?v=3D5&noui&jump=3Dclose&url=3D'+documen=
+t.URL+'&title=3D'+document.title+'" target=3D"_blank" =
+title=3D"Delicious">';=0A=
+txt=3Dtxt+'<img src=3D"/images/share_delicious.gif" width=3D"16px" =
+height=3D"16px" style=3D"margin-right:4px" /></a>';=0A=
+txt=3Dtxt+'<a =
+href=3D"http://www.reddit.com/submit?url=3D'+document.URL+'" =
+target=3D"_blank" title=3D"Reddit">';=0A=
+txt=3Dtxt+'<img src=3D"/images/share_reddit.gif" width=3D"16px" =
+height=3D"16px" style=3D"margin-right:4px" /></a>';=0A=
+txt=3Dtxt+'<a =
+href=3D"http://digg.com/submit?url=3D'+document.URL+'&amp;title=3D'+docum=
+ent.title+'" target=3D"_blank" title=3D"Digg">';=0A=
+txt=3Dtxt+'<img src=3D"/images/share_digg.gif" width=3D"16px" =
+height=3D"16px" style=3D"margin-right:4px" /></a>';=0A=
+txt=3Dtxt+'<a =
+href=3D"http://www.stumbleupon.com/submit?url=3D'+document.URL+'%26title%=
+3D'+document.title+'" target=3D"_blank" title=3D"Stumbleupon">';=0A=
+txt=3Dtxt+'<img src=3D"/images/share_stumbleupon.gif" width=3D"16px" =
+height=3D"16px" /></a>';=0A=
+document.getElementById("sharethis").innerHTML=3Dtxt;=0A=
+}=0A=
+//--></SCRIPT>
+
+<TABLE>
+  <TBODY>
+  <TR>
+    <TH>SHARE THIS PAGE</TH></TR>
+  <TR>
+    <TD id=3D"sharethis">
+      <DIV style=3D"height: 16px;"><A onclick=3D"sharethis();return =
+false;" =
+href=3D"http://www.w3schools.com/tags/ref_httpmessages.asp#">Share=20
+      with =BB</A></DIV></TD></TR></TBODY></TABLE>
+<TABLE style=3D"height: 620px; padding-top: 0px;">
+  <TBODY>
+  <TR>
+    <TD style=3D"padding-top: 0px;"><BR><!-- SkyScraper -->
+      <DIV style=3D"margin: 0px auto auto; width: 120px; height: 600px; =
+overflow: hidden;"=20
+      id=3D"div-gpt-ad-1343810007679-3">
+<SCRIPT type=3D"text/javascript">=0A=
+googletag.display('div-gpt-ad-1343810007679-3');=0A=
+</SCRIPT>
+      </DIV></TD></TR></TBODY></TABLE></DIV></DIV></DIV><BR></DIV>
+<DIV style=3D"margin: 0px; padding: 0px; width: 100%; clear: both; =
+position: relative; background-color: transparent;">
+<DIV style=3D"width: 960px; height: 110px; margin-right: auto; =
+margin-left: auto;"=20
+id=3D"footer"><BR>
+<HR style=3D"height: 2px; color: rgb(85, 85, 85);">
+
+<TABLE id=3D"bottomlinks">
+  <TBODY>
+  <TR>
+    <TD vAlign=3D"top">
+      <H3>Top 10 Tutorials</H3><A =
+href=3D"http://www.w3schools.com/html/default.asp"><SPAN=20
+      class=3D"bottomlinksraquo">=BB</SPAN> HTML Tutorial</A><BR><A =
+href=3D"http://www.w3schools.com/html/html5_intro.asp"><SPAN=20
+      class=3D"bottomlinksraquo">=BB</SPAN> HTML5 Tutorial</A><BR><A =
+href=3D"http://www.w3schools.com/css/default.asp"><SPAN=20
+      class=3D"bottomlinksraquo">=BB</SPAN> CSS Tutorial</A><BR><A =
+href=3D"http://www.w3schools.com/css3/default.asp"><SPAN=20
+      class=3D"bottomlinksraquo">=BB</SPAN> CSS3 Tutorial</A><BR><A =
+href=3D"http://www.w3schools.com/js/default.asp"><SPAN=20
+      class=3D"bottomlinksraquo">=BB</SPAN> JavaScript =
+Tutorial</A><BR><A =
+href=3D"http://www.w3schools.com/jquery/default.asp"><SPAN=20
+      class=3D"bottomlinksraquo">=BB</SPAN> jQuery Tutorial</A><BR><A =
+href=3D"http://www.w3schools.com/sql/default.asp"><SPAN=20
+      class=3D"bottomlinksraquo">=BB</SPAN> SQL Tutorial</A><BR><A =
+href=3D"http://www.w3schools.com/php/default.asp"><SPAN=20
+      class=3D"bottomlinksraquo">=BB</SPAN> PHP Tutorial</A><BR><A =
+href=3D"http://www.w3schools.com/aspnet/default.asp"><SPAN=20
+      class=3D"bottomlinksraquo">=BB</SPAN> ASP.NET Tutorial</A><BR><A =
+href=3D"http://www.w3schools.com/xml/default.asp"><SPAN=20
+      class=3D"bottomlinksraquo">=BB</SPAN> XML Tutorial</A><BR></TD>
+    <TD vAlign=3D"top">
+      <H3>Top 10 References</H3><A =
+href=3D"http://www.w3schools.com/html5/html5_reference.asp"><SPAN=20
+      class=3D"bottomlinksraquo">=BB</SPAN> HTML/HTML5 =
+Reference</A><BR><A =
+href=3D"http://www.w3schools.com/cssref/default.asp"><SPAN=20
+      class=3D"bottomlinksraquo">=BB</SPAN> CSS 1,2,3 =
+Reference</A><BR><A =
+href=3D"http://www.w3schools.com/cssref/css3_browsersupport.asp"><SPAN=20
+      class=3D"bottomlinksraquo">=BB</SPAN> CSS 3 Browser =
+Support</A><BR><A =
+href=3D"http://www.w3schools.com/jsref/default.asp"><SPAN=20
+      class=3D"bottomlinksraquo">=BB</SPAN> JavaScript</A><BR><A =
+href=3D"http://www.w3schools.com/jsref/default.asp"><SPAN=20
+      class=3D"bottomlinksraquo">=BB</SPAN> HTML DOM</A><BR><A =
+href=3D"http://www.w3schools.com/dom/dom_nodetype.asp"><SPAN=20
+      class=3D"bottomlinksraquo">=BB</SPAN> XML DOM</A><BR><A =
+href=3D"http://www.w3schools.com/php/php_ref_array.asp"><SPAN=20
+      class=3D"bottomlinksraquo">=BB</SPAN> PHP Reference</A><BR><A =
+href=3D"http://www.w3schools.com/jquery/jquery_ref_selectors.asp"><SPAN=20
+      class=3D"bottomlinksraquo">=BB</SPAN> jQuery Reference</A><BR><A =
+href=3D"http://www.w3schools.com/aspnet/webpages_ref_classes.asp"><SPAN=20
+      class=3D"bottomlinksraquo">=BB</SPAN> ASP.NET Reference</A><BR><A =
+href=3D"http://www.w3schools.com/html5/html5_ref_colornames.asp"><SPAN=20
+      class=3D"bottomlinksraquo">=BB</SPAN> HTML Colors</A><BR></TD>
+    <TD vAlign=3D"top">
+      <H3>Examples</H3><A=20
+      href=3D"http://www.w3schools.com/html/html_examples.asp"><SPAN =
+class=3D"bottomlinksraquo">=BB</SPAN>=20
+      HTML Examples</A><BR><A =
+href=3D"http://www.w3schools.com/css/css_examples.asp"><SPAN=20
+      class=3D"bottomlinksraquo">=BB</SPAN> CSS Examples</A><BR><A =
+href=3D"http://www.w3schools.com/xml/xml_examples.asp"><SPAN=20
+      class=3D"bottomlinksraquo">=BB</SPAN> XML Examples</A><BR><A =
+href=3D"http://www.w3schools.com/js/js_examples.asp"><SPAN=20
+      class=3D"bottomlinksraquo">=BB</SPAN> JavaScript =
+Examples</A><BR><A =
+href=3D"http://www.w3schools.com/htmldom/dom_examples.asp"><SPAN=20
+      class=3D"bottomlinksraquo">=BB</SPAN> HTML DOM Examples</A><BR><A =
+href=3D"http://www.w3schools.com/dom/dom_examples.asp"><SPAN=20
+      class=3D"bottomlinksraquo">=BB</SPAN> XML DOM Examples</A><BR><A =
+href=3D"http://www.w3schools.com/ajax/ajax_examples.asp"><SPAN=20
+      class=3D"bottomlinksraquo">=BB</SPAN> AJAX Examples</A><BR><A =
+href=3D"http://www.w3schools.com/aspnet/aspnet_examples.asp"><SPAN=20
+      class=3D"bottomlinksraquo">=BB</SPAN> ASP.NET Examples</A><BR><A =
+href=3D"http://www.w3schools.com/aspnet/webpages_examples.asp"><SPAN=20
+      class=3D"bottomlinksraquo">=BB</SPAN> Razor Examples</A><BR><A =
+href=3D"http://www.w3schools.com/asp/asp_examples.asp"><SPAN=20
+      class=3D"bottomlinksraquo">=BB</SPAN> ASP Examples</A><BR><A =
+href=3D"http://www.w3schools.com/svg/svg_examples.asp"><SPAN=20
+      class=3D"bottomlinksraquo">=BB</SPAN> SVG Examples</A></TD>
+    <TD vAlign=3D"top">
+      <H3>Quizzes</H3><A =
+href=3D"http://www.w3schools.com/quiztest/quiztest.asp?qtest=3DHTML"><SPA=
+N=20
+      class=3D"bottomlinksraquo">=BB</SPAN> HTML Quiz</A><BR><A =
+href=3D"http://www.w3schools.com/quiztest/quiztest.asp?qtest=3DXHTML"><SP=
+AN=20
+      class=3D"bottomlinksraquo">=BB</SPAN> XHTML Quiz</A><BR><A =
+href=3D"http://www.w3schools.com/quiztest/quiztest.asp?qtest=3DCSS"><SPAN=
+=20
+      class=3D"bottomlinksraquo">=BB</SPAN> CSS Quiz</A><BR><A =
+href=3D"http://www.w3schools.com/quiztest/quiztest.asp?qtest=3DJavaScript=
+"><SPAN=20
+      class=3D"bottomlinksraquo">=BB</SPAN> JavaScript Quiz</A><BR><A =
+href=3D"http://www.w3schools.com/quiztest/quiztest.asp?qtest=3DjQuery"><S=
+PAN=20
+      class=3D"bottomlinksraquo">=BB</SPAN> jQuery Quiz</A><BR><A =
+href=3D"http://www.w3schools.com/quiztest/quiztest.asp?qtest=3DXML"><SPAN=
+=20
+      class=3D"bottomlinksraquo">=BB</SPAN> XML Quiz</A><BR><A =
+href=3D"http://www.w3schools.com/quiztest/quiztest.asp?qtest=3DASP"><SPAN=
+=20
+      class=3D"bottomlinksraquo">=BB</SPAN> ASP Quiz</A><BR><A =
+href=3D"http://www.w3schools.com/quiztest/quiztest.asp?qtest=3DPHP"><SPAN=
+=20
+      class=3D"bottomlinksraquo">=BB</SPAN> PHP Quiz</A><BR><A =
+href=3D"http://www.w3schools.com/quiztest/quiztest.asp?qtest=3DSQL"><SPAN=
+=20
+      class=3D"bottomlinksraquo">=BB</SPAN> SQL Quiz</A><BR></TD>
+    <TD vAlign=3D"top">
+      <H3>Color Picker</H3><A =
+href=3D"http://www.w3schools.com/html5/html5_ref_colorpicker.asp">
+      <IMG alt=3D"colorpicker" =
+src=3D"http://www.w3schools.com/images/colormap_80.gif"></A>
+      <H3 style=3D"margin-top: 20px;">Statistics</H3><A =
+href=3D"http://www.w3schools.com/browsers/browsers_stats.asp"><SPAN=20
+      class=3D"bottomlinksraquo">=BB</SPAN> Browser Statistics</A><BR><A =
+href=3D"http://www.w3schools.com/browsers/browsers_os.asp"><SPAN=20
+      class=3D"bottomlinksraquo">=BB</SPAN> Browser OS</A><BR><A =
+href=3D"http://www.w3schools.com/browsers/browsers_display.asp"><SPAN=20
+      class=3D"bottomlinksraquo">=BB</SPAN> Browser =
+Display</A></TD></TR></TBODY></TABLE>
+<BR>
+<HR style=3D"height: 2px; color: rgb(85, 85, 85);">
+
+<DIV style=3D"width: 200px; text-align: left; padding-top: 11px; =
+padding-left: 3px; float: left;"><A=20
+href=3D"http://www.w3schools.com/"><IMG style=3D"border: 0px =
+currentColor;" alt=3D"W3Schools.com"=20
+src=3D"http://www.w3schools.com/images/w3schoolscom_gray.gif"></A></DIV>
+<DIV style=3D"width: 600px; text-align: right; padding-top: 19px; =
+padding-right: 12px; font-size: 80%; word-spacing: 6px; float: right;">
+<A onclick=3D"displayError();return false"=20
+href=3D"http://www.w3schools.com/tags/">REPORT ERROR</A> |<A =
+href=3D"http://www.w3schools.com/default.asp"=20
+target=3D"_top">HOME</A> |<A =
+href=3D"http://www.w3schools.com/tags/ref_httpmessages.asp#top"=20
+target=3D"_top">TOP</A> |<A =
+href=3D"http://www.w3schools.com/tags/ref_httpmessages.asp?output=3Dprint=
+"=20
+target=3D"_blank">PRINT</A> |<A =
+href=3D"http://www.w3schools.com/forum/default.asp"=20
+target=3D"_blank">FORUM</A> |<A =
+href=3D"http://www.w3schools.com/about/default.asp"=20
+target=3D"_top">ABOUT</A></DIV>
+<DIV style=3D"color: rgb(64, 64, 64); padding-top: 13px; clear: =
+both;">W3Schools=20
+is optimized for learning, testing, and training. Examples might be =
+simplified=20
+to improve reading and basic understanding.<BR>Tutorials, references, =
+and=20
+examples are constantly reviewed to avoid errors, but we cannot warrant =
+full=20
+correctness of all content.<BR>While using this site, you agree to have =
+read and=20
+accepted our<A =
+href=3D"http://www.w3schools.com/about/about_copyright.asp">terms=20
+of use</A> and<A =
+href=3D"http://www.w3schools.com/about/about_privacy.asp">privacy=20
+policy</A>.<BR><A=20
+href=3D"http://www.w3schools.com/about/about_copyright.asp">Copyright=20
+1999-2012</A> by Refsnes Data. All Rights Reserved.</DIV></DIV></DIV>
+<SCRIPT type=3D"text/javascript">=0A=
+function googleTranslateElementInit() {=0A=
+  new google.translate.TranslateElement({=0A=
+    pageLanguage: 'en',=0A=
+    autoDisplay: false,    =0A=
+    gaTrack: true,=0A=
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE=0A=
+  }, 'google_translate_element');=0A=
+}=0A=
+</SCRIPT>
+
+<SCRIPT type=3D"text/javascript" =
+src=3D"http://translate.google.com/translate_a/element.js?cb=3DgoogleTran=
+slateElementInit"></SCRIPT>
+</BODY></HTML>
+
+------=_NextPart_000_0000_01CD95C3.6491A3C0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.w3schools.com/images/w3schoolslogo.gif
+
+R0lGODlhUAFFAOYAAODg4P///8rJyZDBQFRUU4+MjHBubbOxsbjPkaTIafv7+5bCSNve1s3YuK/L
+fuzr68LUpPDu7tPS0aCenvTz87TOiJvEU1paWb68vJ/GXdbczH99fGJgX/r6+dLawuPh4anJdO7t
+7eDe38fHx4eFhOfm5qqop8jWruLg4NXT0/f29mhnZr3RmvLy8nd1dNjW1piVlfj5+dza2vLx8OXk
+5PHw8NfV1evp6NvZ2Z/CZe304t/e3eXj45XCR63EiODryqrNbb/YkNLQz8bIwqrEgd7c257HVcPI
+uuno6JzCW7XGmdnnvqPDbrHResXbm9rY19DOzr/HsbzHqeTi4unn58zeperp6N/d3dnX1+bv1rjG
+ofX47pfESdPR0abDeNbU1JjCUaXKYNPjsbHFkNTS0/Pz8wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5
+BAEAAAAALAAAAABQAUUAAAf/gACCg4SFhoeIiQBHWkQ5A5BJREeKlZaXmJmam5ydnp+goaKjpJpS
+PkxgkKusPUqlsLGys7S1tre4i0pESay+vwNRucPExcbHyLOnTD3Azr45ydLT1NXWpUe7vc/cv8LX
+4OHi48RDy83d6b8+5O3u7/CVUUpe2+r3v9Hx+/z9yeY+cqDDRxCYv4MIE44aQs9eQXxgckgcCOmb
+wosYMxIaQoTiQ3VMtAwpdMQHujEaU6r058HCR4IJNChiAGKAg5U4c45j4PLlPRaYHFjQSbSoNAQ+
+70HQBIKB0adQb2VImq5CIQYsQCRIAKLBVZlRw4odRbXbAqeDPCz4dXOs27eg/8pyszpIw1pgQK0d
+IMC3r9+/BmBISFbAb4F3fw/AvST3mddBDp4N1fu3cuULGJAV7nvYXeLFlhI0NkjorjMPlC2r5nth
+sLHNfDu3+wxaUYXRvwp1e0xt7+rVsonBJhB8HO3aiCDg9lX3xG5rEg5In079AAwDlVccG15c3HHk
+hjQsZ5W1ZzfU/FxU3m4YsV/F4BGZHr9q67MEoAro11/owP4C8A3yX3eKmLBeIRjAMOCCEyAS3YL7
+jSDIcAYsaIJriUgwwQYGdGiACzBIWIkJJHjYYQGZHfKdIAlC+F+DmTSAwIw00sgbIRA4sNWOCIBl
+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
+
+------=_NextPart_000_0000_01CD95C3.6491A3C0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.w3schools.com/images/colormap_80.gif
+
+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
+
+------=_NextPart_000_0000_01CD95C3.6491A3C0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.w3schools.com/images/w3schoolscom_gray.gif
+
+R0lGODlhlgAcAOZVAKqqqrOzs/7+/s7Ozv39/crKyrKyssfHx7q6uvv7+/z8/Pr6+tXV1fX19c3N
+zfj4+LCwsPn5+fb29vPz88nJybu7u8bGxq2trb+/v9PT09DQ0MPDw7y8vLm5ufDw8LS0tLGxsczM
+zK6urunp6aurq+vr69nZ2c/Pz8TExNLS0tHR0cvLy7i4uOjo6O/v79bW1sLCwt/f3+Xl5ebm5sXF
+xd3d3b29vcjIyK+vr9vb26ysrLW1tfT09PLy8re3t8DAwMHBwdTU1Pf399zc3La2tt7e3uDg4PHx
+8e7u7tjY2L6+vuPj4+fn5+Hh4dfX1+Li4uzs7OTk5Nra2u3t7erq6v///wAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5
+BAEAAFUALAAAAACWABwAAAf/gFUtGwGFhoeIiAYBGzNVj5CRkpOUlZaXmJmam5yQIxAAoaKjpKWi
+IiWdqqusra6YMKays6EHr7e4ubqPAbS+pAgPu8PExZQGv6UXQCEnDkAXACwNxtXWub3Joh9LCZAJ
+MkQf1Nfl5pzZ2gGpVQsTC49QNj3n9faU6b8kMY9LSh9KojySQY9VghgMmhAw9mBIEEf3WuXzFYDa
+kXQ7JlQRsJCVBB8AbEQw5gIEAAsCIrISYWoHjAokRhF5UkIFKX6vJHQAgAFesZIADqRUqQpFhWij
+klQBeqqCkh2kitySgADAj46WBCzwVkkrV0gukAk1lsBnq6GPFgjhQGpJFR5E/0YBkbBgyKgPRx5F
+qKHBwYC/IVSQq+IhSd+/AyY8qBrAwYkBKWKMhDThxYEfG05AhNTjhQXMmsGKTbkghgq/f/0iodRD
+yukBDhyM0FtjBRAgK4ZMrlIjBOLff0+8cPFIwIgZLWZXyTCKhYRHBUbVeJQCgA4QFWQ8UkDBlA52
+MiYCYBKhKikSB7iWADnqgoqhLaC2z5AybNCNA2KWkioJCYtSDLQTCykbjCTAgLQQ4cEjTQxBww3e
+CLECC0RUINAjE8BABAsZeNPAfxh4oAAkJUTTmAappUCNBx8AQAIHITiwQgiKVQWCBTfQ0MsFVFQh
+RFUkwJCECi0C8EQVEvxHAv8KhvVCghFLifVWiwaEgCJiq0XyAFsAdBDjCgXMxkAoLDDgRAWhFLAQ
+CtZtcIAFJkFgwQH/ATAAhj0wQYUKI1bRgGKPjKBRAhOQQ0B3J0myRCghVFIdABoIEwlVVkXAkQmh
+TIcpACv4NEI0QFRRRCgDcNUCSzAQJqUHUmKSQy2DYQjKDnm9xRYqVbAJQQMCKIBBSAoI0INJHGD1
+CA4OSApJCxDQIISWK4jigwlM9NlCKAbcACYFDGhUhQUA4MDDJJT+wNUToeRQRQgAiKDcIzZGMIB1
+TETCWAKs3jcBMiAcsG0GC0YiQHc6bAZJDKFoEMkL6VZBAwAQPCfAr0oMtVP/BcZWgUwFGjghBQMU
+4BAKAiqYYIIG5pFigTARgFvKDgsCAcAHZkFCaU+PGBHKEFV0BwJxkGzQ7gTdidACJAT8KoIER0ip
+QHSlgKAd0mziwE4kSYRiQiSjAhDgw7tWkXRICymwU7GSiKfNKE488kANGcTNAA0xpVDFARDH+sjN
+PukMgLrsXvCuAGgaEIED1m0mwL35jhVBDEHIXQBLG2A1cOKTIAyACpE4sbPDeYv9qw1ln52x2rKI
+8MEHSImCEiVTgEJBFWNC2qfNVeFchd/qSpFmn0zoAMAGvIXiwFAzRIOCqkGhFUl5ACixgFYj1hDK
+ypJMMGutPKCJwxS5hj42/+lVmA0A2pGgbsoBERxOSgFIvhAEA/QnITQAdveATPQDnOB/jTzpW8N0
+cr0iBGF/AmkAe25QhAyAggRNiNJ9EmCCDNDPTAVQHgGawIEBCOABaAJABRzzmNkEYWQ5yIF5QpAS
+XVFjfKU73+nW9oMRyUA/ALiAdqAgCwU94gnsGQUTHgASG/hEc1urQglSFooLZKBPI9jJKETwgoUg
+ARQ0eAsooqad6nRgIVBgYigCFIGHkQIFzzpQDsdFALZgrHwg6cDteLG274mtCB2AQAdwgoQbFOCP
+f6RAEGr1CB4YQQOALMAREpABC7ygTyWgwA2O9gghmGADFcDACa62t0tmUqEDUIBEAwZgAZ5FQAUU
+AFMgU5AlGThyKEJYQgoASQFKJmAJBeAAByjQhK+Y4AYDEIYALMOAlBAgAzcIgvOqoL71cUUBDeDK
+A0JQkHIscxLXNIcAsimRtYViA+96RAt+sAO9EeWcxNifN3GwAQ0wQAMwEJlz0EnPYnDJm7KAQcbq
+yU9XWA+fsoBSPwf6CgK84AOLSIRCE2GAD6RgnwSNqCYCAQA7
+
+------=_NextPart_000_0000_01CD95C3.6491A3C0
+Content-Type: text/css;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.w3schools.com/stdtheme.css
+
+html {
+	overflow-y: scroll;
+}
+body {
+	margin: 0px; color: rgb(0, 0, 0); font-size: 12px; background-image: =
+url("/images/gradientfromtop.gif"); background-repeat: repeat-x; =
+background-color: rgb(255, 255, 255);
+}
+body {
+	font-family: verdana,helvetica,arial,sans-serif;
+}
+p {
+	font-family: verdana,helvetica,arial,sans-serif;
+}
+h1 {
+	font-family: verdana,helvetica,arial,sans-serif;
+}
+h2 {
+	font-family: verdana,helvetica,arial,sans-serif;
+}
+h3 {
+	font-family: verdana,helvetica,arial,sans-serif;
+}
+h4 {
+	font-family: verdana,helvetica,arial,sans-serif;
+}
+table {
+	font-family: verdana,helvetica,arial,sans-serif;
+}
+td {
+	font-family: verdana,helvetica,arial,sans-serif;
+}
+th {
+	font-family: verdana,helvetica,arial,sans-serif;
+}
+ul {
+	font-family: verdana,helvetica,arial,sans-serif;
+}
+ol {
+	font-family: verdana,helvetica,arial,sans-serif;
+}
+textarea {
+	font-family: verdana,helvetica,arial,sans-serif;
+}
+input {
+	font-family: verdana,helvetica,arial,sans-serif;
+}
+h1 {
+	font-size: 190%; font-weight: normal; margin-top: 0px;
+}
+h2 {
+	font-size: 160%; font-weight: normal; margin-top: 10px; margin-bottom: =
+10px;
+}
+h3 {
+	font-size: 120%; font-weight: normal;
+}
+h4 {
+	font-size: 100%;
+}
+h5 {
+	font-size: 90%;
+}
+h6 {
+	font-size: 80%;
+}
+h1 {
+	color: rgb(0, 0, 0); background-color: transparent;
+}
+h2 {
+	color: rgb(0, 0, 0); background-color: transparent;
+}
+h3 {
+	color: rgb(0, 0, 0); background-color: transparent;
+}
+h4 {
+	color: rgb(0, 0, 0); background-color: transparent;
+}
+h5 {
+	color: rgb(0, 0, 0); background-color: transparent;
+}
+h6 {
+	color: rgb(0, 0, 0); background-color: transparent;
+}
+iframe {
+	margin: 0px;
+}
+div {
+	width: 100%;
+}
+table {
+	font-size: 100%;
+}
+th {
+	font-size: 100%;
+}
+td {
+	font-size: 100%;
+}
+input {
+	font-size: 100%;
+}
+textarea {
+	font-size: 100%;
+}
+img {
+	border: 0px currentColor;
+}
+table.example {
+	padding: 8px; border: 1px solid rgb(212, 212, 212); width: 100%; color: =
+rgb(0, 0, 0); background-image: url("images/bgfadegreen.gif"); =
+background-repeat: repeat-x; background-color: rgb(229, 238, 204);
+}
+table.example_code {
+	padding: 4px; border: 1px solid rgb(212, 212, 212); width: 100%; =
+background-color: rgb(255, 255, 255);
+}
+table.example_code td {
+	font-family: "courier new"; font-size: 110%;
+}
+table.example_result {
+	padding: 4px; border: 1px solid rgb(212, 212, 212); background-color: =
+rgb(255, 255, 255);
+}
+table.code {
+	margin: 0px; padding: 3px; border: 1px solid rgb(212, 212, 212); width: =
+100%; background-color: rgb(229, 238, 204);
+}
+table.code td {
+	padding: 4px; border: 1px solid rgb(212, 212, 212); font-family: =
+"courier new"; font-size: 110%; background-color: rgb(255, 255, 255);
+}
+table.example_code p {
+	font-family: "courier new";
+}
+table.code p {
+	font-family: "courier new";
+}
+td.code {
+	font-family: "courier new";
+}
+div.example {
+	margin: 0px; padding: 8px; border: 1px solid rgb(212, 212, 212); width: =
+616px; color: rgb(0, 0, 0); clear: both; background-image: =
+url("/images/bgfadegreen.gif"); background-repeat: repeat-x; =
+background-color: rgb(229, 238, 204);
+}
+div.example_code {
+	padding: 4px; border: 1px solid rgb(212, 212, 212); width: 606px; =
+font-family: "courier new"; font-size: 110%; background-color: rgb(255, =
+255, 255);
+}
+div.example_result {
+	padding: 4px; border: 1px solid rgb(212, 212, 212); width: 606px; =
+background-color: rgb(255, 255, 255);
+}
+div.code {
+	margin: 0px; padding: 5px; border: 1px solid rgb(212, 212, 212); width: =
+622px; background-color: rgb(229, 238, 204);
+}
+div.code div {
+	padding: 4px; border: 1px solid rgb(212, 212, 212); width: 612px; =
+font-family: "courier new"; font-size: 110%; background-color: rgb(255, =
+255, 255);
+}
+div.example_code p {
+	font-family: "courier new";
+}
+div.code p {
+	font-family: "courier new";
+}
+div.code div {
+	font-family: "courier new";
+}
+div.tryit_ex {
+	width: 600px; height: 50px; clear: both; margin-bottom: 5px;
+}
+div.tryit_ex img {
+	border: 0px currentColor; margin-right: 10px; float: left;
+}
+div.tryit_ex h2 {
+	padding-top: 5px;
+}
+table.lamp {
+	padding: 0px; border: 1px solid rgb(212, 212, 212); width: 100%; =
+border-collapse: collapse;
+}
+table.lamp th {
+	padding: 0px; color: rgb(0, 0, 0); border-right-color: rgb(212, 212, =
+212); border-right-width: 1px; border-right-style: solid; =
+background-color: white;
+}
+table.lamp td {
+	padding: 4px 4px 4px 10px; color: rgb(0, 0, 0); background-image: =
+url("images/bgfadegreen.gif"); background-repeat: repeat-x; =
+background-color: rgb(229, 238, 204);
+}
+table.reference {
+	border: 1px solid rgb(195, 195, 195); width: 100%; border-collapse: =
+collapse; background-color: rgb(255, 255, 255);
+}
+table.reference th {
+	padding: 3px; border: 1px solid rgb(195, 195, 195); text-align: left; =
+vertical-align: top; background-color: rgb(229, 238, 204);
+}
+table.reference td {
+	padding: 3px; border: 1px solid rgb(195, 195, 195); vertical-align: =
+top;
+}
+table.reference td.example_code {
+	vertical-align: bottom;
+}
+td.example_code {
+	font-family: "courier new"; font-size: 110%; vertical-align: bottom;
+}
+table.intro {
+	padding: 5px 5px 5px 0px; color: rgb(85, 85, 85); font-size: 110%; =
+background-color: transparent;
+}
+table.summary {
+	padding: 5px; border: 1px solid rgb(212, 212, 212); color: rgb(85, 85, =
+85); font-size: 100%; background-color: rgb(250, 250, 210);
+}
+h2.example {
+	color: rgb(97, 127, 16); margin-top: 0px; background-color: =
+transparent;
+}
+h2.example_head {
+	color: rgb(97, 127, 16); margin-top: 0px; background-color: =
+transparent;
+}
+h2.example {
+	font-size: 120%;
+}
+h2.example_head {
+	font-size: 140%;
+}
+h2.home {
+	color: rgb(144, 11, 9); padding-top: 1px; padding-bottom: 1px; =
+padding-left: 1px; font-size: 120%; margin-top: 0px; margin-bottom: 5px; =
+background-color: rgb(255, 255, 255);
+}
+h2.tutheader {
+	background-position: 0px -50px; margin: 0px; border: 1px solid rgb(212, =
+212, 212); color: rgb(48, 48, 48); padding-top: 2px; padding-bottom: =
+2px; padding-left: 4px; clear: both; background-image: =
+url("/images/gradientfromtop.gif"); background-repeat: repeat-x; =
+background-color: rgb(255, 255, 255);
+}
+h2.left {
+	color: rgb(64, 64, 64); padding-top: 0px; padding-bottom: 0px; =
+font-size: 120%; font-weight: bold; margin-top: 0px; margin-bottom: 4px; =
+background-color: rgb(255, 255, 255);
+}
+span.marked {
+	color: rgb(232, 0, 0); background-color: transparent;
+}
+span.deprecated {
+	color: rgb(232, 0, 0); background-color: transparent;
+}
+p.tutintro {
+	font-size: 125%; margin-top: 0px;
+}
+div.tutintro {
+	width: 622px;
+}
+div.tutintro img {
+	margin-right: 20px; margin-bottom: 10px; float: left;
+}
+div.tutintro p {
+	font-size: 125%; margin-top: 0px;
+}
+p.intro {
+	color: rgb(64, 64, 64); font-size: 120%; margin-top: 10px; =
+background-color: transparent;
+}
+pre {
+	font-family: "courier new"; font-size: 110%; margin-bottom: 0px; =
+margin-left: 0px;
+}
+img.float {
+	float: left;
+}
+img.navup {
+	width: 18px; height: 22px; vertical-align: middle;
+}
+hr {
+	border: 0px currentColor; height: 1px; color: rgb(212, 212, 212); =
+clear: both; background-color: rgb(212, 212, 212);
+}
+a.example {
+	font-weight: bold;
+}
+a:link {
+	color: rgb(144, 11, 9); background-color: transparent;
+}
+a:visited {
+	color: rgb(144, 11, 9); background-color: transparent;
+}
+a:hover {
+	color: rgb(255, 0, 0); background-color: transparent;
+}
+a:active {
+	color: rgb(255, 0, 0); background-color: transparent;
+}
+a.topnav:link {
+	color: rgb(85, 85, 85); text-decoration: none;
+}
+a.topnav:visited {
+	color: rgb(85, 85, 85); text-decoration: none;
+}
+a.topnav:hover {
+	color: rgb(255, 72, 0); text-decoration: none;
+}
+a.topnav:active {
+	color: rgb(255, 72, 0); text-decoration: none;
+}
+a.plain:link {
+	color: rgb(144, 11, 9); text-decoration: none; background-color: =
+transparent;
+}
+a.plain:visited {
+	color: rgb(144, 11, 9); text-decoration: none; background-color: =
+transparent;
+}
+a.plain:hover {
+	color: rgb(255, 0, 0); text-decoration: underline; background-color: =
+transparent;
+}
+a.plain:active {
+	color: rgb(255, 0, 0); text-decoration: underline; background-color: =
+transparent;
+}
+a.header:link {
+	color: black; text-decoration: none; background-color: transparent;
+}
+a.header:visited {
+	color: black; text-decoration: none; background-color: transparent;
+}
+a.header:hover {
+	color: black; text-decoration: underline; background-color: =
+transparent;
+}
+a.header:active {
+	color: black; text-decoration: underline; background-color: =
+transparent;
+}
+table.sitemap a:link {
+	color: black; text-decoration: none; background-color: transparent;
+}
+table.sitemap a:visited {
+	color: black; text-decoration: none; background-color: transparent;
+}
+table.sitemap a:hover {
+	color: black; text-decoration: underline; background-color: =
+transparent;
+}
+table.sitemap a:active {
+	color: black; text-decoration: underline; background-color: =
+transparent;
+}
+#leftcolumn a:link {
+	color: black; text-decoration: none; background-color: transparent;
+}
+#leftcolumn a:visited {
+	color: black; text-decoration: none; background-color: transparent;
+}
+#leftcolumn a:hover {
+	color: black; text-decoration: underline; background-color: =
+transparent;
+}
+#leftcolumn a:active {
+	color: black; text-decoration: underline; background-color: =
+transparent;
+}
+#rightcolumn a:link {
+	color: rgb(144, 11, 9); text-decoration: none; background-color: =
+transparent;
+}
+#rightcolumn a:visited {
+	color: rgb(144, 11, 9); text-decoration: none; background-color: =
+transparent;
+}
+#rightcolumn a:hover {
+	color: rgb(255, 0, 0); text-decoration: underline; background-color: =
+transparent;
+}
+#rightcolumn a:active {
+	color: rgb(255, 0, 0); text-decoration: underline; background-color: =
+transparent;
+}
+.toprect_txt a:link {
+	color: rgb(144, 11, 9); text-decoration: none; background-color: =
+transparent;
+}
+.toprect_txt a:visited {
+	color: rgb(144, 11, 9); text-decoration: none; background-color: =
+transparent;
+}
+.toprect_txt a:hover {
+	color: rgb(255, 0, 0); text-decoration: underline; background-color: =
+transparent;
+}
+.toprect_txt a:active {
+	color: rgb(255, 0, 0); text-decoration: underline; background-color: =
+transparent;
+}
+#footer a:link {
+	color: rgb(64, 64, 64); text-decoration: none; background-color: =
+transparent;
+}
+#footer a:visited {
+	color: rgb(64, 64, 64); text-decoration: none; background-color: =
+transparent;
+}
+#footer a:hover {
+	color: rgb(64, 64, 64); text-decoration: underline; background-color: =
+transparent;
+}
+#footer a:active {
+	color: rgb(64, 64, 64); text-decoration: underline; background-color: =
+transparent;
+}
+a.m_item:link {
+	color: white; text-decoration: none; background-color: transparent;
+}
+a.m_item:visited {
+	color: white; text-decoration: none; background-color: transparent;
+}
+a.m_item:hover {
+	color: white; text-decoration: underline; background-color: =
+transparent;
+}
+a.m_item:active {
+	color: white; text-decoration: underline; background-color: =
+transparent;
+}
+a.chapter:link {
+	color: rgb(152, 191, 33); text-decoration: none; background-color: =
+transparent;
+}
+a.chapter:visited {
+	color: rgb(152, 191, 33); text-decoration: none; background-color: =
+transparent;
+}
+a.chapter:hover {
+	color: rgb(152, 191, 33); text-decoration: underline; background-color: =
+transparent;
+}
+a.chapter:active {
+	color: rgb(152, 191, 33); text-decoration: none; background-color: =
+transparent;
+}
+#leftcolumn {
+	margin-left: 1px;
+}
+a.tryitbtn {
+	padding: 3px 0px 4px; outline: rgb(152, 191, 33) solid 1px; border: 1px =
+solid rgb(255, 255, 255); width: 120px; text-align: center; color: =
+rgb(255, 255, 255); font-size: 11px; font-weight: bold; text-decoration: =
+none; margin-left: 1px; display: block; background-color: rgb(152, 191, =
+33);
+}
+a.tryitbtn:link {
+	padding: 3px 0px 4px; outline: rgb(152, 191, 33) solid 1px; border: 1px =
+solid rgb(255, 255, 255); width: 120px; text-align: center; color: =
+rgb(255, 255, 255); font-size: 11px; font-weight: bold; text-decoration: =
+none; margin-left: 1px; display: block; background-color: rgb(152, 191, =
+33);
+}
+a.tryitbtn:visited {
+	padding: 3px 0px 4px; outline: rgb(152, 191, 33) solid 1px; border: 1px =
+solid rgb(255, 255, 255); width: 120px; text-align: center; color: =
+rgb(255, 255, 255); font-size: 11px; font-weight: bold; text-decoration: =
+none; margin-left: 1px; display: block; background-color: rgb(152, 191, =
+33);
+}
+a.showbtn {
+	padding: 3px 0px 4px; outline: rgb(152, 191, 33) solid 1px; border: 1px =
+solid rgb(255, 255, 255); width: 120px; text-align: center; color: =
+rgb(255, 255, 255); font-size: 11px; font-weight: bold; text-decoration: =
+none; margin-left: 1px; display: block; background-color: rgb(152, 191, =
+33);
+}
+a.showbtn:link {
+	padding: 3px 0px 4px; outline: rgb(152, 191, 33) solid 1px; border: 1px =
+solid rgb(255, 255, 255); width: 120px; text-align: center; color: =
+rgb(255, 255, 255); font-size: 11px; font-weight: bold; text-decoration: =
+none; margin-left: 1px; display: block; background-color: rgb(152, 191, =
+33);
+}
+a.showbtn:visited {
+	padding: 3px 0px 4px; outline: rgb(152, 191, 33) solid 1px; border: 1px =
+solid rgb(255, 255, 255); width: 120px; text-align: center; color: =
+rgb(255, 255, 255); font-size: 11px; font-weight: bold; text-decoration: =
+none; margin-left: 1px; display: block; background-color: rgb(152, 191, =
+33);
+}
+a.tryitbtn:hover {
+	background-color: rgb(122, 153, 26);
+}
+a.tryitbtn:active {
+	background-color: rgb(122, 153, 26);
+}
+a.showbtn:hover {
+	background-color: rgb(122, 153, 26);
+}
+a.showbtn:active {
+	background-color: rgb(122, 153, 26);
+}
+a.playitbtn {
+	padding: 1px 0px 2px 2px; outline: rgb(255, 204, 0) solid 1px; border: =
+1px solid rgb(255, 255, 255); width: 60px; text-align: center; color: =
+rgb(255, 255, 255); font-size: 11px; font-weight: bold; text-decoration: =
+none; margin-left: 1px; display: block; background-color: rgb(255, 173, =
+51);
+}
+a.playitbtn:link {
+	padding: 1px 0px 2px 2px; outline: rgb(255, 204, 0) solid 1px; border: =
+1px solid rgb(255, 255, 255); width: 60px; text-align: center; color: =
+rgb(255, 255, 255); font-size: 11px; font-weight: bold; text-decoration: =
+none; margin-left: 1px; display: block; background-color: rgb(255, 173, =
+51);
+}
+a.playitbtn:visited {
+	padding: 1px 0px 2px 2px; outline: rgb(255, 204, 0) solid 1px; border: =
+1px solid rgb(255, 255, 255); width: 60px; text-align: center; color: =
+rgb(255, 255, 255); font-size: 11px; font-weight: bold; text-decoration: =
+none; margin-left: 1px; display: block; background-color: rgb(255, 173, =
+51);
+}
+a.playitbtn:hover {
+	background-color: rgb(230, 138, 0);
+}
+a.playitbtn:active {
+	background-color: rgb(230, 138, 0);
+}
+a.demobtn {
+	padding: 3px 5px 4px; outline: rgb(238, 108, 50) solid 1px; border: 1px =
+solid rgb(255, 255, 255); text-align: center; color: rgb(255, 255, 255); =
+font-size: 11px; font-weight: bold; text-decoration: none; margin-left: =
+1px; background-color: rgb(238, 108, 50);
+}
+a.demobtn:link {
+	padding: 3px 5px 4px; outline: rgb(238, 108, 50) solid 1px; border: 1px =
+solid rgb(255, 255, 255); text-align: center; color: rgb(255, 255, 255); =
+font-size: 11px; font-weight: bold; text-decoration: none; margin-left: =
+1px; background-color: rgb(238, 108, 50);
+}
+a.demobtn:visited {
+	padding: 3px 5px 4px; outline: rgb(238, 108, 50) solid 1px; border: 1px =
+solid rgb(255, 255, 255); text-align: center; color: rgb(255, 255, 255); =
+font-size: 11px; font-weight: bold; text-decoration: none; margin-left: =
+1px; background-color: rgb(238, 108, 50);
+}
+a.demobtn:hover {
+	background-color: rgb(190, 86, 40);
+}
+a.demobtn:active {
+	background-color: rgb(190, 86, 40);
+}
+a.demobtn:hover {
+	background-color: rgb(190, 86, 40);
+}
+a.demobtn:active {
+	background-color: rgb(190, 86, 40);
+}
+table.chapter {
+	margin: 0px; padding: 0px 3px; font-size: 140%;
+}
+table.chapter td.prev {
+	text-align: left;
+}
+table.chapter td.next {
+	text-align: right;
+}
+div.chapter {
+	margin: 0px; padding: 0px; width: 100%; height: 20px; font-size: 140%;
+}
+div.chapter div.prev {
+	width: 40%; text-align: left; float: left;
+}
+div.chapter div.next {
+	width: 40%; text-align: right; float: right;
+}
+.blacknav {
+	text-align: center; color: white; padding-bottom: 2px; font-size: 10px; =
+font-weight: bold; border-top-color: rgb(134, 134, 134); =
+border-right-color: rgb(134, 134, 134); border-left-color: black; =
+border-top-width: 1px; border-right-width: 1px; border-left-width: 1px; =
+border-top-style: solid; border-right-style: solid; border-left-style: =
+solid; background-color: transparent;
+}
+span.color_h1 {
+	color: rgb(146, 185, 1);
+}
+span.left_h2 {
+	color: rgb(146, 185, 1);
+}
+span.new {
+	outline: rgb(152, 191, 33) solid 1px; border: 1px solid rgb(255, 255, =
+255); color: rgb(255, 255, 255); padding-right: 1px; padding-left: 1px; =
+font-weight: bold; float: right; background-color: rgb(152, 191, 33);
+}
+#rightcolumn table {
+	background-position: 0px -50px; border: 1px solid rgb(212, 212, 212); =
+width: 100%; color: rgb(0, 0, 0); font-size: 11px; margin-top: 0px; =
+margin-bottom: 5px; border-collapse: collapse; border-spacing: 0px; =
+background-image: url("/images/gradientfromtop.gif"); background-repeat: =
+repeat-x; background-color: rgb(255, 255, 255);
+}
+#rightcolumn th {
+	color: rgb(64, 64, 64); padding-top: 3px; padding-bottom: 4px;
+}
+#rightcolumn td {
+	text-align: center; color: rgb(0, 0, 0); padding-top: 3px; =
+padding-bottom: 4px; border-bottom-color: rgb(212, 212, 212); =
+border-bottom-width: 1px; border-bottom-style: solid;
+}
+div.toprect_txt {
+	margin: 0px; padding: 4px 0px 0px; border: 1px solid rgb(195, 195, =
+195); left: 0px; top: 0px; width: 225px; height: 84px; text-align: =
+center; color: rgb(96, 96, 96); font-size: 12px; position: absolute;
+}
+div.toprect_img {
+	margin: 0px; padding: 0px; left: 0px; top: 0px; width: 227px; height: =
+90px; text-align: center; color: rgb(96, 96, 96); font-size: 12px; =
+position: absolute;
+}
+#topnav {
+	background-position: bottom; margin: 5px 0px 10px; padding: 0px; =
+background-image: url("/images/topnav_bg.gif"); background-repeat: =
+repeat-x; background-color: rgb(238, 238, 238);
+}
+#footer {
+	margin: 0px; padding: 0px 20px 10px; text-align: center; color: =
+rgb(144, 144, 144); font-size: 90%;
+}
+.notsupported {
+	color: rgb(197, 128, 128);
+}
+.notsupported:hover {
+	color: rgb(197, 128, 128);
+}
+.notsupported:active {
+	color: rgb(197, 128, 128);
+}
+.notsupported:visited {
+	color: rgb(197, 128, 128);
+}
+.notsupported:link {
+	color: rgb(197, 128, 128);
+}
+#err_form {
+	padding: 10px 10px 0px; border: 1px solid rgb(212, 212, 212); width: =
+95%; color: rgb(0, 0, 0); margin-top: 10px; margin-right: auto; =
+margin-left: auto; display: none; position: relative; z-index: 1; =
+background-repeat: repeat-x; background-color: rgb(241, 241, 241);
+}
+#err_sent {
+	padding: 10px 10px 0px; border: 1px solid rgb(212, 212, 212); width: =
+95%; color: rgb(0, 0, 0); margin-top: 10px; margin-right: auto; =
+margin-left: auto; display: none; position: relative; z-index: 1; =
+background-repeat: repeat-x; background-color: rgb(241, 241, 241);
+}
+#err_form h2 {
+	margin-top: 0px;
+}
+#err_sent h2 {
+	margin-top: 0px;
+}
+#err_form label {
+	margin-bottom: 3px; display: block;
+}
+#err_form input {
+	padding: 4px; border: 1px solid gray; width: 590px; height: 16px; =
+display: block;
+}
+#err_form textarea {
+	padding: 4px; border: 1px solid gray; width: 590px; height: 100px; =
+display: block;
+}
+#err_form .submit input {
+	padding: 0px 0px 2px; border: 1px solid gray; width: 100px; height: =
+18px;
+}
+.err_close {
+	padding: 0px; top: 5px; width: 58px; right: 5px; text-decoration: =
+underline; position: absolute; cursor: pointer;
+}
+.expandingMenu {
+	width: 165px; overflow: hidden;
+}
+.expandingMenuHeader {
+	padding-left: 12px; margin-bottom: 2px; cursor: pointer;
+}
+.expandingMenuItem {
+	width: 145px; padding-left: 12px; margin-bottom: 3px;
+}
+.expandingMenuGroup {
+	border: 1px solid rgb(212, 212, 212); width: 160px; padding-top: 4px; =
+padding-bottom: 4px; margin-bottom: 4px; background-color: rgb(248, 248, =
+248);
+}
+.expandingMenuSelected {
+	background-position: 1px 3px; background-image: =
+url("/images/minus_arrow.gif"); background-repeat: no-repeat;
+}
+.expandingMenuNotSelected {
+	background-position: 1px 3px; background-image: =
+url("/images/plus_arrow.gif"); background-repeat: no-repeat;
+}
+table#bottomlinks {
+	border: currentColor; width: 100%;
+}
+#bottomlinks td {
+	padding: 10px; text-align: left;
+}
+.bottomlinksraquo {
+	color: rgb(255, 72, 0); font-weight: bold;
+}
+#bottomlinks h3 {
+	color: rgb(85, 85, 85); font-size: 14px; font-weight: bold;
+}
+#bottomlinks a {
+	color: rgb(85, 85, 85); font-size: 11px; text-decoration: none;
+}
+
+------=_NextPart_000_0000_01CD95C3.6491A3C0
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit
+
+(function(){var =
+d=3Dwindow,e=3Ddocument,f=3D".",g=3D"UTF-8",h=3D"complete",i=3D"head",j=3D=
+"link",k=3D"script",l=3D"stylesheet",m=3D"text/css",n=3D"text/javascript"=
+;Math.floor(2147483648*Math.random()).toString(36);function p(b){var =
+a=3De.getElementsByTagName(i)[0];a||(a=3De.body.parentNode.appendChild(e.=
+createElement(i)));a.appendChild(b)}function _loadJs(b){var =
+a=3De.createElement(k);a.type=3Dn;a.charset=3Dg;a.src=3Db;p(a)}function =
+_loadCss(b){var =
+a=3De.createElement(j);a.type=3Dm;a.rel=3Dl;a.charset=3Dg;a.href=3Db;p(a)=
+}function _isNS(b){for(var =
+b=3Db.split(f),a=3Dd,c=3D0;c<b.length;++c)if(!(a=3Da[b[c]]))return!1;retu=
+rn!0}function _setupNS(b){for(var =
+b=3Db.split(f),a=3Dd,c=3D0;c<b.length;++c)a=3Da[b[c]]||(a[b[c]]=3D{});ret=
+urn a}=0A=
+d.addEventListener&&"undefined"=3D=3Dtypeof =
+e.readyState&&d.addEventListener("DOMContentLoaded",function(){e.readySta=
+te=3Dh},!1);=0A=
+if (_isNS('google.translate.Element')){return}var =
+c=3D_setupNS('google.translate._const');c._cl=3D'en';c._cuc=3D'googleTran=
+slateElementInit';c._cac=3D'';c._cam=3D'';var =
+h=3D'translate.googleapis.com';var =
+b=3D(window.location.protocol=3D=3D'https:'?'https://':'http://')+h;c._pa=
+h=3Dh;c._pbi=3Db+'/translate_static/img/te_bk.gif';c._pci=3Db+'/translate=
+_static/img/te_ctrl3.gif';c._phf=3Dh+'/translate_static/js/element/hrs.sw=
+f';c._pli=3Db+'/translate_static/img/loading.gif';c._plla=3Dh+'/translate=
+_a/l';c._pmi=3Db+'/translate_static/img/mini_google.png';c._ps=3Db+'/tran=
+slate_static/css/translateelement.css';c._puh=3D'translate.google.com';_l=
+oadCss(c._ps);_loadJs(b+'/translate_static/js/element/main.js');})();
+------=_NextPart_000_0000_01CD95C3.6491A3C0--

@@ -1,0 +1,552 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0106)http://www.coderanch.com/t/168546/java-Web-Component-SCWCD/certification/See-HTTP-Message-Exchange-between -->
+<HTML><HEAD><TITLE>How to See the HTTP Message Exchange between browser and Tomcat? (SCWCD forum at JavaRanch)</TITLE>
+<META content="text/html; charset=UTF-8" http-equiv=Content-Type>
+<META content=no-cache http-equiv=Pragma>
+<META content=-1 http-equiv=Expires><LINK 
+title="JavaRanch: How to See the HTTP Message Exchange between browser and Tomcat?" 
+rel=alternate type=application/rss+xml href="/forums/rss/topicPosts/168546">
+<META name=description 
+content="Hi all,   I am studying Servlet and JSP programming.  I am using Tomcat in win98.  Is there anyway I can tap the normal HTTP message exchanged between">
+<META name=keywords 
+content=change,http,message,tomcat,browser,cookie,jsp,program,servlet>
+<STYLE type=text/css>@import url( /templates/default/styles/style.css?1347810142910 );
+</STYLE>
+
+<STYLE type=text/css>@import url( /templates/default/styles/en_US.css?1347810142910 );
+</STYLE>
+<LINK rel=canonical 
+href="http://www.coderanch.com/t/168546/java-Web-Component-SCWCD/certification/See-HTTP-Message-Exchange-between"><LINK 
+rel=alternate 
+href="http://www.coderanch.com/mobile/t/168546/java-Web-Component-SCWCD/certification/See-HTTP-Message-Exchange-between?foo=a" 
+media=handheld><LINK title="JavaRanch Saloon" rel=search 
+type=application/opensearchdescription+xml 
+href="http://www.coderanch.com/how-to/javaranch-saloon-os.xml"><LINK 
+title="JavaRanch FAQ" rel=search type=application/opensearchdescription+xml 
+href="http://www.coderanch.com/how-to/javaranch-faq-os.xml">
+<META name=GENERATOR content="MSHTML 9.00.8112.16448"></HEAD>
+<BODY class=en_US>
+<DIV class=shngl align=center>
+<CENTER>
+<TABLE border=1 cellPadding=15 width="70%" vspace="30">
+  <TBODY>
+  <TR bgColor=#f0e6d5>
+    <TD>
+      <CENTER><FONT size=2>This week's book giveaway is in the <A 
+      href="http://www.coderanch.com/forums/f-117/ocajp">OCAJP</A> 
+      forum.<BR>We're giving away four copies of <B>OCA Java SE 7 Programmer I 
+      Study Guide</B> and have Edward Finegan and Robert Liguori on-line!<BR>See 
+      <A 
+      href="http://www.coderanch.com/t/592832/ocajp/certification/Welcome-Edward-Finegan-Robert-Liguori">this 
+      thread</A> for details. 
+</FONT></CENTER></TD></TR></TBODY></TABLE></CENTER></DIV>
+<TABLE border=0 width="100%">
+  <TBODY>
+  <TR>
+    <TD>
+      <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%">
+        <TBODY>
+        <TR>
+          <TD align=center><IMG title="" border=0 
+            alt="The moose likes Web Component Certification (SCWCD/OCPJWCD) and the fly likes How to See the HTTP Message Exchange between browser and Tomcat?" 
+            vspace=1 
+            src="How%20to%20See%20the%20HTTP%20Message%20Exchange%20between%20browser%20and%20Tomcat%20(SCWCD%20forum%20at%20JavaRanch)_files/moosefly.gif"> 
+          </TD>
+          <TD class=logo vAlign=middle>A friendly place for programming 
+            greenhorns! </TD>
+          <TD vAlign=middle width="100%" align=center><SPAN 
+            class=boardtitle>Big Moose Saloon</SPAN> 
+            <TABLE border=0 cellSpacing=0 cellPadding=2>
+              <TBODY>
+              <TR>
+                <TD vAlign=top noWrap align=center>&nbsp; <A id=search 
+                  class=mainmenu 
+                  href="http://www.coderanch.com/forums/search/filters/18"><B>Search</B></A> 
+                  | <A id=faq class="mainmenu nonForumLink" 
+                  href="http://www.coderanch.com/how-to/java/Java-FAQ"><B>Java 
+                  FAQ</B></A> | <A id=latest class=mainmenu 
+                  href="http://www.coderanch.com/forums/recentTopics/list">Recent 
+                  Topics</A> <BR><A id=login class=mainmenu 
+                  href="http://www.coderanch.com/forums/user/login">Register / 
+                  Login</A> <BR></TD></TR>
+              <TR>
+                <TD><BR><BR>
+                  <DIV class=announcementBar>Win a copy of <A 
+                  href="http://www.amazon.com/gp/product/0071789421?tag=jranch-20">OCA 
+                  Java SE 7 Programmer I Study Guide</A> this week in the <A 
+                  href="http://www.coderanch.com/forums/f-117/ocajp">OCAJP</A> 
+                  forum!</DIV></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD>
+      <SCRIPT type=text/javascript 
+      src="How%20to%20See%20the%20HTTP%20Message%20Exchange%20between%20browser%20and%20Tomcat%20(SCWCD%20forum%20at%20JavaRanch)_files/userLocalTime.js"></SCRIPT>
+
+      <SCRIPT type=text/javascript 
+      src="How%20to%20See%20the%20HTTP%20Message%20Exchange%20between%20browser%20and%20Tomcat%20(SCWCD%20forum%20at%20JavaRanch)_files/jquery.min.js"></SCRIPT>
+
+      <SCRIPT type=text/javascript 
+      src="How%20to%20See%20the%20HTTP%20Message%20Exchange%20between%20browser%20and%20Tomcat%20(SCWCD%20forum%20at%20JavaRanch)_files/jquery.jeditable.pack.js"></SCRIPT>
+
+      <SCRIPT type=text/javascript 
+      src="How%20to%20See%20the%20HTTP%20Message%20Exchange%20between%20browser%20and%20Tomcat%20(SCWCD%20forum%20at%20JavaRanch)_files/post_show.js"></SCRIPT>
+
+      <SCRIPT type=text/javascript 
+      src="How%20to%20See%20the%20HTTP%20Message%20Exchange%20between%20browser%20and%20Tomcat%20(SCWCD%20forum%20at%20JavaRanch)_files/post.js"></SCRIPT>
+
+      <SCRIPT type=text/javascript 
+      src="How%20to%20See%20the%20HTTP%20Message%20Exchange%20between%20browser%20and%20Tomcat%20(SCWCD%20forum%20at%20JavaRanch)_files/pagination.js"></SCRIPT>
+
+      <SCRIPT type=text/javascript 
+      src="How%20to%20See%20the%20HTTP%20Message%20Exchange%20between%20browser%20and%20Tomcat%20(SCWCD%20forum%20at%20JavaRanch)_files/wz_tooltip.js"></SCRIPT>
+
+      <SCRIPT type=text/javascript 
+      src="How%20to%20See%20the%20HTTP%20Message%20Exchange%20between%20browser%20and%20Tomcat%20(SCWCD%20forum%20at%20JavaRanch)_files/social.js"></SCRIPT>
+
+      <SCRIPT type=text/javascript>
+function showEmail(beforeAt, afterAt)
+{
+	return beforeAt + "@" + afterAt;
+}
+
+function addBookmark(relationType, relationId)
+{
+	var w = window.open('/forums/bookmarks/insert/' + relationType + '/' + relationId + '', 'bookmark_add', 'width=700, height=200, scrollbars=auto, resizable=true');
+	w.focus();
+}
+
+
+    function reportToModerationPrompt(postId) {
+        var reason = prompt("Reason for reporting this post:");
+
+        if (reason == null || reason == "") {
+            alert("Please specify a reason for reporting this post");
+            return false;
+        } else {
+            var link = document.getElementById("report" + postId);
+            link.href += "&reason=" + encodeURIComponent(reason);
+        }
+
+        return true;
+    }
+
+    var watchImage = "http://cache-www.coderanch.com/templates/default/images/watch_topic_start.gif";
+    var unwatchImage = "http://cache-www.coderanch.com/templates/default/images/stop_watching.gif";
+    var watchURL = "/forums/posts/watch/0/168546";
+    var unwatchURL = "/forums/posts/unwatch/0/168546";
+    var unwatchHandler = function() { turnOn=false; toggleWatch(); return false; };
+    var watchHandler = function() { turnOn=true; toggleWatch(); return false; };
+    var turnOn, remove;
+
+    function toggleWatch () {
+        $.ajax({
+            url: turnOn ? watchURL : unwatchURL,
+            type: 'POST',
+            dataType: 'json',
+            success: function (data) {
+                //$("#messages").html(data.message);
+                if (turnOn) {
+                    $(".toggleWatchImage")[0].src = unwatchImage;
+                    $(".toggleWatchImage")[1].src = unwatchImage;
+                    $(".toggleWatchLink")[0].href = unwatchURL;
+                    $(".toggleWatchLink")[1].href = unwatchURL;
+                    $(".toggleWatchLink")[0].onclick = unwatchHandler;
+                    $(".toggleWatchLink")[1].onclick = unwatchHandler;
+                } else {
+                    if (remove) {
+                        // for unwatching locked topics
+                        $(".toggleWatchImage")[0].style.visibility = "hidden";
+                        $(".toggleWatchImage")[1].style.visibility = "hidden";
+                        $(".toggleWatchLink")[0].href = "#";
+                        $(".toggleWatchLink")[1].href = "#";
+                        $(".toggleWatchLink")[0].onclick = "return false;";
+                        $(".toggleWatchLink")[1].onclick = "return false;";
+                    } else {
+                        $(".toggleWatchImage")[0].src = watchImage;
+                        $(".toggleWatchImage")[1].src = watchImage;
+                        $(".toggleWatchLink")[0].href = watchURL;
+                        $(".toggleWatchLink")[1].href = watchURL;
+                        $(".toggleWatchLink")[0].onclick = watchHandler;
+                        $(".toggleWatchLink")[1].onclick = watchHandler;
+                    }
+                }
+            }
+        });
+    }
+
+    var likeImage = "http://cache-www.coderanch.com/templates/default/images/jr.button.plus.1.thumb.gif";
+    var unlikeImage = "http://cache-www.coderanch.com/templates/default/images/jr.button.minus.1.thumb.gif";
+
+    function toggleLike (postId) {
+        var likeURL = "/forums/posts/like/" + postId + "";
+        var unlikeURL = "/forums/posts/unlike/" + postId + "";
+
+        var unlikeHandler = function() { turnOn=false; toggleLike(postId); return false; };
+        var likeHandler = function() { turnOn=true; toggleLike(postId); return false; };
+
+        $.ajax({
+            url: turnOn ? likeURL : unlikeURL,
+            type: 'POST',
+            dataType: 'json',
+            success: function (data) {
+                $("#like_message_" + postId).html("<img src='http://cache-www.coderanch.com/templates/default/images/thumbs-up.gif'"
+                                                    +" title='"+data.message+"'/> "+data.count);
+                if (turnOn) {
+                    $(".toggleLikeImage_"+postId)[0].src = unlikeImage;
+                    $(".toggleLikeLink_"+postId)[0].href = unlikeURL;
+                    $(".toggleLikeLink_"+postId)[0].onclick = unlikeHandler;
+                    $("#like_message_" + postId).css("visibility", "visible");
+                } else {
+                    $(".toggleLikeImage_"+postId)[0].src = likeImage;
+                    $(".toggleLikeLink_"+postId)[0].href = likeURL;
+                    $(".toggleLikeLink_"+postId)[0].onclick = likeHandler;
+                    if (data.count == 0)
+                        $("#like_message_" + postId).css("visibility", "hidden");
+                }
+            }
+        });
+    }
+
+</SCRIPT>
+
+      <TABLE border=0 cellSpacing=0 cellPadding=10 width="97%" align=center>
+        <TBODY>
+        <TR>
+          <TD class=bodyline><SPAN class=nav><A class=maintitle 
+            href="http://www.javaranch.com/">JavaRanch</A> » <A class=maintitle 
+            href="http://www.coderanch.com/forums">Java Forums</A> » <A 
+            class=maintitle 
+            href="http://www.coderanch.com/forums/c/7/certification">Professional 
+            Certification</A> » <A class=maintitle 
+            href="http://www.coderanch.com/forums/f-18/java-Web-Component-SCWCD">Web 
+            Component Certification (SCWCD/OCPJWCD)</A> </SPAN>
+            <TABLE class=threadbar border=0 cellSpacing=2 cellPadding=2 
+            width="100%">
+              <TBODY>
+              <TR>
+                <TD vAlign=middle align=left><IMG class=opaque 
+                  title="You must login or register" alt=Reply 
+                  src="How%20to%20See%20the%20HTTP%20Message%20Exchange%20between%20browser%20and%20Tomcat%20(SCWCD%20forum%20at%20JavaRanch)_files/reply.gif" 
+                  width=82 height=25> <IMG class=opaque 
+                  title="You must login or register" 
+                  alt='Bookmark "How to See the HTTP Message Exchange between browser and Tomcat?"' 
+                  src="How%20to%20See%20the%20HTTP%20Message%20Exchange%20between%20browser%20and%20Tomcat%20(SCWCD%20forum%20at%20JavaRanch)_files/bookmark_it.gif" 
+                  width=82 height=25> <IMG class=opaque 
+                  title="You must login or register" 
+                  alt='Watch "How to See the HTTP Message Exchange between browser and Tomcat?"' 
+                  src="How%20to%20See%20the%20HTTP%20Message%20Exchange%20between%20browser%20and%20Tomcat%20(SCWCD%20forum%20at%20JavaRanch)_files/watch_topic_start.gif" 
+                  width=82 height=25> </TD>
+                <TD align=right><IMG class=opaque 
+                  title="You must login or register" alt="New topic" 
+                  src="How%20to%20See%20the%20HTTP%20Message%20Exchange%20between%20browser%20and%20Tomcat%20(SCWCD%20forum%20at%20JavaRanch)_files/post.gif" 
+                  width=82 height=25> </TD></TR></TBODY></TABLE>
+            <TABLE id=postTable class=forumline border=0 cellSpacing=0 
+            cellPadding=0 width="100%"><A name=816872></A>
+              <TBODY>
+              <TR>
+                <TH class=author width="18%" noWrap>Author</TH>
+                <TH class=subject>
+                  <H1><SPAN id=topicSubject>How to See the HTTP Message Exchange 
+                  between browser and Tomcat?</SPAN> </H1></TH></TR></A>
+              <TR class=firstRowOfPost>
+                <TD class="row1 userPostInfo" vAlign=top rowSpan=2 
+                  align=left><A name=816872></A><SPAN class=authorNameNoLink 
+                  title="You must login or register">Alec Lee</SPAN> <BR><SPAN 
+                  class=gensmall>Ranch Hand <BR><BR>Joined: Jan 28, 
+                  2004<BR>Posts: 568 <BR></SPAN></TD>
+                <TD class=row1 vAlign=top>
+                  <DIV class="postinfo row1">
+                  <DIV class=date><SPAN class=postdetails>posted
+                  <SCRIPT>"Nov 16, 2004 11:40:00".toLocaleDateTime();</SCRIPT>
+                   <NOSCRIPT></NOSCRIPT></SPAN></DIV>
+                  <DIV class=action>
+                  <DIV id=like_message_816872 class=likesHiddenDiv><IMG 
+                  src="How%20to%20See%20the%20HTTP%20Message%20Exchange%20between%20browser%20and%20Tomcat%20(SCWCD%20forum%20at%20JavaRanch)_files/thumbs-up.gif"> 
+                  0 </DIV><IMG class=opaque title="You must login or register" 
+                  alt=Quote 
+                  src="How%20to%20See%20the%20HTTP%20Message%20Exchange%20between%20browser%20and%20Tomcat%20(SCWCD%20forum%20at%20JavaRanch)_files/icon_quote.gif" 
+                  width=59 height=18> </DIV></DIV></TD></TR>
+              <TR class=messageRow>
+                <TD id=post_text_816872 class="row1 postbody" vAlign=top><SPAN 
+                  class=postbody>Hi all,<BR><BR>I am studying <A class=api 
+                  title="the JavaRanch servlet forum" 
+                  href="http://www.coderanch.com/forums/f-7/Servlets" 
+                  target=_new>Servlet</A> and <A class=api 
+                  title="the JavaRanch JSP forum" 
+                  href="http://www.coderanch.com/forums/f-50/JSP" 
+                  target=_new>JSP</A> programming. I am using Tomcat in win98. 
+                  Is<BR>there anyway I can tap the normal HTTP message exchanged 
+                  between IE and<BR>Tomcat? (for studying purpose e.g. to tell 
+                  how cookie is used for session<BR>management)<BR><BR>Thx for 
+                  your advice. </SPAN></TD></TR>
+              <TR>
+                <TD class="spacerow row1" height=1 colSpan=2><IMG alt="" 
+                  src="How%20to%20See%20the%20HTTP%20Message%20Exchange%20between%20browser%20and%20Tomcat%20(SCWCD%20forum%20at%20JavaRanch)_files/spacer.gif" 
+                  width=1 height=1></TD></TR>
+              <TR class=firstRowOfPost>
+                <TD class="row2 userPostInfo" vAlign=top rowSpan=2 
+                  align=left><A name=816873></A><SPAN class=authorNameNoLink 
+                  title="You must login or register">Dale Seng</SPAN> <BR><SPAN 
+                  class=gensmall>Ranch Hand <BR><BR>Joined: Mar 22, 
+                  2004<BR>Posts: 275 <BR></SPAN></TD>
+                <TD class=row2 vAlign=top>
+                  <DIV class="postinfo row2">
+                  <DIV class=date><SPAN class=postdetails>posted
+                  <SCRIPT>"Nov 20, 2004 22:32:00".toLocaleDateTime();</SCRIPT>
+                   <NOSCRIPT></NOSCRIPT></SPAN><IMG class=opaque 
+                  title="You must login or register" alt="private message" 
+                  src="How%20to%20See%20the%20HTTP%20Message%20Exchange%20between%20browser%20and%20Tomcat%20(SCWCD%20forum%20at%20JavaRanch)_files/icon_pm.gif" 
+                  width=59 height=18> </DIV>
+                  <DIV class=action>
+                  <DIV id=like_message_816873 class=likesHiddenDiv><IMG 
+                  src="How%20to%20See%20the%20HTTP%20Message%20Exchange%20between%20browser%20and%20Tomcat%20(SCWCD%20forum%20at%20JavaRanch)_files/thumbs-up.gif"> 
+                  0 </DIV><IMG class=opaque title="You must login or register" 
+                  alt=Quote 
+                  src="How%20to%20See%20the%20HTTP%20Message%20Exchange%20between%20browser%20and%20Tomcat%20(SCWCD%20forum%20at%20JavaRanch)_files/icon_quote.gif" 
+                  width=59 height=18> </DIV></DIV></TD></TR>
+              <TR class=messageRow>
+                <TD id=post_text_816873 class="row2 postbody" vAlign=top><SPAN 
+                  class=postbody>Google "naviscope". A few years ago it was 
+                  around for free, and worked well. It's a proxy server that you 
+                  load on your local machine and it shows you more http header 
+                  stuff than you can shake a stick at.<BR><BR>--Dale-- 
+              </SPAN></TD></TR>
+              <TR>
+                <TD class="spacerow row2" height=1 colSpan=2><IMG alt="" 
+                  src="How%20to%20See%20the%20HTTP%20Message%20Exchange%20between%20browser%20and%20Tomcat%20(SCWCD%20forum%20at%20JavaRanch)_files/spacer.gif" 
+                  width=1 height=1></TD></TR>
+              <TR class=firstRowOfPost>
+                <TD class="row1 userPostInfo" vAlign=top rowSpan=3 
+                  align=left><A name=816874></A><SPAN class=authorNameNoLink 
+                  title="You must login or register">Mikalai Zaikin</SPAN> 
+                  <BR><SPAN class=gensmall>Ranch Hand <BR><BR>Joined: Jun 04, 
+                  2002<BR>Posts: 3053 <BR></SPAN></TD>
+                <TD class=row1 vAlign=top>
+                  <DIV class="postinfo row1">
+                  <DIV class=date><SPAN class=postdetails>posted
+                  <SCRIPT>"Nov 20, 2004 22:47:00".toLocaleDateTime();</SCRIPT>
+                   <NOSCRIPT></NOSCRIPT></SPAN><IMG class=opaque 
+                  title="You must login or register" alt="private message" 
+                  src="How%20to%20See%20the%20HTTP%20Message%20Exchange%20between%20browser%20and%20Tomcat%20(SCWCD%20forum%20at%20JavaRanch)_files/icon_pm.gif" 
+                  width=59 height=18> </DIV>
+                  <DIV class=action>
+                  <DIV id=like_message_816874 class=likesHiddenDiv><IMG 
+                  src="How%20to%20See%20the%20HTTP%20Message%20Exchange%20between%20browser%20and%20Tomcat%20(SCWCD%20forum%20at%20JavaRanch)_files/thumbs-up.gif"> 
+                  0 </DIV><IMG class=opaque title="You must login or register" 
+                  alt=Quote 
+                  src="How%20to%20See%20the%20HTTP%20Message%20Exchange%20between%20browser%20and%20Tomcat%20(SCWCD%20forum%20at%20JavaRanch)_files/icon_quote.gif" 
+                  width=59 height=18> </DIV></DIV></TD></TR>
+              <TR class=messageRow>
+                <TD id=post_text_816874 class="row1 postbody" vAlign=top><SPAN 
+                  class=postbody>1. You can use 'tcpmon' utility from Apache 
+                  Axis framework. <A 
+                  href="http://ws.apache.org/axis/java/user-guide.html#tcpmon" 
+                  rel=nofollow target=_blank>[more details ...]</A><BR><BR>2. 
+                  Another option could be to use WebSphere Studio Application 
+                  Developer and it's excellent 'TCP/IP Monitoring Server' <A 
+                  href="http://www.webagesolutions.com/knowledgebase/waskb/waskb005/index.html" 
+                  rel=nofollow target=_blank>[more details 
+                  ...]</A><BR><BR>regards,<BR>MZ </SPAN></TD></TR>
+              <TR>
+                <TD class=row1 height=28 width="100%" colSpan=2><BR>
+                  <HR>
+                  <SPAN class=userSignature><A class=snap_shots 
+                  href="http://java.boot.by/scdjws5-guide/" rel=nofollow 
+                  target=_new>Free SCDJWS 5.0 Study Guide</A> - <A 
+                  class=snap_shots href="http://java.boot.by/scdjws5-quiz/" 
+                  rel=nofollow target=_new>SCDJWS 5.0 Quiz</A> (<A 
+                  class=snap_shots 
+                  href="http://java.boot.by/scdjws5-quiz/contact.html" 
+                  rel=nofollow target=_new>How to get SCDJWS 5.0 Quiz</A>) 
+                  <BR>Java Platform, Enterprise Edition 6 Web Services Developer 
+                  Certified Expert Exam <A class=snap_shots 
+                  href="http://java.boot.by/ocewsd6-guide/" rel=nofollow 
+                  target=_new>Study Guide</A> and <A class=snap_shots 
+                  href="http://java.boot.by/ocewsd6-quiz/" rel=nofollow 
+                  target=_new>Quiz</A></SPAN> </TD></TR>
+              <TR>
+                <TD class="spacerow row1" height=1 colSpan=2><IMG alt="" 
+                  src="How%20to%20See%20the%20HTTP%20Message%20Exchange%20between%20browser%20and%20Tomcat%20(SCWCD%20forum%20at%20JavaRanch)_files/spacer.gif" 
+                  width=1 height=1></TD></TR>
+              <TR class=firstRowOfPost>
+                <TD class="row2 userPostInfo" vAlign=top rowSpan=3 
+                  align=left><A name=816875></A><SPAN class=authorNameNoLink 
+                  title="You must login or register">Ture Hefner</SPAN> 
+                  <BR><SPAN class=gensmall>Greenhorn <BR><BR>Joined: Nov 14, 
+                  2004<BR>Posts: 18 <BR></SPAN></TD>
+                <TD class=row2 vAlign=top>
+                  <DIV class="postinfo row2">
+                  <DIV class=date><SPAN class=postdetails>posted
+                  <SCRIPT>"Nov 21, 2004 22:37:00".toLocaleDateTime();</SCRIPT>
+                   <NOSCRIPT></NOSCRIPT></SPAN></DIV>
+                  <DIV class=action>
+                  <DIV id=like_message_816875 class=likesHiddenDiv><IMG 
+                  src="How%20to%20See%20the%20HTTP%20Message%20Exchange%20between%20browser%20and%20Tomcat%20(SCWCD%20forum%20at%20JavaRanch)_files/thumbs-up.gif"> 
+                  0 </DIV><IMG class=opaque title="You must login or register" 
+                  alt=Quote 
+                  src="How%20to%20See%20the%20HTTP%20Message%20Exchange%20between%20browser%20and%20Tomcat%20(SCWCD%20forum%20at%20JavaRanch)_files/icon_quote.gif" 
+                  width=59 height=18> </DIV></DIV></TD></TR>
+              <TR class=messageRow>
+                <TD id=post_text_816875 class="row2 postbody" vAlign=top><SPAN 
+                  class=postbody>Alec,<BR>I like to use PuTTY to sniff HTTP 
+                  response headers:<BR><BR><A 
+                  href="http://www.chiark.greenend.org.uk/~sgtatham/putty/" 
+                  rel=nofollow 
+                  target=_blank>http://www.chiark.greenend.org.uk/~sgtatham/putty/</A><BR><BR>I 
+                  learned how to use PuTTY to sniff HTTP request/response when I 
+                  was reading the O'Reilly book for Struts. It is mentioned 
+                  somewhere in the introductory chapters. If you install PuTTY 
+                  then you can configure a session to hit your Tomcat server. 
+                  Use the PuTTY GUI to configure these settings for your 
+                  session:<BR><BR>host=localhost<BR>port=8080<BR>protocol=raw<BR>close 
+                  window on exit: never<BR>You can turn on logging if you 
+                  want.<BR><BR>Type your HTTP request into a textpad and copy it 
+                  to get it into your buffer so you can quickly paste it when 
+                  you open a connection to your server. Something like 
+                  this:<BR><BR>GET /Beer-v1/form.html HTTP/1.1<BR>Host: <A 
+                  href="http://www.wickedlysmart.com/" 
+                  target=_blank>http://www.wickedlysmart.com/</A><BR>User-Agent: 
+                  Mozilla/5.0 (Macintosh; U; PPC Mac )S X Mach-O; en-US; rv1.4) 
+                  Gecko/20030624 Netscape/7.1<BR>Accept: 
+                  text/html<BR>Accept-Language: en-us<BR>Accept-Encoding: 
+                  gzip,deflate<BR>Accept-Charset: 
+                  ISO-8859-1,utf-8;q=0.7,*;q=0.7<BR>Keep-Alive: 
+                  300<BR>Connection: keep-alive<BR><BR>Hit the "Open" button on 
+                  the PuTTY gui to open a connection to your web 
+                  server.<BR><BR>Paste your request into the window that pops up 
+                  by right-clicking the mouse<BR>and then hit return a few times 
+                  (you need a blank line to end the request, I think).<BR><BR>If 
+                  you set PuTTY to "close window on exit = never" then you will 
+                  see the HTTP response in the window:<BR><BR>HTTP/1.1 200 
+                  OK<BR>ETag: W/"540-1100387127031"<BR>Last-Modified: Sat, 13 
+                  Nov 2004 23:05:27 GMT<BR>Content-Type: 
+                  text/html<BR>Content-Length: 540<BR>Date: Sun, 21 Nov 2004 
+                  22:37:40 GMT<BR>Server: 
+                  Apache-Coyote/1.1<BR><BR>&lt;html&gt;<BR>&lt;body&gt;<BR>&lt;h1 
+                  align="center"&gt;Beer Selection Page&lt;/h1&gt;<BR>&lt;form 
+                  method="post" action="SelectBeer.do"&gt;<BR>Select beer 
+                  characteristics&lt;p&gt;<BR>Color:<BR>&lt;select name="color" 
+                  size="1"&gt;<BR>&lt;option&gt;light<BR>&lt;option&gt;amber<BR>&lt;option&gt;brown<BR>&lt;option&gt;dark<BR>&lt;/select&gt;<BR>&lt;br&gt;&lt;br&gt;<BR>&lt;center&gt;<BR>&lt;input 
+                  type="submit"&gt;<BR>&lt;/center&gt;<BR>&lt;/form&gt;<BR>&lt;/body&gt;<BR>&lt;/html&gt; 
+                  </SPAN></TD></TR>
+              <TR>
+                <TD class=row2 height=28 width="100%" colSpan=2><BR>
+                  <HR>
+                  <SPAN class=userSignature>Ture</SPAN> </TD></TR>
+              <TR>
+                <TD class="spacerow row2" height=1 colSpan=2><IMG alt="" 
+                  src="How%20to%20See%20the%20HTTP%20Message%20Exchange%20between%20browser%20and%20Tomcat%20(SCWCD%20forum%20at%20JavaRanch)_files/spacer.gif" 
+                  width=1 height=1></TD></TR>
+              <TR>
+                <TD bgColor=#dec7a4 width="18%"><IMG 
+                  src="How%20to%20See%20the%20HTTP%20Message%20Exchange%20between%20browser%20and%20Tomcat%20(SCWCD%20forum%20at%20JavaRanch)_files/bunkhouse_smoke.gif"></TD>
+                <TD bgColor=#dec7a4 vAlign=top width="82%" 
+                  align=left>&nbsp;<BR>
+                  <DIV class=shngl align=left><SPAN 
+                  style="LINE-HEIGHT: 1.5em; FONT-SIZE: 12px">You might try the 
+                  <A 
+                  href="http://www.coderanch.com/forums/forums/banner/redirect/351">file 
+                  manipulation tools at Aspose</A>.</SPAN> 
+</DIV>&nbsp;<BR></TD></TR>
+              <TR class=postbody align=left>
+                <TD colSpan=2>subject: How to See the HTTP Message Exchange 
+                  between browser and Tomcat? </TD></TR>
+              <TR align=center>
+                <TD class=catbottom height=28 colSpan=2>
+                  <TABLE border=0 cellSpacing=0 cellPadding=0>
+                    <TBODY>
+                    <TR>
+                      <TD align=center><SPAN 
+                    class=gensmall>&nbsp;</SPAN></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+            <TABLE width="100%" align=center>
+              <TBODY></TBODY></TABLE></TD></TR></TBODY></TABLE>
+      <TABLE class=highlights align=center>
+        <TBODY>
+        <TR>
+          <TH colSpan=2>Threads others viewed</TH></TR>
+        <TR>
+        <TR>
+          <TD class="row1 gen"><A 
+            href="http://www.coderanch.com/t/460267/Servlets/java/web-container-Web-server">web-container 
+            and Web-server.</A></TD></TR>
+        <TR>
+          <TD class="row1 gen"><A 
+            href="http://www.coderanch.com/t/104942/vc/TCPIP-Monitor-Eclipse-Web-Standard">TCPIP 
+            Monitor of Eclipse Web Standard Tool Component</A></TD></TR>
+        <TR>
+          <TD class="row1 gen"><A 
+            href="http://www.coderanch.com/t/168547/java-Web-Component-SCWCD/certification/See-HTTP-Message-Exchange-between">How 
+            to See the HTTP Message Exchange between browser and 
+        Tomcat?</A></TD></TR>
+        <TR>
+          <TD class="row1 gen"><A 
+            href="http://www.coderanch.com/t/111445/Mac/Has-anyone-gotten-Tomcat-work">Has 
+            anyone gotten Tomcat 5.5.X to work on OS X?</A></TD></TR>
+        <TR>
+          <TD class="row1 gen"><A 
+            href="http://www.coderanch.com/t/169310/java-Web-Component-SCWCD/certification/getting-error-code-pagenotfound-jsp">getting 
+            error code in pagenotfound.jsp</A></TD></TR></TR></TBODY></TABLE><A 
+      name=quick></A>
+      <SCRIPT type=text/javascript>
+$(document).ready(function() {
+    limitURLSize();
+});
+</SCRIPT>
+    </TD></TR></TBODY></TABLE>
+<DIV class="gensmall center">
+<SCRIPT>
+document.write("All times above are in your local time zone & format.");
+document.write("The current ranch time (not your local time) is ");
+document.write("Sep 18, 2012 10:40:24".bold() + ".");
+</SCRIPT>
+<NOSCRIPT></NOSCRIPT></DIV>
+<DIV class=shngl align=center><A 
+href="http://www.coderanch.com/forums/banner/redirect/347" target=_blank><IMG 
+border=0 alt="ruby IDE" 
+src="How%20to%20See%20the%20HTTP%20Message%20Exchange%20between%20browser%20and%20Tomcat%20(SCWCD%20forum%20at%20JavaRanch)_files/rubymine45_728x90.png"></A> 
+</DIV>
+<SCRIPT type=text/javascript>
+	var gaJsHost = (("https:" == document.location.protocol) ?  "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</SCRIPT>
+
+<SCRIPT type=text/javascript>
+if (typeof _gat !== "undefined") {
+	var pageTracker = _gat._getTracker("UA-2371260-2");
+	pageTracker._trackPageview();
+
+	dt = new Date();
+	pageTracker._setVar("hour: " + dt.getHours());
+}
+</SCRIPT>
+<BR>
+<DIV class=float-divider></DIV>
+<DIV id=footer>
+<DIV class="footerLinksDiv center"><A class=nonForumLink 
+href="http://www.coderanch.com/how-to/code/ContactUs">Contact Us</A> | Powered 
+by <A href="http://www.jforum.net/" target=_blank>JForum</A> | <SPAN 
+class=copyrightOwner>Copyright © 1998-2012 <A 
+href="http://www.javaranch.com/paul-wheaton.jsp">Paul Wheaton</A></SPAN> 
+</DIV></DIV>
+<DIV class=float-divider></DIV>
+<DIV class=shngl align=center>
+<DIV style="WIDTH: 600px; MARGIN-BOTTOM: 25px; MARGIN-LEFT: 25px"><IMG 
+style="FLOAT: left" 
+title="if you don't behave, this guy will whack you on the head with his cast iron skillet" 
+alt="cast iron skillet 49er" 
+src="How%20to%20See%20the%20HTTP%20Message%20Exchange%20between%20browser%20and%20Tomcat%20(SCWCD%20forum%20at%20JavaRanch)_files/cast-iron-skillet-49er-wide.png"> 
+
+<P>more from paul wheaton's glorious empire of web junk: <A 
+href="http://www.richsoil.com/cast-iron.jsp">cast iron skillet</A> <A 
+href="http://www.richsoil.com/diatomaceous-earth.jsp">diatomaceous earth</A> <A 
+href="http://www.richsoil.com/rocket-stove-mass-heater.jsp">rocket mass 
+heater</A> <A 
+href="http://www.richsoil.com/sepp-holzer/sepp-holzer-permaculture.jsp">sepp 
+holzer</A> <A href="http://www.richsoil.com/hugelkultur/">raised garden beds</A> 
+<A href="http://www.richsoil.com/raising-chickens.jsp">raising chickens</A> <A 
+href="http://www.richsoil.com/lawn-care.jsp">lawn care</A> <A 
+href="http://www.richsoil.com/CFL-fluorescent-light-bulbs.jsp">light bulbs</A> 
+<A href="http://www.richsoil.com/flea-control.jsp">flea control</A> <A 
+href="http://www.permies.com/missoula">missoula</A> <A 
+href="http://www.richsoil.com/electric-heat.jsp">electric heaters</A> <A 
+href="http://www.permies.com/forums">permaculture</A> 
+</P></DIV></DIV></BODY></HTML>

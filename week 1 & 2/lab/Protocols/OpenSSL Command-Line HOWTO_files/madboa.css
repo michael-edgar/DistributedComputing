@@ -1,0 +1,219 @@
+body {
+	background: url("/images/leftfade.gif") repeat-y rgb(245, 245, 245); margin: 0px; width: 700px; color: black;
+}
+div.article {
+	margin: 0px 0px 0px 110px; padding: 0px; width: 590px; font-family: optima, utopia, georgia, "dejavu serif", "bitstream charter", serif; font-size: 11pt;
+}
+div.bibliography {
+	margin: 0px 0px 0px 110px; padding: 0px; width: 590px; font-family: optima, utopia, georgia, "dejavu serif", "bitstream charter", serif; font-size: 11pt;
+}
+div.chordpro {
+	margin: 0px 0px 0px 110px; padding: 0px; width: 590px; font-family: optima, utopia, georgia, "dejavu serif", "bitstream charter", serif; font-size: 11pt;
+}
+div.bottommenu {
+	margin: 5px 0px 5px 110px; width: 590px; border-top-color: rgb(178, 34, 34); border-bottom-color: rgb(178, 34, 34); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid; background-color: white;
+}
+div.footer {
+	margin: 5px 0px 5px 110px; width: 590px; font-family: verdana, arial, helvetica, "dejavu sans", sans-serif; font-size: 8pt;
+}
+div.license {
+	margin: 5px 0px 5px 110px; width: 590px; font-family: verdana, arial, helvetica, "dejavu sans", sans-serif; font-size: 8pt;
+}
+div.footer {
+	padding-top: 5px;
+}
+div.license {
+	text-align: center;
+}
+div.menu {
+	margin: 0px; padding: 0px; width: 100px; color: rgb(178, 34, 34); font-family: verdana, arial, helvetica, "dejavu sans", sans-serif; font-size: 8pt; font-weight: bold; float: left;
+}
+div.pageheader {
+	color: white; clear: both; background-color: black;
+}
+div.topspace {
+	width: 700px; height: 60px;
+}
+a {
+	text-decoration: none;
+}
+a:link {
+	color: rgb(0, 0, 128);
+}
+a:visited {
+	color: rgb(0, 0, 128);
+}
+a:hover {
+	color: rgb(178, 34, 34);
+}
+div.fivepix {
+	margin: 0px; padding: 0px; height: 5px;
+}
+div.informaltable th {
+	padding-right: 15px; border-bottom-color: rgb(178, 34, 34); border-bottom-width: 1px; border-bottom-style: solid;
+}
+div.informaltable td {
+	padding-right: 15px;
+}
+div.note {
+	font-size: 10pt;
+}
+div.toc {
+	font-size: 10pt;
+}
+h1 {
+	color: rgb(178, 34, 34); font-family: verdana, arial, helvetica, "dejavu sans", sans-serif;
+}
+h2 {
+	color: rgb(178, 34, 34); font-family: verdana, arial, helvetica, "dejavu sans", sans-serif;
+}
+h3 {
+	color: rgb(178, 34, 34); font-family: verdana, arial, helvetica, "dejavu sans", sans-serif;
+}
+h4 {
+	color: rgb(178, 34, 34); font-family: verdana, arial, helvetica, "dejavu sans", sans-serif;
+}
+h1.title {
+	font-size: 16pt;
+}
+h2.title {
+	font-size: 14pt;
+}
+h3.title {
+	font-size: 12pt;
+}
+hr.pageinfo {
+	border: 0px currentColor; height: 1px; color: black; background-color: black;
+}
+img {
+	border: 0px currentColor;
+}
+p.arttitle {
+	font-size: 10pt; margin-top: 10px; margin-bottom: 0px;
+}
+p.updated {
+	font-size: 10pt;
+}
+pre {
+	font-family: monaco, "dejavu sans mono", "luxi mono", monospace; font-size: 10pt;
+}
+tt {
+	font-family: monaco, "dejavu sans mono", "luxi mono", monospace; font-size: 10pt;
+}
+code {
+	font-family: monaco, "dejavu sans mono", "luxi mono", monospace; font-size: 10pt;
+}
+pre.programlisting {
+	border-width: 1px 2px 2px 1px; border-style: solid; border-color: rgb(102, 102, 102); padding: 5px; background-color: rgb(253, 223, 223);
+}
+span.smallcaps {
+	font-variant: small-caps;
+}
+span.symbol {
+	font-family: monospace;
+}
+.rightward {
+	text-align: right;
+}
+.centered {
+	text-align: center;
+}
+.w3cimg {
+	width: 88px; height: 31px;
+}
+div.artabstract p {
+	font-size: 10pt; margin-top: 0px; margin-bottom: 0px;
+}
+p.arttitle a {
+	font-family: verdana, arial, helvetica, "dejavu sans", sans-serif; font-weight: bold;
+}
+div.article pre {
+	font-size: 10pt;
+}
+div.article div.toc {
+	font-size: 10pt; border-bottom-color: black; border-bottom-width: 1px; border-bottom-style: solid;
+}
+div.article div.titlepage {
+	font-size: 10pt;
+}
+div.author .authorname {
+	font-weight: bold;
+}
+div.bottommenu p {
+	margin: 2px; text-align: center; text-transform: lowercase; font-family: verdana, arial, helvetica, "dejavu sans", sans-serif; font-size: 8pt;
+}
+div.menu a {
+	color: white; margin-left: 5px; display: block;
+}
+div.menu a:hover {
+	color: white; background-color: rgb(178, 34, 34);
+}
+div.menu a:visited {
+	color: white;
+}
+div.pageheader .moniker {
+	margin: 10px 0px 0px 10px; text-transform: lowercase; letter-spacing: 1ex; font-family: "times new roman", times, serif; font-size: 20pt;
+}
+div.titlepage .releaseinfo {
+	margin-top: 0px; margin-bottom: 0px;
+}
+div.titlepage .copyright {
+	margin-top: 0px; margin-bottom: 0px;
+}
+div.titlepage .pubdate {
+	margin-top: 0px; margin-bottom: 0px;
+}
+div.titlepage .author {
+	margin-top: 0px; margin-bottom: 0px;
+}
+div.titlepage .revision {
+	margin-top: 0px; margin-bottom: 0px;
+}
+table.simplelist tr {
+	margin-top: 0px; margin-bottom: 0px;
+}
+table.simplelist td {
+	margin-top: 0px; margin-bottom: 0px;
+}
+div.biblioentry {
+	border-top-color: black; border-top-width: 1px; border-top-style: dotted;
+}
+div.biblioentry div.abstract {
+	border-top-color: black; border-top-width: 1px; border-top-style: dotted;
+}
+div.biblioentry div.reviewdate {
+	font-size: 10pt; font-style: italic; margin-left: 1cm;
+}
+div.biblioentry span.subtitle {
+	font-style: italic;
+}
+p.booklist {
+	margin-top: 0px; margin-bottom: 6pt;
+}
+div.chordpro td.chords {
+	text-align: left; color: rgb(178, 34, 34); font-family: verdana, arial, helvetica, "dejavu sans", sans-serif; font-size: 9pt;
+}
+div.chordpro .lyrics {
+	text-align: left; color: black;
+}
+div.chordpro p.lyrics {
+	margin-top: 0px; margin-bottom: 0px;
+}
+div.chordpro p.comment {
+	font-size: 10pt; font-style: italic; margin-top: 0px; margin-bottom: 0px;
+}
+div.chordpro p.spacer {
+	font-size: 10pt; font-style: italic; margin-top: 0px; margin-bottom: 0px;
+}
+div.chordpro div.chorus {
+	margin-left: 1cm;
+}
+div.chordpro div.chorus .lyrics {
+	font-style: italic;
+}
+td.t1 {
+	padding-right: 25px;
+}
+td.t2 {
+	padding-right: 25px;
+}
