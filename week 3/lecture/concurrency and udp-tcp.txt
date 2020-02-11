@@ -1,0 +1,6 @@
+Concurrency:
+
+Datagrams (UDP): interleaved concurrency
+
+Streams (TCP): iterative server/sequential server
+	     : Concurrent server (Threads)

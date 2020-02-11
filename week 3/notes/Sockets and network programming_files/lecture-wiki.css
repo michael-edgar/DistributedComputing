@@ -1,0 +1,810 @@
+body {
+	color: rgb(0, 0, 0); line-height: 16px; font-family: Verdana, arial, sans-serif; font-size: 12px; font-weight: normal;
+}
+p {
+	color: rgb(0, 0, 0); line-height: 16px; font-family: Verdana, arial, sans-serif; font-size: 12px; font-weight: normal;
+}
+td {
+	color: rgb(0, 0, 0); line-height: 16px; font-family: Verdana, arial, sans-serif; font-size: 12px; font-weight: normal;
+}
+table {
+	color: rgb(0, 0, 0); line-height: 16px; font-family: Verdana, arial, sans-serif; font-size: 12px; font-weight: normal;
+}
+tr {
+	color: rgb(0, 0, 0); line-height: 16px; font-family: Verdana, arial, sans-serif; font-size: 12px; font-weight: normal;
+}
+.bodytext {
+	color: rgb(0, 0, 0); line-height: 16px; font-family: Verdana, arial, sans-serif; font-size: 12px; font-weight: normal;
+}
+.stepfield {
+	color: rgb(0, 0, 0); line-height: 16px; font-family: Verdana, arial, sans-serif; font-size: 12px; font-weight: normal;
+}
+body {
+	margin: 5px; padding: 8px; text-align: left; background-color: rgb(248, 248, 248);
+}
+.monospaceInput {
+	font: 12px/normal monospace; font-size-adjust: none; font-stretch: normal;
+}
+.wiki-content p {
+	margin: 16px 0px; padding: 0px;
+}
+.commentblock p {
+	margin: 16px 0px; padding: 0px;
+}
+.wiki-content-preview {
+	padding: 5px; border-right-color: rgb(60, 120, 181); border-left-color: rgb(60, 120, 181); border-right-width: 1px; border-left-width: 1px; border-right-style: solid; border-left-style: solid;
+}
+ul {
+	padding-top: 0px; padding-bottom: 0px; margin-top: 2px; margin-bottom: 2px;
+}
+ol {
+	padding-top: 0px; padding-bottom: 0px; margin-top: 2px; margin-bottom: 2px;
+}
+pre {
+	margin: 5px 5px 5px 15px; padding: 0px; text-align: left;
+}
+.helpheading {
+	margin: 10px 0px 0px; padding: 4px; font-weight: bold; border-bottom-color: rgb(60, 120, 181); border-bottom-width: 1px; border-bottom-style: solid; background-color: rgb(208, 217, 189);
+}
+.helpcontent {
+	padding: 4px 4px 20px; background-color: rgb(245, 247, 241);
+}
+.code {
+	margin: 10px; border: 1px dashed rgb(60, 120, 181); line-height: 13px; font-family: Courier; font-size: 12px;
+}
+.focusedComment {
+	background: rgb(255, 255, 206);
+}
+.commentBox {
+	margin: 5px 0px; padding: 10px; border: 1px solid rgb(187, 187, 187);
+}
+.focusedComment {
+	margin: 5px 0px; padding: 10px; border: 1px solid rgb(187, 187, 187);
+}
+.codeHeader {
+	padding: 3px; text-align: center; border-bottom-color: rgb(60, 120, 181); border-bottom-width: 1px; border-bottom-style: dashed; background-color: rgb(240, 240, 240);
+}
+.codeContent {
+	padding: 3px; text-align: left; background-color: rgb(240, 240, 240);
+}
+.preformatted {
+	margin: 10px; border: 1px dashed rgb(60, 120, 181); line-height: 13px; font-family: Courier; font-size: 11px;
+}
+.preformattedHeader {
+	padding: 3px; text-align: center; border-bottom-color: rgb(60, 120, 181); border-bottom-width: 1px; border-bottom-style: dashed; background-color: rgb(240, 240, 240);
+}
+.preformattedContent {
+	padding: 3px; background-color: rgb(240, 240, 240);
+}
+.panel {
+	margin: 0px 10px 10px; border: 1px dashed rgb(60, 120, 181);
+}
+.panelHeader {
+	padding: 3px; text-align: center; border-bottom-color: rgb(60, 120, 181); border-bottom-width: 1px; border-bottom-style: dashed; background-color: rgb(240, 240, 240);
+}
+.panelContent {
+	padding: 5px; background-color: rgb(240, 240, 240);
+}
+.anonymousAlert {
+	margin: 4px; padding: 10px 5px; border: 1px dashed red; line-height: 13px; font-size: 11px; background-color: rgb(240, 240, 240);
+}
+.lockAlert {
+	margin: 4px; padding: 10px 5px; border: 1px dashed red; width: 50%; line-height: 13px; font-size: 11px; background-color: rgb(240, 240, 240);
+}
+.code-keyword {
+	color: rgb(0, 0, 145); background-color: inherit;
+}
+.code-object {
+	color: rgb(145, 0, 145); background-color: inherit;
+}
+.code-quote {
+	color: rgb(0, 145, 0); background-color: inherit;
+}
+.code-comment {
+	color: rgb(128, 128, 128); background-color: inherit;
+}
+.code-xml .code-keyword {
+	color: inherit; font-weight: bold;
+}
+.code-tag {
+	color: rgb(0, 0, 145); background-color: inherit;
+}
+.breadcrumbs {
+	border-width: 1px 0px; border-style: solid; border-color: rgb(60, 120, 181); padding: 3px 0px; font-size: 11px; background-color: rgb(240, 240, 240);
+}
+.navmenu {
+	border: 1px solid rgb(204, 204, 204);
+}
+.menuheading {
+	padding: 4px 4px 2px; font-weight: bold; border-bottom-color: rgb(60, 120, 181); border-bottom-width: 1px; border-bottom-style: solid; background-color: rgb(240, 240, 240);
+}
+.menuitems {
+	padding: 4px 4px 20px;
+}
+.rightpanel {
+	border-bottom-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); border-bottom-width: 1px; border-left-width: 1px; border-bottom-style: solid; border-left-style: solid;
+}
+#helpheading {
+	margin: 0px; padding: 4px; text-align: left; font-weight: bold; border-bottom-color: rgb(60, 120, 181); border-bottom-width: 1px; border-bottom-style: solid; background-color: rgb(208, 217, 189);
+}
+#helpcontent {
+	padding: 4px 4px 20px; background-color: rgb(245, 247, 241);
+}
+.helptab-unselected {
+	padding: 5px; font-weight: bold; background-color: rgb(245, 247, 241);
+}
+.helptab-selected {
+	padding: 5px; font-weight: bold; background-color: rgb(208, 217, 189);
+}
+.helptabs {
+	margin: 0px; padding: 5px; background-color: rgb(245, 247, 241);
+}
+.infopanel-heading {
+	padding: 4px 0px 2px; font-weight: bold; border-bottom-color: rgb(60, 120, 181); border-bottom-width: 1px; border-bottom-style: solid;
+}
+#Content {
+	margin: 0px; padding: 0px; text-align: left; background-color: rgb(255, 255, 255);
+}
+.pagebody {
+	
+}
+.pageheader {
+	padding: 5px 5px 5px 0px; border-bottom-color: rgb(60, 120, 181); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.pagetitle {
+	color: rgb(0, 51, 102); font-family: Arial, sans-serif; font-size: 22px; font-weight: bold;
+}
+.steptitle {
+	color: rgb(0, 51, 102); font-family: Arial, sans-serif; font-size: 18px; font-weight: bold; margin-bottom: 7px;
+}
+.formtitle {
+	color: rgb(0, 51, 102); font-family: Arial, sans-serif; font-size: 12px; font-weight: bold;
+}
+.stepdesc {
+	color: rgb(102, 102, 102); line-height: 16px; font-family: Verdana, arial, sans-serif; font-size: 11px; font-weight: normal; margin-top: 7px; margin-bottom: 7px;
+}
+.steplabel {
+	width: 15%; text-align: right; color: black; font-weight: bold; margin-right: 4px; float: left;
+}
+.stepfield {
+	background: rgb(240, 240, 240); padding: 5px;
+}
+.tabletitle {
+	margin: 8px 4px 2px 0px; padding: 3px 0px 2px; color: rgb(0, 51, 102); font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; border-bottom-color: rgb(60, 120, 181); border-bottom-width: 2px; border-bottom-style: solid;
+}
+.pagesubheading {
+	padding: 0px 0px 5px; color: rgb(102, 102, 102); font-size: 10px;
+}
+hr {
+	
+}
+a:link {
+	color: rgb(0, 51, 102);
+}
+a:visited {
+	color: rgb(0, 51, 102);
+}
+a:active {
+	color: rgb(0, 51, 102);
+}
+a:hover {
+	color: rgb(0, 51, 102);
+}
+h1 a:link {
+	text-decoration: none;
+}
+h1 a:visited {
+	text-decoration: none;
+}
+h1 a:active {
+	text-decoration: none;
+}
+h1 a:hover {
+	border-bottom-color: rgb(0, 51, 102); border-bottom-width: 1px; border-bottom-style: dotted;
+}
+.wiki-content > :first-child {
+	margin-top: 3px;
+}
+.commentblock > :first-child {
+	margin-top: 3px;
+}
+.logocell {
+	padding: 10px;
+}
+input {
+	color: rgb(0, 0, 0); font-family: verdana, geneva, arial, sans-serif; font-size: 11px;
+}
+textarea {
+	color: rgb(51, 51, 51); font-family: verdana, geneva, arial, sans-serif; font-size: 11px;
+}
+textarea.editor {
+	color: rgb(51, 51, 51); font-family: verdana, geneva, arial, sans-serif; font-size: 11px;
+}
+.spacenametitle {
+	font: 100 21px/31px Impact, Arial, Helvetica; margin: 0px; color: rgb(153, 153, 153); font-size-adjust: none; font-stretch: normal;
+}
+.spacenametitle img {
+	margin: 0px 0px -4px;
+}
+.spacenametitle a {
+	color: rgb(153, 153, 153); text-decoration: none;
+}
+.spacenametitle a:visited {
+	color: rgb(153, 153, 153); text-decoration: none;
+}
+.spacenametitle-printable {
+	font: 100 20px/25px Impact, Arial, Helvetica; margin: 0px; color: rgb(153, 153, 153); font-size-adjust: none; font-stretch: normal;
+}
+.spacenametitle-printable a {
+	color: rgb(153, 153, 153); text-decoration: none;
+}
+.spacenametitle-printable a:visited {
+	color: rgb(153, 153, 153); text-decoration: none;
+}
+.blogHeading {
+	margin: 10px 0px 0px; padding: 10px 0px 0px; line-height: normal; font-size: 20px; font-weight: bold;
+}
+h1 {
+	margin: 5px 0px 4px; padding: 2px; color: rgb(0, 51, 102); line-height: normal; font-size: 20px; font-weight: bold; border-bottom-color: rgb(60, 120, 181); border-bottom-width: 1px; border-bottom-style: solid; background-color: rgb(248, 248, 248);
+}
+h2 {
+	margin: 27px 0px 4px; padding: 2px; line-height: normal; font-size: 18px; font-weight: bold; border-bottom-color: rgb(60, 120, 181); border-bottom-width: 1px; border-bottom-style: solid; background-color: rgb(248, 248, 248);
+}
+h3 {
+	margin: 21px 0px 4px; padding: 2px; line-height: normal; font-size: 14px; font-weight: bold; background-color: rgb(248, 248, 248);
+}
+h4 {
+	margin: 18px 0px 4px; padding: 2px; line-height: normal; font-size: 12px; font-weight: bold; background-color: rgb(248, 248, 248);
+}
+h4.search {
+	margin: 18px 0px 4px; padding: 4px; line-height: normal; font-size: 12px; font-weight: normal; background-color: rgb(248, 248, 248);
+}
+h5 {
+	margin: 14px 0px 4px; padding: 2px; line-height: normal; font-size: 10px; font-weight: bold; background-color: rgb(248, 248, 248);
+}
+h6 {
+	margin: 14px 0px 4px; padding: 2px; line-height: normal; font-size: 8px; font-weight: bold; background-color: rgb(248, 248, 248);
+}
+.smallfont {
+	font-size: 10px;
+}
+.descfont {
+	color: rgb(102, 102, 102); font-size: 10px;
+}
+.smallerfont {
+	font-size: 9px;
+}
+.smalltext {
+	color: rgb(102, 102, 102); font-size: 10px;
+}
+.smalltext a {
+	color: rgb(102, 102, 102);
+}
+.smalltext-blue {
+	color: rgb(60, 120, 181); font-size: 10px;
+}
+.surtitle {
+	color: rgb(102, 102, 102); font-size: 14px; margin-bottom: 5px; margin-left: 1px;
+}
+.navItemOver {
+	color: rgb(255, 255, 255); font-size: 10px; font-weight: bold; cursor: pointer; background-color: rgb(0, 51, 102); voice-family: inherit;
+}
+.navItemOver a {
+	color: rgb(255, 255, 255); text-decoration: none; background-color: rgb(0, 51, 102);
+}
+.navItemOver a:visited {
+	color: rgb(255, 255, 255); text-decoration: none; background-color: rgb(0, 51, 102);
+}
+.navItemOver a:hover {
+	color: rgb(255, 255, 255); text-decoration: none; background-color: rgb(0, 51, 102);
+}
+.navItem {
+	color: rgb(255, 255, 255); font-size: 10px; font-weight: bold; background-color: rgb(60, 120, 181);
+}
+.navItem a {
+	color: rgb(255, 255, 255); text-decoration: none;
+}
+.navItem a:hover {
+	color: rgb(255, 255, 255); text-decoration: none;
+}
+.navItem a:visited {
+	color: rgb(255, 255, 255); text-decoration: none;
+}
+div.padded {
+	padding: 4px;
+}
+h3.macrolibrariestitle {
+	margin: 0px;
+}
+div.centered {
+	margin: 10px; text-align: center;
+}
+div.centered table {
+	margin: 0px auto; text-align: left;
+}
+.tableview table {
+	margin: 0px;
+}
+.tableview th {
+	padding: 5px 0px 0px 5px; text-align: left; color: rgb(0, 51, 102); font-size: 12px; border-bottom-color: rgb(60, 120, 181); border-bottom-width: 2px; border-bottom-style: solid;
+}
+.tableview td {
+	border-width: 0px 0px 1px; border-style: solid; border-color: rgb(204, 204, 204); margin: 0px; padding: 4px 10px 4px 5px; text-align: left;
+}
+.grid {
+	margin: 2px 0px 5px; border-collapse: collapse;
+}
+.grid th {
+	background: rgb(248, 248, 248); padding: 2px 4px; border: 1px solid rgb(204, 204, 204); text-align: center;
+}
+.grid td {
+	padding: 3px 4px; border: 1px solid rgb(204, 204, 204);
+}
+.gridHover {
+	background-color: rgb(249, 249, 249);
+}
+td.infocell {
+	background-color: rgb(248, 248, 248);
+}
+.label {
+	color: rgb(0, 51, 102); font-weight: bold;
+}
+.error {
+	background-color: rgb(255, 204, 204);
+}
+.errorBox {
+	margin: 5px; padding: 5px; border: 1px solid rgb(204, 0, 0); background-color: rgb(255, 204, 204);
+}
+.errorMessage {
+	color: rgb(204, 0, 0);
+}
+blockquote {
+	padding-right: 10px; padding-left: 10px; margin-right: 0px; margin-left: 5px; border-left-color: rgb(60, 120, 181); border-left-width: 1px; border-left-style: solid;
+}
+table.confluenceTable {
+	margin: 5px; border-collapse: collapse;
+}
+td.confluenceTd {
+	padding: 3px 4px; border: 1px solid rgb(204, 204, 204);
+}
+th.confluenceTh {
+	background: rgb(248, 248, 248); padding: 3px 4px; border: 1px solid rgb(204, 204, 204); text-align: center;
+}
+div.small {
+	font-size: 9px;
+}
+h1.pagename {
+	margin-top: 0px;
+}
+img.inline {
+	
+}
+.loginform {
+	margin: 5px; border: 1px solid rgb(204, 204, 204);
+}
+.previewnote {
+	text-align: center; color: red; font-size: 11px;
+}
+.previewcontent {
+	background: rgb(224, 224, 224);
+}
+.messagecontent {
+	background: rgb(224, 224, 224);
+}
+.conflictnote {
+	
+}
+.createlink {
+	color: maroon;
+}
+a.createlink {
+	color: maroon;
+}
+.templateparameter {
+	color: darkblue; font-size: 9px;
+}
+.diffadded {
+	background: rgb(221, 255, 221); padding: 1px 1px 1px 4px; border-left-color: darkgreen; border-left-width: 4px; border-left-style: solid;
+}
+.diffdeleted {
+	background: rgb(255, 221, 221); padding: 1px 1px 1px 4px; color: rgb(153, 153, 153); border-left-color: darkred; border-left-width: 4px; border-left-style: solid;
+}
+.diffnochange {
+	padding: 1px 1px 1px 4px; border-left-color: lightgrey; border-left-width: 4px; border-left-style: solid;
+}
+.differror {
+	background: brown;
+}
+.diff {
+	line-height: 14px; font-family: lucida console, courier new, fixed-width; font-size: 12px;
+}
+.diffaddedchars {
+	font-weight: bolder; background-color: rgb(153, 255, 153);
+}
+.diffremovedchars {
+	font-weight: bolder; text-decoration: line-through; background-color: rgb(255, 153, 153);
+}
+.greybackground {
+	background: rgb(248, 248, 248);
+}
+.greybox {
+	margin: 1px 1px 10px; padding: 3px; border: 1px solid rgb(221, 221, 221);
+}
+.greyboxfilled {
+	background: rgb(248, 248, 248); margin: 10px 1px; padding: 5px; border: 1px solid rgb(221, 221, 221);
+}
+.previewBoxTop {
+	border-width: 1px 1px 0px; border-style: solid; border-color: rgb(60, 120, 181); margin: 5px 0px 0px; padding: 5px; text-align: center; background-color: rgb(248, 248, 248);
+}
+.previewContent {
+	border-width: 0px 1px; border-style: solid; border-color: rgb(60, 120, 181); margin: 0px; padding: 10px; background-color: rgb(255, 255, 255);
+}
+.previewBoxBottom {
+	border-width: 0px 1px 1px; border-style: solid; border-color: rgb(60, 120, 181); margin: 0px 0px 5px; padding: 5px; text-align: center; background-color: rgb(248, 248, 248);
+}
+.functionbox {
+	margin: 1px 1px 10px; padding: 3px; border: 1px solid rgb(60, 120, 181); background-color: rgb(248, 248, 248);
+}
+.functionbox-greyborder {
+	margin: 1px 1px 10px; padding: 3px; border: 1px solid rgb(221, 221, 221); background-color: rgb(248, 248, 248);
+}
+.search-highlight {
+	background-color: rgb(255, 255, 204);
+}
+.rowNormal {
+	background-color: rgb(255, 255, 255);
+}
+.rowAlternate {
+	background-color: rgb(247, 247, 247);
+}
+.rowAlternateNoBottomColor {
+	background-color: rgb(247, 247, 247);
+}
+.rowAlternateNoBottomNoColor {
+	
+}
+.rowAlternateNoBottomColor td {
+	border-bottom-color: currentColor; border-bottom-width: 0px; border-bottom-style: none;
+}
+.rowAlternateNoBottomNoColor td {
+	border-bottom-color: currentColor; border-bottom-width: 0px; border-bottom-style: none;
+}
+.rowHighlight {
+	background-color: rgb(248, 248, 248);
+}
+td.greenbar {
+	background: rgb(0, 223, 0); padding: 0px; border: 1px solid rgb(156, 156, 156); font-size: 2px;
+}
+td.redbar {
+	background: rgb(223, 0, 0); padding: 0px; border: 1px solid rgb(156, 156, 156); font-size: 2px;
+}
+td.darkredbar {
+	background: rgb(175, 0, 0); padding: 0px; border: 1px solid rgb(156, 156, 156); font-size: 2px;
+}
+tr.testpassed {
+	background: rgb(221, 255, 221); padding: 0px; font-size: 2px;
+}
+tr.testfailed {
+	background: rgb(255, 221, 221); padding: 0px; font-size: 2px;
+}
+.toolbar {
+	margin: 0px; border-collapse: collapse;
+}
+.toolbar td {
+	padding: 2px; border: 1px solid rgb(204, 204, 204); color: rgb(204, 204, 204);
+}
+td.noformatting {
+	border-width: 0px; padding: 0px; text-align: center;
+}
+.commentblock {
+	margin: 12px 0px;
+}
+.license-eval {
+	text-align: center; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; border-top-color: rgb(187, 187, 187); border-top-width: 1px; border-top-style: solid;
+}
+.license-none {
+	text-align: center; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; border-top-color: rgb(187, 187, 187); border-top-width: 1px; border-top-style: solid;
+}
+.license-nonprofit {
+	text-align: center; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; border-top-color: rgb(187, 187, 187); border-top-width: 1px; border-top-style: solid;
+}
+.license-eval {
+	background-color: rgb(255, 204, 204);
+}
+.license-none {
+	background-color: rgb(255, 204, 204);
+}
+.license-eval b {
+	color: rgb(153, 0, 0);
+}
+.license-none b {
+	color: rgb(153, 0, 0);
+}
+.license-nonprofit {
+	background-color: rgb(255, 255, 255);
+}
+.bottomshadow {
+	height: 12px; background-image: url("/wiki/images/border/border_bottom.gif"); background-repeat: repeat-x;
+}
+.navmenu .operations li {
+	list-style: none; padding-left: 0px; margin-left: 0px;
+}
+.navmenu .operations ul {
+	list-style: none; padding-left: 0px; margin-left: 0px;
+}
+.navmenu .operations ul {
+	margin-bottom: 9px;
+}
+.navmenu .label {
+	font-weight: inherit;
+}
+.toolbar div {
+	display: none;
+}
+.toolbar .label {
+	display: none;
+}
+.toolbar .operations {
+	display: block;
+}
+.toolbar .operations ul {
+	list-style: none; padding-left: 0px; margin-left: 10px; display: inline;
+}
+.toolbar .operations li {
+	list-style: none; display: inline;
+}
+#spaceops_tab {
+	font: bold 11px/normal Verdana, sans-serif; padding: 3px 0px 3px 8px; margin-left: 0px; border-bottom-color: rgb(60, 120, 181); border-bottom-width: 1px; border-bottom-style: solid; font-size-adjust: none; font-stretch: normal;
+}
+#spaceops_tab li {
+	list-style: none; margin: 0px; display: inline;
+}
+#spaceops_tab li a {
+	background: rgb(60, 120, 181); border-width: 1px 1px medium; border-style: solid solid none; border-color: rgb(60, 120, 181) rgb(60, 120, 181) currentColor; padding: 3px 0.5em; text-decoration: none; margin-left: 3px;
+}
+#spaceops_tab li a:link {
+	color: white;
+}
+#spaceops_tab li a:visited {
+	color: white;
+}
+#spaceops_tab li a:hover {
+	background: rgb(0, 51, 102); border-color: rgb(0, 51, 102); color: rgb(255, 255, 255);
+}
+#spaceops_tab li a#current {
+	background: rgb(248, 248, 248); color: black; border-bottom-color: rgb(248, 248, 248); border-bottom-width: 1px; border-bottom-style: solid;
+}
+#foldertab {
+	font: bold 11px/normal Verdana, sans-serif; padding: 3px 0px 3px 8px; margin-left: 0px; border-bottom-color: rgb(60, 120, 181); border-bottom-width: 1px; border-bottom-style: solid; font-size-adjust: none; font-stretch: normal;
+}
+#foldertab li {
+	list-style: none; margin: 0px; display: inline;
+}
+#foldertab li a {
+	background: rgb(60, 120, 181); border-width: 1px 1px medium; border-style: solid solid none; border-color: rgb(60, 120, 181) rgb(60, 120, 181) currentColor; padding: 3px 0.5em; text-decoration: none; margin-left: 3px;
+}
+#foldertab li a:link {
+	color: white;
+}
+#foldertab li a:visited {
+	color: white;
+}
+#foldertab li a:hover {
+	background: rgb(0, 51, 102); border-color: rgb(0, 51, 102); color: rgb(255, 255, 255);
+}
+#foldertab li a#current {
+	background: white; color: black; border-bottom-color: white; border-bottom-width: 1px; border-bottom-style: solid;
+}
+ul#squaretab {
+	font: bold 8px/normal Verdana, sans-serif; padding-left: 0px; margin-left: 0px; white-space: nowrap; font-size-adjust: none; font-stretch: normal;
+}
+#squaretab li {
+	display: inline; list-style-type: none;
+}
+#squaretab a {
+	padding: 2px 6px; border: 1px solid rgb(60, 120, 181);
+}
+#squaretab a:link {
+	color: rgb(255, 255, 255); text-decoration: none; background-color: rgb(60, 120, 181);
+}
+#squaretab a:visited {
+	color: rgb(255, 255, 255); text-decoration: none; background-color: rgb(60, 120, 181);
+}
+#squaretab a:hover {
+	border-color: rgb(0, 51, 102); color: rgb(255, 255, 255); text-decoration: none; background-color: rgb(0, 51, 102);
+}
+#squaretab li a#current {
+	background: white; color: black;
+}
+.blogcalendar * {
+	padding: 2px; line-height: 140%; font-family: verdana, arial, sans-serif; font-size: x-small; font-weight: normal;
+}
+table.blogcalendar {
+	border: 1px solid rgb(60, 120, 181);
+}
+.blogcalendar th.calendarhead {
+	padding: 2px; color: rgb(255, 255, 255); text-transform: uppercase; letter-spacing: 0.3em; font-size: x-small; font-weight: bold; background-color: rgb(60, 120, 181);
+}
+a.calendarhead {
+	padding: 2px; color: rgb(255, 255, 255); text-transform: uppercase; letter-spacing: 0.3em; font-size: x-small; font-weight: bold; background-color: rgb(60, 120, 181);
+}
+.blogcalendar th {
+	padding: 2px; font-size: x-small; font-weight: bold; background-color: rgb(248, 248, 248);
+}
+.blogcalendar td {
+	font-size: x-small; font-weight: normal;
+}
+.searchGroup {
+	background: rgb(248, 248, 248); padding: 0px 0px 10px;
+}
+.searchGroupHeading {
+	padding: 2px 4px 1px; color: rgb(255, 255, 255); font-size: 10px; font-weight: bold; background-color: rgb(60, 120, 181);
+}
+.searchItem {
+	padding: 1px 4px;
+}
+.searchItemSelected {
+	background: rgb(221, 221, 221); padding: 1px 4px; font-weight: bold;
+}
+.permissionHeading {
+	border-width: 0px 0px 1px; border-style: solid; text-align: left; font-size: 16px; border-bottom-color: rgb(187, 187, 187);
+}
+.permissionTab {
+	background: rgb(60, 120, 181); border-width: 0px 0px 0px 1px; border-style: solid; color: rgb(255, 255, 255); font-size: 10px;
+}
+.permissionSuperTab {
+	background: rgb(0, 51, 102); border-width: 0px 0px 0px 1px; border-style: solid; color: rgb(255, 255, 255);
+}
+.permissionCell {
+	border-width: 0px 0px 0px 1px; border-style: solid; border-left-color: rgb(187, 187, 187);
+}
+.warningPanel {
+	background: rgb(255, 255, 206); margin: 10px; padding: 8px; border: 1px solid rgb(240, 192, 0);
+}
+.alertPanel {
+	background: rgb(255, 204, 204); margin: 10px; padding: 8px; border: 1px solid rgb(204, 0, 0);
+}
+.optionPadded {
+	padding: 2px;
+}
+.optionSelected {
+	margin: -1px; padding: 2px; border: 1px solid rgb(221, 221, 221); background-color: rgb(255, 255, 204);
+}
+.optionSelected a {
+	color: black; font-weight: bold; text-decoration: none;
+}
+.noteMacro {
+	border: 1px solid rgb(240, 192, 0); background-color: rgb(255, 255, 206);
+}
+.warningMacro {
+	border: 1px solid rgb(204, 0, 0); background-color: rgb(255, 204, 204);
+}
+.infoMacro {
+	border: 1px solid rgb(60, 120, 181); background-color: rgb(216, 228, 241);
+}
+.tipMacro {
+	border: 1px solid rgb(0, 153, 0); background-color: rgb(221, 255, 221);
+}
+.informationMacroPadding {
+	padding: 5px 0px 0px 5px;
+}
+table.infoMacro td {
+	border: currentColor;
+}
+table.warningMacro td {
+	border: currentColor;
+}
+table.tipMacro td {
+	border: currentColor;
+}
+table.noteMacro td {
+	border: currentColor;
+}
+table.sectionMacro td {
+	border: currentColor;
+}
+.pagecontent {
+	padding: 10px;
+}
+.topBarDiv a:link {
+	color: white;
+}
+.topBarDiv a:visited {
+	color: white;
+}
+.topBarDiv a:active {
+	color: white;
+}
+.topBarDiv a:hover {
+	color: white;
+}
+.topBarDiv {
+	color: white;
+}
+.topBar td {
+	background-color: rgb(0, 51, 102);
+}
+.greyLinks a:link {
+	color: rgb(102, 102, 102);
+}
+.greyLinks a:visited {
+	color: rgb(102, 102, 102);
+}
+.greyLinks a:active {
+	color: rgb(102, 102, 102);
+}
+.greyLinks a:hover {
+	color: rgb(102, 102, 102);
+}
+.greyLinks {
+	padding: 10px; color: rgb(102, 102, 102); display: block;
+}
+.logoSpaceLink a:link {
+	color: rgb(102, 102, 102); text-decoration: none;
+}
+.logoSpaceLink a:visited {
+	color: rgb(102, 102, 102); text-decoration: none;
+}
+.logoSpaceLink a:active {
+	color: rgb(102, 102, 102); text-decoration: none;
+}
+.logoSpaceLink a:hover {
+	color: rgb(0, 51, 102); text-decoration: none;
+}
+.logoSpaceLink {
+	text-decoration: none;
+}
+.basicPanelContainer {
+	border: 1px solid rgb(60, 120, 181); width: 100%; margin-top: 2px; margin-bottom: 8px;
+}
+.basicPanelTitle {
+	margin: 0px; padding: 5px; color: black; font-weight: bold; background-color: rgb(248, 248, 248);
+}
+.basicPanelBody {
+	margin: 0px; padding: 5px;
+}
+.separatorLinks a:link {
+	color: white;
+}
+.separatorLinks a:visited {
+	color: white;
+}
+.separatorLinks a:active {
+	color: white;
+}
+.greynavbar {
+	margin-top: 2px; border-top-color: rgb(60, 120, 181); border-top-width: 1px; border-top-style: solid; background-color: rgb(248, 248, 248);
+}
+div.headerField {
+	width: auto; height: 100%; float: left;
+}
+.headerFloat {
+	width: 50%; margin-left: auto;
+}
+.headerFloatLeft {
+	margin-right: 20px; margin-bottom: 10px; float: left;
+}
+#headerRow {
+	padding: 10px;
+}
+div.license-personal {
+	color: rgb(255, 255, 255); background-color: rgb(0, 51, 102);
+}
+div.license-personal a {
+	color: rgb(255, 255, 255);
+}
+.greyFormBox {
+	padding: 5px; border: 1px solid rgb(204, 204, 204);
+}
+.marginlessForm {
+	margin: 0px;
+}
+.openPageHighlight {
+	padding: 2px; border: 1px solid rgb(221, 221, 221); background-color: rgb(255, 255, 204);
+}
+.editPageInsertLinks {
+	color: rgb(102, 102, 102); font-size: 10px; font-weight: bold;
+}
+.editPageInsertLinks a {
+	color: rgb(102, 102, 102); font-size: 10px; font-weight: bold;
+}

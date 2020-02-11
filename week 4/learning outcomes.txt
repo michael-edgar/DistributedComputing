@@ -1,0 +1,7 @@
+1. Understand multicast with sockets
+2. Build multicast programs with Java multicast API
+3. Understand Client Server Architecture and need for three layers
+4. Be able to define and write own protocol.
+5. Build Cient Server applications using 3 layers of code and using protocols.
+6. Understand concurrent v iterative servers
+7. Understand stateful v stateless servers.

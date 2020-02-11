@@ -1,0 +1,376 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0063)http://www.cs.usfca.edu/~parrt/course/601/lectures/sockets.html -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><HTML 
+lang="en" lang="en" xml:lang="en" 
+xmlns="http://www.w3.org/1999/xhtml"><HEAD><META content="IE=10.000" 
+http-equiv="X-UA-Compatible">
+	 
+<META http-equiv="content-type" content="text/html; charset=utf-8">	 <LINK href="Sockets%20and%20network%20programming_files/lecture-wiki.css" 
+rel="stylesheet" type="text/css"> <TITLE>Sockets and network programming</TITLE> 
+<META name="GENERATOR" content="MSHTML 10.00.9200.16660"></HEAD> 
+<BODY>
+<H1>Sockets and network programming</H1>
+<P><A href="http://www.cs.usfca.edu/~parrt"><B> Terence Parr</B></A> 
+<H2>Introduction</H2>
+<P>Separate processes (not threads) on the same computer may share data and 
+synchronize via <EM>pipes</EM>.  For example, 
+<DIV class="code">
+<PRE>$ ls | grep Aug
+</PRE></DIV>
+<P>pipes the output of <TT>ls</TT> to the input of <TT>grep</TT> using the UNIX 
+<TT>pipe()</TT> function that sets up a one-way data flow from one process to
+ another. 
+<P>But, what about connecting processes on separate computers? Java provides 
+access to OS <EM>sockets</EM> (originally from BSD) that allow two or more 
+processes on the same or different computers to send/receive data. 
+<H3>Background</H3>
+<H4>IP</H4>
+<P>First, IP protocol.  IP is an addressing and fragmentation protocol. It 
+breaks all communications into <EM>packets</EM>, chunks of data up to 65536 
+bytes long.  Packets are individually <EM>routed</EM> from source to
+ destination.  IP is allowed to drop packets; i.e., it is an unreliable
+ protocol.  There are no acknowledgements and no retransmissions. There is no 
+flow-control such as there is in a RS-232 serial interface. 
+<P>One way to think of IP communication is by analogy to communications via a 
+letter. You write the letter (this is the data you are sending); put the letter 
+inside an envelope (the IP packet); address the envelope (using an IP address); 
+put your return address on the envelope (your local IP address); and then you 
+send the letter.  Like a real letter, you have no way of knowing whether an IP 
+packet was received. If you send a second letter one day after the first, the
+ second one may be received before the first. Or, the second one may never be 
+received. 
+<P>IP uses <EM>IP addresses</EM> to define source/target.  IPs are 32 bit
+ numbers represented as 4 8 bit numbers separated by periods.  When you try to 
+visit <TT>www.cnn.com</TT> in your browser, the computer must first translate 
+<TT>www.cnn.com</TT> to an IP address.  Then the browser can make a connection 
+to the web server on the target machine identified by the IP address.  You can 
+think of this as the "phone number" of a machine. Special IPs: 
+<UL>
+  <LI>Behind firewalls, people often use 192.168.x.y and use NAT (<EM>network 
+  address translation</EM>) in their firewall to translate an outside address (a 
+  real IP) to the special IPs behind the wall.  A good security feature to hide 
+  your machines from outside.  For example, all machines from within IBM's 
+  firewall probably look like the exact same IP address to the outside world 
+  (for example, in web server log files).  That is one reason you cannot use an 
+  IP address to identify "sessions" for a web server application. </LI>
+  <LI>127.0.0.1 is "localhost" </LI></UL>
+<P>Here is a simple Java program that prints out the current machines IP address 
+and the address of jguru: 
+<DIV class="code">
+<PRE>import java.net.*;
+
+// http://java.sun.com/j2se/1.3/docs/api/java/net/InetAddress.html
+
+public class IP {
+    public static void main(String[] args) throws Exception {
+        System.out.println(InetAddress.getLocalHost());
+        System.out.println(InetAddress.getByName("www.jguru.com"));
+    }
+}
+</PRE></DIV>
+<P>This is similar to doing: 
+<DIV class="code">
+<PRE>$ nslookup www.jguru.com
+</PRE></DIV>
+<H4>UDP</H4>
+<P>UDP (<EM>User Datagram Protocol</EM>) is a <EM>connectionless</EM> protocol 
+sitting on top of IP that provides <B>unreliable</B> packet delivery.  It
+ essentially provides user-level access to the low-level IP hardware. But adds 
+<EM>port numbers</EM> and <EM>checksumming</EM> for error handling (UDP can drop 
+bad packets). 
+<UL>
+  <LI>UDP packets arrive out of order possibly or even not at all. </LI>
+  <LI>The target/recipient does not acknowledge receipt </LI>
+  <LI>there is no control (e.g., packets can arrive faster than the recipient 
+  can process them). </LI></UL>
+<P>Useful for games (sending position), network time services, internet
+ telephony, DNS, streaming video. 
+<P>UDP is much faster than TCP. 
+<H4>TCP</H4>
+<P>TCP (<EM>Transmission Control Protocol</EM>) is another protocol, a reliable
+ but slower one, sitting on top of IP.  TCP provides reliable, stream-oriented 
+connections; can treat the connection like a stream/file rather than packets.  
+Packets are ordered into the proper sequence at the target machine via use of 
+<EM>sequence numbers</EM>.  TCP automatically deals with lost packets before 
+delivering a complete "file" to a recipient.  Control-flow prevents buffer 
+overflows etc... 
+<P>TCP is like a phone connection versus the simple "fire and forget" letter 
+stateless style of UDP.  TCP sockets are open for the duration of a 
+communication (i.e., until you close the connection). 
+<P>Unlike UDP, the destination host and port number is not sufficient to
+ identify a recipient of a TCP connection. There are five distinct elements that 
+make a TCP connection unique: 
+<OL>
+  <LI>IP address of the server  </LI>
+  <LI>IP address of the client  </LI>
+  <LI>Port number of the server  </LI>
+  <LI>Port number of the client (data goes out a socket from source too) </LI>
+  <LI>Protocol (UDP, TCP/IP, etc...)  </LI></OL>
+<P>where each requested client socket is assigned a unique port number whereas 
+the server port number is always the same. If any of these numbers is different, 
+the socket is different.  A server can thus listen to one and only one port yet 
+talk to multiple clients at the same time! 
+<H4>What is a socket?</H4>
+<P>If the IP address is like an office building main phone number, a socket is 
+like the extension numbers for offices.  So the IP and socket, often called the 
+port, uniquely identify an "office" (server process).  You will see unique 
+identifiers like <TT>192.168.2.100:80</TT> where 80 is the port.  Just like in 
+an office, it is possible no process is listening at a port.  That is, there is 
+no server waiting for requests at that port. 
+<P>Ports run from 1..65535.  1..1024 require root privileges to use and ports 
+1..255 are reserved for common processes like: 
+<UL>
+  <LI>80: HTTP </LI>
+  <LI>110: POP </LI>
+  <LI>25: SMTP </LI>
+  <LI>22: SSH </LI></UL>
+<P>Continuing the office analogy further, just because you can open a connection 
+to a port doesn't mean you can speak the right language. Processes at ports all 
+speak a specific, predefined, agreed-upon protocol like HTTP. 
+<P>You can use <TT>telnet</TT> to connect to ports to manually speak the
+ protocol.  The most successful and long-lived protocols are simple and text 
+based. 
+<P>Here I connect to the POP server at jguru: 
+<DIV class="code">
+<PRE>$ telnet pop.jguru.com 110
+Trying 65.219.20.147...
+Connected to pop.jguru.com.
+Escape character is '^]'.
++OK POP3 lobby v6.50 server ready
+QUIT
++OK Sayonara
+Connection closed by foreign host.
+</PRE></DIV>
+<H4>Sockets and Security</H4>
+<P>Because sockets are the means by which computers on a network communicate, 
+they open your computer to attack.  The simplest possible attack is a <EM>denial 
+of service</EM> just like a telemarketer that calls you at home incessantly.  
+Another common attack is to exploit a vulnerability in a particular program 
+listening at a port.  Sometimes it's possible to trick a listening server 
+program into allowing unauthorized access to that program or even the whole 
+computer.  The hacker either wants data on the server or wants to use the 
+machine as a <EM>mule</EM> (launch further attacks from that machine to (a) make 
+it difficult to trace back to the hacker and (b) launch multiple simultaneous 
+attacks).   
+<P>The single most common vulnerability in server software is probably 
+<EM>buffer overflow</EM>.  By overwriting a buffer, the software crashes, is
+ convinced to allow access, or execute some code sent by the hacker, thus, 
+providing access.  Here is a simple C program that illustrates how a single 
+buffer overflow can crash a server.  The program will most likely never return 
+from function <TT>gone()</TT>, depending on the operating system and compiler: 
+<DIV class="code">
+<PRE>#include &lt;stdio.h&gt;
+int main() {
+    gone();
+    printf("back from gone\n");
+}
+int gone() {
+    char a[2];
+    a[2] = 'x';
+}
+</PRE></DIV>
+<P>The array <TT>a</TT> has two <TT>char</TT>s but you are overwriting it by 1 
+char. That array is allocated on the stack instead of the heap (via 
+<TT>malloc()</TT>) and so you are overwriting the stack activation record for 
+<TT>gone()</TT>.  When <TT>gone()</TT> hits the return instruction, it will most
+ likely not see a valid return address as <TT>gone()</TT> has stepped on it.
+ Here is what happens when I compile and run it on a linux box: 
+<DIV class="code">
+<PRE>[parrt@nexus tmp]$ gcc buffer_overflow.c ; ./a.out
+Segmentation fault
+[parrt@nexus tmp]$ gcc buffer_overflow.c ; ./a.out
+back from gone
+Segmentation fault
+[parrt@nexus tmp]$ gcc buffer_overflow.c ; ./a.out
+back from gone
+back from gone
+Segmentation fault
+</PRE></DIV>
+<P>You don't get consistent results and, once, the program never even
+ terminated! 
+<P>Languages with automatic runtime array bounds checking such as Java make 
+buffer overflow attacks impossible by their very nature, but languages like C 
+are easy targets.  This should highlight an important fact about languages such 
+as Java, C#, and Python.  When there is an error, you know it's an algorithmic 
+problem.  You could not have corrupted the runtime system as you can in C/C++. 
+<H4>Firewalls</H4>
+<P>A <EM>firewall</EM> is a piece of hardware or software that blocks or
+ restricts access to a port on a computer or set of computers.  For example, the 
+SMTP port on our USF servers is not visible to machines outside the firewall.  
+Our firewall(s) filter out incoming machine:port requests that are dangerous.  
+You can even set a firewall to stop connections to the SMTP server when a virus 
+attachment is suspected.  Another very common filter is for ssh connections.  
+For example, at jGuru, we only allowed ssh connections to our live servers from 
+certain IP addresses (machines in our office).  The ssh port is open, but only 
+to certain machines.  A random machine on the net cannot get to the ssh port. 
+<P>One can also use a firewall to filter outgoing requests.  For example, some 
+companies stop all outgoing HTTP requests except from a single <EM>proxy</EM> 
+machine.  Browsers must pass all HTTP traffic through this proxy machine to get 
+outside the wall.  In this manner, a company can track and/or stop its employees 
+from accessing certain websites. 
+<P><EM>How can peer-to-peer systems allow connections through firewalls?</EM> In
+ other words, if Sriram works behind a firewall blocking instant messenger chat 
+port <EM>x</EM> at BEA and Terence works at a firewall at USF blocking port 
+<EM>x</EM>, how can Sriram and Terence chat client-to-client instead of doing 
+their jobs?  The only solution is for both of them to contact a central server 
+outside the wall(s) and have traffic routed through that central server.  Even 
+if Sriram's computer sends his IP address to the central server, there is no way 
+Terence can open a connection to that IP address from outside Sriram's firewall.
+ Peer-to-peer systems such as this, that must operate in the presence of 
+firewalls, are really client-server architectures. 
+<H2>Java Sockets and Client/Server Programming</H2>
+<P>You can use Java to communicate with remote processes using a client/server 
+model. A server listens for connection requests from clients across the network 
+or even from the same machine. Clients know how to connect to the server via an 
+IP address and port number. Upon connection, the server reads the request sent 
+by the client and responds appropriately. In this way, applications can be 
+broken down into specific tasks that are accomplished in separate locations. 
+<P>The data that is sent back and forth over a socket can be anything you like 
+in text or binary. Normally, the client sends a request for information or 
+processing to the server, which performs a task or sends data back. You could, 
+for example, place an SQL shell on the server and let people talk to it via a 
+simple client "chat" program. 
+<P>The IP and port number of the server are generally well-known and advertised 
+so the client knows where to find the service. In contrast, the port number on 
+client the side (the outgoing socket) is generally allocated automatically by 
+the kernel. 
+<P>Here is an example talking to the web server in CS department (port 80).  The 
+protocol is "<TT>GET /index.html</TT>" which directs the web server to get 
+contents of the <TT>index.html</TT> file at the document root and send the text 
+back to you. 
+<DIV class="code">
+<PRE>$ telnet www.cs.usfca.edu 80
+Trying 138.202.170.4...
+Connected to nexus.cs.usfca.edu.
+Escape character is '^]'.
+GET /index.html
+&lt;!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en"&gt;
+&lt;html&gt;
+&lt;head&gt;
+...
+&lt;/html&gt;
+Connection closed by foreign host.
+$ 
+</PRE></DIV>
+<H3>Creating a server</H3>
+<P>Java makes socket programming extremely easy.  To create a server listening 
+for requests, all you need to do is create a <TT>ServerSocket</TT> object 
+attached to a port number and call method <TT>accept()</TT>.  For example, port 
+8080: 
+<DIV class="code">
+<PRE>ServerSocket sSocket = new ServerSocket(8080);
+Socket channel = sSocket.accept();
+</PRE></DIV>
+<P>Method <TT>accept()</TT> returns when a client has connected to your server.
+ The <TT>channel</TT> socket has a <B>different</B> port number than 8080.  The
+ server socket is 8080 so to get more than one person talking to the server at 
+once, the server needs to hand off socket connections to a different port. 
+<P>You can get input/output streams from the <TT>channel</TT> socket to have a
+ conversation with the client: 
+<DIV class="code">
+<PRE>OutputStream out = channel.getOutputStream();
+PrintStream pout = new PrintStream(out);
+InputStream in = channel.getInputStream();
+DataInputStream din = new DataInputStream(in);
+</PRE></DIV>
+<P>If you read from the input stream, you'll hear what the client has to say.  
+You can respond by sending data out the output stream. 
+<DIV class="code">
+<PRE>String line = din.readLine();
+pout.println("You said: "+line);
+</PRE></DIV>
+<P>Finally, don't forget to close your streams and socket: 
+<DIV class="code">
+<PRE>din.close();
+pout.close();
+channel.close();
+</PRE></DIV>
+<H3>Creating a client</H3>
+<P>To talk to a server, open a socket to the machine and port: 
+<DIV class="code">
+<PRE>Socket s = new Socket("localhost", 8080); // port 8080
+</PRE></DIV>
+<P>When this returns, you can get input/output streams: 
+<DIV class="code">
+<PRE>OutputStream out = s.getOutputStream();
+PrintStream pout = new PrintStream(out);
+pout.println("hi from java client");
+pout.close();
+s.close();
+</PRE></DIV>
+<P>The client's input stream is pulling from the server's output stream and vice 
+versa. 
+<H3>An Example</H3>
+<P>You can think of client/server programming like a pizza-delivery place.  As 
+an employee at the pizza place, you wait by the phone (you are the "server").  
+Upon receiving a call from a client, you send a "hello" message.  The client 
+responds by sending you an order.  You acknowledge and write down the order 
+(performing the server's task). You or they hang up (connection closes).  
+Typically the server will spawn a thread to actually handle the request as it 
+can be complicated, like making the pizza.  The server should go back to
+ answering the phone rather than using a single-threaded model and making the 
+pizza itself.  Note: the server blocks waiting on a request at the port rather 
+than sitting in a spin loop, "picking up the phone" to see if anybody is 
+there--it waits for a "telephone ring." 
+<P>The following code embodies a simple, single-threaded version of the above 
+scenario (it assumes ASCII text communication). 
+<DIV class="code">
+<PRE>import java.net.*;
+import java.io.*;
+
+public class PizzaHut {
+  public static final int PIZZA_HUT_PHONE_NUMBER = 8080;
+  boolean openForBusiness = true;
+
+  public static void main(String[] args) {
+    try {
+      PizzaHut restaurant = new PizzaHut();
+      restaurant.startAnsweringPhone();
+    }
+    catch (IOException ioe) {
+      System.err.println("Can't open for business or problem serving!");
+      ioe.printStackTrace(System.err);
+    }
+  }
+
+  public void startAnsweringPhone() throws IOException {
+    ServerSocket phone = new ServerSocket(PIZZA_HUT_PHONE_NUMBER);
+    while (openForBusiness) {
+      DataInputStream din = null;
+      PrintStream pout = null;
+      Socket phoneCall = null;
+      try {
+        // wait for a call; sleep while you are waiting
+        phoneCall = phone.accept();
+        // get an input stream (the headset speaker)
+        InputStream in = phoneCall.getInputStream();
+        din = new DataInputStream(in);
+        // get an output stream (the microphone)
+        OutputStream out = phoneCall.getOutputStream();
+        pout = new PrintStream(out);
+
+        // say hello
+        pout.println("hello, Pizza Hut, how may I help you?");
+        // take the order
+        String order = din.readLine();
+        // read it back to customer
+        pout.println("your order: "+order); 
+
+        createPizza(order);
+      }
+      finally { // ensure close happens
+        din.close();
+        pout.close();
+        phoneCall.close();
+      }
+    }
+  }
+
+  protected void createPizza(String order) {
+    // parse order and perform work
+  }
+}
+</PRE></DIV>
+<P>When we get to threads you will learn how to allow the pizza to be made while 
+the phone is being answered.  It is like hiring more than one employee. 
+</P></BODY></HTML>
