@@ -1,0 +1,11 @@
+set CLASSPATH=%SOAP_HOME%\lib\xerces.jar;
+set CLASSPATH=%CLASSPATH%C:\jdk1.3\bin;C:\jdk1.3\lib\tools.jar;
+set CLASSPATH=%CLASSPATH%C:\jswdk-1.0.1\src;
+set CLASSPATH=%CLASSPATH%%SOAP_HOME%\lib\soap.jar;
+set CLASSPATH=%CLASSPATH%%SOAP_HOME%\lib\mail.jar;
+set CLASSPATH=%CLASSPATH%%SOAP_HOME%\lib\activation.jar;
+set CLASSPATH=%CLASSPATH%%SOAP_HOME%;
+set CLASSPATH=%CLASSPATH%c:\tomcat\classes;c:\tomcat\lib\ant.jar;
+set CLASSPATH=%CLASSPATH%c:\tomcat\lib\crimson.jar;c:\tomcat\lib\jasper.jar;
+set CLASSPATH=%CLASSPATH%c:\tomcat\lib\jaxp.jar;c:\tomcat\lib\servlet.jar;
+set CLASSPATH=%CLASSPATH%c:\tomcat\lib\webserver.jar;.;

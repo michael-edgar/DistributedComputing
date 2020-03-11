@@ -1,0 +1,3 @@
+1. Understand Web Services protocols (XML-RPC, JSON_RPC, SOAP)
+2. Build a Web Service using JAX-WS SOAP, Apache XML-RPC - in your own time)
+3. Compare and contrast Web Services protocols

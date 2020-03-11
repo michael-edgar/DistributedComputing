@@ -1,0 +1,462 @@
+td.right p {
+	text-align: center;
+}
+p {
+	text-align: justify;
+}
+.graybox {
+	border-width: 0px 1px 1px; border-style: none solid solid; border-color: currentColor rgb(202, 211, 218) rgb(202, 211, 218); padding: 5px 5px 10px; font-family: tahoma,arial; font-size: 11px; font-weight: normal; text-decoration: none; background-color: rgb(255, 255, 255);
+}
+.blackhead {
+	font-family: arial; font-size: 11px; font-weight: bold; text-decoration: none;
+}
+.more {
+	font-family: tahoma,arial; font-size: 10px; font-weight: bold; text-decoration: underline;
+}
+h1.manpages {
+	font-family: Calibri;
+}
+body {
+	margin: 0px; color: rgb(0, 0, 0); font-family: Helvetica, Arial, Sans-Serif; font-size: 70%; vertical-align: baseline; background-color: rgb(241, 241, 241);
+}
+table.main {
+	width: 960px;
+}
+table.mainoffice {
+	width: 960px;
+}
+table.middle {
+	border: 1px solid rgb(170, 170, 170); width: 570px; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);
+}
+table.middleoffice {
+	border: 1px solid rgb(170, 170, 170); width: 570px; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);
+}
+th {
+	background-color: rgb(205, 205, 205);
+}
+table.pmp {
+	border: 1px solid rgb(170, 170, 170); width: 100%; border-collapse: collapse; background-color: rgb(241, 241, 241);
+}
+td.pmp {
+	border-width: 0px 1px 1px; border-style: none solid solid; border-color: currentColor rgb(170, 170, 170) rgb(170, 170, 170); text-align: center; background-color: rgb(238, 238, 238);
+}
+td {
+	text-align: left; margin-bottom: 0px; vertical-align: top;
+}
+table.src td {
+	border: 1px solid rgb(170, 170, 170); border-collapse: collapse;
+}
+table.src th {
+	border: 1px solid rgb(170, 170, 170); border-collapse: collapse;
+}
+table.ex td {
+	border: 1px solid rgb(170, 170, 170); border-collapse: collapse;
+}
+table.ex th {
+	border: 1px solid rgb(170, 170, 170); border-collapse: collapse;
+}
+table.pmp td {
+	border: 1px solid rgb(170, 170, 170); border-collapse: collapse;
+}
+table.pmp th {
+	border: 1px solid rgb(170, 170, 170); border-collapse: collapse;
+}
+table.src {
+	border: 1px solid rgb(170, 170, 170); width: 100%; padding-left: 5px; vertical-align: top; border-collapse: collapse; background-color: rgb(241, 241, 241);
+}
+table.ex {
+	border: 1px solid rgb(170, 170, 170); width: 100%; padding-left: 5px; border-collapse: collapse; background-color: rgb(241, 241, 241);
+}
+ul.menu {
+	margin: 0.3em 0px 0px 1.5em; padding: 0px; line-height: 1.3em; list-style-type: square;
+}
+div.left {
+	border-width: 1px 0px 0px; border-style: solid; border-color: black rgb(170, 170, 170) rgb(170, 170, 170); padding: 0px 0.8em 0.3em 0.5em; width: 16.5em; font-size: 95%; margin-top: 5px; border-collapse: collapse;
+}
+div.search {
+	padding: 0px 0.8em 0.3em 0.5em; border: 1px solid rgb(170, 170, 170); width: 16.5em; font-size: 95%; border-collapse: collapse;
+}
+div.leftpmp {
+	padding: 0px 0.8em 0.3em 0.5em; border: 1px solid rgb(170, 170, 170); width: 23.8em; font-size: 95%; border-collapse: collapse;
+}
+body {
+	font-family: verdana,helvetica,arial,sans-serif;
+}
+p {
+	font-family: verdana,helvetica,arial,sans-serif;
+}
+table {
+	font-family: verdana,helvetica,arial,sans-serif;
+}
+td {
+	font-family: verdana,helvetica,arial,sans-serif;
+}
+th {
+	font-family: verdana,helvetica,arial,sans-serif;
+}
+ul {
+	font-family: verdana,helvetica,arial,sans-serif;
+}
+ol {
+	font-family: verdana,helvetica,arial,sans-serif;
+}
+textarea {
+	font-family: verdana,helvetica,arial,sans-serif;
+}
+input {
+	font-family: verdana,helvetica,arial,sans-serif;
+}
+h1 {
+	font: 15px/1.5 Helvetica, Arial, "Liberation Sans", FreeSans, sans-serif; margin-bottom: 0px; font-size-adjust: none; font-stretch: normal;
+}
+h2 {
+	font: bold 9px/1.5 Helvetica, Arial, "Liberation Sans", FreeSans, sans-serif; margin-bottom: 0px; font-size-adjust: none; font-stretch: normal;
+}
+table {
+	font-size: 100%;
+}
+input {
+	font-size: 100%;
+}
+textarea {
+	font-size: 100%;
+}
+td.top {
+	border-width: 1px 1px 0px; border-style: solid solid none; border-color: rgb(170, 170, 170) rgb(170, 170, 170) currentColor; height: 1.9em; vertical-align: middle;
+}
+div {
+	width: 100%;
+}
+h1 {
+	font-size: 160%;
+}
+h2 {
+	font-size: 145%; margin-top: 10px; margin-bottom: 10px;
+}
+h3 {
+	font-size: 110%;
+}
+h4 {
+	font-size: 100%;
+}
+h5 {
+	font-size: 90%;
+}
+h6 {
+	font-size: 80%;
+}
+h2.home {
+	color: black; padding-top: 1px; padding-bottom: 1px; padding-left: 1px; font-size: 120%; margin-top: 0px; margin-bottom: 5px; background-color: rgb(255, 255, 255);
+}
+p.alignment {
+	text-align: justify;
+}
+td.right {
+	text-align: center;
+}
+h2.right {
+	text-align: center; color: rgb(255, 255, 255); padding-top: 0px; padding-bottom: 2px; padding-left: 0px; font-size: 100%; margin-top: 0px; margin-bottom: 0px; background-color: rgb(128, 128, 128);
+}
+table.right {
+	padding: 5px; border: 1px solid rgb(170, 170, 170); width: 175px;
+}
+table.adv {
+	padding: 5px; border: 1px solid rgb(170, 170, 170); width: 175px; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);
+}
+th.right {
+	color: rgb(255, 255, 255); padding-bottom: 2px; background-color: rgb(0, 0, 0);
+}
+th.right a {
+	color: rgb(255, 255, 255); padding-bottom: 2px; text-decoration: none; background-color: rgb(0, 0, 0);
+}
+th.exercise {
+	padding-bottom: 2px; font-size: 150%; background-color: rgb(128, 128, 128);
+}
+td.line {
+	padding-bottom: 0px; font-size: 100%; background-color: rgb(241, 241, 241);
+}
+th.left {
+	text-align: center;
+}
+span.codeKeyword {
+	color: blue;
+}
+td.right {
+	text-align: center; color: rgb(0, 0, 0); padding-top: 3px; padding-bottom: 6px;
+}
+td.main {
+	text-align: left; color: rgb(0, 0, 0); padding-top: 3px; padding-bottom: 6px; font-family: tahoma,arial; font-size: 11px; font-weight: normal; text-decoration: none;
+}
+td.left {
+	color: rgb(0, 0, 0); padding-top: 3px; padding-bottom: 6px;
+}
+pre {
+	font-family: "Courier New",monospace; font-size: 110%; margin-top: 0px; margin-bottom: 0px; margin-left: 0px;
+}
+img.float {
+	float: left;
+}
+img {
+	border: 0px currentColor;
+}
+h1 {
+	color: rgb(0, 0, 0); background-color: transparent;
+}
+h2 {
+	color: rgb(0, 0, 0); background-color: transparent;
+}
+h3 {
+	color: rgb(0, 0, 0); background-color: transparent;
+}
+h1.att {
+	color: rgb(0, 0, 0); background-color: transparent;
+}
+h2.att {
+	color: rgb(0, 0, 0); background-color: transparent;
+}
+h3.att {
+	color: rgb(0, 0, 0); background-color: transparent;
+}
+hr.att {
+	color: rgb(0, 0, 0); background-color: transparent;
+}
+hr {
+	height: 1px; color: rgb(0, 0, 0); background-color: transparent;
+}
+a.nounderline {
+	text-decoration: none;
+}
+a:link {
+	color: rgb(144, 11, 9); background-color: transparent;
+}
+a:visited {
+	color: rgb(144, 11, 9); background-color: transparent;
+}
+a:active {
+	color: rgb(255, 0, 0); background-color: transparent;
+}
+a:hover {
+	color: rgb(255, 0, 0); background-color: transparent;
+}
+a.right:link {
+	color: black; text-decoration: none; background-color: transparent;
+}
+a.right:visited {
+	color: black; text-decoration: none; background-color: transparent;
+}
+a.right:hover {
+	color: red; text-decoration: underline; background-color: transparent;
+}
+a.right:active {
+	color: red; text-decoration: underline; background-color: transparent;
+}
+a.whitepaper:link {
+	color: blue; text-decoration: none; background-color: transparent;
+}
+a.whitepaper:visited {
+	color: blue; text-decoration: none; background-color: transparent;
+}
+a.whitepaper:hover {
+	color: red; text-decoration: underline; background-color: transparent;
+}
+a.whitepaper:active {
+	color: red; text-decoration: underline; background-color: transparent;
+}
+a.left:link {
+	color: black; text-decoration: none; background-color: transparent;
+}
+a.left:visited {
+	color: black; text-decoration: none; background-color: transparent;
+}
+a.left:hover {
+	color: red; text-decoration: underline; background-color: transparent;
+}
+a.left:active {
+	color: red; text-decoration: underline; background-color: transparent;
+}
+a.top:link {
+	color: black; text-decoration: none; background-color: transparent;
+}
+a.top:visited {
+	color: black; text-decoration: none; background-color: transparent;
+}
+a.top:hover {
+	color: black; text-decoration: underline; background-color: transparent;
+}
+a.top:active {
+	color: black; text-decoration: underline; background-color: transparent;
+}
+a.white:link {
+	color: rgb(255, 255, 255); background-color: transparent;
+}
+a.white:active {
+	color: rgb(255, 0, 0); background-color: transparent;
+}
+a.white:hover {
+	color: rgb(0, 0, 0); background-color: transparent;
+}
+a.red:link {
+	color: rgb(144, 11, 9); background-color: transparent;
+}
+a.red:visited {
+	color: rgb(144, 11, 9); background-color: transparent;
+}
+a.red:active {
+	color: rgb(255, 0, 0); background-color: transparent;
+}
+a.red:hover {
+	color: rgb(255, 0, 0); background-color: transparent;
+}
+a.more:link {
+	color: rgb(102, 127, 148);
+}
+a.more:visited {
+	color: rgb(102, 127, 148);
+}
+a.more:active {
+	color: rgb(255, 0, 0);
+}
+a.more:hover {
+	color: rgb(255, 0, 0);
+}
+a.blackhead:link {
+	color: rgb(9, 1, 1);
+}
+a.blackhead:visited {
+	color: rgb(9, 1, 1);
+}
+a.blackhead:active {
+	color: rgb(255, 0, 0);
+}
+a.blackhead:hover {
+	color: rgb(255, 0, 0);
+}
+a.example {
+	font-weight: bold;
+}
+a.func {
+	text-decoration: none;
+}
+.verbatim {
+	background: rgb(241, 241, 241); border: 1px solid currentColor;
+}
+pre.verbatim {
+	background: rgb(241, 241, 241); padding: 10px; border: 1px solid rgb(204, 204, 204); width: 90%; margin-left: 10px;
+}
+pre.ans {
+	background: rgb(220, 220, 220); padding: 10px;
+}
+code.inline {
+	background: rgb(238, 238, 221); border: 1px solid rgb(204, 204, 204); font-size: 130%;
+}
+table.sv {
+	background-color: rgb(241, 241, 241);
+}
+.red {
+	color: red;
+}
+.bold {
+	font-weight: bold;
+}
+.c {
+	color: rgb(34, 139, 34);
+}
+.cm {
+	color: rgb(0, 0, 0);
+}
+.co {
+	color: rgb(0, 0, 0);
+}
+.h {
+	color: rgb(205, 85, 85); font-weight: bold;
+}
+.hh {
+	color: rgb(205, 85, 85); font-style: italic;
+}
+.i {
+	color: rgb(0, 104, 139);
+}
+.j {
+	color: rgb(205, 85, 85); font-weight: bold;
+}
+.k {
+	color: rgb(139, 0, 139); font-weight: bold;
+}
+.m {
+	color: rgb(255, 0, 0); font-weight: bold;
+}
+.n {
+	color: rgb(180, 82, 205);
+}
+.p {
+	color: rgb(0, 0, 0);
+}
+.pd {
+	color: rgb(34, 139, 34); font-style: italic;
+}
+.pu {
+	color: rgb(0, 0, 0);
+}
+.q {
+	color: rgb(205, 85, 85);
+}
+.s {
+	color: rgb(0, 0, 0);
+}
+.sc {
+	color: rgb(0, 0, 0);
+}
+.v {
+	color: rgb(180, 82, 205);
+}
+.w {
+	color: rgb(0, 0, 0);
+}
+.subscribe_icons a {
+	padding: 40px 0px 2px; color: rgb(68, 68, 68) !important; text-decoration: none; display: block; -webkit-transition: all .2s ease-out; -moz-transition: all .2s ease-out;
+}
+.subscribe_icons a:hover {
+	color: red !important; text-decoration: underline; -moz-box-shadow: 0px 2px 4px hsla(0, 0%, 0%, .35); -webkit-box-shadow: 0px 2px 4px hsla(0, 0%, 0%, .35);
+}
+.subscribe_twitter {
+	background: url("images/icon-twitter.png") no-repeat top; width: 60px; text-align: center;
+}
+.subscribe_facebook {
+	background: url("images/icon-facebook.png") no-repeat top; width: 60px; text-align: center;
+}
+.subscribe_rss {
+	background: url("images/icon-rss.png") no-repeat top; width: 70px; text-align: center;
+}
+ul.menu {
+	border-top-color: rgb(187, 187, 187); border-top-width: 0px; border-top-style: solid;
+}
+ul.menu li {
+	margin: 0px;
+}
+ul.menu li a {
+	padding: 2px 0px; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: dotted; display: block;
+}
+ul.menu li a:hover {
+	background: rgb(238, 238, 238);
+}
+ul.menu li a:active {
+	background: rgb(204, 204, 204);
+}
+.list1 {
+	background: url("circle.jpg") no-repeat; padding: 7px 9px; text-align: center; color: rgb(0, 0, 0); font-size: 12px; font-weight: bold; margin-right: 5px; margin-left: 0px; display: inline;
+}
+.list2 {
+	background: url("circle.jpg") no-repeat; padding: 8px; text-align: center; color: rgb(0, 0, 0); font-size: 10px; font-weight: bold; margin-right: 5px; margin-left: 0px; display: inline;
+}
+table.olist td {
+	list-style: none; line-height: 3em; font-size: 13px;
+}
+fieldset {
+	padding: 10px; border-radius: 5px; border: 1px solid rgb(187, 187, 187); margin-bottom: 10px; position: relative; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+}
+legend {
+	background: rgb(255, 255, 255); padding: 0.4em 0.8em; border: 1px solid rgb(187, 187, 187); font-size: 1.1em;
+}
+img.office {
+	width: 560px;
+}

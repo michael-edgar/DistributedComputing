@@ -1,0 +1,1923 @@
+div.ibm-landing-page #ibm-content-body {
+	background: no-repeat 0px 0px rgb(255, 255, 255);
+}
+div.ibm-landing-page #ibm-pcon {
+	background: no-repeat 0px 0px rgb(255, 255, 255);
+}
+#ibm-pcon {
+	background: no-repeat 0px 0px rgb(255, 255, 255);
+}
+#ibm-footer {
+	background: no-repeat 0px 0px rgb(255, 255, 255);
+}
+div.ibm-landing-page #ibm-pcon {
+	padding-top: 0px;
+}
+#ibm-metrics {
+	background: rgb(204, 204, 204); margin: 0px; padding: 0px; height: 0px;
+}
+#ibm-page-tools {
+	background: rgb(255, 255, 255); padding: 0px; border: 0px currentColor;
+}
+#ibm-footer {
+	margin: 0px; padding: 0px; border: 0px currentColor; height: 0px; color: rgb(255, 255, 255);
+}
+div.ibm-landing-page #ibm-content {
+	background: url("//dw1.s81c.com/i/c.gif") no-repeat 99% 0px;
+}
+.dwwordmark#ibm-content-head {
+	background: url("//dw1.s81c.com/i/c.gif") no-repeat 99% 0px;
+}
+#dw-footer-module {
+	padding-bottom: 30px; background-color: rgb(255, 255, 255);
+}
+#dw-footer-module .footer-module-container .footer-module-column-first {
+	width: 360px; padding-top: 8px;
+}
+#dw-footer-module img.footer-promotion-image.footer-module-image {
+	padding-right: 20px; padding-left: 0px;
+}
+#dw-footer-module .footer-module-container .footer-module-column-second {
+	width: 20px;
+}
+#dw-footer-module .footer-module-container .footer-module-column-third {
+	width: 500px;
+}
+#ibm-masthead-dw ul {
+	margin: 0px; padding: 0px;
+}
+#ibm-masthead-dw li {
+	list-style-type: none;
+}
+#dw-masthead-top-row {
+	width: 930px; height: 34px; overflow: hidden; border-bottom-color: rgb(68, 68, 68); border-bottom-width: 1px; border-bottom-style: solid; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#666666', endColorstr='#000000'); background-color: rgb(0, 0, 0);
+}
+#dw-masthead-top-row ul#ibm-mast-options-dw {
+	padding-right: 10px;
+}
+#dw-masthead-top-row li#dw-mast-top-0 {
+	float: right;
+}
+#dw-masthead-top-row li#dw-mast-top-1 {
+	float: right;
+}
+#dw-masthead-top-row li a {
+	color: rgb(153, 153, 153); font-family: arial,sans-serif; font-size: 14px; font-weight: normal; text-decoration: none; -webkit-font-smoothing: antialiased;
+}
+#dw-masthead-top-row #ibm-unav-home-dw li {
+	padding: 8px 0px 8px 15px;
+}
+#dw-masthead-top-row #ibm-mast-options-dw li {
+	padding: 6px 10px 5px 16px;
+}
+img.dw-preload {
+	display: none;
+}
+#dw-masthead-top-row li#dw-mast-top-1 {
+	margin-right: 34px;
+}
+#dw-masthead-top-row li#dw-mast-top-1 a {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down.gif") no-repeat right; padding-right: 20px;
+}
+#dw-masthead-top-row li#dw-mast-top-1 a:hover {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down-active.gif") no-repeat right; color: rgb(204, 204, 204);
+}
+#dw-masthead-top-row li#dw-mast-top-1 a.current {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down-active.gif") no-repeat right; color: rgb(204, 204, 204);
+}
+#dw-masthead-top-row li.dw-mast-top-1-cn#dw-mast-top-1 a {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down.gif") no-repeat right; padding-right: 20px;
+}
+#dw-masthead-top-row li.dw-mast-top-1-cn#dw-mast-top-1 a:hover {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down-active.gif") no-repeat right; color: rgb(204, 204, 204);
+}
+#dw-masthead-top-row li.dw-mast-top-1-cn#dw-mast-top-1 a.current {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down-active.gif") no-repeat right; color: rgb(204, 204, 204);
+}
+#dw-masthead-top-row li.dw-mast-top-1-br#dw-mast-top-1 a {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down.gif") no-repeat right; padding-right: 20px;
+}
+#dw-masthead-top-row li.dw-mast-top-1-br#dw-mast-top-1 a:hover {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down-active.gif") no-repeat right; color: rgb(204, 204, 204);
+}
+#dw-masthead-top-row li.dw-mast-top-1-br#dw-mast-top-1 a.current {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down-active.gif") no-repeat right; color: rgb(204, 204, 204);
+}
+#dw-masthead-top-row li.dw-mast-top-1-ssa#dw-mast-top-1 a {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down.gif") no-repeat right; padding-right: 20px;
+}
+#dw-masthead-top-row li.dw-mast-top-1-ssa#dw-mast-top-1 a:hover {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down-active.gif") no-repeat right; color: rgb(204, 204, 204);
+}
+#dw-masthead-top-row li.dw-mast-top-1-ssa#dw-mast-top-1 a.current {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down-active.gif") no-repeat right; color: rgb(204, 204, 204);
+}
+#dw-masthead-top-row li.dw-mast-top-1-ru#dw-mast-top-1 a {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down.gif") no-repeat right; padding-right: 20px;
+}
+#dw-masthead-top-row li.dw-mast-top-1-ru#dw-mast-top-1 a:hover {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down-active.gif") no-repeat right; color: rgb(204, 204, 204);
+}
+#dw-masthead-top-row li.dw-mast-top-1-ru#dw-mast-top-1 a.current {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down-active.gif") no-repeat right; color: rgb(204, 204, 204);
+}
+#dw-masthead-top-row li.dw-mast-top-1-jp#dw-mast-top-1 a {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down.gif") no-repeat right; padding-right: 20px;
+}
+#dw-masthead-top-row li.dw-mast-top-1-jp#dw-mast-top-1 a:hover {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down-active.gif") no-repeat right; color: rgb(204, 204, 204);
+}
+#dw-masthead-top-row li.dw-mast-top-1-jp#dw-mast-top-1 a.current {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down-active.gif") no-repeat right; color: rgb(204, 204, 204);
+}
+#dw-masthead-top-row li.dw-mast-top-1-kr#dw-mast-top-1 a {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down.gif") no-repeat right; padding-right: 20px;
+}
+#dw-masthead-top-row li.dw-mast-top-1-kr#dw-mast-top-1 a:hover {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down-active.gif") no-repeat right; color: rgb(204, 204, 204);
+}
+#dw-masthead-top-row li.dw-mast-top-1-kr#dw-mast-top-1 a.current {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down-active.gif") no-repeat right; color: rgb(204, 204, 204);
+}
+#dw-masthead-top-row li.dw-mast-top-1-vn#dw-mast-top-1 a {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down.gif") no-repeat right; padding-right: 20px;
+}
+#dw-masthead-top-row li.dw-mast-top-1-vn#dw-mast-top-1 a:hover {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down-active.gif") no-repeat right; color: rgb(204, 204, 204);
+}
+#dw-masthead-top-row li.dw-mast-top-1-vn#dw-mast-top-1 a.current {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down-active.gif") no-repeat right; color: rgb(204, 204, 204);
+}
+#dw-masthead-top-row li#dw-mast-top-0 a.dw-mf-noscript:hover {
+	background: url("//dw1.s81c.com/i/c.gif") no-repeat 134px 5px; color: rgb(102, 102, 102); padding-right: 22px; cursor: default;
+}
+#dw-masthead-top-row li#dw-mast-top-0 a.dw-mf-noscript {
+	background: url("//dw1.s81c.com/i/c.gif") no-repeat 134px 5px; color: rgb(102, 102, 102); padding-right: 22px; cursor: default;
+}
+#dw-masthead-top-row li.authenticated#dw-mast-top-0:hover {
+	background-color: rgb(0, 0, 0);
+}
+#dw-masthead-top-row li.popen.authenticated#dw-mast-top-0 {
+	background-color: rgb(0, 0, 0);
+}
+#dw-masthead-top-row li#dw-mast-top-0 a {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down.gif") no-repeat right; padding-right: 22px;
+}
+#dw-masthead-top-row li#dw-mast-top-0 a.current {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down-active.gif") no-repeat right; color: rgb(204, 204, 204);
+}
+#dw-masthead-top-row li#dw-mast-top-0 a:hover {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down-active.gif") no-repeat right; color: rgb(204, 204, 204);
+}
+#dw-masthead-top-row li#dw-mast-top-3 a img {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down.gif") no-repeat right; padding-right: 14px;
+}
+#dw-masthead-top-row li#dw-mast-top-3 a.current img {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down-active.gif") no-repeat right; color: rgb(204, 204, 204);
+}
+#dw-masthead-top-row li#dw-mast-top-3 a:hover img {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down-active.gif") no-repeat right; color: rgb(204, 204, 204);
+}
+#dw-masthead-top-row li#dw-mast-top-3 a img {
+	margin-top: 2px;
+}
+#dw-masthead-top-row li#dw-mast-top-3 {
+	width: 50px;
+}
+.ssa#ibm-mast-options-dw li#dw-mast-top-0 a.dw-mf-noscript:hover {
+	background: url("//dw1.s81c.com/i/c.gif") no-repeat 154px 5px; color: rgb(102, 102, 102); padding-right: 22px; cursor: default;
+}
+.ssa#ibm-mast-options-dw li#dw-mast-top-0 a.dw-mf-noscript {
+	background: url("//dw1.s81c.com/i/c.gif") no-repeat 154px 5px; color: rgb(102, 102, 102); padding-right: 22px; cursor: default;
+}
+.ssa#ibm-mast-options-dw li#dw-mast-top-0 a {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down.gif") no-repeat right; padding-right: 22px;
+}
+.ssa#ibm-mast-options-dw li#dw-mast-top-0 a.current {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down-active.gif") no-repeat right; color: rgb(204, 204, 204);
+}
+.ssa#ibm-mast-options-dw li#dw-mast-top-0 a:hover {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down-active.gif") no-repeat right; color: rgb(204, 204, 204);
+}
+.cn#ibm-mast-options-dw li#dw-mast-top-0 a.dw-mf-noscript:hover {
+	background: url("//dw1.s81c.com/i/c.gif") no-repeat 96px 5px; color: rgb(102, 102, 102); padding-right: 22px; cursor: default;
+}
+.cn#ibm-mast-options-dw li#dw-mast-top-0 a.dw-mf-noscript {
+	background: url("//dw1.s81c.com/i/c.gif") no-repeat 96px 5px; color: rgb(102, 102, 102); padding-right: 22px; cursor: default;
+}
+.cn#ibm-mast-options-dw li#dw-mast-top-0 a {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down.gif") no-repeat right; padding-right: 22px;
+}
+.cn#ibm-mast-options-dw li#dw-mast-top-0 a.current {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down-active.gif") no-repeat right; color: rgb(204, 204, 204);
+}
+.cn#ibm-mast-options-dw li#dw-mast-top-0 a:hover {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down-active.gif") no-repeat right; color: rgb(204, 204, 204);
+}
+.jp#ibm-mast-options-dw li#dw-mast-top-0 a.dw-mf-noscript:hover {
+	background: url("//dw1.s81c.com/i/c.gif") no-repeat 160px 5px; color: rgb(102, 102, 102); padding-right: 22px; cursor: default;
+}
+.jp#ibm-mast-options-dw li#dw-mast-top-0 a.dw-mf-noscript {
+	background: url("//dw1.s81c.com/i/c.gif") no-repeat 160px 5px; color: rgb(102, 102, 102); padding-right: 22px; cursor: default;
+}
+.jp#ibm-mast-options-dw li#dw-mast-top-0 a {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down.gif") no-repeat right; padding-right: 22px;
+}
+.jp#ibm-mast-options-dw li#dw-mast-top-0 a.current {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down-active.gif") no-repeat right; color: rgb(204, 204, 204);
+}
+.jp#ibm-mast-options-dw li#dw-mast-top-0 a:hover {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down-active.gif") no-repeat right; color: rgb(204, 204, 204);
+}
+.br#ibm-mast-options-dw li#dw-mast-top-0 a.dw-mf-noscript:hover {
+	background: url("//dw1.s81c.com/i/c.gif") no-repeat 176px 5px; color: rgb(102, 102, 102); padding-right: 22px; cursor: default;
+}
+.br#ibm-mast-options-dw li#dw-mast-top-0 a.dw-mf-noscript {
+	background: url("//dw1.s81c.com/i/c.gif") no-repeat 176px 5px; color: rgb(102, 102, 102); padding-right: 22px; cursor: default;
+}
+.br#ibm-mast-options-dw li#dw-mast-top-0 a {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down.gif") no-repeat right; padding-right: 22px;
+}
+.br#ibm-mast-options-dw li#dw-mast-top-0 a.current {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down-active.gif") no-repeat right; color: rgb(204, 204, 204);
+}
+.br#ibm-mast-options-dw li#dw-mast-top-0 a:hover {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down-active.gif") no-repeat right; color: rgb(204, 204, 204);
+}
+.ru#ibm-mast-options-dw li#dw-mast-top-0 a.dw-mf-noscript:hover {
+	background: url("//dw1.s81c.com/i/c.gif") no-repeat 178px 5px; color: rgb(102, 102, 102); padding-right: 22px; cursor: default;
+}
+.ru#ibm-mast-options-dw li#dw-mast-top-0 a.dw-mf-noscript {
+	background: url("//dw1.s81c.com/i/c.gif") no-repeat 178px 5px; color: rgb(102, 102, 102); padding-right: 22px; cursor: default;
+}
+.ru#ibm-mast-options-dw li#dw-mast-top-0 a {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down.gif") no-repeat right; padding-right: 22px;
+}
+.ru#ibm-mast-options-dw li#dw-mast-top-0 a.current {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down-active.gif") no-repeat right; color: rgb(204, 204, 204);
+}
+.ru#ibm-mast-options-dw li#dw-mast-top-0 a:hover {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down-active.gif") no-repeat right; color: rgb(204, 204, 204);
+}
+.kr#ibm-mast-options-dw li#dw-mast-top-0 a.dw-mf-noscript:hover {
+	background: url("//dw1.s81c.com/i/c.gif") no-repeat 128px 5px; color: rgb(102, 102, 102); padding-right: 22px; cursor: default;
+}
+.kr#ibm-mast-options-dw li#dw-mast-top-0 a.dw-mf-noscript {
+	background: url("//dw1.s81c.com/i/c.gif") no-repeat 128px 5px; color: rgb(102, 102, 102); padding-right: 22px; cursor: default;
+}
+.kr#ibm-mast-options-dw li#dw-mast-top-0 a {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down.gif") no-repeat right; padding-right: 22px;
+}
+.kr#ibm-mast-options-dw li#dw-mast-top-0 a.current {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down-active.gif") no-repeat right; color: rgb(204, 204, 204);
+}
+.kr#ibm-mast-options-dw li#dw-mast-top-0 a:hover {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down-active.gif") no-repeat right; color: rgb(204, 204, 204);
+}
+.vn#ibm-mast-options-dw li#dw-mast-top-0 a.dw-mf-noscript:hover {
+	background: url("//dw1.s81c.com/i/c.gif") no-repeat 183px 5px; color: rgb(102, 102, 102); padding-right: 22px; cursor: default;
+}
+.vn#ibm-mast-options-dw li#dw-mast-top-0 a.dw-mf-noscript {
+	background: url("//dw1.s81c.com/i/c.gif") no-repeat 183px 5px; color: rgb(102, 102, 102); padding-right: 22px; cursor: default;
+}
+.vn#ibm-mast-options-dw li#dw-mast-top-0 a {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down.gif") no-repeat right; padding-right: 22px;
+}
+.vn#ibm-mast-options-dw li#dw-mast-top-0 a.current {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down-active.gif") no-repeat right; color: rgb(204, 204, 204);
+}
+.vn#ibm-mast-options-dw li#dw-mast-top-0 a:hover {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down-active.gif") no-repeat right; color: rgb(204, 204, 204);
+}
+.cn#ibm-mast-options-dw li#dw-mast-top-0 a.authenticated {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down.gif") no-repeat right; color: rgb(255, 223, 78); font-weight: bold; display: inline-block;
+}
+.cn#ibm-mast-options-dw li#dw-mast-top-0 a.authenticated.current {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down.gif") no-repeat right; color: rgb(255, 223, 78); font-weight: bold; display: inline-block;
+}
+.ssa#ibm-mast-options-dw li#dw-mast-top-0 a.authenticated {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down.gif") no-repeat right; color: rgb(255, 223, 78); font-weight: bold; display: inline-block;
+}
+.ssa#ibm-mast-options-dw li#dw-mast-top-0 a.authenticated.current {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down.gif") no-repeat right; color: rgb(255, 223, 78); font-weight: bold; display: inline-block;
+}
+.jp#ibm-mast-options-dw li#dw-mast-top-0 a.authenticated {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down.gif") no-repeat right; color: rgb(255, 223, 78); font-weight: bold; display: inline-block;
+}
+.jp#ibm-mast-options-dw li#dw-mast-top-0 a.authenticated.current {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down.gif") no-repeat right; color: rgb(255, 223, 78); font-weight: bold; display: inline-block;
+}
+.vn#ibm-mast-options-dw li#dw-mast-top-0 a.authenticated {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down.gif") no-repeat right; color: rgb(255, 223, 78); font-weight: bold; display: inline-block;
+}
+.vn#ibm-mast-options-dw li#dw-mast-top-0 a.authenticated.current {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down.gif") no-repeat right; color: rgb(255, 223, 78); font-weight: bold; display: inline-block;
+}
+.kr#ibm-mast-options-dw li#dw-mast-top-0 a.authenticated {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down.gif") no-repeat right; color: rgb(255, 223, 78); font-weight: bold; display: inline-block;
+}
+.kr#ibm-mast-options-dw li#dw-mast-top-0 a.authenticated.current {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down.gif") no-repeat right; color: rgb(255, 223, 78); font-weight: bold; display: inline-block;
+}
+.ru#ibm-mast-options-dw li#dw-mast-top-0 a.authenticated {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down.gif") no-repeat right; color: rgb(255, 223, 78); font-weight: bold; display: inline-block;
+}
+.ru#ibm-mast-options-dw li#dw-mast-top-0 a.authenticated.current {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down.gif") no-repeat right; color: rgb(255, 223, 78); font-weight: bold; display: inline-block;
+}
+.br#ibm-mast-options-dw li#dw-mast-top-0 a.authenticated {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down.gif") no-repeat right; color: rgb(255, 223, 78); font-weight: bold; display: inline-block;
+}
+.br#ibm-mast-options-dw li#dw-mast-top-0 a.authenticated.current {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down.gif") no-repeat right; color: rgb(255, 223, 78); font-weight: bold; display: inline-block;
+}
+#dw-masthead-top-row li#dw-mast-top-0 a.authenticated {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down.gif") no-repeat right; color: rgb(255, 223, 78); font-weight: bold; display: inline-block;
+}
+#dw-masthead-top-row li#dw-mast-top-0 a.authenticated.current {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down.gif") no-repeat right; color: rgb(255, 223, 78); font-weight: bold; display: inline-block;
+}
+img.dw-mast-profimg {
+	top: 0px; margin-top: 1px; margin-right: 4px; margin-left: 0px; vertical-align: -5px;
+}
+.dw-mf-hide {
+	display: none;
+}
+#ibm-search-form {
+	width: 200px; padding-top: 6px; padding-bottom: 5px; clear: right; float: right;
+}
+#ibm-universal-nav-dw #ibm-search-form p {
+	margin-right: 80px; position: relative !important;
+}
+#ibm-universal-nav-dw input#q {
+	background: url("//dw1.s81c.com/developerworks/i/mf/dw-mf-search-sprite.gif") no-repeat 0px -75px; padding: 5px 0px 4px 5px; width: 174px; color: rgb(102, 102, 102); text-indent: 3px; font-size: 12px; display: inline;
+}
+#ibm-universal-nav-dw input#q:focus {
+	color: rgb(0, 0, 0);
+}
+#ibm-universal-nav-dw input.ibm-btn-search {
+	background: url("//dw1.s81c.com/developerworks/i/mf/dw-mf-search-sprite.gif") no-repeat 0px -220px rgb(255, 255, 255); padding: 0px !important; top: 21px; width: 20px; height: 17px; right: -59px; color: rgb(204, 204, 204); text-indent: -999em; font-size: 0px !important; margin-top: 0px; margin-bottom: 0px; display: inline; position: absolute !important; cliptop: 4px; clipright: 20px; clipbottom: 24px; clipleft: 0px; cursor: pointer;
+}
+#ibm-universal-nav-dw input.ibm-btn-search:hover {
+	background: url("//dw1.s81c.com/developerworks/i/mf/dw-mf-search-sprite.gif") no-repeat 0px -150px;
+}
+#ibm-universal-nav-dw {
+	width: 930px; height: 77px; overflow: hidden; border-top-color: rgb(199, 111, 71); border-top-width: 1px; border-top-style: solid; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#CC5422', endColorstr='#E78D2C')); background-color: rgb(224, 114, 39);
+}
+#ibm-universal-nav-dw li {
+	float: left;
+}
+#ibm-universal-nav-dw #ibm-unav-links-dw li {
+	padding: 24px 14px 0px 35px;
+}
+#ibm-universal-nav-dw #ibm-menu-links-dw li {
+	padding: 27px 13px 0px; height: 50px;
+}
+#ibm-universal-nav-dw .ibm-menu-links-dw-cn#ibm-menu-links-dw li {
+	padding: 27px 30px 0px;
+}
+#ibm-universal-nav-dw .ibm-menu-links-dw-ssa#ibm-menu-links-dw li {
+	padding: 27px 30px 0px;
+}
+#ibm-universal-nav-dw .ibm-menu-links-dw-br#ibm-menu-links-dw li {
+	padding: 27px 24px 0px;
+}
+#ibm-universal-nav-dw .ibm-menu-links-dw-jp#ibm-menu-links-dw li {
+	padding: 27px 10px 0px;
+}
+#ibm-universal-nav-dw .ibm-menu-links-dw-kr#ibm-menu-links-dw li {
+	padding: 27px 20px 0px;
+}
+#ibm-universal-nav-dw .ibm-menu-links-dw-kr#ibm-menu-links-dw li {
+	padding: 27px 22px 0px;
+}
+#ibm-universal-nav-dw .ibm-menu-links-dw-vn#ibm-menu-links-dw li {
+	padding: 27px 20px 0px;
+}
+#ibm-universal-nav-dw .ibm-menu-links-dw-ru#ibm-menu-links-dw li {
+	padding: 27px 18px 0px;
+}
+#ibm-universal-nav-dw #ibm-menu-links-dw li:hover {
+	background-color: rgb(208, 66, 18);
+}
+#ibm-universal-nav-dw #ibm-menu-links-dw li.current {
+	background-color: rgb(208, 66, 18);
+}
+#ibm-universal-nav-dw li a {
+	color: rgb(255, 255, 255); font-family: arial,sans-serif; font-size: 13px; font-weight: bold; text-decoration: none; -webkit-font-smoothing: antialiased;
+}
+#ibm-page-tools-dw ul {
+	margin: 0px; padding: 0px;
+}
+#ibm-footer-module-dw {
+	margin: 0px; padding: 0px;
+}
+#ibm-page-tools-dw li {
+	list-style-type: none;
+}
+#ibm-footer-module-dw li {
+	list-style-type: none;
+}
+#dw-footer-top-row {
+	width: 930px; height: 30px; overflow: hidden; border-top-color: rgb(231, 105, 5); border-bottom-color: rgb(153, 153, 153); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#E78D2C', endColorstr='#CC5422'); background-color: rgb(224, 114, 39);
+}
+#dw-footer-top-row li {
+	float: left;
+}
+#dw-footer-top-row li a {
+	color: rgb(255, 255, 255); font-family: arial,sans-serif; font-size: 12px; font-weight: bold; text-decoration: none; -webkit-font-smoothing: antialiased;
+}
+#dw-footer-top-row #dw-foot-options li {
+	padding: 4px 0px 12px; height: 30px; margin-left: 10px;
+}
+#dw-footer-top-row #ibm-foot-options-dw li {
+	padding: 4px 0px 12px; height: 30px; margin-left: 10px;
+}
+#dw-footer-top-row #dw-foot-options li:hover {
+	background-color: rgb(208, 66, 18);
+}
+#dw-footer-top-row #ibm-foot-options-dw li:hover {
+	background-color: rgb(208, 66, 18);
+}
+#dw-footer-top-row #ibm-foot-options-dw li.current {
+	background-color: rgb(208, 66, 18);
+}
+#dw-footer-top-row li#dw-print {
+	padding-right: 14px; padding-left: 10px;
+}
+#dw-footer-top-row li#dw-foot-1 {
+	padding-right: 10px; padding-left: 10px;
+}
+#dw-footer-top-row li#dw-foot-0 {
+	padding-right: 10px; padding-left: 10px;
+}
+#dw-footer-top-row li#dw-foot-0 a {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down-white.gif") no-repeat right; padding-right: 16px;
+}
+#dw-footer-top-row li.dw-foot-0-jp#dw-foot-0 a {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down-white.gif") no-repeat right; padding-right: 16px;
+}
+#dw-footer-top-row li.dw-foot-0-ru#dw-foot-0 a {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down-white.gif") no-repeat right; padding-right: 16px;
+}
+#dw-footer-top-row li.dw-foot-0-kr#dw-foot-0 a {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down-white.gif") no-repeat right; padding-right: 16px;
+}
+#dw-footer-top-row li.dw-foot-0-vn#dw-foot-0 a {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down-white.gif") no-repeat right; padding-right: 16px;
+}
+#dw-footer-top-row li.dw-foot-0-ssa#dw-foot-0 a {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down-white.gif") no-repeat right; padding-right: 16px;
+}
+#dw-footer-top-row li.dw-foot-0-br#dw-foot-0 a {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down-white.gif") no-repeat right; padding-right: 16px;
+}
+#dw-footer-top-row li.dw-foot-0-cn#dw-foot-0 a {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down-white.gif") no-repeat right; padding-right: 16px;
+}
+#dw-footer-top-row li#dw-foot-1 a {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down-white.gif") no-repeat right; padding-right: 16px;
+}
+#dw-footer-top-row li.dw-foot-1-jp#dw-foot-1 a {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down-white.gif") no-repeat right; padding-right: 16px;
+}
+#dw-footer-top-row li.dw-foot-1-cn#dw-foot-1 a {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down-white.gif") no-repeat right; padding-right: 16px;
+}
+#dw-footer-top-row li.dw-foot-1-kr#dw-foot-1 a {
+	background: url("//dw1.s81c.com/developerworks/i/mf/arrow-down-white.gif") no-repeat right; padding-right: 16px;
+}
+#ibm-footer-module-dw {
+	width: 930px; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: solid; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#DDDDDD', endColorstr='#FFFFFF'); min-height: 140px; background-color: rgb(255, 249, 225);
+}
+.ibm-ribbon-pane-dw {
+	width: 930px; overflow: hidden; position: relative;
+}
+.ibm-ribbon-section-dw {
+	width: 20000em; position: absolute;
+}
+#ibm-masthead-dw .ibm-ribbon-pane-dw .dw-mast-columns {
+	width: 930px; clear: none; float: left;
+}
+#ibm-page-tools-dw .ibm-ribbon-pane-dw .dw-footer-columns {
+	width: 930px; clear: none; float: left;
+}
+#ibm-my-menu-dw {
+	overflow: hidden; font-size: 0.8em; display: none; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#FEF2B6'); background-color: rgb(254, 242, 182);
+}
+#ibm-common-menu-dw {
+	overflow: hidden; font-size: 0.8em; display: none; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#FEF2B6'); background-color: rgb(254, 242, 182);
+}
+#dw-page-tools-menu {
+	overflow: hidden; font-size: 0.8em; display: none; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#FEF2B6'); background-color: rgb(254, 242, 182);
+}
+#ibm-common-menu-dw {
+	padding: 12px 0px 0px;
+}
+#dw-page-tools-menu {
+	padding: 12px 0px 0px;
+}
+#dw-page-tools-menu {
+	padding: 12px 0px;
+}
+#ibm-my-menu-dw .ibm-ribbon-pane-dw {
+	height: 200px;
+}
+#ibm-common-menu-dw .ibm-ribbon-pane-dw {
+	height: 150px;
+}
+#ibm-common-menu-dw .dw-ribbon-pane-en.ibm-ribbon-pane-dw {
+	height: 175px;
+}
+#ibm-common-menu-dw .dw-ribbon-pane-jp.ibm-ribbon-pane-dw {
+	height: 170px;
+}
+#dw-page-tools-menu {
+	height: 106px; border-bottom-color: rgb(153, 153, 153); border-bottom-width: 1px; border-bottom-style: solid;
+}
+#dw-page-tools-menu .ibm-ribbon-pane-dw {
+	height: 120px;
+}
+#ibm-common-menu-dw .dw-mast-columns h2 {
+	margin: 0px; padding: 0px 0px 6px; color: rgb(0, 0, 0); font-family: arial,sans-serif; font-size: 12px; font-weight: bold; text-decoration: none;
+}
+#ibm-my-menu-dw .dw-mast-columns h2 {
+	margin: 0px; padding: 0px 0px 10px; color: rgb(0, 0, 0); font-family: arial,sans-serif; font-size: 12px; font-weight: bold; text-decoration: none;
+}
+#dw-page-tools-menu .dw-footer-columns h2 {
+	margin: 0px; padding: 0px 0px 10px; color: rgb(0, 0, 0); font-family: arial,sans-serif; font-size: 12px; font-weight: bold; text-decoration: none;
+}
+#ibm-common-menu-dw .dw-mast-columns h2 a {
+	text-decoration: none;
+}
+#ibm-common-menu-dw .dw-mast-columns h2 a:hover {
+	text-decoration: underline;
+}
+#ibm-my-menu-dw li {
+	padding-bottom: 5px;
+}
+#ibm-common-menu-dw li {
+	padding-bottom: 5px;
+}
+#ibm-my-menu-dw li a {
+	color: rgb(74, 102, 148); font-family: arial,sans-serif; font-size: 12px; font-weight: normal; text-decoration: none;
+}
+#ibm-common-menu-dw li a {
+	color: rgb(74, 102, 148); font-family: arial,sans-serif; font-size: 12px; font-weight: normal; text-decoration: none;
+}
+#ibm-common-menu-dw li a:hover {
+	text-decoration: underline;
+}
+#ibm-my-menu-dw li a:hover {
+	text-decoration: underline;
+}
+#ibm-common-menu-dw .dw-mast-columns ul li.dw-mast-newline {
+	line-height: 110%;
+}
+#dw-page-tools-menu .ibm-link-list li a {
+	font-family: arial,sans-serif; font-size: 12px; font-weight: normal; text-decoration: none;
+}
+#ibm-footer-module-dw .dw-footer-columns li a {
+	font-family: arial,sans-serif; font-size: 12px; font-weight: normal; text-decoration: none;
+}
+#dw-page-tools-menu .ibm-link-list li a {
+	color: rgb(74, 102, 148);
+}
+#ibm-footer-module-dw .dw-footer-columns ul li a {
+	color: rgb(102, 102, 102);
+}
+#dw-page-tools-menu .ibm-link-list li a:hover {
+	text-decoration: underline;
+}
+#ibm-footer-module-dw .dw-footer-columns ul li a:hover {
+	text-decoration: underline;
+}
+#ibm-my-menu-dw .dw-mast-columns {
+	width: 440px;
+}
+#ibm-common-menu-dw .dw-mast-columns {
+	width: 760px;
+}
+#ibm-my-menu-dw .dw-mast-col-1-1 {
+	width: 890px; padding-bottom: 12px; margin-left: 30px; float: left;
+}
+#ibm-my-menu-dw .dw-mast-col-1-1 #dw-mast-dname {
+	width: 790px;
+}
+#ibm-my-menu-dw .dw-mast-col-2-1 {
+	width: 200px; padding-top: 16px; padding-bottom: 16px; float: left;
+}
+#ibm-my-menu-dw .dw-mast-col-2-2 {
+	width: 200px; padding-top: 42px; padding-bottom: 12px; float: left;
+}
+#ibm-my-menu-dw .dw-mast-col-2-2-no-pad {
+	width: 200px; padding-top: 16px; padding-bottom: 16px; float: left;
+}
+#ibm-my-menu-dw .dw-mast-ibm.dw-mast-col-2-2 {
+	padding-top: 16px;
+}
+#ibm-my-menu-dw .dw-mast-close ul {
+	margin-left: 455px;
+}
+#ibm-common-menu-dw .dw-mast-close ul {
+	margin-left: 455px;
+}
+#ibm-my-menu-dw .dw-mast-col-1-1 .dw-mast-close ul {
+	margin-left: 425px;
+}
+#ibm-my-menu-dw .dw-mast-close {
+	clear: left;
+}
+#ibm-my-menu-dw .dw-mast-close li a {
+	background: url("//dw1.s81c.com/developerworks/i/mf/close-icon.gif") no-repeat 0px 0px; width: 20px; height: 10px;
+}
+#ibm-my-menu-dw .dw-mast-close li a:hover {
+	background-position: 0px -60px;
+}
+#ibm-my-menu-dw #dw-mast-sso .dw-mast-close .dw-mast-close-sign {
+	padding-top: 22px; margin-left: -3px;
+}
+#ibm-my-menu-dw #dw-mast-sso .dw-mast-close .dw-mast-close-sign-vn {
+	padding-top: 20px; margin-left: -3px;
+}
+#ibm-my-menu-dw #dw-mast-sso .dw-mast-close .dw-mast-close-sign-jp {
+	padding-top: 17px; margin-left: -3px;
+}
+#ibm-my-menu-dw #dw-mast-sso .dw-mast-close .dw-mast-close-sign-ru {
+	padding-top: 12px; margin-left: -3px;
+}
+#ibm-my-menu-dw #dw-mast-sso .dw-mast-close .dw-mast-close-sign-kr {
+	padding-top: 7px; margin-left: -3px;
+}
+#ibm-my-menu-dw #dw-mast-sso .dw-mast-close .dw-mast-close-sign-br {
+	padding-top: 6px; margin-left: -4px;
+}
+#ibm-my-menu-dw #dw-mast-sso .dw-mast-close .dw-mast-close-sign-ssa {
+	padding-top: 7px; margin-left: -4px;
+}
+#ibm-my-menu-dw #dw-mast-sso .dw-mast-close .dw-mast-close-sign-cn {
+	padding-top: 11px; margin-left: -3px;
+}
+#ibm-my-menu-dw #dw-mast-sso .dw-mast-close .dw-mast-close-sign {
+	
+}
+#ibm-my-menu-dw #dw-mast-sso .dw-mast-close .dw-mast-close-sign {
+	padding-top: 11px;
+}
+#ibm-my-menu-dw #dw-mast-dname .dw-mast-close .dw-mast-close-sign {
+	padding-top: 16px; margin-left: 1px;
+}
+#ibm-my-menu-dw #dw-mast-dname .dw-mast-close .dw-mast-close-sign-ru {
+	padding-top: 25px; margin-left: 1px;
+}
+#ibm-my-menu-dw #dw-mast-dname .dw-mast-close .dw-mast-close-sign-cn {
+	padding-top: 18px; margin-left: 0px;
+}
+#ibm-my-menu-dw #dw-mast-dname .dw-mast-close .dw-mast-close-sign-br {
+	padding-top: 17px; margin-left: 1px;
+}
+#ibm-my-menu-dw #dw-mast-dname .dw-mast-close .dw-mast-close-sign-ssa {
+	padding-top: 17px; margin-left: 1px;
+}
+#ibm-my-menu-dw #dw-mast-dname .dw-mast-close .dw-mast-close-sign-kr {
+	padding-top: 41px; margin-left: 1px;
+}
+#ibm-my-menu-dw #dw-mast-dname .dw-mast-close .dw-mast-close-sign-vn {
+	padding-top: 25px; margin-left: 1px;
+}
+#ibm-my-menu-dw #dw-mast-dname .dw-mast-close .dw-mast-close-sign-jp {
+	padding-top: 20px; margin-left: 1px;
+}
+#ibm-my-menu-dw #dw-mast-dname .dw-mast-close .dw-mast-close-sign {
+	
+}
+#ibm-my-menu-dw #dw-mast-dname .dw-mast-close .dw-mast-close-sign {
+	padding-top: 15px;
+}
+#ibm-my-menu-dw #dw-mast-auth .dw-mast-close .dw-mast-close-sign {
+	padding-top: 76px; margin-left: 1px;
+}
+#ibm-my-menu-dw .dw-mast-close .dw-mast-close-ibm {
+	padding-top: 64px;
+}
+#ibm-my-menu-dw .dw-mast-close .dw-mast-close-ibm-ssa {
+	padding-top: 22px;
+}
+#ibm-my-menu-dw .dw-mast-close .dw-mast-close-ibm-cn {
+	padding-top: 85px;
+}
+#ibm-my-menu-dw .dw-mast-close .dw-mast-close-lang {
+	padding-top: 38px;
+}
+#ibm-common-menu-dw .dw-mast-close {
+	clear: left;
+}
+#ibm-common-menu-dw .dw-mast-close li {
+	padding-bottom: 0px;
+}
+#ibm-common-menu-dw .dw-mast-close li a {
+	background: url("//dw1.s81c.com/developerworks/i/mf/close-icon.gif") no-repeat 0px 0px; width: 20px; height: 10px;
+}
+#ibm-common-menu-dw .dw-mast-close li a:hover {
+	background-position: 0px -60px;
+}
+#ibm-common-menu-dw .dw-mast-close .dw-mast-close-tech {
+	padding-top: 9px;
+}
+#ibm-common-menu-dw .dw-mast-close .dw-mast-close-tech {
+	padding-left: 1px;
+}
+#ibm-common-menu-dw .dw-mast-close .dw-mast-close-tech-vn {
+	padding-top: 9px;
+}
+#ibm-common-menu-dw .dw-mast-close .dw-mast-close-tech-jp {
+	padding-top: 29px;
+}
+#ibm-common-menu-dw .dw-mast-close .dw-mast-close-tech-br {
+	padding-top: 5px;
+}
+#ibm-common-menu-dw .dw-mast-close .dw-mast-close-tech-cn {
+	padding-top: 3px;
+}
+#ibm-common-menu-dw .dw-mast-close .dw-mast-close-tech-ssa {
+	padding-top: 5px;
+}
+#ibm-common-menu-dw .dw-mast-close .dw-mast-close-tech-kr {
+	padding-top: 8px;
+}
+#ibm-common-menu-dw .dw-mast-close .dw-mast-close-eval {
+	padding-top: 72px;
+}
+#ibm-common-menu-dw .dw-mast-close .dw-mast-close-eval-vn {
+	padding-top: 38px;
+}
+#ibm-common-menu-dw .dw-mast-close .dw-mast-close-eval-jp {
+	padding-top: 70px;
+}
+#ibm-common-menu-dw .dw-mast-close .dw-mast-close-eval-ru {
+	padding-top: 38px;
+}
+#ibm-common-menu-dw .dw-mast-close .dw-mast-close-eval-cn {
+	padding-top: 45px;
+}
+#ibm-common-menu-dw .dw-mast-close .dw-mast-close-eval-br {
+	padding-top: 47px;
+}
+#ibm-common-menu-dw .dw-mast-close .dw-mast-close-eval-ssa {
+	padding-top: 47px;
+}
+#ibm-common-menu-dw .dw-mast-close .dw-mast-close-event {
+	padding-top: 72px;
+}
+#ibm-common-menu-dw .dw-mast-close .dw-mast-close-event-jp {
+	padding-top: 70px;
+}
+#ibm-common-menu-dw .dw-mast-close .dw-mast-close-event-cn {
+	padding-top: 24px;
+}
+#ibm-common-menu-dw .dw-mast-close .dw-mast-close-comm {
+	padding-top: 30px;
+}
+#ibm-common-menu-dw .dw-mast-close .dw-mast-close-comm-vn {
+	padding-top: 9px;
+}
+#ibm-common-menu-dw .dw-mast-close .dw-mast-close-comm-jp {
+	padding-top: 28px;
+}
+#ibm-common-menu-dw .dw-mast-close .dw-mast-close-comm-ru {
+	padding-top: 9px;
+}
+#ibm-common-menu-dw .dw-mast-close .dw-mast-close-comm-cn {
+	padding-top: 3px;
+}
+#ibm-common-menu-dw .dw-mast-close .dw-mast-close-comm-ssa {
+	padding-top: 5px;
+}
+#ibm-common-menu-dw .dw-mast-close .dw-mast-close-comm-br {
+	padding-top: 5px;
+}
+#ibm-my-menu-dw .dw-mast-col-2-1 {
+	margin-left: 30px;
+}
+#ibm-common-menu-dw .dw-mast-col-1-1 {
+	margin-left: 30px;
+}
+#ibm-common-menu-dw .dw-mast-col-2-1 {
+	margin-left: 30px;
+}
+#ibm-common-menu-dw .dw-mast-col-3-1 {
+	margin-left: 30px;
+}
+#ibm-common-menu-dw .dw-mast-col-4-1 {
+	margin-left: 30px;
+}
+#ibm-common-menu-dw .dw-mast-col-5-1 {
+	margin-left: 30px;
+}
+#ibm-common-menu-dw .dw-mast-col-1-1 {
+	width: 380px; float: left;
+}
+#ibm-common-menu-dw .dw-mast-col-2-1 {
+	width: 200px; float: left;
+}
+#ibm-common-menu-dw .dw-mast-col-2-2 {
+	width: 200px; float: left;
+}
+#ibm-common-menu-dw .dw-mast-col-2-2 {
+	padding-top: 21px;
+}
+#ibm-common-menu-dw .dw-mast-col-3-1 {
+	width: 160px; float: left;
+}
+#ibm-common-menu-dw .dw-mast-col-3-2 {
+	width: 160px; float: left;
+}
+#ibm-common-menu-dw .dw-mast-col-3-3 {
+	width: 160px; float: left;
+}
+#ibm-common-menu-dw .dw-mast-col-3-3-en.dw-mast-col-3-3 {
+	width: 180px; margin-right: 30px;
+}
+#ibm-common-menu-dw .dw-mast-col-3-1-ru.dw-mast-col-3-1 {
+	width: 180px; float: left;
+}
+#ibm-common-menu-dw .dw-mast-col-3-2-ru.dw-mast-col-3-2 {
+	width: 180px; float: left;
+}
+#ibm-common-menu-dw .dw-mast-col-3-3-ru.dw-mast-col-3-3 {
+	width: 180px; float: left;
+}
+#ibm-common-menu-dw .dw-mast-col-3-1-br.dw-mast-col-3-1 {
+	width: 180px; float: left;
+}
+#ibm-common-menu-dw .dw-mast-col-3-2-br.dw-mast-col-3-2 {
+	width: 180px; float: left;
+}
+#ibm-common-menu-dw .dw-mast-col-3-3-br.dw-mast-col-3-3 {
+	width: 180px; float: left;
+}
+#ibm-common-menu-dw .dw-mast-col-3-1-ssa.dw-mast-col-3-1 {
+	width: 180px; float: left;
+}
+#ibm-common-menu-dw .dw-mast-col-3-2-ssa.dw-mast-col-3-2 {
+	width: 180px; float: left;
+}
+#ibm-common-menu-dw .dw-mast-col-3-3-ssa.dw-mast-col-3-3 {
+	width: 180px; float: left;
+}
+#ibm-common-menu-dw .dw-mast-col-3-2 {
+	padding-top: 21px;
+}
+#ibm-common-menu-dw .dw-mast-col-3-3 {
+	padding-top: 21px;
+}
+#ibm-common-menu-dw .dw-mast-col-3-3-ru.dw-mast-col-3-3 {
+	padding-top: 0px;
+}
+#ibm-common-menu-dw .dw-mast-col-3-3-br.dw-mast-col-3-3 {
+	padding-top: 0px;
+}
+#ibm-common-menu-dw .dw-mast-col-3-3-ssa.dw-mast-col-3-3 {
+	padding-top: 0px;
+}
+#ibm-common-menu-dw .dw-mast-col-4-1 {
+	width: 200px; float: left;
+}
+#ibm-common-menu-dw .dw-mast-col-4-2 {
+	width: 200px; float: left;
+}
+#ibm-common-menu-dw .dw-mast-col-4-3 {
+	width: 200px; float: left;
+}
+#ibm-common-menu-dw .dw-mast-col-4-4 {
+	width: 200px; float: left;
+}
+#ibm-common-menu-dw .dw-mast-col-4-2 {
+	padding-top: 20px;
+}
+#ibm-common-menu-dw .dw-mast-col-4-3 {
+	padding-top: 20px;
+}
+#ibm-common-menu-dw .dw-mast-col-5-1 {
+	width: 228px; float: left;
+}
+#ibm-common-menu-dw .dw-mast-col-5-2 {
+	width: 188px; float: left;
+}
+#ibm-common-menu-dw .dw-mast-col-5-3 {
+	width: 172px; float: left;
+}
+#ibm-common-menu-dw .dw-mast-col-5-4 {
+	width: 160px; float: left;
+}
+#ibm-common-menu-dw .dw-mast-col-5-5 {
+	width: 120px; float: left;
+}
+#ibm-common-menu-dw .dw-mast-col-5-2 {
+	padding-top: 20px;
+}
+#ibm-common-menu-dw .dw-mast-col-5-3 {
+	padding-top: 20px;
+}
+#ibm-common-menu-dw .dw-mast-col-5-4 {
+	padding-top: 20px;
+}
+#ibm-common-menu-dw .dw-mast-more {
+	width: 300px; margin-left: 20px; float: left;
+}
+#ibm-common-menu-dw .dw-mast-more-en.dw-mast-more {
+	width: 255px;
+}
+#ibm-common-menu-dw .dw-mast-more ul.ibm-link-list a {
+	padding: 0px 5px 5px 19px;
+}
+input#pw_mf {
+	width: 140px; height: 18px; padding-left: 2px; font-family: arial,sans-serif; font-size: 0.9em; border-top-color: rgb(85, 85, 85); border-top-width: 1px; border-top-style: solid;
+}
+input#ibmid_mf {
+	width: 140px; height: 18px; padding-left: 2px; font-family: arial,sans-serif; font-size: 0.9em; border-top-color: rgb(85, 85, 85); border-top-width: 1px; border-top-style: solid;
+}
+input#dname_mf {
+	width: 140px; height: 18px; padding-left: 2px; font-family: arial,sans-serif; font-size: 0.9em; border-top-color: rgb(85, 85, 85); border-top-width: 1px; border-top-style: solid;
+}
+input.novalue#pw_mf {
+	border: 1px solid rgb(255, 0, 0);
+}
+input.novalue#ibmid_mf {
+	border: 1px solid rgb(255, 0, 0);
+}
+input.novalue#ibmid {
+	border: 1px solid rgb(255, 0, 0);
+}
+input.novalue#password {
+	border: 1px solid rgb(255, 0, 0);
+}
+input#dname_mf {
+	margin-right: 50px;
+}
+input.dw-mf-submit-btn {
+	background: url("//dw1.s81c.com/developerworks/i/submit.gif") no-repeat 0px -80px; border: 0px currentColor; width: 93px; height: 30px; font-size: 0px !important; margin-top: 12px; cursor: pointer;
+}
+input.dw-mf-submit-btn:hover {
+	background: url("//dw1.s81c.com/developerworks/i/submit.gif") no-repeat 0px 0px;
+}
+input.dw-mf-submit-btn-jp {
+	background: url("//dw1.s81c.com/developerworks/i/submit-jp.gif") no-repeat 0px -80px; border: 0px currentColor; width: 93px; height: 30px; color: rgb(204, 204, 204); line-height: 0 !important; font-size: 0px !important; margin-top: 12px; margin-left: 20px; cursor: pointer;
+}
+input.dw-mf-submit-btn-jp:hover {
+	background: url("//dw1.s81c.com/developerworks/i/submit-jp.gif") no-repeat 0px 0px;
+}
+input.dw-mf-submit-btn-cn {
+	background: url("//dw1.s81c.com/developerworks/i/submit-cn.gif") no-repeat 0px -80px; border: 0px currentColor; width: 93px; height: 30px; color: rgb(34, 84, 118); line-height: 0 !important; font-size: 0px !important; margin-top: 25px; margin-left: 20px; cursor: pointer;
+}
+input.dw-mf-submit-btn-cn:hover {
+	background: url("//dw1.s81c.com/developerworks/i/submit-cn.gif") no-repeat 0px 0px;
+}
+input.dw-mf-submit-btn-ru {
+	background: url("//dw1.s81c.com/developerworks/i/submit-ru.gif") no-repeat 0px -80px; border: 0px currentColor; width: 93px; height: 30px; font-size: 0px !important; margin-top: 12px; margin-left: 16px; cursor: pointer;
+}
+input.dw-mf-submit-btn-ru:hover {
+	background: url("//dw1.s81c.com/developerworks/i/submit-ru.gif") no-repeat 0px 0px;
+}
+input.dw-mf-submit-btn-kr {
+	background: url("//dw1.s81c.com/developerworks/i/submit-kr.gif") no-repeat 0px -80px; border: 0px currentColor; width: 93px; height: 30px; color: rgb(34, 84, 118); line-height: 0 !important; font-size: 0px !important; margin-top: 12px; margin-left: 18px; cursor: pointer;
+}
+input.dw-mf-submit-btn-kr:hover {
+	background: url("//dw1.s81c.com/developerworks/i/submit-kr.gif") no-repeat 0px 0px;
+}
+input.dw-mf-submit-btn-ssa {
+	background: url("//dw1.s81c.com/developerworks/i/submit-ssa.gif") no-repeat 0px -80px; border: 0px currentColor; width: 93px; height: 30px; color: rgb(153, 153, 153); line-height: 0 !important; font-size: 0px !important; margin-top: 12px; margin-left: 10px; cursor: pointer;
+}
+input.dw-mf-submit-btn-ssa:hover {
+	background: url("//dw1.s81c.com/developerworks/i/submit-ssa.gif") no-repeat 0px 0px;
+}
+input.dw-mf-submit-btn-br {
+	background: url("//dw1.s81c.com/developerworks/i/submit-br.gif") no-repeat 0px -80px; border: 0px currentColor; width: 93px; height: 30px; color: rgb(153, 153, 153); line-height: 0 !important; font-size: 0px !important; margin-top: 12px; cursor: pointer;
+}
+input.dw-mf-submit-btn-br:hover {
+	background: url("//dw1.s81c.com/developerworks/i/submit-br.gif") no-repeat 0px 0px;
+}
+input.dw-mf-submit-btn-vn {
+	background: url("//dw1.s81c.com/developerworks/i/submit-vn.gif") no-repeat 0px -80px; border: 0px currentColor; width: 93px; height: 30px; font-size: 0px !important; margin-top: 12px; margin-left: 20px; cursor: pointer;
+}
+input.dw-mf-submit-btn-vn:hover {
+	background: url("//dw1.s81c.com/developerworks/i/submit-vn.gif") no-repeat 0px 0px;
+}
+#dw-mast-sso-form input.dw-mf-submit-btn-br {
+	margin-left: -2px;
+}
+#dw-mast-dname-form input.dw-mf-submit-btn-br {
+	margin-left: 20px;
+}
+#dw-mast-sso {
+	font-family: arial,sans-serif; font-size: 1em;
+}
+#dw-mast-dname {
+	font-family: arial,sans-serif; font-size: 1em;
+}
+#dw-mast-sso p {
+	font-size: 0.9em;
+}
+#dw-mast-dname p {
+	font-size: 0.9em;
+}
+#dw-mast-sso {
+	padding-top: 4px;
+}
+#dw-mast-sso li {
+	padding: 0px 0px 0px 4px; font-size: 0.9em;
+}
+#dw-mast-sso li a {
+	font-weight: bold;
+}
+#dw-mast-sso-form div {
+	float: left;
+}
+#dw-mast-sso-update ul {
+	float: left;
+}
+#dw-mast-dname-form div {
+	float: left;
+}
+dw-mast-sso-update div {
+	float: left;
+}
+#dw-mast-sso-target {
+	width: 164px;
+}
+.dw-mast-sso-target-jp#dw-mast-sso-target {
+	width: 190px;
+}
+#dw-mast-sso-target p {
+	padding-top: 8px; padding-left: 10px;
+}
+.dw-mast-sso-target-cn#dw-mast-sso-target p {
+	padding-top: 8px; padding-left: 10px;
+}
+.dw-mast-sso-target-jp#dw-mast-sso-target p {
+	padding-top: 4px; padding-left: 5px;
+}
+#dw-mast-sso-target p {
+	font-size: 0.85em;
+}
+#dw-mast-sso-target input#perm_mf {
+	margin: 0px; vertical-align: middle;
+}
+#dw-mast-sso-target p label {
+	padding-left: 4px; vertical-align: middle;
+}
+#dw-mast-sso-form {
+	padding-top: 26px;
+}
+#dw-mast-dname-form {
+	margin-top: 30px;
+}
+.dw-mast-sso-id-ssa#dw-mast-sso-id {
+	margin-top: 6px;
+}
+.dw-mast-sso-pw-ssa#dw-mast-sso-pw {
+	margin-top: 6px;
+}
+.dw-mast-sso-target-ssa#dw-mast-sso-target {
+	margin-top: 6px;
+}
+.dw-mast-sso-id-br#dw-mast-sso-id {
+	margin-top: 6px;
+}
+.dw-mast-sso-pw-br#dw-mast-sso-pw {
+	margin-top: 6px;
+}
+.dw-mast-sso-target-br#dw-mast-sso-target {
+	margin-top: 6px;
+}
+.dw-mast-sso-id-vn#dw-mast-sso-id {
+	margin-top: 6px;
+}
+.dw-mast-sso-pw-vn#dw-mast-sso-pw {
+	margin-top: 6px;
+}
+.dw-mast-sso-target-vn#dw-mast-sso-target {
+	margin-top: 6px;
+}
+.dw-mast-sso-id-cn#dw-mast-sso-id {
+	margin-top: 11px;
+}
+.dw-mast-sso-pw-cn#dw-mast-sso-pw {
+	margin-top: 11px;
+}
+.dw-mast-sso-target-cn#dw-mast-sso-target {
+	margin-top: 11px;
+}
+.dw-mast-sso-id-jp#dw-mast-sso-id {
+	margin-top: 1px;
+}
+.dw-mast-sso-pw-jp#dw-mast-sso-pw {
+	margin-top: 1px;
+}
+.dw-mast-sso-target-jp#dw-mast-sso-target {
+	margin-top: 1px;
+}
+.dw-mast-sso-target-jp#dw-mast-sso-target {
+	width: 195px; margin-left: 6px;
+}
+.dw-mast-sso-target-kr#dw-mast-sso-target {
+	width: 168px; margin-left: 4px;
+}
+#dw-mast-sso-id label {
+	margin: 0px; padding: 0px 0px 2px 4px; color: rgb(85, 85, 85); font-size: 0.9em; font-weight: bold; display: block;
+}
+#dw-mast-sso-pw label {
+	margin: 0px; padding: 0px 0px 2px 4px; color: rgb(85, 85, 85); font-size: 0.9em; font-weight: bold; display: block;
+}
+#dw-mast-dname-mf label {
+	margin: 0px; padding: 0px 0px 2px 4px; color: rgb(85, 85, 85); font-size: 0.9em; font-weight: bold; display: block;
+}
+#dw-mast-sso-id input {
+	margin: 0px 16px 0px 0px !important; padding: 0px !important;
+}
+#dw-mast-sso-pw input {
+	margin: 0px 16px 0px 0px !important; padding: 0px !important;
+}
+#dw-mast-sso-update-id ul {
+	width: 160px;
+}
+#dw-mast-sso-update-id ul li {
+	padding-bottom: 2px;
+}
+#dw-mast-sso-update ul {
+	margin-top: -14px;
+}
+.dw-mast-sso-update-ru#dw-mast-sso-update ul {
+	margin-top: -6px;
+}
+.dw-mast-sso-update-kr#dw-mast-sso-update ul {
+	margin-top: -4px;
+}
+.dw-mast-sso-update-jp#dw-mast-sso-update ul {
+	margin-top: -12px;
+}
+#dw-mast-sso-update ul.dw-mf-pwupdate-br {
+	margin-left: 32px;
+}
+#dw-mast-sso-update ul.dw-mf-pwupdate-jp {
+	margin-left: 20px;
+}
+#dw-mast-sso-update ul.dw-mf-pwupdate-ssa {
+	margin-left: 52px;
+}
+#dw-mast-sso-update ul.dw-mf-pwupdate-kr {
+	margin-left: 18px;
+}
+#dw-mast-sso-update ul.dw-mf-pwupdate-cn {
+	margin-left: 80px;
+}
+#dw-mast-sso-update ul.dw-mf-pwupdate-vn {
+	margin-left: 40px;
+}
+#dw-mast-sso-update ul.dw-mf-pwupdate-ru {
+	margin-left: 38px;
+}
+#dw-mast-sso-update ul.dw-mf-pwupdate li {
+	padding-bottom: 2px;
+}
+#dw-mast-sso-update ul.dw-mf-pwupdate-br li {
+	padding-bottom: 2px;
+}
+#dw-mast-sso-update ul.dw-mf-pwupdate-ssa li {
+	padding-bottom: 2px;
+}
+#dw-mast-sso-update ul.dw-mf-pwupdate-ru li {
+	padding-bottom: 2px;
+}
+#dw-mast-sso-update ul.dw-mf-pwupdate-vn li {
+	padding-bottom: 2px;
+}
+#dw-mast-sso-update ul.dw-mf-pwupdate-cn li {
+	padding-bottom: 2px;
+}
+#dw-mast-sso-update ul.dw-mf-pwupdate-kr li {
+	padding-bottom: 2px;
+}
+#dw-mast-sso-update ul.dw-mf-pwupdate-jp li {
+	padding-bottom: 2px;
+}
+#dw-mast-sso-terms {
+	width: 200px; margin-top: 19px; margin-left: 0px;
+}
+.dw-mast-sso-terms-ru#dw-mast-sso-terms {
+	width: 210px;
+}
+.dw-mast-sso-terms-kr#dw-mast-sso-terms {
+	width: 210px;
+}
+#dw-mast-dname-terms {
+	width: 200px;
+}
+#dw-mast-sso-terms p {
+	font-size: 0.85em;
+}
+#dw-mast-sso-terms p.dw-mf-perm-box {
+	margin: 0px; padding: 0px;
+}
+#dw-mast-sso-terms input#perm_mf {
+	margin: 0px 2px 0px -1px; vertical-align: middle;
+}
+#dw-mast-sso-terms p.dw-mast-sso-terms-en {
+	margin-top: 0px;
+}
+#dw-mast-dname-terms p {
+	font-size: 0.85em; margin-top: 12px;
+}
+#dw-mast-sso-terms p.dw-mast-sso-terms-br {
+	padding-right: 4px; margin-top: 2px; margin-bottom: 6px;
+}
+#dw-mast-dname-terms p.dw-mast-dname-terms-br {
+	margin-top: 2px; margin-bottom: 6px;
+}
+#dw-mast-sso-terms p.dw-mast-sso-terms-ssa {
+	margin-top: 2px; margin-bottom: 6px;
+}
+#dw-mast-dname-terms p.dw-mast-dname-terms-ssa {
+	margin-top: 2px; margin-bottom: 6px;
+}
+#dw-mast-sso-terms p.dw-mast-sso-terms-kr {
+	margin-top: 0px; margin-bottom: 0px;
+}
+#dw-mast-dname-terms p.dw-mast-dname-terms-kr {
+	margin-top: 0px; margin-bottom: 0px;
+}
+#dw-mast-sso-terms p.dw-mast-sso-terms-jp {
+	margin-top: 0px; margin-bottom: -6px;
+}
+#dw-mast-dname-terms p.dw-mast-dname-terms-jp {
+	margin-top: 0px; margin-bottom: -6px;
+}
+#dw-mast-sso-terms p.dw-mast-sso-terms-vn {
+	margin-top: 0px; margin-bottom: 0px;
+}
+#dw-mast-dname-terms p.dw-mast-dname-terms-vn {
+	margin-top: 0px; margin-bottom: 0px;
+}
+#dw-mast-sso-terms p.dw-mast-sso-terms-ru {
+	margin-top: 0px; margin-bottom: 0px;
+}
+#dw-mast-dname-terms p.dw-mast-dname-terms-ru {
+	margin-top: 0px; margin-bottom: 0px;
+}
+#dw-mast-sso-update {
+	clear: left;
+}
+#dw-mast-sso-text {
+	clear: left;
+}
+#dw-mast-sso-text-ru {
+	clear: left;
+}
+#dw-mast-sso-text-br {
+	clear: left;
+}
+#dw-mast-sso-text-ssa {
+	clear: left;
+}
+#dw-mast-sso-text-vn {
+	clear: left;
+}
+#dw-mast-sso-text p {
+	padding: 12px 30px 0px 0px; color: rgb(85, 85, 85); font-size: 0.85em;
+}
+#dw-mast-sso-text-ru p {
+	padding: 11px 30px 0px 0px; color: rgb(85, 85, 85); font-size: 0.85em;
+}
+#dw-mast-sso-text-br p {
+	padding: 3px 30px 0px 0px; color: rgb(85, 85, 85); font-size: 0.85em; margin-top: -7px;
+}
+#dw-mast-sso-text-ssa p {
+	padding: 2px 30px 0px 0px; color: rgb(85, 85, 85); font-size: 0.85em; margin-top: -7px;
+}
+#dw-mast-sso-text-vn p {
+	padding: 11px 30px 0px 0px; color: rgb(85, 85, 85); font-size: 0.85em;
+}
+#dw-mast-dname-secure p {
+	padding: 16px 30px 0px 0px; color: rgb(85, 85, 85); font-size: 0.85em;
+}
+#dw-mast-sso-text-vn p.dw-mf-secure-vn {
+	background: url("//dw1.s81c.com/i/v16/icons/lock.gif") no-repeat 0px 0px; padding: 0px 30px 0px 20px !important; line-height: 16px; float: right;
+}
+#dw-mast-sso-text p.dw-mf-secure-br {
+	background: url("//dw1.s81c.com/i/v16/icons/lock.gif") no-repeat 0px 0px; padding: 0px 30px 0px 20px !important; line-height: 16px; float: right;
+}
+#dw-mast-sso-text-ru p.dw-mf-secure-ru {
+	background: url("//dw1.s81c.com/i/v16/icons/lock.gif") no-repeat 0px 0px; padding: 0px 30px 0px 20px !important; line-height: 16px; float: right;
+}
+#dw-mast-sso-text-br p.dw-mf-secure-br {
+	background: url("//dw1.s81c.com/i/v16/icons/lock.gif") no-repeat 0px 0px; padding: 0px 30px 0px 20px !important; line-height: 16px; float: right;
+}
+#dw-mast-sso-text-ssa p.dw-mf-secure-ssa {
+	background: url("//dw1.s81c.com/i/v16/icons/lock.gif") no-repeat 0px 0px; padding: 0px 30px 0px 20px !important; line-height: 16px; float: right;
+}
+#dw-mast-sso-text p.dw-mf-secure-kr {
+	background: url("//dw1.s81c.com/i/v16/icons/lock.gif") no-repeat 0px 0px; padding: 0px 30px 0px 20px !important; line-height: 16px; float: right;
+}
+#dw-mast-sso-text p.dw-mf-secure-jp {
+	background: url("//dw1.s81c.com/i/v16/icons/lock.gif") no-repeat 0px 0px; padding: 0px 30px 0px 20px !important; line-height: 16px; float: right;
+}
+#dw-mast-sso-text p.dw-mf-secure-ssa {
+	background: url("//dw1.s81c.com/i/v16/icons/lock.gif") no-repeat 0px 0px; padding: 0px 30px 0px 20px !important; line-height: 16px; float: right;
+}
+#dw-mast-sso-text p.dw-mf-secure-cn {
+	background: url("//dw1.s81c.com/i/v16/icons/lock.gif") no-repeat 0px 0px; padding: 0px 30px 0px 20px !important; line-height: 16px; float: right;
+}
+#dw-mast-sso-text p.dw-mf-secure {
+	background: url("//dw1.s81c.com/i/v16/icons/lock.gif") no-repeat 0px 0px; padding: 0px 30px 0px 20px !important; line-height: 16px; float: right;
+}
+#dw-mast-sso-text p.dw-mf-secure {
+	margin-top: 0px;
+}
+#dw-mast-sso-text p.dw-mf-secure-cn {
+	margin-top: 0px;
+}
+#dw-mast-sso-text p.dw-mf-secure-br {
+	margin-top: -8px;
+}
+#dw-mast-sso-text p.dw-mf-secure-ssa {
+	margin-top: 0px;
+}
+#dw-mast-sso-text p.dw-mf-secure-jp {
+	margin-top: -10px;
+}
+#dw-mast-sso-text p.dw-mf-secure-kr {
+	margin-top: -10px;
+}
+#dw-mast-sso-text p.dw-mf-secure-vn {
+	margin-top: -10px;
+}
+#dw-mast-sso-text-ru p.dw-mf-secure-ru {
+	margin-top: -15px;
+}
+#dw-mast-dname-secure p.dw-mf-secure-vn {
+	background: url("//dw1.s81c.com/i/v16/icons/lock.gif") no-repeat 0px 0px; padding: 0px 0px 0px 20px !important; float: right;
+}
+#dw-mast-dname-secure p.dw-mf-secure-br {
+	background: url("//dw1.s81c.com/i/v16/icons/lock.gif") no-repeat 0px 0px; padding: 0px 0px 0px 20px !important; float: right;
+}
+#dw-mast-dname-secure p.dw-mf-secure-ru {
+	background: url("//dw1.s81c.com/i/v16/icons/lock.gif") no-repeat 0px 0px; padding: 0px 0px 0px 20px !important; float: right;
+}
+#dw-mast-dname-secure p.dw-mf-secure-kr {
+	background: url("//dw1.s81c.com/i/v16/icons/lock.gif") no-repeat 0px 0px; padding: 0px 0px 0px 20px !important; float: right;
+}
+#dw-mast-dname-secure p.dw-mf-secure-ssa {
+	background: url("//dw1.s81c.com/i/v16/icons/lock.gif") no-repeat 0px 0px; padding: 0px 0px 0px 20px !important; float: right;
+}
+#dw-mast-dname-secure p.dw-mf-secure-cn {
+	background: url("//dw1.s81c.com/i/v16/icons/lock.gif") no-repeat 0px 0px; padding: 0px 0px 0px 20px !important; float: right;
+}
+#dw-mast-dname-secure p.dw-mf-secure {
+	background: url("//dw1.s81c.com/i/v16/icons/lock.gif") no-repeat 0px 0px; padding: 0px 0px 0px 20px !important; float: right;
+}
+#dw-mast-dname-secure p.dw-mf-secure-jp {
+	background: url("//dw1.s81c.com/i/v16/icons/lock.gif") no-repeat 0px -1px; padding: 2px 0px 2px 20px !important; float: right;
+}
+*:first-child + html #dw-mast-dname-secure p.dw-mf-secure {
+	background: url("//dw1.s81c.com/i/v16/icons/lock.gif") no-repeat 0px 0px;
+}
+#dw-mast-dname-secure p.dw-mf-secure {
+	margin-top: 0px;
+}
+#dw-mast-dname-secure p.dw-mf-secure-vn {
+	margin-top: 30px;
+}
+#dw-mast-dname-secure p.dw-mf-secure-kr {
+	margin-top: 14px;
+}
+#dw-mast-dname-secure p.dw-mf-secure-cn {
+	margin-top: 22px;
+}
+#dw-mast-dname-secure p.dw-mf-secure-br {
+	margin-top: 20px;
+}
+#dw-mast-dname-secure p.dw-mf-secure-ssa {
+	margin-top: 20px;
+}
+#dw-mast-dname-secure p.dw-mf-secure-jp {
+	margin-top: 23px;
+}
+#dw-mast-dname-secure p.dw-mf-secure-ru {
+	margin-top: 14px;
+}
+#dw-mast-dname-secure {
+	clear: left; margin-top: 20px;
+}
+#signin_error_mf {
+	height: 0px;
+}
+#signin_dname_error_mf {
+	height: 0px;
+}
+#signin_dname_error_mf {
+	margin-top: -11px;
+}
+#signin_error_mf p.ibm-error {
+	background: url("//dw1.s81c.com/i/v16/icons/error.gif") no-repeat 0px 0px; padding: 0px 0px 2px 20px; line-height: 16px; display: inline;
+}
+#signin_dname_error_mf p.ibm-error {
+	background: url("//dw1.s81c.com/i/v16/icons/error.gif") no-repeat 0px 0px; padding: 0px 0px 2px 20px; line-height: 16px; display: inline;
+}
+#signin_error_mf p.ibm-error em {
+	font-style: normal;
+}
+#signin_dname_error_mf p.ibm-error em {
+	font-style: normal;
+}
+#dw-mast-auth {
+	margin-top: 16px;
+}
+#dw-mast-auth div {
+	float: left;
+}
+#dw-mast-auth div#dw-mast-notify {
+	margin-left: 100px;
+}
+#dw-mast-auth div.dw-mast-more {
+	margin-left: 100px; float: left;
+}
+#dw-mast-auth div.dw-mast-more ul.ibm-link-list a {
+	padding: 0px 5px 5px 21px;
+}
+a.dw-more-link {
+	background: url("//dw1.s81c.com/developerworks/i/mf/blue-arrow.gif") no-repeat 2px 1px; margin-left: -18px !important;
+}
+.dw-mast-newgroup {
+	padding-top: 20px;
+}
+#dw-page-tools-menu .dw-footer-columns {
+	width: 760px;
+}
+#dw-page-tools-menu .dw-footer-col-1-1 {
+	margin-left: 30px;
+}
+#dw-page-tools-menu .dw-footer-col-3-1 {
+	margin-left: 30px;
+}
+#dw-page-tools-menu .dw-footer-col-4-1 {
+	margin-left: 30px;
+}
+#dw-page-tools-menu .dw-footer-col-1-1 {
+	width: 180px; float: left;
+}
+#dw-page-tools-menu .dw-footer-col-3-1 {
+	width: 180px; float: left;
+}
+#dw-page-tools-menu .dw-footer-col-3-2 {
+	width: 180px; float: left;
+}
+#dw-page-tools-menu .dw-footer-col-4-1 {
+	width: 160px; float: left;
+}
+#dw-page-tools-menu .dw-footer-col-4-2 {
+	width: 160px; float: left;
+}
+#dw-page-tools-menu .dw-footer-col-4-3 {
+	width: 160px; float: left;
+}
+#dw-page-tools-menu .dw-footer-col-3-3 {
+	width: 300px; float: left;
+}
+#dw-page-tools-menu .dw-footer-col-4-4 {
+	width: 180px; float: left;
+}
+#dw-page-tools-menu .dw-footer-col-3-2 {
+	padding-top: 24px;
+}
+#dw-page-tools-menu .dw-footer-col-3-3 {
+	padding-top: 24px;
+}
+#dw-page-tools-menu .dw-footer-col-4-2 {
+	padding-top: 24px;
+}
+#dw-page-tools-menu .dw-footer-col-4-3 {
+	padding-top: 24px;
+}
+#dw-page-tools-menu .dw-footer-col-4-4 {
+	padding-top: 24px;
+}
+#dw-page-tools-menu .dw-footer-close {
+	clear: left;
+}
+#dw-page-tools-menu .dw-footer-close ul {
+	margin-left: 455px;
+}
+#dw-page-tools-menu .dw-footer-close li a {
+	background: url("//dw1.s81c.com/developerworks/i/mf/close-icon.gif") no-repeat 0px 0px; width: 20px; height: 10px;
+}
+#dw-page-tools-menu .dw-footer-close li a:hover {
+	background-position: 0px -60px;
+}
+#dw-page-tools-menu .dw-footer-close .dw-footer-close-share {
+	padding-top: 0px;
+}
+#dw-page-tools-menu .dw-footer-close .dw-footer-close-follow {
+	padding-top: 25px;
+}
+#dw-page-tools-menu .dw-footer-close .dw-footer-close-follow-cn {
+	padding-top: 50px;
+}
+#dw-page-tools-menu .dw-footer-close .dw-footer-close-follow-jp {
+	padding-top: 49px;
+}
+#dw-page-tools-menu .dw-footer-close .dw-footer-close-follow-kr {
+	padding-top: 50px;
+}
+#dw-page-tools-menu .dw-footer-close .dw-footer-close-follow-br {
+	padding-top: 50px;
+}
+#ibm-footer-module-dw {
+	padding: 14px 0px;
+}
+#ibm-footer-module-dw .dw-footer-col-5-1 {
+	width: 176px; float: left;
+}
+#ibm-footer-module-dw .dw-footer-col-5-2 {
+	width: 176px; float: left;
+}
+#ibm-footer-module-dw .dw-footer-col-5-3 {
+	width: 176px; float: left;
+}
+#ibm-footer-module-dw .dw-footer-col-5-4 {
+	width: 176px; float: left;
+}
+#ibm-footer-module-dw .dw-footer-col-5-5 {
+	width: 176px; float: left;
+}
+#ibm-footer-module-dw .dw-footer-col-5-1 {
+	margin-left: 20px;
+}
+#ibm-footer-module-dw .dw-footer-col-5-5 {
+	padding-top: 20px;
+}
+#ibm-footer-module-dw .dw-footer-col-6-1 {
+	width: 168px; float: left;
+}
+#ibm-footer-module-dw .dw-footer-col-6-2 {
+	width: 168px; float: left;
+}
+#ibm-footer-module-dw .dw-footer-col-6-3 {
+	width: 168px; float: left;
+}
+#ibm-footer-module-dw .dw-footer-col-6-5 {
+	width: 100px; float: left;
+}
+#ibm-footer-module-dw .dw-footer-col-6-6 {
+	width: 100px; float: left;
+}
+#ibm-footer-module-dw .dw-footer-col-6-4 {
+	width: 130px; float: left;
+}
+#ibm-footer-module-dw .dw-footer-col-6-1 {
+	margin-left: 20px;
+}
+#ibm-footer-module-dw .dw-footer-col-6-2 {
+	padding-top: 0px;
+}
+#ibm-footer-module-dw .dw-footer-col-6-6 {
+	padding-left: 30px;
+}
+#ibm-footer-module-dw .dw-footer-columns {
+	padding-top: 5px;
+}
+#ibm-footer-module-dw .dw-footer-columns h2 {
+	margin: 0px; padding: 0px 0px 5px; font-family: arial,sans-serif; font-size: 13px; font-weight: bold;
+}
+#ibm-footer-module-dw .dw-footer-columns h2.dw-footer-newgroup {
+	padding: 20px 0px 5px;
+}
+#ibm-footer-module-dw .dw-footer-columns h2.dw-footer-headonly {
+	color: rgb(85, 85, 85);
+}
+#ibm-footer-module-dw .dw-footer-columns h2.dw-footer-more {
+	padding-top: 4px;
+}
+#ibm-footer-module-dw .dw-footer-columns h2 a {
+	color: rgb(74, 102, 148) !important; text-decoration: none;
+}
+#ibm-footer-module-dw .dw-footer-columns h2 a:hover {
+	text-decoration: underline;
+}
+#ibm-footer-module-dw .dw-footer-columns ul {
+	margin: 0px; padding: 0px;
+}
+#ibm-footer-module-dw .dw-footer-columns ul li {
+	padding-bottom: 4px;
+}
+#ibm-footer-module-dw .dw-footer-columns ul li.dw-footer-newline {
+	line-height: 90%;
+}
+#ibm-footer-module-dw .dw-footer-columns ul li.dw-footer-newline-en.dw-footer-newline {
+	padding-top: 3px;
+}
+.dw-footer-newgroup {
+	padding-top: 20px;
+}
+#ibm-footer-module-dw #dw-footer-selectlang {
+	clear: left;
+}
+#ibm-footer-module-dw #dw-footer-selectlang h2 {
+	margin: 0px !important; padding: 20px 0px 0px !important;
+}
+#ibm-footer-module-dw #dw-footer-selectlang h2 a {
+	color: rgb(85, 85, 85); padding-left: 20px; font-size: 13px;
+}
+#ibm-footer-module-dw #dw-footer-selectlang ul {
+	margin-left: 12px !important; display: inline; -moz-padding-start: 0px;
+}
+#ibm-footer-module-dw #dw-footer-selectlang ul li {
+	padding-left: 0px !important; display: inline;
+}
+#ibm-footer-module-dw #dw-footer-selectlang ul li a {
+	color: rgb(102, 102, 102); padding-right: 8px; padding-left: 8px; font-size: 12px; text-decoration: none;
+}
+#dw-mast-top-0 {
+	outline: 0px;
+}
+#dw-mast-top-1 {
+	outline: 0px;
+}
+#dw-mast-top-2 {
+	outline: 0px;
+}
+#dw-mast-top-3 {
+	outline: 0px;
+}
+#dw-mast-top-0-0 {
+	outline: 0px;
+}
+#dw-mast-top-1-0 {
+	outline: 0px;
+}
+#dw-mast-top-3-0 {
+	outline: 0px;
+}
+#dw-mast-nav-0-0 {
+	outline: 0px;
+}
+#dw-mast-nav-1-0 {
+	outline: 0px;
+}
+#dw-mast-nav-2-0 {
+	outline: 0px;
+}
+#dw-mast-nav-3-0 {
+	outline: 0px;
+}
+#dw-foot-0-0 {
+	outline: 0px;
+}
+#dw-foot-1-0 {
+	outline: 0px;
+}
+*:first-child + html #ibm-my-menu-dw .dw-mast-close .dw-mast-close-ibm {
+	padding-top: 63px;
+}
+*:first-child + html #ibm-my-menu-dw #dw-mast-sso .dw-mast-close .dw-mast-close-sign {
+	padding-top: 22px;
+}
+*:first-child + html #ibm-my-menu-dw #dw-mast-auth .dw-mast-close .dw-mast-close-sign {
+	padding-top: 77px;
+}
+*:first-child + html #ibm-my-menu-dw #dw-mast-dname .dw-mast-close .dw-mast-close-sign {
+	padding-top: 16px;
+}
+*:first-child + html #ibm-my-menu-dw #dw-mast-sso .dw-mast-close .dw-mast-close-sign-kr {
+	padding-top: 12px; margin-left: -3px;
+}
+*:first-child + html #ibm-my-menu-dw #dw-mast-sso .dw-mast-close .dw-mast-close-sign-jp {
+	padding-top: 20px; margin-left: 0px;
+}
+*:first-child + html #ibm-my-menu-dw #dw-mast-sso .dw-mast-close .dw-mast-close-sign-ru {
+	padding-top: 10px; margin-left: -3px;
+}
+*:first-child + html #ibm-my-menu-dw #dw-mast-sso .dw-mast-close .dw-mast-close-sign-br {
+	padding-top: 5px; margin-left: -3px;
+}
+*:first-child + html #ibm-my-menu-dw #dw-mast-sso .dw-mast-close .dw-mast-close-sign-ssa {
+	padding-top: 5px; margin-left: -3px;
+}
+*:first-child + html #ibm-my-menu-dw #dw-mast-sso .dw-mast-close .dw-mast-close-sign-vn {
+	padding-top: 12px; margin-left: -3px;
+}
+*:first-child + html #ibm-my-menu-dw #dw-mast-sso .dw-mast-close .dw-mast-close-sign-cn {
+	padding-top: 12px; margin-left: -3px;
+}
+*:first-child + html #ibm-my-menu-dw #dw-mast-dname .dw-mast-close .dw-mast-close-sign-cn {
+	padding-top: 37px; margin-left: -3px;
+}
+*:first-child + html #ibm-my-menu-dw #dw-mast-dname .dw-mast-close .dw-mast-close-sign-jp {
+	padding-top: 7px; margin-left: 0px;
+}
+*:first-child + html #ibm-my-menu-dw #dw-mast-dname .dw-mast-close .dw-mast-close-sign-kr {
+	padding-top: 10px; margin-left: 0px;
+}
+*:first-child + html #ibm-my-menu-dw #dw-mast-dname .dw-mast-close .dw-mast-close-sign-ru {
+	padding-top: 8px; margin-left: 0px;
+}
+*:first-child + html #ibm-my-menu-dw #dw-mast-dname .dw-mast-close .dw-mast-close-sign-br {
+	padding-top: 6px; margin-left: 0px;
+}
+*:first-child + html #ibm-my-menu-dw #dw-mast-dname .dw-mast-close .dw-mast-close-sign-ssa {
+	padding-top: 6px; margin-left: 0px;
+}
+*:first-child + html #ibm-my-menu-dw #dw-mast-dname .dw-mast-close .dw-mast-close-sign-vn {
+	padding-top: 4px; margin-left: 0px;
+}
+*:first-child + html #ibm-common-menu-dw .dw-mast-close .dw-mast-close-comm-ru {
+	padding-top: 8px;
+}
+*:first-child + html #ibm-common-menu-dw .dw-mast-close .dw-mast-close-tech-vn {
+	padding-top: 4px;
+}
+*:first-child + html #ibm-common-menu-dw .dw-mast-close .dw-mast-close-eval-vn {
+	padding-top: 36px;
+}
+*:first-child + html #ibm-common-menu-dw .dw-mast-close .dw-mast-close-comm-vn {
+	padding-top: 8px;
+}
+*:first-child + html #dw-mast-sso-form {
+	padding-top: 16px;
+}
+*:first-child + html #dw-mast-sso-target {
+	margin-top: 9px;
+}
+*:first-child + html .dw-mast-sso-target-kr#dw-mast-sso-target p {
+	padding-top: 12px; padding-left: 5px;
+}
+*:first-child + html .dw-mast-sso-target-jp#dw-mast-sso-target p {
+	padding-top: 6px; padding-left: 5px;
+}
+*:first-child + html .dw-mast-sso-target-cn#dw-mast-sso-target p {
+	padding-top: 15px; padding-left: 10px;
+}
+*:first-child + html #dw-mast-sso-terms input#perm_box {
+	margin: 0px 0px 0px -2px;
+}
+*:first-child + html #dw-mast-sso-terms input#perm_mf {
+	margin: 0px 2px 0px -4px;
+}
+*:first-child + html #dw-mast-sso-update ul {
+	margin-top: -5px;
+}
+*:first-child + html #dw-mast-sso-text p.dw-mf-secure {
+	margin: 0px;
+}
+*:first-child + html #dw-mast-sso-text p {
+	padding: 0px 30px 0px 0px; margin-top: 12px;
+}
+*:first-child + html #dw-mast-sso-text-ru p {
+	padding: 0px 30px 0px 0px; margin-top: 12px;
+}
+*:first-child + html #dw-mast-sso-text-br p {
+	padding: 0px 30px 0px 0px; margin-top: 1px;
+}
+*:first-child + html #dw-mast-sso-text-ssa p {
+	padding: 0px 30px 0px 0px; margin-top: 1px;
+}
+*:first-child + html #dw-mast-sso-text-vn p {
+	padding: 0px 30px 0px 0px; margin-top: 5px;
+}
+*:first-child + html #dw-mast-sso-text p.dw-mf-secure {
+	margin-top: -18px;
+}
+*:first-child + html #dw-mast-dname p {
+	margin: 12px 0px 0px;
+}
+*:first-child + html #signin_dname_error_mf {
+	margin-top: 0px;
+}
+*:first-child + html #signin_dname_error_mf p.ibm-error {
+	padding: 0px 0px 2px 20px;
+}
+*:first-child + html #dw-mast-dname-form {
+	margin-top: 16px;
+}
+*:first-child + html #dw-mast-dname-secure p.dw-mf-secure {
+	margin-top: 0px;
+}
+*:first-child + html input#q {
+	color: rgb(51, 51, 51);
+}
+*:first-child + html input.ibm-btn-search-jp.ibm-btn-search {
+	top: 19px;
+}
+*:first-child + html .dw-mast-sso-id-ssa#dw-mast-sso-id {
+	margin-top: 10px;
+}
+*:first-child + html .dw-mast-sso-pw-ssa#dw-mast-sso-pw {
+	margin-top: 10px;
+}
+*:first-child + html .dw-mast-sso-target-ssa#dw-mast-sso-target {
+	margin-top: 10px;
+}
+*:first-child + html .dw-mast-sso-id-br#dw-mast-sso-id {
+	margin-top: 10px;
+}
+*:first-child + html .dw-mast-sso-pw-br#dw-mast-sso-pw {
+	margin-top: 10px;
+}
+*:first-child + html .dw-mast-sso-target-br#dw-mast-sso-target {
+	margin-top: 10px;
+}
+*:first-child + html .dw-mast-sso-id-vn#dw-mast-sso-id {
+	margin-top: 10px;
+}
+*:first-child + html .dw-mast-sso-pw-vn#dw-mast-sso-pw {
+	margin-top: 10px;
+}
+*:first-child + html .dw-mast-sso-target-vn#dw-mast-sso-target {
+	margin-top: 10px;
+}
+*:first-child + html .dw-mast-sso-terms-kr#dw-mast-sso-terms {
+	width: 230px;
+}
+*:first-child + html .dw-mast-sso-update-ru#dw-mast-sso-update ul {
+	margin-top: -8px;
+}
+*:first-child + html .dw-mast-sso-update-kr#dw-mast-sso-update ul {
+	margin-top: -8px;
+}
+*:first-child + html .dw-mast-sso-update-jp#dw-mast-sso-update ul {
+	margin-top: -10px;
+}
+*:first-child + html #dw-mast-sso-text p.dw-mf-secure-cn {
+	margin-top: -10px;
+}
+*:first-child + html #dw-mast-sso-text p.dw-mf-secure-vn {
+	margin-top: -22px;
+}
+*:first-child + html #dw-mast-sso-text p.dw-mf-secure-ssa {
+	margin-top: -20px;
+}
+*:first-child + html #dw-mast-sso-text p.dw-mf-secure-br {
+	margin-top: -16px;
+}
+*:first-child + html #dw-mast-sso-text p.dw-mf-secure-ru {
+	margin-top: -16px;
+}
+*:first-child + html #dw-mast-sso-text p.dw-mf-secure-jp {
+	margin-top: 10px;
+}
+*:first-child + html #dw-mast-sso-text p.dw-mf-secure-kr {
+	margin-top: -16px;
+}
+*:first-child + html #dw-mast-sso-text p.dw-mf-secure-br {
+	margin-top: -16px;
+}
+*:first-child + html #dw-mast-sso-text p.dw-mf-secure-ru {
+	margin-top: -8px;
+}
+*:first-child + html #dw-mast-sso-terms p.dw-mast-sso-terms-ssa {
+	margin-bottom: 0px;
+}
+*:first-child + html #dw-mast-sso-terms p.dw-mast-sso-terms-br {
+	margin-top: 2px; margin-bottom: 0px;
+}
+*:first-child + html #dw-mast-sso-terms p.dw-mast-sso-terms-vn {
+	margin-top: 2px; margin-bottom: 0px;
+}
+*:first-child + html #dw-mast-sso-terms p.dw-mast-sso-terms-cn {
+	margin-top: 8px;
+}
+*:first-child + html #dw-mast-sso-terms p.dw-mast-sso-terms-kr {
+	margin-top: 4px; margin-bottom: 0px;
+}
+*:first-child + html #dw-mast-sso-terms p.dw-mast-sso-terms-jp {
+	margin-bottom: -12px;
+}
+*:first-child + html #dw-mast-sso-terms p.dw-mast-sso-terms-ru {
+	margin-top: 2px; margin-bottom: 0px;
+}
+*:first-child + html #dw-mast-dname-secure p.dw-mf-secure-cn {
+	margin-top: -24px;
+}
+*:first-child + html #dw-mast-dname-secure p.dw-mf-secure-ssa {
+	margin-top: -18px;
+}
+*:first-child + html #dw-mast-dname-secure p.dw-mf-secure-jp {
+	margin-top: -16px;
+}
+*:first-child + html #dw-mast-dname-secure p.dw-mf-secure-vn {
+	margin-top: -18px;
+}
+*:first-child + html #dw-mast-dname-secure p.dw-mf-secure-br {
+	margin-top: -18px;
+}
+*:first-child + html #dw-mast-dname-secure p.dw-mf-secure-ru {
+	margin-top: -18px;
+}
+*:first-child + html #dw-mast-dname-secure p.dw-mf-secure-kr {
+	margin-top: -24px;
+}
+*:first-child + html #dw-mast-sso-text p.dw-mf-secure-jp {
+	background: url("//dw1.s81c.com/i/v16/icons/lock.gif") no-repeat 0px 0px; line-height: 16px;
+}
+*:first-child + html #dw-mast-dname-secure p.dw-mf-secure-jp {
+	background: url("//dw1.s81c.com/i/v16/icons/lock.gif") no-repeat 0px 0px; line-height: 16px;
+}

@@ -1,0 +1,297 @@
+.ibm-common-overlay {
+	display: none;
+}
+.ibm-common-overlay-mask {
+	display: none;
+}
+.ibm-common-overlay {
+	width: 410px; position: absolute; z-index: 9;
+}
+* html .ibm-common-overlay {
+	width: 390px;
+}
+.ibm-overlay-alt.ibm-common-overlay {
+	width: 590px; z-index: 1000;
+}
+* html .ibm-overlay-alt.ibm-common-overlay {
+	width: 570px;
+}
+.ibm-overlay-alt-two.ibm-common-overlay {
+	width: 770px; z-index: 1000;
+}
+* html .ibm-overlay-alt-two.ibm-common-overlay {
+	width: 750px;
+}
+.ibm-common-overlay-mask {
+	margin: 0px; padding: 0px; border: currentColor; overflow: hidden; position: absolute; z-index: 8;
+}
+.ibm-common-overlay .ibm-head {
+	background: url("//www.ibm.com/i/v16/overlay/sprites.png") no-repeat 0px 0px; padding: 0px 20px; height: 41px; overflow: hidden;
+}
+* html .ibm-common-overlay .ibm-head {
+	padding: 0px 10px; height: 39px; background-image: url("//www.ibm.com/i/v16/overlay/sprites.gif");
+}
+.ibm-overlay-alt.ibm-common-overlay .ibm-head {
+	background-position: -1362px 0px;
+}
+.ibm-overlay-alt-two.ibm-common-overlay .ibm-head {
+	background-position: -3264px 0px;
+}
+.ibm-common-overlay .ibm-head p {
+	margin: 0px; padding: 0px; text-align: right; line-height: 39px;
+}
+.ibm-common-overlay .ibm-head p a {
+	color: rgb(255, 255, 255); font-weight: bold; text-decoration: none;
+}
+.ibm-common-overlay .ibm-body {
+	background: url("//www.ibm.com/i/v16/overlay/sprites.png") repeat-y -930px 0px; padding: 10px;
+}
+* html .ibm-common-overlay .ibm-body {
+	padding: 10px 0px; background-image: url("//www.ibm.com/i/v16/overlay/sprites.gif");
+}
+div.ibm-common-overlay .ibm-body {
+	padding-bottom: 1px;
+}
+.ibm-overlay-alt.ibm-common-overlay .ibm-body {
+	background-position: -2652px 0px;
+}
+.ibm-overlay-alt-two.ibm-common-overlay .ibm-body {
+	background-position: -4914px 0px;
+}
+.ibm-common-overlay .ibm-main {
+	padding: 0px 10px;
+}
+.ibm-common-overlay .ibm-footer {
+	background: url("//www.ibm.com/i/v16/overlay/sprites.png") no-repeat -460px 0px; padding: 0px 10px; height: 22px;
+}
+* html .ibm-common-overlay .ibm-footer {
+	padding: 0px; background-image: url("//www.ibm.com/i/v16/overlay/sprites.gif");
+}
+.ibm-overlay-alt.ibm-common-overlay .ibm-footer {
+	background: url("//www.ibm.com/i/v16/overlay/sprites.png") no-repeat -2002px 0px;
+}
+.ibm-overlay-alt-two.ibm-common-overlay .ibm-footer {
+	background: url("//www.ibm.com/i/v16/overlay/sprites.png") no-repeat -4084px 0px;
+}
+* html .ibm-common-overlay .ibm-footer {
+	height: 20px;
+}
+* html .ibm-overlay-alt.ibm-common-overlay .ibm-footer {
+	height: 20px;
+}
+* html body {
+	z-index: -1;
+}
+*:first-child + html body {
+	z-index: -1;
+}
+* html #ibm-content {
+	z-index: 1;
+}
+*:first-child + html #ibm-content {
+	z-index: 1;
+}
+* html #ibm-navigation {
+	z-index: 0;
+}
+*:first-child + html #ibm-navigation {
+	z-index: 0;
+}
+#ibm-content-main .ibm-common-overlay .ibm-head p {
+	font-size: 0.71em;
+}
+* html #ibm-content-main .ibm-common-overlay .ibm-two-column {
+	width: auto;
+}
+* html #ibm-content-main .ibm-common-overlay .ibm-three-column {
+	width: auto;
+}
+* html div.ibm-landing-page #ibm-content-main .ibm-common-overlay .ibm-two-column {
+	width: auto;
+}
+* html div.ibm-landing-page #ibm-content-main .ibm-common-overlay .ibm-three-column {
+	width: auto;
+}
+#ibm-content-main .ibm-overlay-alt.ibm-common-overlay .ibm-two-column .ibm-first.ibm-column {
+	width: 270px;
+}
+#ibm-content-main .ibm-overlay-alt.ibm-common-overlay .ibm-two-column .ibm-second.ibm-column {
+	width: 270px;
+}
+#ibm-content-main .ibm-overlay-alt-two.ibm-common-overlay .ibm-two-column .ibm-first.ibm-column {
+	width: 360px;
+}
+#ibm-content-main .ibm-overlay-alt-two.ibm-common-overlay .ibm-two-column .ibm-second.ibm-column {
+	width: 360px;
+}
+* html #ibm-content-main .ibm-overlay-alt.ibm-common-overlay .ibm-two-column .ibm-first.ibm-column {
+	width: 270px;
+}
+* html #ibm-content-main .ibm-overlay-alt.ibm-common-overlay .ibm-two-column .ibm-second.ibm-column {
+	width: 270px;
+}
+* html #ibm-content-main .ibm-overlay-alt-two.ibm-common-overlay .ibm-two-column .ibm-first.ibm-column {
+	width: 360px;
+}
+* html #ibm-content-main .ibm-overlay-alt-two.ibm-common-overlay .ibm-two-column .ibm-second.ibm-column {
+	width: 360px;
+}
+#ibm-content-main .ibm-overlay-alt.ibm-common-overlay .ibm-three-column .ibm-column {
+	width: 176px;
+}
+#ibm-content-main .ibm-overlay-alt.ibm-common-overlay .ibm-three-column.ibm-container-body .ibm-column {
+	width: 176px;
+}
+#ibm-content-main .ibm-overlay-alt.ibm-common-overlay .ibm-three-column .ibm-third.ibm-column {
+	width: 177px;
+}
+* html div.ibm-landing-page #ibm-content-main .ibm-overlay-alt.ibm-common-overlay .ibm-three-column.ibm-container-body .ibm-column {
+	width: 175px;
+}
+*:first-child + html #ibm-content-main .ibm-overlay-alt.ibm-common-overlay .ibm-three-column .ibm-column {
+	width: 176px;
+}
+*:first-child + html #ibm-content-main .ibm-overlay-alt.ibm-common-overlay .ibm-three-column .ibm-third.ibm-column {
+	width: 177px;
+}
+#ibm-content-main .ibm-overlay-alt-two.ibm-common-overlay .ibm-three-column .ibm-column {
+	width: 236px;
+}
+#ibm-content-main .ibm-overlay-alt-two.ibm-common-overlay .ibm-three-column .ibm-third.ibm-column {
+	width: 238px;
+}
+* html #ibm-content-main .ibm-overlay-alt-two.ibm-common-overlay .ibm-three-column .ibm-column {
+	width: 236px;
+}
+* html div.ibm-landing-page #ibm-content-main .ibm-overlay-alt-two.ibm-common-overlay .ibm-three-column .ibm-column {
+	width: 236px;
+}
+* html #ibm-content-main .ibm-overlay-alt-two.ibm-common-overlay .ibm-three-column .ibm-third.ibm-column {
+	width: 238px;
+}
+* html div.ibm-landing-page #ibm-content-main .ibm-overlay-alt-two.ibm-common-overlay .ibm-three-column .ibm-third.ibm-column {
+	width: 238px;
+}
+* html #ibm-content-main .ibm-overlay-alt.ibm-common-overlay .ibm-three-column .ibm-first.ibm-column {
+	margin-right: 10px;
+}
+* html div.ibm-landing-page #ibm-content-main .ibm-overlay-alt.ibm-common-overlay .ibm-three-column .ibm-first.ibm-column {
+	margin-right: 10px;
+}
+#ibm-content-main .ibm-overlay-alt.ibm-common-overlay .ibm-alternate-four .ibm-first.ibm-column {
+	width: 364px;
+}
+#ibm-content-main .ibm-overlay-alt-two.ibm-common-overlay .ibm-alternate-four .ibm-first.ibm-column {
+	width: 482px;
+}
+* html #ibm-content-main .ibm-overlay-alt.ibm-common-overlay .ibm-alternate-four .ibm-first.ibm-column {
+	width: 364px !important;
+}
+* html div.ibm-landing-page #ibm-content-main .ibm-overlay-alt.ibm-common-overlay .ibm-alternate-four .ibm-first.ibm-column {
+	width: 364px !important;
+}
+* html #ibm-content-main .ibm-overlay-alt-two.ibm-common-overlay .ibm-alternate-four .ibm-first.ibm-column {
+	width: 482px !important;
+}
+* html div.ibm-landing-page #ibm-content-main .ibm-overlay-alt-two.ibm-common-overlay .ibm-alternate-four .ibm-first.ibm-column {
+	width: 482px !important;
+}
+#ibm-content-main .ibm-overlay-alt.ibm-common-overlay .ibm-alternate-four .ibm-second.ibm-column {
+	width: 176px;
+}
+#ibm-content-main .ibm-overlay-alt-two.ibm-common-overlay .ibm-alternate-four .ibm-second.ibm-column {
+	width: 239px;
+}
+* html #ibm-content-main .ibm-overlay-alt.ibm-common-overlay .ibm-alternate-four .ibm-second.ibm-column {
+	width: 176px !important;
+}
+* html div.ibm-landing-page #ibm-content-main .ibm-overlay-alt.ibm-common-overlay .ibm-alternate-four .ibm-second.ibm-column {
+	width: 176px !important;
+}
+* html #ibm-content-main .ibm-overlay-alt-two.ibm-common-overlay .ibm-alternate-four .ibm-second.ibm-column {
+	width: 239px !important;
+}
+* html div.ibm-landing-page #ibm-content-main .ibm-overlay-alt-two.ibm-common-overlay .ibm-alternate-four .ibm-second.ibm-column {
+	width: 239px !important;
+}
+#ibm-content-main .ibm-overlay-alt.ibm-common-overlay .ibm-alternate-five .ibm-first.ibm-column {
+	width: 176px;
+}
+#ibm-content-main .ibm-overlay-alt-two.ibm-common-overlay .ibm-alternate-five .ibm-first.ibm-column {
+	width: 238px;
+}
+* html #ibm-content-main .ibm-overlay-alt.ibm-common-overlay .ibm-alternate-five .ibm-first.ibm-column {
+	width: 176px !important;
+}
+* html div.ibm-landing-page #ibm-content-main .ibm-overlay-alt.ibm-common-overlay .ibm-alternate-five .ibm-first.ibm-column {
+	width: 176px !important;
+}
+* html #ibm-content-main .ibm-overlay-alt-two.ibm-common-overlay .ibm-alternate-five .ibm-first.ibm-column {
+	width: 237px !important;
+}
+* html div.ibm-landing-page #ibm-content-main .ibm-overlay-alt-two.ibm-common-overlay .ibm-alternate-five .ibm-first.ibm-column {
+	width: 237px !important;
+}
+#ibm-content-main .ibm-overlay-alt.ibm-common-overlay .ibm-alternate-five .ibm-second.ibm-column {
+	width: 364px;
+}
+#ibm-content-main .ibm-overlay-alt-two.ibm-common-overlay .ibm-alternate-five .ibm-second.ibm-column {
+	width: 483px;
+}
+* html #ibm-content-main .ibm-overlay-alt.ibm-common-overlay .ibm-alternate-five .ibm-second.ibm-column {
+	width: 364px !important;
+}
+* html div.ibm-landing-page #ibm-content-main .ibm-overlay-alt.ibm-common-overlay .ibm-alternate-five .ibm-second.ibm-column {
+	width: 364px !important;
+}
+* html #ibm-content-main .ibm-overlay-alt-two.ibm-common-overlay .ibm-alternate-five .ibm-second.ibm-column {
+	width: 483px !important;
+}
+* html div.ibm-landing-page #ibm-content-main .ibm-overlay-alt-two.ibm-common-overlay .ibm-alternate-five .ibm-second.ibm-column {
+	width: 483px !important;
+}
+div.ibm-common-overlay .ibm-title h1 {
+	margin: 0px; padding: 0px; color: rgb(51, 51, 51);
+}
+div.ibm-common-overlay .ibm-title h2 {
+	margin: 0px; padding: 0px; color: rgb(51, 51, 51);
+}
+div.ibm-common-overlay .ibm-title h3 {
+	margin: 0px; padding: 0px; color: rgb(51, 51, 51);
+}
+div.ibm-common-overlay .ibm-title h4 {
+	margin: 0px; padding: 0px; color: rgb(51, 51, 51);
+}
+div.ibm-common-overlay .ibm-title {
+	padding-bottom: 7px;
+}
+div.ibm-common-overlay .ibm-subtitle.ibm-title h1 {
+	padding: 0px;
+}
+div.ibm-common-overlay .ibm-subtitle.ibm-title p {
+	padding-left: 0px !important;
+}
+div.ibm-common-overlay .ibm-subtitle.ibm-title p em {
+	color: rgb(102, 102, 102);
+}
+div.ibm-common-overlay .ibm-subtitle.ibm-title p.ibm-error em {
+	color: rgb(255, 0, 0);
+}
+div.ibm-overlay-rule {
+	background: url("//www.ibm.com/i/v16/t/gradient-overlay-rule.gif") repeat-x rgb(255, 255, 255); height: 6px;
+}
+div.ibm-common-overlay .ibm-alternate.ibm-container div.ibm-overlay-rule {
+	margin-top: 9px; margin-right: -10px; margin-left: -10px;
+}
+div.ibm-overlay-rule hr {
+	display: none;
+}
+div.ibm-common-overlay .ibm-overlay-rule {
+	clear: both;
+}
+div.ibm-common-overlay .ibm-buttons-last.ibm-alternate.ibm-container {
+	margin-bottom: 10px;
+}
+div.ibm-common-overlay .ibm-alternate.ibm-container {
+	margin: 0px 0px 0.3em;
+}

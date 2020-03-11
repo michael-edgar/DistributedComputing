@@ -1,0 +1,1553 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0071)http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/ -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><HTML 
+lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><HEAD>
+<META content="text/html; charset=UTF-8" http-equiv="Content-Type"><TITLE>Web 
+services hints and tips: JAX-RPC versus JAX-WS, Part 3</TITLE>
+<META content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true r (n 0 s 0 v 0 l 0) "http://www.classify.org/safesurf/" l gen true r (SS~~000 1))' 
+http-equiv="PICS-Label"><LINK rel="schema.DC" href="http://purl.org/DC/elements/1.0/">
+<LINK rel="SHORTCUT ICON" href="http://www.ibm.com/favicon.ico">
+<META name="Owner" content="developerWorks Content/Raleigh/IBM">
+<META scheme="rfc1766" name="DC.Language" content="en">
+<META name="IBM.Country" content="ZZ">
+<META name="Security" content="Public">
+<META name="IBM.SpecialPurpose" content="SP001">
+<META name="IBM.PageAttributes" content="sid=1003,1004">
+<META name="Source" content="v16 Template Generator">
+<META name="Robots" content="index,follow">
+<META name="Abstract" content="This third part of the series about Java(TM) API for XML-based RPC (JAX-RPC) 1.1 and Java API for XML Web Services (JAX-WS) 2.0 compares the mapping of Web Services Description Language (WSDL) to a service endpoint interface (SEI). The concept of an SEI was first introduced in JAX-RPC 1.0 and has been maintained in JAX-WS 2.0, with some additions. This tip walks you through the major differences.">
+<META name="Description" content="This third part of the series about Java(TM) API for XML-based RPC (JAX-RPC) 1.1 and Java API for XML Web Services (JAX-WS) 2.0 compares the mapping of Web Services Description Language (WSDL) to a service endpoint interface (SEI). The concept of an SEI was first introduced in JAX-RPC 1.0 and has been maintained in JAX-WS 2.0, with some additions. This tip walks you through the major differences.">
+<META name="Keywords" content="JAX-RPC, JAX-WS, Web services specifications, Web services specs, Web services standards, Russell Butek, Nicholas Gallardo, SEI, Service Endpoint Interface, WSDL, Web Services Description Language, , tttwsca">
+<META scheme="iso8601" name="DC.Date" content="2007-06-13">
+<META scheme="IBM_ContentClassTaxonomy" name="DC.Type" content="CT316">
+<META scheme="IBM_SubjectTaxonomy" name="DC.Subject" content="TT700">
+<META scheme="IBM_WTMCategory" name="IBM.WTMCategory" content="SOFDCSOAZZ">
+<META name="DC.Rights" content="© Copyright&nbsp;IBM Corporation&nbsp;2007">
+<META scheme="W3CDTF" name="IBM.Effective" content="2007-06-13">
+<META name="title" content="Web services hints and tips: JAX-RPC versus JAX-WS, Part 3"><!-- HEADER_SCRIPTS_AND_CSS_INCLUDE -->
+<LINK title="www" rel="stylesheet" type="text/css" href="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/all.css" 
+media="all"><LINK title="www" rel="stylesheet" type="text/css" href="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/screen.css" 
+media="screen,projection"><LINK title="www" rel="stylesheet" type="text/css" 
+href="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/screen-uas.css" 
+media="screen,projection"><LINK title="www" rel="stylesheet" type="text/css" 
+href="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/screen-fonts.css" 
+media="screen,projection"><LINK title="www" rel="stylesheet" type="text/css" 
+href="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/handheld.css" 
+media="handheld"><LINK title="www" rel="stylesheet" type="text/css" href="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/print.css" 
+media="print"><LINK title="www" rel="stylesheet" type="text/css" href="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/overlay.css" 
+media="screen,projection"><!-- dW-specific CSS --><LINK title="www" rel="stylesheet" 
+type="text/css" href="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/dw-screen.css" 
+media="screen,projection"><LINK title="www" rel="stylesheet" type="text/css" 
+href="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/dw-screen-comments-ratings-signin.css" 
+media="screen,projection"><LINK title="www" rel="stylesheet" type="text/css" 
+href="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/jquery.cluetip.css" 
+media="screen,projection"><!-- xM Masthead/Footer --><LINK title="www" rel="stylesheet" 
+type="text/css" href="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/dw-mf2012-08.css">
+<SCRIPT type="text/javascript" src="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/ibmcommon.js">//</SCRIPT>
+
+<SCRIPT type="text/javascript" src="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/dynamicnav.js">//</SCRIPT>
+<!-- dW functional JS -->
+<SCRIPT language="JavaScript" type="text/javascript" src="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/urltactic.js"></SCRIPT>
+<!-- Rating_START -->
+<SCRIPT language="JavaScript" type="text/javascript" src="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/showrating.js"></SCRIPT>
+
+<STYLE type="text/css">
+.metavalue {
+  display: none;
+}
+</STYLE>
+<!-- Rating_END --><!-- RESERVED_HEADER_INCLUDE -->
+<SCRIPT language="javascript" type="text/javascript" src="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/ajax1.js"></SCRIPT>
+
+<SCRIPT language="javascript" type="text/javascript" src="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/search_counter-maverick.js"></SCRIPT>
+
+<SCRIPT language="javascript" type="text/javascript" src="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/request_referer_capture-maverick.js"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/javascript">
+ <!--
+ setDefaultQuery('webservicesart');
+ //-->
+</SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/javascript">
+ <!--
+ function openNewWindow(url,tar,arg){window.open(url,tar,arg);}
+ //-->
+</SCRIPT>
+<!-- Include file support -->
+<SCRIPT language="JavaScript" type="text/javascript">
+(function($) {
+	jQuery.extend({
+		getInc: function(u,d){
+			if(u==null)return;
+			jQuery.ajax({
+	    		type: "GET",
+			url: u,
+			dataType: "text",
+	        	success: function(t) {
+				jQuery(d).html(t);
+				ibmCommon.initShowHide(jQuery(d).children()[0]);			
+			},
+			async: true
+			});
+		}
+	});
+})(jQuery);
+</SCRIPT>
+
+<META name="GENERATOR" content="MSHTML 9.00.8112.16447"></HEAD>
+<BODY id="ibm-com">
+<DIV id="ibm-top" class="ibm-landing-page"><!-- MASTHEAD_BEGIN --><!-- MASTHEAD_BEGIN -->
+<DIV class="ibm-access"><A href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/#ibm-content">Skip 
+to main content</A></DIV>
+<DIV id="ibm-masthead-dw"><!-- TOP ROW -->
+<DIV id="dw-masthead-top-row">
+<UL id="ibm-mast-options-dw">
+  <LI id="dw-mast-top-0"><A class="dw-mf-noscript" title="Sign in (or register) requires JavaScript" 
+  href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/#">Sign 
+  in (or register)</A></LI>
+  <LI id="dw-mast-top-1"><A href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/#SELECTLANG">English</A><IMG 
+  class="dw-preload" alt="" src="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/arrow-down-active.gif" 
+  width="8" height="7"></LI>
+  <LI id="dw-mast-top-2" class="dw-mf-hide"><A href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/#"><IMG 
+  class="dw-mast-profimg" alt="PHOTO" src="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/photo.gif" 
+  width="20" height="20"> [userid]</A></LI>
+  <LI id="dw-mast-top-3"><A href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/#"><IMG 
+  alt="IBM®" src="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/ibm-smlogo.gif" 
+  width="44" height="16"></A></LI></UL></DIV><!-- TOP ROW SLIDER -->
+<DIV id="ibm-my-menu-dw">
+<DIV class="ibm-ribbon-pane-dw">
+<DIV class="ibm-ribbon-section-dw"><!-- Sign-in -->
+<DIV class="dw-mast-columns">
+<DIV class="dw-mast-col-1-1">
+<DIV id="dw-mast-sso">
+<DIV id="signin_error_mf" class="dw-mf-hide"></DIV>
+<DIV id="dw-mast-sso-form">
+<FORM id="sForm_mf" onsubmit="return false;" method="post" name="sForm_name_mf" 
+action="">
+<DIV id="dw-mast-sso-id" class="dw-mast-sso-id-en"><LABEL for="ibmid_mf">IBM 
+ID:</LABEL><INPUT id="ibmid_mf" onkeypress="handleEP(event,this.form,'mf');" 
+name="ibmid_name_mf" maxLength="100" type="text"></DIV>
+<DIV id="dw-mast-sso-pw" class="dw-mast-sso-pw-en"><LABEL 
+for="pw_mf">Password:</LABEL><INPUT id="pw_mf" onkeypress="handleEP(event,this.form,'mf');" 
+name="pw_name_mf" maxLength="100" type="password"></DIV>
+<DIV id="dw-mast-sso-target" class="dw-mast-sso-target-en">
+<P class="dw-mf-perm-box"><INPUT id="perm_mf" name="perm_name_mf" type="checkbox"><LABEL 
+for="perm_mf"> Keep me signed in.</LABEL></P></DIV>
+<DIV id="dw-mast-sso-terms">
+<P class="dw-mast-sso-terms-en">By clicking <STRONG>Submit</STRONG>, you agree 
+to the <A 
+href="https://www.ibm.com/developerworks/community/terms/">developerWorks terms 
+of use</A>.</P></DIV>
+<DIV><INPUT class="dw-mf-submit-btn" onclick="signin('mf');return false;" name="ibm_submit_name_mf" value="Submit" type="submit"></DIV></FORM></DIV>
+<DIV id="dw-mast-sso-update">
+<DIV id="dw-mast-sso-update-id">
+<UL>
+  <LI><A class="ibm-forward-link" onclick="(function () {window.location='/developerworks/dwwi/DWAuthRouter?m=reg&amp;lang=en&amp;d='+encodeURIComponent(location.href);})();" 
+  href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/#">Need 
+  an IBM ID?</A></LI>
+  <LI><A class="ibm-forward-link" href="http://www.ibm.com/developerworks/dwwi/jsp/WSHelp.jsp?lang=en_US">Forgot 
+  your IBM ID?</A></LI></UL></DIV>
+<DIV id="dw-mast-sso-update-pw">
+<UL class="dw-mf-pwupdate">
+  <LI><A class="ibm-forward-link" onclick="(function () {window.location='https://www.ibm.com/account/profile?page=forgot&amp;lang=en_US&amp;appname=ibm&amp;required=null&amp;d='+encodeURIComponent(getAuthUrl())+'%3Fm%3Dloginpage%26lang%3Den_US%26d%3D'+encodeURIComponent(location.href);})();" 
+  href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/#">Forgot 
+  your password?</A></LI>
+  <LI><A class="ibm-forward-link" onclick="(function () {window.location='https://www.ibm.com/account/profile?page=chpw&amp;lang=en_US&amp;appname=ibm&amp;required=null&amp;d='+encodeURIComponent(location.href);})();" 
+  href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/#">Change 
+  your password</A></LI></UL></DIV></DIV>
+<DIV id="dw-mast-sso-text">
+<P>The first time you sign into developerWorks, a <STRONG>profile</STRONG> is 
+created for you.  <STRONG>Select information in your developerWorks profile is 
+displayed to the public, but you may edit the information at any time.</STRONG>  
+Your first name, last name (unless you choose to hide them), and display name 
+will accompany the content that you post.</P>
+<P class="dw-mf-secure">All information submitted is secure.</P></DIV>
+<DIV class="dw-mast-close">
+<UL>
+  <LI>
+  <DIV class="dw-mast-close-sign"><A href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/#"><IMG 
+  border="0" alt="Close [x]" src="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/c.gif" 
+  width="20" height="10"></A></DIV></LI></UL></DIV></DIV>
+<DIV id="dw-mast-dname" class="dw-mf-hide">
+<P>The first time you sign in to developerWorks, a profile is created for you, 
+so you need to choose a display name.  Your display name accompanies the content 
+you post on developerworks.</P>
+<P><STRONG>Please choose a display name between 3-31 characters</STRONG>.  Your 
+display name must be unique in the developerWorks community and should not be 
+your email address for privacy reasons.</P>
+<DIV id="signin_dname_error_mf" class="dw-mf-hide"></DIV>
+<DIV id="dw-mast-dname-form">
+<FORM id="dForm_mf" onsubmit="return false;" method="post" name="dForm_name_mf" 
+action="">
+<DIV id="dw-mast-dname-mf"><LABEL for="dname_mf">Display name:</LABEL><INPUT id="dname_mf" 
+onkeypress="handleEP(event,this.form,'mf');" name="dname_name_mf" maxLength="31" 
+size="25" type="text"></DIV>
+<DIV id="dw-mast-dname-terms">
+<P>By clicking <STRONG>Submit</STRONG>, you agree to the <A href="https://www.ibm.com/developerworks/community/terms/">developerWorks 
+terms of use</A>.</P></DIV>
+<DIV><INPUT class="dw-mf-submit-btn" onclick="signin('mf');return false;" name="dname_submit_name_mf" value="Submit" type="submit"></DIV></FORM></DIV>
+<DIV id="dw-mast-dname-secure">
+<P class="dw-mf-secure">All information submitted is secure.</P></DIV>
+<DIV class="dw-mast-close">
+<UL>
+  <LI>
+  <DIV class="dw-mast-close-sign"><A href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/#"><IMG 
+  border="0" alt="Close [x]" src="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/c.gif" 
+  width="20" height="10"></A></DIV></LI></UL></DIV></DIV>
+<DIV id="dw-mast-auth" class="dw-mf-hide">
+<DIV>
+<H2>My developerWorks:</H2>
+<UL>
+  <LI><A id="dw-mast-top-0-0" href="http://www.ibm.com/developerworks/mydeveloperworks/profiles/html/myProfileView.do?lang=en">My 
+  profile</A></LI>
+  <LI><A href="http://www.ibm.com/developerworks/mydeveloperworks/homepage?lang=en">My 
+  home</A></LI>
+  <LI><A href="http://www.ibm.com/developerworks/mydeveloperworks/groups/service/html/mycommunities?lang=en">My 
+  groups</A></LI></UL></DIV>
+<DIV id="dw-mast-notify" class="dw-mf-hide">
+<H2>My notifications:</H2>
+<UL>
+  <LI><A id="new_notify" href="http://www.ibm.com/developerworks/mydeveloperworks/homepage?lang=en">{[num_notify] 
+  new notifications}([num_notify] new notification)</A></LI>
+  <LI><A id="new_invite" href="http://www.ibm.com/developerworks/mydeveloperworks/profiles/html/wc.do?action=in&amp;requireAuth=true&amp;widgetId=friends&amp;lang=[lang]">{[num_invite] 
+  network requests}([num_invite] network request)</A></LI></UL></DIV>
+<DIV class="dw-mast-more">
+<UL class="ibm-link-list">
+  <LI><A class="dw-more-link" onclick="signOut(); return false;" href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/#"><STRONG>Sign 
+  out</STRONG></A></LI></UL></DIV>
+<DIV class="dw-mast-close">
+<UL>
+  <LI>
+  <DIV class="dw-mast-close-sign"><A href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/#"><IMG 
+  border="0" alt="Close [x]" src="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/c.gif" 
+  width="20" height="10"></A></DIV></LI></UL></DIV></DIV></DIV></DIV><!-- Language selector -->
+<DIV class="dw-mast-columns">
+<DIV class="dw-mast-col-2-1">
+<H2>Select a language:</H2>
+<UL>
+  <LI><A id="dw-mast-top-1-0" 
+  href="http://www.ibm.com/developerworks/">English</A></LI>
+  <LI><A href="http://www.ibm.com/developerworks/cn/">中文</A></LI>
+  <LI><A href="http://www.ibm.com/developerworks/jp/">日本語</A></LI>
+  <LI><A href="http://www.ibm.com/developerworks/ru/">Русский</A></LI></UL></DIV>
+<DIV class="dw-mast-col-2-2">
+<UL>
+  <LI><A href="http://www.ibm.com/developerworks/br/">Português 
+(Brasil)</A></LI>
+  <LI><A href="http://www.ibm.com/developerworks/ssa/">Español</A></LI>
+  <LI><A href="http://www.ibm.com/developerworks/vn/">Việt</A></LI></UL></DIV>
+<DIV class="dw-mast-close">
+<UL>
+  <LI>
+  <DIV class="dw-mast-close-lang"><A href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/#"><IMG 
+  border="0" alt="Close [x]" src="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/c.gif" 
+  width="20" height="10"></A></DIV></LI></UL></DIV></DIV>
+<DIV class="dw-mast-columns"><!-- Authenticated --></DIV><!-- IBM -->
+<DIV class="dw-mast-columns">
+<DIV class="dw-mast-col-2-1">
+<UL>
+  <LI><A id="dw-mast-top-3-0" href="http://www.ibm.com/">IBM home</A></LI>
+  <LI><A href="http://www.ibm.com/solutions/">Solutions</A></LI>
+  <LI><A href="http://www.ibm.com/software/">Software</A></LI>
+  <LI><A href="http://www.ibm.com/software/sw-services/">Software 
+  services</A></LI></UL></DIV>
+<DIV class="dw-mast-col-2-2 dw-mast-ibm">
+<UL>
+  <LI><A href="http://www.ibm.com/support/">Support</A></LI>
+  <LI><A 
+  href="http://www.ibm.com/support/publications/us/library/index.shtml">Product 
+  information</A></LI>
+  <LI><A href="http://www.ibm.com/redbooks/">Redbooks</A></LI></UL></DIV>
+<DIV class="dw-mast-close">
+<UL>
+  <LI>
+  <DIV class="dw-mast-close-ibm"><A href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/#"><IMG 
+  border="0" alt="Close [x]" src="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/c.gif" 
+  width="20" height="10"></A></DIV></LI></UL></DIV></DIV></DIV></DIV></DIV><!-- BOTTOM ROW -->
+<DIV id="ibm-universal-nav-dw">
+<UL id="ibm-unav-links-dw">
+  <LI id="ibm-unav-home-dwlogo"><A 
+  href="http://www.ibm.com/developerworks/"><IMG alt="developerWorks®" src="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/dw-wordmark.gif" 
+  width="218" height="32"></A></LI></UL>
+<UL id="ibm-menu-links-dw">
+  <LI id="dw-mast-nav-0"><A 
+  href="http://www.ibm.com/developerworks/topics/">Technical topics</A></LI>
+  <LI id="dw-mast-nav-1"><A 
+  href="http://www.ibm.com/developerworks/downloads/">Evaluation 
+  software</A></LI>
+  <LI id="dw-mast-nav-2"><A 
+  href="http://www.ibm.com/developerworks/community/">Community</A></LI>
+  <LI id="dw-mast-nav-3"><A 
+  href="http://www.ibm.com/developerworks/events/">Events</A></LI></UL>
+<FORM id="ibm-search-form" method="get" name="form1" action="//www.ibm.com/search/csass/search/"><INPUT 
+name="sn" value="dw" type="hidden"><INPUT name="lang" value="en" 
+type="hidden"><INPUT name="cc" value="US" type="hidden"><INPUT name="en" value="utf" 
+type="hidden"><INPUT name="hpp" value="20" type="hidden"><INPUT name="dws" 
+value="dw" type="hidden">
+<P><LABEL for="q"><IMG alt="Search developerWorks" src="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/c.gif" 
+width="1" height="1"></LABEL><INPUT id="q" name="q" maxLength="100" value="Search developerWorks" 
+type="text"><INPUT id="ibm-search" class="ibm-btn-search" name="Search" value="Search" type="submit"></P></FORM></DIV><!-- BOTTOM ROW SLIDER -->
+<DIV id="ibm-common-menu-dw">
+<DIV class="ibm-ribbon-pane-dw dw-ribbon-pane-en">
+<DIV class="ibm-ribbon-section-dw"><!-- Technical topics category -->
+<DIV class="dw-mast-columns">
+<DIV class="dw-mast-col-5-1">
+<H2><A id="dw-mast-nav-0-0" 
+href="http://www.ibm.com/developerworks/topics/">Technical topics</A></H2>
+<UL>
+  <LI><A href="http://www.ibm.com/developerworks/connect/agile/">Agile 
+  transformation</A></LI>
+  <LI><A href="http://www.ibm.com/developerworks/aix/">AIX and UNIX</A></LI>
+  <LI><A href="http://www.ibm.com/developerworks/analytics/">Business 
+  analytics</A></LI>
+  <LI><A href="http://www.ibm.com/developerworks/bpm/">Business process 
+  management</A></LI>
+  <LI><A href="http://www.ibm.com/developerworks/cloud/">Cloud 
+computing</A></LI>
+  <LI><A 
+href="http://www.ibm.com/developerworks/commerce/">Commerce</A></LI></UL></DIV>
+<DIV class="dw-mast-col-5-2">
+<UL>
+  <LI><A href="http://www.ibm.com/developerworks/ibmi/">IBM i</A></LI>
+  <LI><A href="http://www.ibm.com/developerworks/industry/">Industries</A></LI>
+  <LI><A href="http://www.ibm.com/developerworks/data/">Information 
+  management</A></LI>
+  <LI><A href="http://www.ibm.com/developerworks/java/">Java technology</A></LI>
+  <LI><A href="http://www.ibm.com/developerworks/linux/">Linux</A></LI>
+  <LI><A href="http://www.ibm.com/developerworks/lotus/">Lotus</A></LI></UL></DIV>
+<DIV class="dw-mast-col-5-3">
+<UL>
+  <LI><A href="http://www.ibm.com/developerworks/mobile/">Mobile 
+  development</A></LI>
+  <LI><A href="http://www.ibm.com/developerworks/opensource/">Open 
+  source</A></LI>
+  <LI><A href="http://www.ibm.com/developerworks/rational/">Rational</A></LI>
+  <LI><A href="http://www.ibm.com/developerworks/security/">Security</A></LI>
+  <LI><A href="http://www.ibm.com/developerworks/servicemanagement/">Service 
+  management</A></LI>
+  <LI><A href="http://www.ibm.com/developerworks/webservices/">SOA and web 
+  services</A></LI></UL></DIV>
+<DIV class="dw-mast-col-5-4">
+<UL>
+  <LI><A href="http://www.ibm.com/developerworks/tivoli/">Tivoli</A></LI>
+  <LI><A href="http://www.ibm.com/developerworks/web/">Web development</A></LI>
+  <LI><A href="http://www.ibm.com/developerworks/websphere/">WebSphere</A></LI>
+  <LI><A href="http://www.ibm.com/developerworks/xml/">XML</A></LI></UL></DIV>
+<DIV class="dw-mast-col-5-5">
+<UL>
+  <LI><A href="http://www.ibm.com/developerworks/library/"><STRONG>Technical 
+  library</STRONG></A></LI>
+  <LI><A href="http://www.ibm.com/developerworks/products/"><STRONG>Products A 
+  to Z</STRONG></A></LI></UL></DIV>
+<DIV class="dw-mast-close">
+<UL>
+  <LI>
+  <DIV class="dw-mast-close-tech"><A href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/#"><IMG 
+  border="0" alt="Close [x]" src="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/c.gif" 
+  width="20" height="10"></A></DIV></LI></UL></DIV></DIV><!-- Evaluation software category -->
+<DIV class="dw-mast-columns">
+<DIV class="dw-mast-col-2-1">
+<H2><A id="dw-mast-nav-1-0" 
+href="http://www.ibm.com/developerworks/downloads/">Evaluation software</A></H2>
+<UL>
+  <LI><A href="http://www.ibm.com/developerworks/downloads/#data">Information 
+  management</A></LI>
+  <LI><A 
+href="http://www.ibm.com/developerworks/downloads/#lotus">Lotus</A></LI>
+  <LI><A 
+  href="http://www.ibm.com/developerworks/downloads/#rational">Rational</A></LI></UL></DIV>
+<DIV class="dw-mast-col-2-2">
+<UL>
+  <LI><A 
+  href="http://www.ibm.com/developerworks/downloads/#tivoli">Tivoli</A></LI>
+  <LI><A 
+  href="http://www.ibm.com/developerworks/downloads/#websphere">WebSphere</A></LI>
+  <LI><A href="http://www.ibm.com/developerworks/downloads/#more">More IBM 
+  products</A></LI></UL></DIV>
+<DIV class="dw-mast-close">
+<UL>
+  <LI>
+  <DIV class="dw-mast-close-eval"><A href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/#"><IMG 
+  border="0" alt="Close [x]" src="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/c.gif" 
+  width="20" height="10"></A></DIV></LI></UL></DIV></DIV><!-- Community category -->
+<DIV class="dw-mast-columns">
+<DIV class="dw-mast-col-3-1">
+<H2><A id="dw-mast-nav-2-0" href="http://www.ibm.com/developerworks/community/?lang=en">Community</A></H2>
+<UL>
+  <LI><A 
+  href="https://www.ibm.com/developerworks/community/homepage/?lang=en">My 
+  home</A></LI>
+  <LI><A 
+  href="https://www.ibm.com/developerworks/community/profiles/?lang=en">Profiles</A></LI>
+  <LI><A 
+  href="https://www.ibm.com/developerworks/community/groups/?lang=en">Groups</A></LI>
+  <LI><A 
+  href="https://www.ibm.com/developerworks/community/blogs/?lang=en">Blogs</A></LI>
+  <LI><A 
+  href="https://www.ibm.com/developerworks/community/bookmarks/?lang=en">Bookmarks</A></LI></UL></DIV>
+<DIV class="dw-mast-col-3-2">
+<UL>
+  <LI><A href="https://www.ibm.com/developerworks/forums/">Forums</A></LI>
+  <LI><A href="https://www.ibm.com/developerworks/mydeveloperworks/wikis/?lang=en">Wikis</A></LI>
+  <LI><A 
+  href="https://www.ibm.com/developerworks/community/files/?lang=en">Files</A></LI>
+  <LI><A 
+  href="https://www.ibm.com/developerworks/community/activities/?lang=en">Activities</A></LI>
+  <LI><A 
+  href="https://www.ibm.com/developerworks/community/podcasts/?lang=en">Podcasts</A></LI></UL></DIV>
+<DIV class="dw-mast-col-3-3 dw-mast-col-3-3-en">
+<UL>
+  <LI><A href="http://www.ibm.com/developerworks/champion/">IBM Champion 
+  program</A></LI></UL></DIV>
+<DIV class="dw-mast-close">
+<UL>
+  <LI>
+  <DIV class="dw-mast-close-comm"><A href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/#"><IMG 
+  border="0" alt="Close [x]" src="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/c.gif" 
+  width="20" height="10"></A></DIV></LI></UL></DIV></DIV><!-- Events category -->
+<DIV class="dw-mast-columns">
+<DIV class="dw-mast-col-1-1">
+<H2><A id="dw-mast-nav-3-0" 
+href="http://www.ibm.com/developerworks/events/">Events</A></H2>
+<UL>
+  <LI><A href="http://www.ibm.com/developerworks/briefings/">Briefings</A></LI>
+  <LI><A 
+  href="http://www.ibm.com/developerworks/find/webcasts/">Webcasts</A></LI>
+  <LI><A href="http://www.ibm.com/developerworks/find/events/">Find events 
+  (briefings, webcasts, conferences...)</A></LI></UL></DIV>
+<DIV class="dw-mast-close">
+<UL>
+  <LI>
+  <DIV class="dw-mast-close-event"><A href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/#"><IMG 
+  border="0" alt="Close [x]" src="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/c.gif" 
+  width="20" height="10"></A></DIV></LI></UL></DIV></DIV></DIV></DIV></DIV></DIV>
+<DIV id="fdiv" class="ibm-access"></DIV><!-- MASTHEAD_END --><!-- MASTHEAD_END -->
+<DIV id="ibm-pcon"><!-- CONTENT_BEGIN -->
+<DIV id="ibm-content"><!-- Navigation_Trail_BEGIN --><!-- &nbsp; -->
+<DIV id="ibm-content-head">
+<UL id="ibm-navigation-trail">
+  <LI class="ibm-first"><A 
+  href="http://www.ibm.com/developerworks/">developerWorks</A></LI>
+  <LI><A href="http://www.ibm.com/developerworks/topics/">Technical 
+  topics</A></LI>
+  <LI><A href="http://www.ibm.com/developerworks/webservices/">SOA and web 
+  services</A></LI>
+  <LI><A href="http://www.ibm.com/developerworks/webservices/library/">Technical 
+  library</A></LI></UL></DIV><!-- Navigation_Trail_END --><!-- dW_Summary Area_START -->
+<DIV id="dw-summary-article">
+<DIV class="dw-content-head">
+<H1>Web services hints and tips: JAX-RPC versus JAX-WS, Part 3</H1>
+<P><EM>The service endpoint interface</EM></P></DIV>
+<DIV class="ibm-container-body ibm-two-column">
+<DIV class="ibm-column ibm-first">
+<DIV class="author"><A class="dwauthor" href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/#author1" 
+rel="#authortip1">Russell Butek</A> (<A href="mailto:butek@us.ibm.com?subject=JAX-RPC versus JAX-WS, Part 3">mailto:butek@us.ibm.com?subject=JAX-RPC 
+versus JAX-WS, Part 3</A>), IT Specialist, IBM</DIV>
+<DIV id="authortip1" class="dwauthor-onload-state ibm-no-print">Russell Butek is 
+an IBM SOA and web services consultant.  He has been one of the developers of 
+the IBM WebSphere web services engine. He has also been a member the JAX-RPC 
+Java Specification Request (JSR) expert group. He was involved in the 
+implementation of Apache's AXIS SOAP engine, driving AXIS 1.0 to comply with 
+JAX-RPC.<BR>(An IBM developerWorks Contributing Author)</DIV>
+<DIV class="author"><A class="dwauthor" href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/#author2" 
+rel="#authortip2">Nicholas Gallardo</A>, Staff Software Engineer, IBM</DIV>
+<DIV id="authortip2" class="dwauthor-onload-state ibm-no-print">Nick Gallardo 
+works as a software engineer on the IBM WebSphere platform, focusing on various 
+aspects of the Web services--most recently, the JAX-WS support. His previous 
+work in IBM includes other assignments within the WebSphere and Tivoli 
+platforms. Nick came to IBM in 2001 after working in development in two 
+different technology start-ups in Austin, Texas.</DIV>
+<P></P>
+<P><STRONG>Summary:</STRONG>&nbsp; This third part of the series about Java™ API 
+for XML-based RPC (JAX-RPC) 1.1 and Java API for XML Web Services (JAX-WS) 2.0   
+   compares the mapping of Web Services Description Language (WSDL) to a service 
+     endpoint interface (SEI). The concept of an      SEI was first introduced 
+in JAX-RPC 1.0 and has been maintained in JAX-WS 2.0, with      some additions. 
+This tip walks you through the major      differences.</P>
+<P class="ibm-no-print"><A href="http://www.ibm.com/developerworks/search/searchResults.jsp?searchType=1&amp;searchSite=dW&amp;searchScope=webservZ&amp;query=Web+services+hints+and+tips%3A+JAX-RPC+JAX-WS&amp;Search.x=42&amp;Search.y=11&amp;Search=Search">View 
+more content in this series</A></P></DIV>
+<DIV class="ibm-column ibm-second">
+<P class="leading"><STRONG>Date:</STRONG>&nbsp; 13 Jun 2007<BR><STRONG>Level: 
+</STRONG>&nbsp;Intermediate<BR><STRONG>Also available in:&nbsp;</STRONG>&nbsp;<A 
+href="http://www.ibm.com/developerworks/cn/webservices/ws-tip-jaxwsrpc3/">Chinese</A>
+&nbsp;<A 
+href="http://www.ibm.com/developerworks/kr/library/ws-tip-jaxwsrpc3/">Korean</A><BR>
+<BR><STRONG>Activity:</STRONG>&nbsp; 38089 views<BR><STRONG>Comments:</STRONG> 
+&nbsp; <SPAN id="nCmts"><IMG alt="" src="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/circle-preloader.gif" 
+width="50" height="12"><IMG alt="" src="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/c.gif" 
+width="1" height="14"></SPAN><!-- Rating_Area_Begin -->
+<DIV id="art-rating-summary"></DIV><!-- Rating_Area_End -->
+<P></P></DIV></DIV></DIV><!-- dW_Summary_Area_END --><!-- CONTENT_BODY -->
+<DIV id="ibm-content-body"><!-- MAIN_COLUMN_BEGIN -->
+<DIV id="ibm-content-main"><!-- Related_Searches_Area --><!-- Related_Searches_Area_Begin -->
+<SCRIPT language="javascript" type="text/javascript">
+	     capture_referrer();
+</SCRIPT>
+
+<DIV style="display: none;" id="dw-related-searches-article">
+<DIV class="ibm-container ibm-alternate-two">
+<DIV class="ibm-container-body"><!--  START : HTML FOR ARTICLE SEARCH -->
+<DIV style="display: block;" id="article_results"></DIV><!--  END : HTML FOR ARTICLE SEARCH --></DIV>
+</DIV></DIV><!-- Related_Searches_Area_End --><!-- MAIN_COLUMN_CONTAINER_BEGIN -->
+<DIV class="ibm-container"><!-- MAIN_COLUMN_CONTENT_BEGIN -->
+<P><A name="N10068"><SPAN class="atitle">Introduction</SPAN></A></P>
+<DIV class="ibm-container dw-container-sidebar">
+<H2>Develop skills on this topic</H2>
+<DIV class="ibm-container-body dw-sidebar-custom">
+<P>This content is part of a progressive knowledge path for advancing your 
+skills.  See <A href="http://www.ibm.com/developerworks/training/kp/j-kp-jaxws/index.html">Building 
+and deploying JAX-WS web services</A></P></DIV></DIV>
+<P>Overall, the structures of a Java API for XML-based RPC (JAX-RPC) 1.1 service 
+       endpoint interface (SEI) and a Java API for XML Web Services (JAX-WS) 2.0 
+SEI are very        similar. This article addresses the differences. Even with 
+differences in        structure, however, the goal of providing an interface 
+that reflects the contract        of the Web service is the same.</P>
+<P><A name="N10081"><SPAN class="atitle">Comparing SEI mapping</SPAN></A></P>
+<P>Listing 1 shows the WSDL for a simple HelloWorld Web service.</P><BR><A name="listing1"><STRONG>Listing 
+1. HelloWorld WSDL</STRONG></A><BR>
+<TABLE border="0" cellSpacing="0" summary="This table contains a code listing." 
+cellPadding="0" width="70%">
+  <TBODY>
+  <TR>
+    <TD class="code-outline"><PRE class="displaycode">                
+  &lt;?xml version="1.0" encoding="UTF-8"?&gt;
+      &lt;wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+      xmlns:tns="urn:helloWorld/sample/ibm/com"
+      xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="HelloWorld"
+      targetNamespace="urn:helloWorld/sample/ibm/com"&gt;
+  &lt;wsdl:types&gt;
+    &lt;xsd:schema targetNamespace="urn:helloWorld/sample/ibm/com"
+        xmlns:tns="urn:helloWorld/sample/ibm/com"
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+      &lt;xsd:element name="hello"&gt;
+        &lt;xsd:complexType&gt;
+          &lt;xsd:sequence&gt;
+            &lt;xsd:element name="name" nillable="true" type="xsd:string" /&gt;
+          &lt;/xsd:sequence&gt;
+        &lt;/xsd:complexType&gt;
+      &lt;/xsd:element&gt;
+      &lt;xsd:element name="helloResponse"&gt;
+        &lt;xsd:complexType&gt;
+          &lt;xsd:sequence&gt;
+            &lt;xsd:element name="response" nillable="true" type="xsd:string" /&gt;
+          &lt;/xsd:sequence&gt;
+        &lt;/xsd:complexType&gt;
+      &lt;/xsd:element&gt;
+    &lt;/xsd:schema&gt;
+  &lt;/wsdl:types&gt;
+  &lt;wsdl:message name="helloRequestMsg"&gt;
+    &lt;wsdl:part element="tns:hello" name="helloParameters" /&gt;
+  &lt;/wsdl:message&gt;
+  &lt;wsdl:message name="helloResponseMsg"&gt;
+    &lt;wsdl:part element="tns:helloResponse" name="helloResult" /&gt;
+  &lt;/wsdl:message&gt;
+  &lt;wsdl:portType name="HelloWorld"&gt;
+    &lt;wsdl:operation name="hello"&gt;
+      &lt;wsdl:input message="tns:helloRequestMsg" name="helloRequest" /&gt;
+      &lt;wsdl:output message="tns:helloResponseMsg" name="helloResponse" /&gt;
+    &lt;/wsdl:operation&gt;
+  &lt;/wsdl:portType&gt;
+  &lt;wsdl:binding name="HelloWorldBinding" type="tns:HelloWorld"&gt;
+    &lt;soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" /&gt;
+    &lt;wsdl:operation name="hello"&gt;
+      &lt;soap:operation soapAction="urn:helloWorld/sample/ibm/com/hello" /&gt;
+      &lt;wsdl:input name="helloRequest"&gt;
+        &lt;soap:body use="literal" /&gt;
+      &lt;/wsdl:input&gt;
+      &lt;wsdl:output name="helloResponse"&gt;
+        &lt;soap:body use="literal" /&gt;
+      &lt;/wsdl:output&gt;
+    &lt;/wsdl:operation&gt;
+  &lt;/wsdl:binding&gt;
+  &lt;wsdl:service name="HelloWorldService"&gt;
+    &lt;wsdl:port name="port" binding="tns:HelloWorldBinding"&gt;
+      &lt;soap:address location="http://tempuri.org/" /&gt;
+    &lt;/wsdl:port&gt;
+  &lt;/wsdl:service&gt;
+&lt;/wsdl:definitions&gt;</PRE></TD></TR></TBODY></TABLE><BR>
+<P>Listing 2 shows the JAX-RPC mapping of the Java SEI from this WSDL without 
+the        method signatures (you will see more about those later). </P><BR><A 
+name="listing2"><STRONG>Listing 2. JAX-RPC HelloWorld SEI</STRONG></A><BR>
+<TABLE border="0" cellSpacing="0" summary="This table contains a code listing." 
+cellPadding="0" width="70%">
+  <TBODY>
+  <TR>
+    <TD class="code-outline"><PRE class="displaycode">                
+package com.ibm.samples;
+public interface HelloWorld extends java.rmi.Remote {
+...
+}</PRE></TD></TR></TBODY></TABLE><BR>
+<P>Listing 3 shows the JAX-WS SEI for the same WSDL.</P><BR><A 
+name="listing3"><STRONG>Listing 3. JAX-WS HelloWorld SEI</STRONG></A><BR>
+<TABLE border="0" cellSpacing="0" summary="This table contains a code listing." 
+cellPadding="0" width="70%">
+  <TBODY>
+  <TR>
+    <TD class="code-outline"><PRE class="displaycode">                
+package com.ibm.samples.helloworld;
+
+import javax.jws.WebService;
+
+@WebService(name = "HelloWorld", targetNamespace = "urn:samples.ibm.com/HelloWorld")
+public interface HelloWorld {
+  ...
+}</PRE></TD></TR></TBODY></TABLE><BR>
+<P>There are three differences here:</P>
+<UL>
+  <LI>Package:  The target namespace is "urn:helloWorld/sample/ibm/com". Both    
+          mappings take the domain name-like string and reverse the order of the 
+             elements. JAX-RPC's mapping stops at the first slash. JAX-WS's 
+  mapping            continues with the string, adding the information after the 
+  first slash. Both            specifications allow for custom 
+  namespace-to-package mappings.<BR><BR></LI>
+  <LI>Annotations:  JAX-WS requires that all SEIs include the            
+  <CODE>@WebService</CODE> annotation. As mentioned in            <A href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc.html">Part
+   1</A>            of this series, JAX-WS includes support for the annotations 
+  defined in JSR-181            Web Services Metadata.<BR><BR></LI>
+  <LI><CODE>java.rmi.Remote</CODE>:  The JAX-RPC SEI extends the 
+  <CODE>java.rmi.Remote</CODE>            interface. JAX-WS no longer requires 
+  this.        </LI></UL>
+<P>Before moving into the details of operation mappings, there is one last thing 
+about the SEI itself. Although JAX-WS provides support for Web        services 
+that have an SEI, this is not mandatory for all services. With JAX-WS, a        
+JavaBean can be deployed on its own as a Web service implementation, as opposed 
+to        JAX-RPC where the bean must include an SEI. JAX-WS services deployed   
+     without an SEI are considered to have an <EM>implicit SEI</EM>.</P>
+<DIV class="ibm-alternate-rule">
+<HR>
+</DIV>
+<P class="ibm-ind-link ibm-back-to-top"><A class="ibm-anchor-up-link" href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/#ibm-pcon">Back 
+to top</A></P>
+<P><A name="code-hd"><SPAN class="atitle">Comparing operation 
+mapping</SPAN></A></P>
+<P>Now that you have seen the interfaces, look at the comparison of how the 
+operations are mapped.        There are different ways of designing a WSDL 
+document to represent Web services that have similar semantics.        The 
+article <A href="http://www.ibm.com/developerworks/webservices/library/ws-whichwsdl/">Which 
+style of WSDL should I use?</A>                provides an overview of the 
+different styles of WSDL documents available          and how to determine which 
+is best for you.</P>
+<P>Now, look at how JAX-RPC and JAX-WS map to each of the WSDL styles.</P>
+<P><A name="N100EB"><SPAN class="smalltitle">Exploring the document/literal 
+wrapped        pattern</SPAN></A></P>
+<P>The WSDL in <A href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/#listing1">Listing 
+1</A> is formatted using the        document/literal wrapped pattern.        
+Listings 4 and 5 are mappings for the same wrapped operation in JAX-RPC and      
+  JAX-WS. Notice that JAX-WS adds the <CODE>@RequestWrapper</CODE> and        
+<CODE>@ResponseWrapper</CODE> annotations to the method. These        provide 
+additional metadata about both the elements that will serve as the        
+operation wrapper along with any Java beans that might have been generated for   
+     those wrapper elements. These annotations are optional.</P><BR><A name="listing4"><STRONG>Listing 
+4. JAX-RPC complete HelloWorld SEI</STRONG></A><BR>
+<TABLE border="0" cellSpacing="0" summary="This table contains a code listing." 
+cellPadding="0" width="70%">
+  <TBODY>
+  <TR>
+    <TD class="code-outline"><PRE class="displaycode">                
+package com.ibm.samples;
+
+public interface HelloWorld extends java.rmi.Remote {
+    public java.lang.String hello(java.lang.String name) throws java.rmi.RemoteException;
+}</PRE></TD></TR></TBODY></TABLE><BR><BR><A 
+name="listing5"><STRONG>Listing 5. JAX-WS complete HelloWorld 
+SEI</STRONG></A><BR>
+<TABLE border="0" cellSpacing="0" summary="This table contains a code listing." 
+cellPadding="0" width="70%">
+  <TBODY>
+  <TR>
+    <TD class="code-outline"><PRE class="displaycode">                
+package com.ibm.samples.helloworld;
+
+import javax.jws.WebMethod;
+import javax.jws.WebParam;
+import javax.jws.WebResult;
+import javax.jws.WebService;
+import javax.xml.ws.RequestWrapper;
+import javax.xml.ws.ResponseWrapper;
+
+@WebService(name = "HelloWorld", targetNamespace = "urn:samples.ibm.com/HelloWorld")
+public interface HelloWorld {
+
+    @WebMethod(action = "urn:samples.ibm.com/HelloWorld/hello")
+    @WebResult(name = "response", targetNamespace = "")
+    @RequestWrapper(localName = "hello",
+        targetNamespace = "urn:samples.ibm.com/HelloWorld", 
+        className = "com.ibm.samples.helloworld.Hello")
+    @ResponseWrapper(localName = "helloResponse", 
+        targetNamespace = "urn:samples.ibm.com/HelloWorld", 
+        className = "com.ibm.samples.helloworld.HelloResponse")
+    public String hello(
+        @WebParam(name = "name", targetNamespace = "")
+        String name);
+}</PRE></TD></TR></TBODY></TABLE><BR>
+<P>As you can see, the JAX-WS mapping again has a lot of annotations, but when 
+you        get down to the root signature, the only difference is that the 
+JAX-RPC method can        throw <CODE>java.rmi.RemoteException</CODE> while the 
+JAX-WS method        is not defined to do so.</P>
+<P><A name="N1011B"><SPAN class="smalltitle">Exploring document/literal 
+patterns</SPAN></A></P>
+<P>Both JAX-RPC and JAX-WS support mapping operations that are document/literal, 
+but        are not wrapped. To accomplish this with the HelloWorld sample, you 
+would need to remove the wrapper elements that represent the        operation 
+name. Listing 6 shows what the relevant portions of the WSDL document        
+would look like in comparison to the WSDL in <A href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/#listing1">Listing 
+1</A>.</P><BR><A name="listing6"><STRONG>Listing 6. Document/literal 
+WSDL</STRONG></A><BR>
+<TABLE border="0" cellSpacing="0" summary="This table contains a code listing." 
+cellPadding="0" width="70%">
+  <TBODY>
+  <TR>
+    <TD class="code-outline"><PRE class="displaycode">                
+&lt;wsdl:types&gt;
+  &lt;xsd:schema targetNamespace="urn:helloWorld/sample/ibm/com"
+   xmlns:tns="urn:helloWorld/sample/ibm/com"
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+      &lt;xsd:element name="hello" type="xsd:string"/&gt;
+      &lt;xsd:element name="helloResponse" type="xsd:string"/&gt;
+  &lt;/xsd:schema&gt;
+&lt;/wsdl:types&gt;
+
+&lt;wsdl:message name="helloRequestMsg"&gt;
+  &lt;wsdl:part element="tns:hello" name="helloParameters" /&gt;
+&lt;/wsdl:message&gt;
+
+&lt;wsdl:message name="helloResponseMsg"&gt;
+  &lt;wsdl:part element="tns:helloResponse" name="helloResult" /&gt;
+&lt;/wsdl:message&gt;
+</PRE></TD></TR></TBODY></TABLE><BR>
+<P>Now look at the Java mapping for this new WSDL. Listings 7 and 8 show the     
+   JAX-RPC and JAX-WS mappings respectively. Do you see how similar the JAX-RPC 
+mapping        is? The only difference is the parameter name. As with the 
+previous case, putting        the annotations aside, there is no real difference 
+between the JAX-RPC mapping and        the JAX-WS mapping.</P><BR><A name="listing7"><STRONG>Listing 
+7. JAX-RPC document/literal mapping</STRONG></A><BR>
+<TABLE border="0" cellSpacing="0" summary="This table contains a code listing." 
+cellPadding="0" width="70%">
+  <TBODY>
+  <TR>
+    <TD class="code-outline"><PRE class="displaycode">                
+public interface HelloWorld extends java.rmi.Remote {
+    public java.lang.String hello(java.lang.String helloParameters) 
+        throws java.rmi.RemoteException;
+}</PRE></TD></TR></TBODY></TABLE><BR><BR><A 
+name="listing8"><STRONG>Listing 8. JAX-WS document/literal 
+mapping</STRONG></A><BR>
+<TABLE border="0" cellSpacing="0" summary="This table contains a code listing." 
+cellPadding="0" width="70%">
+  <TBODY>
+  <TR>
+    <TD class="code-outline"><PRE class="displaycode">                
+@WebService(name = "HelloWorld", targetNamespace = "urn:helloWorld/sample/ibm/com")
+<STRONG>@SOAPBinding(parameterStyle = ParameterStyle.BARE)</STRONG>
+public interface HelloWorld {
+
+    @WebMethod(action = "urn:helloWorld/sample/ibm/com/hello")
+    @WebResult(name = "helloResponse", 
+        targetNamespace = "urn:helloWorld/sample/ibm/com", 
+        partName = "helloResult")
+    public String hello(
+        @WebParam(name = "hello", 
+            targetNamespace = "urn:helloWorld/sample/ibm/com", 
+            partName = "helloParameters")
+        String helloParameters);
+
+}</PRE></TD></TR></TBODY></TABLE><BR>
+<P>Notice that for JAX-WS, you no longer see the        
+<CODE>@RequestWrapper</CODE> and        <CODE>@ResponseWrapper</CODE> 
+annotations. Also note that a new        annotation appears at the interface 
+level as well,        <CODE>@SOAPBinding</CODE>. This annotation provides 
+information        about the parameter style. If absent, the default value for 
+the parameterStyle        attribute is wrapped, which would be like the WSDL in 
+<A href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/#listing1">Listing
+ 1</A>.</P>
+<P><A name="N1015F"><SPAN class="smalltitle">Exploring the RPC/literal 
+patterns</SPAN></A></P>
+<P>The next example is somewhat different from the previous two. With an 
+RPC/literal        style WSDL, the parts are defined in terms of types rather 
+than elements. Listing        9 contains the relevant WSDL 
+differences.</P><BR><A name="listing9"><STRONG>Listing 9.  RPC/literal WSDL 
+changes</STRONG></A><BR>
+<TABLE border="0" cellSpacing="0" summary="This table contains a code listing." 
+cellPadding="0" width="70%">
+  <TBODY>
+  <TR>
+    <TD class="code-outline"><PRE class="displaycode">                
+&lt;wsdl:types/&gt;
+
+&lt;wsdl:message name="helloRequestMsg"&gt;
+  &lt;wsdl:part name="helloParameters" type="xsd:string"/&gt;
+&lt;/wsdl:message&gt;
+
+&lt;wsdl:message name="helloResponseMsg"&gt;
+  &lt;wsdl:part name="helloResult" type="xsd:string"/&gt;
+&lt;/wsdl:message&gt;
+</PRE></TD></TR></TBODY></TABLE><BR>
+<P>The Java mappings in Listings 10 and 11 reflect the changes to the WSDL. 
+Again,        you see an identical mapping when the annotations are stripped 
+away.</P><BR><A name="listing10"><STRONG>Listing 10. JAX-RPC RPC/literal 
+mapping</STRONG></A><BR>
+<TABLE border="0" cellSpacing="0" summary="This table contains a code listing." 
+cellPadding="0" width="70%">
+  <TBODY>
+  <TR>
+    <TD class="code-outline"><PRE class="displaycode">                
+public interface HelloWorld extends java.rmi.Remote {
+    public java.lang.String hello(java.lang.String helloParameters)
+        throws java.rmi.RemoteException;
+}</PRE></TD></TR></TBODY></TABLE><BR><BR><A 
+name="listing11"><STRONG>Listing 11. JAX-WS RPC/Literal mapping</STRONG></A><BR>
+<TABLE border="0" cellSpacing="0" summary="This table contains a code listing." 
+cellPadding="0" width="70%">
+  <TBODY>
+  <TR>
+    <TD class="code-outline"><PRE class="displaycode">                
+@WebService(name = "HelloWorld", targetNamespace = "urn:helloWorld/sample/ibm/com")
+<STRONG>@SOAPBinding(style = Style.RPC)</STRONG>
+public interface HelloWorld {
+
+    @WebMethod(action = "urn:helloWorld/sample/ibm/com/hello")
+    @WebResult(name = "helloResult", partName = "helloResult")
+    public String hello(
+        @WebParam(name = "helloParameters", partName = "helloParameters")
+        String helloParameters);
+
+}</PRE></TD></TR></TBODY></TABLE><BR>
+<P>Comparing this JAX-WS interface to the previous, you see that the        
+<CODE>@SOAPBinding</CODE> annotation remains, but now it is not used        for 
+the parameter style, but rather the WSDL style.</P>
+<P><A name="N10193"><SPAN class="smalltitle">Exploring the RPC/encoded 
+patterns</SPAN></A></P>
+<P>There is no comparison for RPC/encoded style operations that can be made. 
+JAX-WS        does not support any mappings for WSDL documents that contain an 
+<EM>encoded</EM>        representation for the data. This comes from JAX-WS's 
+compliance with WS-I's Basic        Profile 1.1, which does not allow usage of 
+<EM>encoded</EM> WSDL documents. There are        good reasons to build an 
+RPC/encoded Web service, in which case you should stick        with the JAX-RPC 
+mappings, but if you want to write interoperable Web services,        you should 
+not use RPC/encoded.</P>
+<DIV class="ibm-alternate-rule">
+<HR>
+</DIV>
+<P class="ibm-ind-link ibm-back-to-top"><A class="ibm-anchor-up-link" href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/#ibm-pcon">Back 
+to top</A></P>
+<P><A name="N101A2"><SPAN class="atitle">Considering other 
+differences</SPAN></A></P>
+<P>A major difference in operation mapping for JAX-WS over JAX-RPC         is 
+the introduction of asynchronous operations. Any WSDL operation with a two-way   
+     message flow, or one where the client expects to receive a response, can be 
+mapped        to an asynchronous Java representation. There are two different 
+mechanisms,        asynchronous with a callback and asynchronous polling, that 
+require two different        mappings. A future article will describe how these 
+two types of operations work.        This article just shows you an example. 
+Listing 12        contains an asynchronous callback operation, where the        
+<CODE>javax.xml.ws.AsyncHandler</CODE> object is the callback        object. 
+Listing 13 contains an asynchronous polling operation mapping.</P><BR><A name="listing12"><STRONG>Listing 
+12. JAX-WS asynchronous callback</STRONG></A><BR>
+<TABLE border="0" cellSpacing="0" summary="This table contains a code listing." 
+cellPadding="0" width="70%">
+  <TBODY>
+  <TR>
+    <TD class="code-outline"><PRE class="displaycode">                
+@WebMethod(action = "urn:samples.ibm.com/HelloWorld/hello")
+@RequestWrapper(localName = "hello",
+    targetNamespace = "urn:samples.ibm.com/HelloWorld", 
+    className = "com.ibm.samples.helloworld.Hello")
+@ResponseWrapper(localName = "helloResponse", 
+    targetNamespace = "urn:samples.ibm.com/HelloWorld", 
+    className = "com.ibm.samples.helloworld.HelloResponse")
+public Future&lt;?&gt; helloAsync(
+    @WebParam(name = "name", targetNamespace = "")
+    String name,
+    @WebParam(name = "asyncHandler", targetNamespace = "")
+    AsyncHandler&lt;String&gt; asyncHandler);
+ </PRE></TD></TR></TBODY></TABLE><BR><BR><A 
+name="listing13"><STRONG>Listing 13. JAX-WS asynchronous 
+polling</STRONG></A><BR>
+<TABLE border="0" cellSpacing="0" summary="This table contains a code listing." 
+cellPadding="0" width="70%">
+  <TBODY>
+  <TR>
+    <TD class="code-outline"><PRE class="displaycode">                
+@WebMethod(action = "urn:samples.ibm.com/HelloWorld/hello")
+@RequestWrapper(localName = "hello", 
+    targetNamespace = "urn:samples.ibm.com/HelloWorld", 
+    className = "com.ibm.samples.helloworld.Hello")
+@ResponseWrapper(localName = "helloResponse", 
+    targetNamespace = "urn:samples.ibm.com/HelloWorld", 
+    className = "com.ibm.samples.helloworld.HelloResponse")
+public Response&lt;String&gt; helloAsync(
+    @WebParam(name = "name", targetNamespace = "")
+    String name);
+</PRE></TD></TR></TBODY></TABLE><BR>
+<P>There is no asynchronous mapping for WSDL operations in JAX-RPC, so you do 
+not have        anything to make a comparison to here. One important note, 
+however, is that the        asynchronous mappings only apply to the client side. 
+No such asynchronous mappings        exist for service endpoints, only for 
+clients.</P>
+<P><A name="N101C6"><SPAN class="smalltitle">Comparing IN/OUT 
+parameters</SPAN></A></P>
+<P>Both JAX-RPC and JAX-WS support parameters known as IN/OUT parameters. In 
+Listing        14, you see an IN/OUT parameter added to the WSDL from <A href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/#listing1">Listing
+ 1</A>. Notice that the        parameter with the name "inout" appears in both 
+the input and the output. In        this scenario, both JAX-RPC and JAX-WS map 
+that parameter to a holder        parameter, but the impact this has is 
+different for each mapping.</P><BR><A name="listing14"><STRONG>Listing 14. A 
+WSDL with an IN/OUT parameter</STRONG></A><BR>
+<TABLE border="0" cellSpacing="0" summary="This table contains a code listing." 
+cellPadding="0" width="70%">
+  <TBODY>
+  <TR>
+    <TD class="code-outline"><PRE class="displaycode">                
+&lt;xsd:element name="hello"&gt;
+  &lt;xsd:complexType&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element name="name" nillable="true" type="xsd:string" /&gt;
+      <STRONG>&lt;xsd:element name="inout" nillable="true" type="xsd:string" /&gt;</STRONG>
+    &lt;/xsd:sequence&gt;
+  &lt;/xsd:complexType&gt;
+&lt;/xsd:element&gt;
+
+&lt;xsd:element name="helloResponse"&gt;
+  &lt;xsd:complexType&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element name="response" nillable="true" type="xsd:string" /&gt;
+      <STRONG>&lt;xsd:element name="inout" nillable="true" type="xsd:string" /&gt;</STRONG>
+    &lt;/xsd:sequence&gt;
+  &lt;/xsd:complexType&gt;
+&lt;/xsd:element&gt;
+</PRE></TD></TR></TBODY></TABLE><BR>
+<P>Listing 15 has the JAX-RPC mapping for a holder parameter, and Listing 16 has 
+the        JAX-WS mapping.</P><BR><A name="listing15"><STRONG>Listing 15. 
+JAX-RPC SEI with IN/OUT parameters</STRONG></A><BR>
+<TABLE border="0" cellSpacing="0" summary="This table contains a code listing." 
+cellPadding="0" width="70%">
+  <TBODY>
+  <TR>
+    <TD class="code-outline"><PRE class="displaycode">                
+public interface HelloWorld extends java.rmi.Remote {
+    public java.lang.String hello(
+        java.lang.String name, 
+        <STRONG>javax.xml.rpc.holders.StringHolder inout</STRONG>) throws java.rmi.RemoteException;
+}</PRE></TD></TR></TBODY></TABLE><BR><BR><A 
+name="listing16"><STRONG>Listing 16. JAX-WS SEI with IN/OUT 
+parameters</STRONG></A><BR>
+<TABLE border="0" cellSpacing="0" summary="This table contains a code listing." 
+cellPadding="0" width="70%">
+  <TBODY>
+  <TR>
+    <TD class="code-outline"><PRE class="displaycode">                
+@WebService(name = "HelloWorld", targetNamespace = "urn:helloWorld/sample/ibm/com")
+public interface HelloWorld {
+
+    @WebMethod(action = "urn:helloWorld/sample/ibm/com/hello")
+    @RequestWrapper(localName = "hello", 
+        targetNamespace = "urn:helloWorld/sample/ibm/com", 
+        className = "helloworld.sample.ibm.com.Hello")
+    @ResponseWrapper(localName = "helloResponse", 
+        targetNamespace = "urn:helloWorld/sample/ibm/com", 
+        className = "helloworld.sample.ibm.com.HelloResponse")
+    public void hello(
+        @WebParam(name = "name", targetNamespace = "")
+        String name,
+        @WebParam(name = "inout", targetNamespace = "", mode = Mode.INOUT)
+        <STRONG>Holder&lt;String&gt; inout</STRONG>,
+        @WebParam(name = "response", targetNamespace = "", mode = Mode.OUT)
+        <STRONG>Holder&lt;String&gt; response</STRONG>);
+
+}</PRE></TD></TR></TBODY></TABLE><BR>
+<P>For JAX-RPC, there are a set of classes defined by the specification as 
+holder        classes for known types. These include types like        
+<CODE>java.lang.String</CODE> and other        primitive types. For user defined 
+types, JAX-RPC requires that custom holder        classes be generated that can 
+handle the user-defined types. JAX-WS, on the other        hand, makes use of 
+the Generics feature in Java 5 to provide a single class that        can work 
+for all types, including user-defined types.</P>
+<P>Another interesting thing to note here is the difference in return types.     
+   Rather than keeping the return type as JAX-RPC does, JAX-WS makes the method 
+void        and makes use of the holder for what was the return value. By rule 
+in JAX-WS, when        there is more than one parameter that can be considered 
+an OUT parameter for an        operation, the return type must be void, and all 
+OUT parameters are mapped to        holder types. </P>
+<DIV class="ibm-alternate-rule">
+<HR>
+</DIV>
+<P class="ibm-ind-link ibm-back-to-top"><A class="ibm-anchor-up-link" href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/#ibm-pcon">Back 
+to top</A></P>
+<P><A name="N1020D"><SPAN class="atitle">Summary</SPAN></A></P>
+<P>The above examples illustrate that, while there are a number of differences   
+     between JAX-RPC and JAX-WS, the mapping from WSDL to the structure of a 
+service        endpoint interface is very similar. The key differences are:</P>
+<UL>
+  <LI>The package names are different.<BR><BR></LI>
+  <LI>JAX-RPC requires java.rmi.Remote and java.rmi.RemoteException, which       
+   JAX-WS does not.<BR><BR></LI>
+  <LI>Holders are defined differently.</LI></UL>
+<P>Even with all the similarities that exist, there is one major difference that 
+       makes the JAX-WS SEI a very different entity from the JAX-RPC one. The 
+use of        JSR-181 annotations gives the JAX-WS SEI the capability to not 
+only represent the        Java-centric view of the Web service, but also the 
+WSDL-centric view. A number of        the annotations included are used to map 
+the Java information back to WSDL        constructs. This information does not 
+exist in any form in a JAX-RPC SEI. Some of        the other things that are 
+exclusive to JAX-WS are the asynchronous invocation        model and the fact 
+that it does not require a generated SEI in the first place. On        the other 
+hand, JAX-RPC has something that JAX-WS does not: it supports an        
+RPC/encoded WSDL.</P><!-- CMA ID: 230403 --> <!-- Site ID: 1 --> <!-- XSLT stylesheet used to transform this file: dw-document-html-6.0.xsl -->
+<BR>
+<P><A name="resources"><SPAN class="atitle">Resources</SPAN></A></P>
+<P><STRONG>Learn</STRONG></P>
+<UL>
+  <LI>Use an <A href="http://www.ibm.com/developerworks/views/rss/customrssatom.jsp?zone_by=Web+services&amp;type_by=Articles&amp;search_by=Web+services+hints+and+tips+JAX-RPC+JAX-WS&amp;day=1&amp;month=01&amp;year=2004&amp;max_entries=10&amp;feed_by=rss&amp;isGUI=true&amp;Submit.x=44&amp;Submit.y=10">RSS
+   feed</A> to request notification for the upcoming articles in this series. 
+  (Find out more about <A href="http://www.ibm.com/developerworks/rss/">RSS 
+  feeds of developerWorks content</A>.)      <BR><BR></LI>
+  <LI>Get the specification, API classes, and Javadocs        for <A href="http://java.sun.com/xml/downloads/jaxrpc.html">JAX-RPC 
+  1.1</A>.<BR><BR></LI>
+  <LI>Get the specification, API classes, and Javadocs        for <A href="http://jcp.org/aboutJava/communityprocess/pfd/jsr224/index.html">JAX-WS 
+  2.0</A>.<BR><BR></LI>
+  <LI>Learn about all the features of        <A href="http://java.sun.com/docs/books/jls/">Java 
+  5</A>.<BR><BR></LI>
+  <LI>Read the        <A href="http://www.w3.org/TR/wsdl">WSDL 1.1 
+  specification</A>.<BR><BR></LI>
+  <LI>Read the        <A href="http://www.w3.org/TR/soap12-part0/">SOAP version 
+  1.2 primer</A>.<BR><BR></LI>
+  <LI>Check out <A onmouseover="linkQueryAppend(this)" href="http://www.ibm.com/developerworks/webservices/library/ws-whichwsdl/">Which 
+  style  of WSDL should I use?</A> for details about WSDL styles.<BR><BR></LI>
+  <LI>You can begin to evaluate JAX-WS features with        the beta release of 
+  the        <A onmouseover="linkQueryAppend(this)" href="https://www14.software.ibm.com/iwm/web/cc/earlyprograms/websphere/wsvwas61/">IBM 
+  WebSphere Application Server Version 6.1 Feature Pack for Web 
+  Services</A>.<BR><BR></LI>
+  <LI>Visit <A href="http://www.ws-i.org/">WS-I's Web site</A>.<BR><BR></LI>
+  <LI>The        <A onmouseover="linkQueryAppend(this)" href="http://www.ibm.com/developerworks/webservices">SOA 
+  and Web services zone</A>        on IBM developerWorks hosts hundreds of 
+  informative articles and        introductory, intermediate, and advanced 
+  tutorials on how to develop Web services        applications.<BR><BR></LI>
+  <LI>The        <A onmouseover="linkQueryAppend(this)" href="http://www.ibm.com/software/solutions/soa/">IBM 
+  SOA Web site</A> offers        an overview of SOA and how IBM can help you get 
+  there.<BR><BR></LI>
+  <LI>Stay current with        <A onmouseover="linkQueryAppend(this)" href="http://www.ibm.com/developerworks/offers/techbriefings">developerWorks 
+  technical events and webcasts</A>.<BR><BR></LI>
+  <LI>Browse for books on these and other technical        topics at the        
+  <A onmouseover="linkQueryAppend(this)" href="http://safari.bvdep.com/?x=1&amp;portal=bvdep&amp;uicode=&amp;Key=&amp;GUID=D1F1DB57-50AF-4998-99-DA-6D-BB-A5-E0-E4-0B">Safari 
+  bookstore</A>.<BR><BR></LI></UL>
+<P><STRONG>Get products and technologies</STRONG></P>
+<UL>
+  <LI>Innovate your next        development project with        <A onmouseover="linkQueryAppend(this)" 
+  href="http://www.ibm.com/developerworks/downloads/">IBM trial software</A>,    
+      available for download or on DVD.<BR><BR></LI></UL>
+<P><STRONG>Discuss</STRONG></P>
+<UL>
+  <LI><A 
+  href="http://www.ibm.com/developerworks/forums/dw_wsforums.jsp">Participate in 
+  the discussion forum</A>.<BR><BR></LI>
+  <LI>Get involved in the developerWorks community        by participating in <A 
+  onmouseover="linkQueryAppend(this)" href="http://www.ibm.com/developerworks/blogs/">developerWorks 
+  blogs</A>.<BR><BR></LI></UL>
+<P><A name="author"><SPAN class="atitle">About the authors</SPAN></A></P>
+<DIV class="ibm-container ibm-portrait-module ibm-alternate-two">
+<DIV class="ibm-container-body"><A name="author1"> </A><IMG class="dw-author-level-img-alt" 
+alt="developerWorks Contributing author level" src="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/authorrecogbadge_cont_v3.jpg" 
+width="187" height="30">
+<P>Russell Butek is an IBM SOA and web services consultant.  He has been one of 
+the developers of the IBM WebSphere web services engine. He has also been a 
+member the JAX-RPC Java Specification Request (JSR) expert group. He was 
+involved in the implementation of Apache's AXIS SOAP engine, driving AXIS 1.0 to 
+comply with JAX-RPC.</P></DIV>
+<DIV class="ibm-container-body">
+<P><A name="author2"> </A>Nick Gallardo works as a software engineer on the IBM 
+WebSphere platform, focusing on various aspects of the Web services--most 
+recently, the JAX-WS support. His previous work in IBM includes other 
+assignments within the WebSphere and Tivoli platforms. Nick came to IBM in 2001 
+after working in development in two different technology start-ups in Austin, 
+Texas.</P></DIV></DIV><!-- MAIN_COLUMN_CONTENT_END --><!-- OVERLAYS_START --><!-- Report_Abuse_Start -->
+<DIV id="reportabuseoverlay" class="ibm-common-overlay ibm-no-print">
+<DIV class="ibm-head">
+<P><A class="ibm-common-overlay-close" href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/#">Close 
+[x]</A></P></DIV>
+<DIV class="ibm-body">
+<DIV class="ibm-main"><A class="ibm-access" name="reportabuseoverlay">Report 
+abuse help</A>
+<DIV class="ibm-title">
+<H1>Report abuse</H1></DIV>
+<DIV class="ibm-container ibm-alternate">
+<P><STRONG>Thank you.</STRONG>  This entry has been flagged for moderator 
+attention.</P>
+<DIV class="ibm-overlay-rule">
+<HR>
+</DIV>
+<DIV class="ibm-buttons-row"><INPUT class="ibm-btn-cancel-sec dw-btn-cancel-sec" onclick="ibmCommon.Overlays.hide('reportabuseoverlay');return false;" name="ibm-cancel" value="Close" type="button"></DIV></DIV></DIV></DIV>
+<DIV class="ibm-footer"></DIV></DIV><!-- Report_Abuse_Error_Start -->
+<DIV id="reportabuseoverlayerror" class="ibm-common-overlay ibm-no-print">
+<DIV class="ibm-head">
+<P><A class="ibm-common-overlay-close" href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/#">Close 
+[x]</A></P></DIV>
+<DIV class="ibm-body">
+<DIV class="ibm-main"><A class="ibm-access" 
+name="reportabuseoverlayerror">Report abuse help</A>
+<DIV class="ibm-title">
+<H1>Report abuse</H1></DIV>
+<DIV class="ibm-container ibm-alternate">
+<P class="ibm-ind-error"><STRONG>Report abuse submission failed.  Please try 
+again later.</STRONG></P>
+<DIV class="ibm-overlay-rule">
+<HR>
+</DIV>
+<DIV class="ibm-buttons-row"><INPUT class="ibm-btn-cancel-sec dw-btn-cancel-sec" onclick="ibmCommon.Overlays.hide('reportabuseoverlayerror');return false;" name="ibm-cancel" value="Close" type="button"></DIV></DIV></DIV></DIV>
+<DIV class="ibm-footer"></DIV></DIV><!-- Sign in OVERLAY STARTS HERE -->
+<DIV id="signin_overlay" class="ibm-common-overlay">
+<DIV class="ibm-head">
+<P><A class="ibm-common-overlay-close" onclick="clearForm();" href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/#">Close 
+[x]</A></P></DIV>
+<DIV class="ibm-body">
+<DIV class="ibm-main">
+<DIV class="ibm-title ibm-subtitle">
+<H1>developerWorks: Sign in</H1>
+<DIV id="ibm-overlay-error-signin" class="no-display"></DIV></DIV>
+<DIV class="ibm-container ibm-alternate ibm-buttons-last">
+<DIV class="ibm-container-body">
+<FORM id="sFormId" class="ibm-column-form" onsubmit="return false;" method="post" 
+name="sForm" action="">
+<P><LABEL for="ibmid">IBM ID:</LABEL><SPAN><INPUT id="ibmid" class="required" 
+onkeypress="handleEP(event,this.form);" name="ibm-id" size="25" 
+type="text"><BR><A class="ibm-forward-link" onclick="(function () {window.location='/developerworks/dwwi/DWAuthRouter?m=reg&amp;d='+encodeURIComponent(location.href);})();" 
+href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/#">Need 
+an IBM ID?</A><BR><A class="ibm-forward-link" href="http://www.ibm.com/developerworks/dwwi/jsp/WSHelp.jsp?lang=en_US">Forgot 
+your IBM ID?</A></SPAN></P>
+<P><LABEL for="password">Password:</LABEL><SPAN><INPUT id="password" class="required" 
+onkeypress="handleEP(event,this.form);" name="password" size="25" type="password"><BR><A 
+class="ibm-forward-link" onclick="(function () {window.location='https://www.ibm.com/account/profile?page=forgot&amp;lang=en_US&amp;appname=ibm&amp;required=null&amp;d='+encodeURIComponent(getAuthUrl())+'%3Fm%3Dloginpage%26lang%3Den_US%26d%3D'+encodeURIComponent(location.href);})();" 
+href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/#">Forgot 
+your password?</A><BR><A class="ibm-forward-link" onclick="(function () {window.location='https://www.ibm.com/account/profile?page=chpw&amp;lang=en_US&amp;appname=ibm&amp;required=null&amp;d='+encodeURIComponent(location.href);})();" 
+href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/#">Change 
+your password</A></SPAN></P>
+<P class="dw-perm-box"><SPAN><INPUT id="perm" name="perm_name" 
+type="checkbox"><LABEL for="perm"> Keep me signed in.</LABEL></SPAN></P>
+<P>By clicking <STRONG>Submit</STRONG>, you agree to the <A href="https://www.ibm.com/developerworks/community/terms/">developerWorks 
+terms of use</A>.</P>
+<DIV class="ibm-buttons-row">
+<P><INPUT class="ibm-btn-arrow-pri" onclick="signin();return false;" name="ibm-submit" value="Submit" type="submit"><SPAN 
+class="ibm-sep">&nbsp;</SPAN><INPUT class="ibm-btn-cancel-sec" onclick="clearForm();ibmCommon.Overlays.hide('signin_overlay');return false;" name="ibm-cancel" value="Cancel" type="button"></P>
+</DIV></FORM>
+<DIV class="ibm-overlay-rule">
+<HR>
+</DIV>
+<P>The first time you sign into developerWorks, a <STRONG>profile</STRONG> is 
+created for you.  <STRONG>Select information in your developerWorks profile is 
+displayed to the public, but you may edit the information at any time</STRONG>. 
+Your first name, last name (unless you choose to hide them), and display name 
+will accompany the content that you post.</P>
+<DIV class="dw-overlay-legal">
+<P>All information submitted is secure.</P></DIV></DIV></DIV></DIV></DIV>
+<DIV class="ibm-footer"></DIV></DIV><!-- Sign in OVERLAY ENDS HERE --><!-- Display name OVERLAY STARTS HERE -->
+<DIV id="displayname_overlay" class="ibm-common-overlay">
+<DIV class="ibm-head">
+<P><A class="ibm-common-overlay-close" onclick="clearForm();" href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/#">Close 
+[x]</A></P></DIV>
+<DIV class="ibm-body">
+<DIV class="ibm-main">
+<DIV class="ibm-title ibm-subtitle">
+<H1>Choose your display name</H1>
+<DIV id="ibm-overlay-error-dname" class="no-display"></DIV></DIV>
+<DIV class="ibm-container ibm-alternate ibm-buttons-last">
+<DIV class="ibm-container-body">
+<P class="ibm-overlay-intro">The first time you sign in to developerWorks, a 
+profile is created for you, so you need to choose a display name.  Your display 
+name accompanies the content you post on developerWorks.</P>
+<P><STRONG>Please choose a display name between 3-31 characters</STRONG>. Your 
+display name must be unique in the developerWorks community and should not be 
+your email address for privacy reasons.</P>
+<FORM id="dFormId" class="ibm-column-form" onsubmit="return false;" method="post" 
+name="dForm" action="">
+<P><LABEL for="displayname">Display name:</LABEL><SPAN><INPUT id="displayname" 
+onkeypress="handleEP(event,this.form);" name="displayname" size="25" 
+type="text"></SPAN><SPAN class="ibm-form-note">(Must be between 3 – 31 
+characters.)</SPAN></P>
+<P>By clicking <STRONG>Submit</STRONG>, you agree to the <A href="https://www.ibm.com/developerworks/community/terms/">developerWorks 
+terms of use</A>.</P>
+<DIV class="ibm-buttons-row">
+<P><INPUT class="ibm-btn-arrow-pri" onclick="signin();return false;" name="ibm-submit" value="Submit" type="submit"><SPAN 
+class="ibm-sep">&nbsp;</SPAN><INPUT class="ibm-btn-cancel-sec" onclick="clearForm();ibmCommon.Overlays.hide('displayname_overlay');return false;" name="ibm-cancel" value="Cancel" type="button"></P>
+</DIV></FORM>
+<DIV class="ibm-overlay-rule">
+<HR>
+</DIV>
+<DIV class="dw-overlay-legal">
+<P>All information submitted is secure.</P></DIV></DIV></DIV></DIV></DIV>
+<DIV class="ibm-footer"></DIV></DIV><!-- Display name OVERLAY ENDS HERE --><!-- OVERLAYS_END --><!-- RATINGS START -->
+<P class="ibm-no-print"><SPAN class="atitle"><A name="iratings">Rate this 
+article</A></SPAN></P><INPUT id="art-rating" name="ratinga" value="0" type="hidden">
+<DIV id="art-rating-module"></DIV>
+<SCRIPT language="JavaScript" type="text/javascript">
+// <![CDATA[
+   // widget div id and article id as args
+   window.artRating.init('art-rating-module','art-rating-summary');
+// ]]>
+</SCRIPT>
+<!-- RATINGS END --><!-- INLINE_COMMENTS_START -->
+<P class="ibm-no-print"><SPAN class="atitle"><A 
+name="icomments">Comments</A></SPAN></P>
+<DIV id="threadShow"></DIV><!-- INLINE_COMMENTS_END -->
+<P class="ibm-ind-link ibm-back-to-top"><A class="ibm-anchor-up-link" href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/#ibm-pcon">Back 
+to top</A></P><!-- Overlays --></DIV><!-- MAIN_COLUMN_CONTAINER_END --><!-- Rating_Meta_BEGIN --><!--Rating_Meta_BEGIN-->
+<DIV 
+class="metavalue">static.content.url=http://www.ibm.com/developerworks/js/artrating/</DIV>
+<DIV class="metavalue">SITE_ID=1</DIV>
+<DIV class="metavalue">Zone=SOA and web services</DIV>
+<DIV class="metavalue">ArticleID=230403</DIV>
+<DIV class="metavalue">ArticleTitle=Web services hints and tips: JAX-RPC versus 
+JAX-WS, Part 3</DIV>
+<DIV class="metavalue">publish-date=06132007</DIV>
+<SCRIPT language="javascript" type="text/javascript">document.write('<div class="metavalue">url='+location.href.replace(/</g,  '%3C')+'</div>');</SCRIPT>
+<!--Rating_Meta_END--><!-- Rating_Meta_END --></DIV><!-- MAIN_COLUMN_END--><!-- RIGHT_COLUMN_BEGIN -->
+<DIV id="ibm-content-sidebar"><!-- RIGHT_COLUMN_CONTENT_BEGIN -->
+<DIV class="ibm-container">
+<H2>Table of contents</H2>
+<DIV class="ibm-container-body"><IMG alt="" src="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/c(1).gif" 
+width="1" height="1">
+<UL class="ibm-bullet-list">
+  <LI><A class="ibm-feature-link" href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/#N10068">Introduction</A></LI>
+  <LI><A class="ibm-feature-link" href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/#N10081">Comparing 
+  SEI mapping</A></LI>
+  <LI><A class="ibm-feature-link" href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/#code-hd">Comparing 
+  operation mapping</A></LI>
+  <LI><A class="ibm-feature-link" href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/#N101A2">Considering 
+  other differences</A></LI>
+  <LI><A class="ibm-feature-link" href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/#N1020D">Summary</A></LI>
+  <LI><A class="ibm-feature-link" href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/#resources">Resources</A></LI>
+  <LI><A class="ibm-feature-link" href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/#author">About 
+  the authors</A></LI>
+  <LI><A class="ibm-feature-link" href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/#icomments">Comments</A></LI></UL></DIV></DIV><!--XSLT stylesheet used to transform this content: s-nextsteps.xsl-->
+<DIV class="ibm-container">
+<H2>Next steps from IBM</H2>
+<DIV class="ibm-container-body"><IMG border="0" alt="" src="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/spot-nextsteps.jpg" 
+width="188" height="58">
+<P>WebSphere Application Server can leverage its built in Web Services support 
+to expose services to   remote consumers in an industry-standard way.</P>
+<DIV class="ibm-rule">
+<HR>
+</DIV>
+<UL class="ibm-bullet-list">
+  <LI><A class="ibm-feature-link" href="http://www.ibm.com/developerworks/downloads/ws/wasce/index.html">Try: 
+  The no-charge WebSphere Application Server Community Edition is a 
+  pre-integrated, lightweight Java 5    application server built on Apache 
+  Tomcat and includes built in Web Services support.</A></LI>
+  <LI><A class="ibm-feature-link" href="http://www.ibm.com/developerworks/websphere/library/techarticles/0804_sedov/0804_sedov.html?open">Article: 
+  Learn how to use of the JAX-WS programming model to create dispatch and 
+  dynamic proxy clients and how to      create an asynchronous Web service 
+  client.</A></LI>
+  <LI><A class="ibm-feature-link" href="http://www.ibm.com/developerworks/edu/dm-dw-dm-0803pauser-i.html">Tutorial: 
+  This tutorial takes you through the steps to deploy Data Web Services to the 
+  WebSphere Application Server      Community Edition.</A></LI>
+  <LI><A class="ibm-feature-link" href="http://www.ibm.com/developerworks/offers/lp/demos/summary/wesd-wascej5ee1.html">Demo: 
+  This demo shows how to extract and install the IBM Java Platform, Java EE 5 
+  SDK with WebSphere Application      Server.</A></LI>
+  <LI><A class="ibm-feature-link" href="http://www.ibm.com/software/dre/h2b/buildh2bpage.wss?synkey=G394201N28809H35">Buy: 
+  WebSphere Application Server - Express</A></LI></UL></DIV></DIV><!-- Dig_Deeper -->
+<DIV class="ibm-container">
+<H2>Dig deeper into SOA and Web services on developerWorks</H2>
+<DIV class="ibm-container-body">
+<UL class="ibm-link-list">
+  <LI class="ibm-first"><A class="ibm-forward-link" href="http://www.ibm.com/developerworks/webservices/">Overview</A></LI>
+  <LI><A class="ibm-forward-link" href="http://www.ibm.com/developerworks/webservices/newto/">New 
+  to SOA and Web services</A></LI>
+  <LI><A class="ibm-forward-link" href="http://www.ibm.com/developerworks/webservices/find/downloads/">Downloads 
+  and products</A></LI>
+  <LI><A class="ibm-forward-link" href="http://www.ibm.com/developerworks/webservices/find/projects/">Open 
+  source projects</A></LI>
+  <LI><A class="ibm-forward-link" href="http://www.ibm.com/developerworks/webservices/standards/">Standards</A></LI>
+  <LI><A class="ibm-forward-link" href="http://www.ibm.com/developerworks/webservices/library/">Technical 
+  library (articles, tutorials, and more)</A></LI>
+  <LI><A class="ibm-forward-link" href="http://www.ibm.com/developerworks/forums/dw_wsforums.jsp">Forums</A></LI>
+  <LI><A class="ibm-forward-link" href="http://www.ibm.com/developerworks/webservices/find/events/">Events</A></LI>
+  <LI><A class="ibm-forward-link" href="http://www.ibm.com/developerworks/newsletter/">Newsletter</A></LI></UL></DIV></DIV><!-- High_Visibility_Offer --><!--XSLT stylesheet used to transform this content: s-highvisibilityoffer.xsl-->
+<DIV class="ibm-container">
+<H2>IBM SmartCloud trial. No charge.</H2>
+<DIV class="ibm-container-body"><IMG border="0" alt="IBM PureSystems on a kaleideoscope background" 
+src="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/hivis-cloud.jpg" 
+width="188" height="70">
+<P>Unleash the power of hybrid cloud computing today!</P>
+<DIV class="ibm-rule">
+<HR>
+</DIV>
+<P class="ibm-ind-link"><A class="ibm-forward-link" href="http://www.ibm.com/developerworks/cloud/try/?ca=dti-hivis-troy">Public 
+and private solutions in one trial.</A></P></DIV></DIV><!-- Special_Offers -->
+<DIV class="ibm-container">
+<H2>Special offers</H2>
+<DIV class="ibm-container-body">
+<P class="dw-special-offers"><A 
+href="http://www.ibm.com/developerworks/demos/"><IMG border="0" alt="On demand demos: An easy way to watch and learn" 
+src="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/tile_v16_ondemanddemos.gif" 
+width="158" height="50"></A></P>
+<P class="dw-special-offers"><A href="http://www.ibm.com/developerworks/aboutdw/dwa/?ca=dti-dwarp"><IMG 
+border="0" alt="Get recognized! W Author Program" src="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/tile_v16_dwaarp.gif" 
+width="158" height="50"></A></P>
+<P class="dw-special-offers"><A href="https://www.ibm.com/developerworks/cloud/index.html?ca=dti-cloudzone"><IMG 
+border="0" alt="Cloud Computing resources for IT professionals" src="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/tile_v16_cloudzoneA.gif" 
+width="158" height="50"></A></P>
+<DIV class="ibm-rule">
+<HR>
+</DIV>
+<P class="ibm-ind-link"><A class="ibm-forward-link" href="http://www.ibm.com/developerworks/downloads/?ca=dti-tilemoreoffers">Trial 
+software offers</A></P></DIV></DIV><!-- RIGHT_COLUMN_CONTENT_END --></DIV><!-- RIGHT_COLUMN_END --><!-- CONTENT_BODY_END -->
+</DIV></DIV><!-- CONTENT_END --><!-- END_IBM-PCON --></DIV><!-- FOOTER_BEGIN -->
+<DIV id="ibm-footer"><!-- IBM footer container; disabled --></DIV>
+<DIV id="ibm-page-tools-dw">
+<DIV id="dw-footer-top-row">
+<UL id="dw-foot-options">
+  <LI id="dw-print"><A class="ibm-print-link" href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/#">Print 
+  this page</A></LI></UL>
+<UL id="ibm-foot-options-dw">
+  <LI id="dw-foot-0"><A href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/#">Share 
+  this page</A></LI>
+  <LI id="dw-foot-1"><A href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/#">Follow 
+  developerWorks</A></LI></UL></DIV><!-- TOP ROW SLIDER -->
+<DIV id="dw-page-tools-menu">
+<DIV class="ibm-ribbon-pane-dw">
+<DIV class="ibm-ribbon-section-dw"><!-- Share this page -->
+<DIV class="dw-footer-columns">
+<DIV class="dw-footer-col-3-1">
+<H2>Share this page:</H2>
+<UL class="ibm-link-list">
+  <LI><A id="dw-foot-0-0" class="ibm-facebook-link" href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/#">Facebook</A></LI>
+  <LI><A class="ibm-linkedin-link" href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/#">LinkedIn</A></LI>
+  <LI><A class="ibm-twitter-link" href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/#">Twitter</A></LI></UL></DIV>
+<DIV class="dw-footer-col-3-2">
+<UL class="ibm-link-list">
+  <LI><A class="ibm-delicious-link" href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/#">Delicious</A></LI>
+  <LI><A class="ibm-digg-link" href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/#">Digg</A></LI>
+  <LI><A class="ibm-stumbleupon" href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/#">StumbleUpon</A></LI></UL></DIV>
+<DIV class="dw-footer-col-3-3">
+<UL class="ibm-link-list">
+  <LI><A class="ibm-email-link" href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/#">Email 
+  this page</A></LI></UL></DIV>
+<DIV class="dw-footer-close">
+<UL>
+  <LI>
+  <DIV class="dw-footer-close-share"><A href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/#"><IMG 
+  border="0" alt="Close [x]" src="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/c.gif" 
+  width="20" height="10"></A></DIV></LI></UL></DIV></DIV><!-- Follow developerWorks -->
+<DIV class="dw-footer-columns">
+<DIV class="dw-footer-col-1-1">
+<H2>Follow developerWorks:</H2>
+<UL class="ibm-link-list">
+  <LI><A id="dw-foot-1-0" class="ibm-facebook-link" href="http://www.facebook.com/developerworks">Facebook</A></LI>
+  <LI><A class="ibm-twitter-link" 
+  href="http://twitter.com/developerWorks">Twitter</A></LI></UL></DIV>
+<DIV class="dw-footer-close">
+<UL>
+  <LI>
+  <DIV class="dw-footer-close-follow"><A href="http://www.ibm.com/developerworks/webservices/library/ws-tip-jaxwsrpc3/#"><IMG 
+  border="0" alt="Close [x]" src="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/c.gif" 
+  width="20" height="10"></A></DIV></LI></UL></DIV></DIV></DIV></DIV></DIV></DIV>
+<DIV id="ibm-footer-module-dw">
+<DIV class="dw-footer-columns">
+<DIV class="dw-footer-col-6-1">
+<UL>
+  <LI><A href="http://www.ibm.com/developerworks/aboutdw/">About</A></LI>
+  <LI><A href="https://www.ibm.com/developerworks/feedback">Help</A></LI>
+  <LI><A href="http://www.ibm.com/developerworks/aboutdw/contacts.html">Contact 
+  us</A></LI>
+  <LI><A href="https://www.ibm.com/developerworks/ideas">Submit 
+content</A></LI></UL></DIV>
+<DIV class="dw-footer-col-6-2">
+<UL>
+  <LI><A href="http://www.ibm.com/developerworks/feeds/">Feeds and apps</A></LI>
+  <LI><A 
+  href="https://www.ibm.com/developerworks/newsletter/">Newsletters</A></LI></UL></DIV>
+<DIV class="dw-footer-col-6-3">
+<UL>
+  <LI><A href="https://www.ibm.com/developerworks/community/report/">Report 
+  abuse</A></LI>
+  <LI><A href="https://www.ibm.com/developerworks/community/terms/">Terms of 
+  use</A></LI>
+  <LI><A href="http://www.ibm.com/privacy/">IBM privacy</A></LI>
+  <LI><A href="http://www.ibm.com/accessibility/">IBM 
+accessibility</A></LI></UL></DIV>
+<DIV class="dw-footer-col-6-4">
+<UL>
+  <LI><A 
+  href="http://www.ibm.com/developerworks/university/academicinitiative/">Faculty</A></LI>
+  <LI><A 
+  href="http://www.ibm.com/developerworks/university/students/">Students</A></LI>
+  <LI><A href="http://www.ibm.com/isv/">Business Partners</A></LI></UL></DIV>
+<DIV class="dw-footer-col-6-5"></DIV>
+<DIV 
+class="dw-footer-col-6-6"></DIV></DIV><!-- Language selector no-script --><NOSCRIPT>
+	&lt;div id="dw-footer-selectlang"&gt;		&lt;h2&gt;&lt;a 
+name="SELECTLANG"&gt;Select a language:&lt;/a&gt;&lt;/h2&gt;		&lt;ul&gt;
+			&lt;li&gt;&lt;a 
+href="http://www.ibm.com/developerworks/"&gt;English&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a 
+href="http://www.ibm.com/developerworks/cn/"&gt;中文&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a 
+href="http://www.ibm.com/developerworks/jp/"&gt;日本語&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a 
+href="http://www.ibm.com/developerworks/ru/"&gt;Русский&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="http://www.ibm.com/developerworks/br/"&gt;Português 
+(Brasil)&lt;/a&gt;&lt;/li&gt;			&lt;li&gt;&lt;a 
+href="http://www.ibm.com/developerworks/ssa/"&gt;Español&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a 
+href="http://www.ibm.com/developerworks/vn/"&gt;Việt&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;	&lt;/div&gt;	</NOSCRIPT></DIV><!-- FOOTER_END --><!-- END_IBM-TOP -->
+</DIV><!-- SCRIPTS_INCLUDE_BEGIN --><!-- JQuery start -->
+<SCRIPT language="JavaScript" type="text/javascript" src="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/jquery.hoverIntent.minified.js"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/javascript" src="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/jquery.cluetip.js"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/javascript" src="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/ui.core-1.7.1.js"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/javascript" src="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/ui.slider-1.7.1.js"></SCRIPT>
+<!-- xM Masthead/Footer -->
+<SCRIPT language="JavaScript" type="text/javascript" src="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/jquery.tools.min.js">//</SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/javascript" src="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/jquery.jscroll.js">//</SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/javascript" src="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/dw_v16.js">//</SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/javascript" src="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/flash-detect.js">//</SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/javascript" src="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/dwsi.js">//</SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/javascript" src="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/dwjquerytags.js"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/javascript" src="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/showcomments.js">//</SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/javascript">
+// <![CDATA[
+ jQuery('threadShow').showComments('95%',5,'nCmts','icomments');
+// ]]>
+</SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/javascript">
+	jQuery.noConflict();     
+	// Put all your code in your document ready area
+	jQuery(document).ready(function(jQuery) {
+	// Do jQuery stuff using jQuery 
+	jQuery('a.dwauthor').cluetip({
+		local: true,
+		showTitle: false,
+		positionBy: 'bottomTop',
+		sticky: true,	
+		mouseOutClose: true,
+		closeText: '<img src="//dw1.s81c.com/developerworks/js/jquery/cluetip98/i/x.gif" alt="Close" />',
+		arrows: false,
+		dropShadow: true,
+		cluetipClass: 'dwbasic'
+		});
+
+		//tagging
+		login="false";
+		userid="";
+		whichTags = "init";
+		pCont = "";
+		mCont = "";
+		signInMCont = "";
+		accessCont = "";
+		pValue = 0;
+		mValue = 0;
+
+		rBHash = null;
+		rBHash = new Object();
+		rBHash['viperLang'] = 'en';
+		rBHash['urlLang'] = 'en';
+		rBHash['tagThisWinTitle'] = 'Tagit';
+		rBHash['pTags1'] = 'Popular tags';
+		rBHash['pTags2'] = 'End of Popular tags';
+		rBHash['mTags1'] = 'My tags';
+		rBHash['mTags2'] = 'End of My tags';
+		rBHash['alt1'] = 'Loading Content';
+		rBHash['noATags'] = 'No active tags';
+		rBHash['signIn1'] = 'Please ';
+		rBHash['signIn2'] = 'sign in';
+		rBHash['signIn3'] = ' to access';
+		rBHash['signIn4'] = 'My Tags';
+		rBHash['signIn5'] = 'To access My Tags, please ';
+		rBHash['signIn6'] = 'sign in';
+		rBHash['signIn7'] = 'Read Popular tags';
+
+		zoneHash = new Object();
+		zoneHash['aix'] = 'AIX and UNIX zone';
+		zoneHash['ibmi'] = 'IBM i zone';
+		zoneHash['data'] = 'Information Management zone';
+		zoneHash['lotus'] = 'Lotus zone';
+		zoneHash['rational'] = 'Rational zone';
+		zoneHash['tivoli'] = 'Tivoli zone';
+		zoneHash['websphere'] = 'WebSphere zone';
+		zoneHash['architecture'] = 'Technical library';
+		zoneHash['autonomic'] = 'Technical library';
+		zoneHash['java'] = 'Technical library';
+		zoneHash['cloud'] = 'Technical library';
+		zoneHash['industry'] = 'Technical library';
+		zoneHash['library'] = 'Technical library';
+		zoneHash['linux'] = 'Technical library';
+		zoneHash['opensource'] = 'Technical library';
+		zoneHash['power'] = 'Technical library';
+		zoneHash['webservices'] = 'Technical library';
+		zoneHash['web'] = 'Technical library';
+		zoneHash['xml'] = 'Technical library';
+		zoneHash['wireless'] = 'Technical library';
+		jQuery.checkRB();
+		jQuery.getPopularTags("/developerworks/dwtags/dwjquerytabtags?lang=" + rBHash['viperLang'] + "&base=" + jQuery.getNormalizedZoneUrl(location.href));
+		jQuery.getUserTags();
+		if(jQuery.isTutorial(location.href) == "true") {
+			jQuery.getTagsForContent("/developerworks/tagging/UseCaseServlet?lang=" + rBHash['viperLang'] + "&format=maverick&cType=tutorials&use_case=geturltags&action=gettags&url=" + jQuery.normalizeUrl(location.href));
+		}
+		else {
+			jQuery.getTagsForContent("/developerworks/tagging/UseCaseServlet?lang=" + rBHash['viperLang'] + "&format=maverick&cType=articles&use_case=geturltags&action=gettags&url=" + jQuery.normalizeUrl(location.href));
+
+		}
+		
+		// si
+		initSI();
+	});
+ </SCRIPT>
+<!-- JQuery end --><!-- Overlay js -->
+<SCRIPT language="JavaScript" type="text/javascript" src="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/overlay.js"></SCRIPT>
+<!-- My dW Interest article -->
+<SCRIPT language="JavaScript" type="text/javascript" src="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/showinterest.js">//</SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/javascript">
+        // <![CDATA[
+			var contentId = '';
+			var contentAreas = '';
+			var caArr = [];
+			contentId = '230403';
+			contentAreas = 'webservices';
+			if(contentAreas != ''){caArr = contentAreas.split(',');}
+			var topNames = [
+							"APIs",
+							"Application and information integration",
+							"Application development",
+							"Architecture",
+							"Business modeling",
+							"Business performance management",
+							"Business process management",
+							"Business processes",
+							"Business service management",
+							"Integration",
+							"Interoperability",
+							"J2EE (Java 2 Enterprise Edition)",
+							"Legacy systems",
+							"Policy-based orchestration",
+							"Remote procedure calls",
+							"SOA (Service-Oriented Architecture)",
+							"Standards",
+							"Standards and specifications",
+							"Web services"
+			];
+			
+			var loginLink = 'https://www.ibm.com/developerworks/dwwi/DWAuthRouter?m=loginpage&d=' + encodeURIComponent(window.location);jQuery('interestShow').showInterest(contentId,'dw-article',{'int_topnames':topNames,'int_prods':[], 'int_prod_fam':[],'int_cont_area':caArr},
+'<div id="dw-interest-anon"><a id="intAnonBtn" class="ibm-external-link" href="">Update My dW interests</a> (<a class="dw-interest" href="' + loginLink + '">Log in</a> | <a class="dw-interest" href="#overlay" onclick="ibmCommon.Overlays.show(\'dwmyinterestadd\', this);return false;">What\'s this?</a>) <a class="ibm-access" href="#dwmyinterestaddhelp">Skip to help for Update My dW interests</a></div>',
+'<div id="dw-interest-add"><a id="intSelectBtn" class="ibm-external-link" href="">Add to My dW interests</a> (<a class="dw-interest" href="#overlay" onclick="ibmCommon.Overlays.show(\'dwmyinterestadd\', this);return false;">What\'s this?</a>) <a class="ibm-access" href="#dwmyinterestaddhelp">Skip to help for Add to My dW interests</a></div>',
+'<div id="dw-interest-remove">Added to My dW interests (<a class="dw-interest" href="https://www.ibm.com/developerworks/mydeveloperworks/profiles/html/myProfileView.do?lang=en">Edit</a>)</div>'
+);
+// ]]>
+</SCRIPT>
+<!-- BEGIN: Use this section to set page specific variables for the Unica Page Tag -->
+<SCRIPT language="JavaScript">var NTPT_PGEXTRA="ibmSkillLevel=3&ibmAdoptPhase=648&ibmRole=36&ibmCmaId=230403";</SCRIPT>
+<!--END --><!-- SCRIPTS_INCLUDE_END -->
+<DIV id="ibm-metrics">
+<SCRIPT type="text/javascript" src="Web%20services%20hints%20and%20tips%20JAX-RPC%20versus%20JAX-WS,%20Part%203_files/stats.js">//</SCRIPT>
+</DIV></BODY></HTML>

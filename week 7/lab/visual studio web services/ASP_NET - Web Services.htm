@@ -1,0 +1,540 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0062)http://www.tutorialspoint.com/asp.net/asp.net_web_services.htm -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><HTML 
+lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><HEAD>
+<TITLE>ASP.NET - Web Services</TITLE>
+<META content="text/html; charset=utf-8" http-equiv="Content-Type"><LINK rel="shortcut icon" 
+type="image/x-icon" href="/favicon.ico">
+<META name="Keywords" content="Web Services, Free, ASP.NET, Tutorial, Reference, Manual, Guide, Beginners,Event Handling, Life Cycle, ADO.NET, AJAX control,Web Services,Add Rotator, Panel, control, LINQ, Database Access, Security, Debugging, Error, Handling, Configuration, Deployment.">
+<META name="description" content="ASP.NET Web Services -  Free ASP.NET Tutorials, Reference Manual, and Quick Guide for Beginners. Learn ASP.NET starting from Environment Setup, Basic Controls, Directives, Event Handling, Life Cycle, ADO.NET, AJAX control,Web Services,Add Rotator, Panel control, LINQ, Database Access, Security, Debugging, Error Handling, Configuration and Deployment.">
+<META content="no-cache" http-equiv="pragma">
+<META content="no-cache" http-equiv="cache-control"><LINK rel="stylesheet" type="text/css" 
+href="ASP_NET%20-%20Web%20Services_files/tp.css">
+<SCRIPT type="text/javascript" src="ASP_NET%20-%20Web%20Services_files/urchin.js"></SCRIPT>
+
+<SCRIPT type="text/javascript"> 
+_uacct = "UA-232293-6";
+urchinTracker();
+</SCRIPT>
+
+<META name="GENERATOR" content="MSHTML 9.00.8112.16448"></HEAD>
+<BODY>
+<CENTER><A name="top"></A>
+<TABLE class="main" border="0" cellSpacing="0" cellPadding="2">
+  <TBODY>
+  <TR>
+    <TD class="content" vAlign="top" align="left"><A href="http://www.tutorialspoint.com/index.htm"><IMG 
+      border="0" alt="Tutorials Point" src="ASP_NET%20-%20Web%20Services_files/tp-logo.gif"></A>
+      <BR><BR>
+      <DIV class="search"><!-- SiteSearch Google -->
+      <FORM method="get" action="http://www.google.com/custom" target="google_window">
+      <TABLE border="0">
+        <TBODY>
+        <TR>
+          <TD height="32" vAlign="top" noWrap="nowrap" align="center"><A href="http://www.google.com/">
+            <IMG border="0" alt="Google" align="middle" src="ASP_NET%20-%20Web%20Services_files/Logo_25wht.gif"></A>
+          </TD></TR>
+        <TR>
+          <TD noWrap="nowrap"><INPUT name="domains" value="www.tutorialspoint.com" 
+            type="hidden"><INPUT name="q" maxLength="255" size="20" type="text"><INPUT style="width: 20px; font-weight: bold;" name="sa" value="..." type="submit">
+          </TD></TR>
+        <TR>
+          <TD noWrap="nowrap">
+            <TABLE>
+              <TBODY>
+              <TR>
+                <TD><INPUT name="sitesearch" value="" type="radio"><FONT 
+                  color="#000000" size="-1">Web</FONT></TD>
+                <TD><INPUT name="sitesearch" value="www.tutorialspoint.com" 
+                  type="radio"><FONT color="#000000" size="-1">This Site</FONT>
+                </TD></TR></TBODY></TABLE><INPUT name="client" value="pub-7133395778201029" 
+            type="hidden"><INPUT name="forid" value="1" type="hidden"><INPUT 
+            name="ie" value="ISO-8859-1" type="hidden"><INPUT name="oe" value="ISO-8859-1" 
+            type="hidden"><INPUT name="cof" value="GALT:#008000;GL:1;DIV:#336699;VLC:663399;AH:center;BGC:FFFFFF;LBGC:336699;ALC:0000FF;LC:0000FF;T:000000;GFNT:0000FF;GIMP:0000FF;FORID:1" 
+            type="hidden"><INPUT name="hl" value="en" type="hidden">
+        </TD></TR></TBODY></TABLE></FORM><!-- SiteSearch Google --></DIV><BR>
+      &nbsp;&nbsp;<B>ASP.NET Tutorial</B>
+      <DIV class="left">
+      <UL class="menu">
+        <LI><A class="left" href="http://www.tutorialspoint.com/asp.net/index.htm" 
+        target="_top">ASP.NET -  Home</A></LI>
+        <LI><A class="left" href="http://www.tutorialspoint.com/asp.net/asp.net_introduction.htm" 
+        target="_top">ASP.NET -  Introduction</A></LI>
+        <LI><A class="left" href="http://www.tutorialspoint.com/asp.net/asp.net_environment_setup.htm" 
+        target="_top">ASP.NET -  Environment</A></LI>
+        <LI><A class="left" href="http://www.tutorialspoint.com/asp.net/asp.net_life_cycle.htm" 
+        target="_top">ASP.NET -  Life Cycle</A></LI>
+        <LI><A class="left" href="http://www.tutorialspoint.com/asp.net/asp.net_first_example.htm" 
+        target="_top">ASP.NET -  First Example</A></LI>
+        <LI><A class="left" href="http://www.tutorialspoint.com/asp.net/asp.net_event_handling.htm" 
+        target="_top">ASP.NET -  Event Handling</A></LI>
+        <LI><A class="left" href="http://www.tutorialspoint.com/asp.net/asp.net_server_side.htm" 
+        target="_top">ASP.NET -  Server Side</A></LI>
+        <LI><A class="left" href="http://www.tutorialspoint.com/asp.net/asp.net_server_controls.htm" 
+        target="_top">ASP.NET -  Server Controls</A></LI>
+        <LI><A class="left" href="http://www.tutorialspoint.com/asp.net/asp.net_html_server.htm" 
+        target="_top">ASP.NET -  HTML Server</A></LI>
+        <LI><A class="left" href="http://www.tutorialspoint.com/asp.net/asp.net_client_side.htm" 
+        target="_top">ASP.NET -  Client Side</A></LI>
+        <LI><A class="left" href="http://www.tutorialspoint.com/asp.net/asp.net_basic_controls.htm" 
+        target="_top">ASP.NET -  Basic Controls</A></LI>
+        <LI><A class="left" href="http://www.tutorialspoint.com/asp.net/asp.net_directives.htm" 
+        target="_top">ASP.NET -  Directives</A></LI>
+        <LI><A class="left" href="http://www.tutorialspoint.com/asp.net/asp.net_managing_state.htm" 
+        target="_top">ASP.NET -  Managing State</A></LI>
+        <LI><A class="left" href="http://www.tutorialspoint.com/asp.net/asp.net_validators.htm" 
+        target="_top">ASP.NET -  Validators</A></LI>
+        <LI><A class="left" href="http://www.tutorialspoint.com/asp.net/asp.net_database_access.htm" 
+        target="_top">ASP.NET -  Database Access</A></LI>
+        <LI><A class="left" href="http://www.tutorialspoint.com/asp.net/asp.net_ado_net.htm" 
+        target="_top">ASP.NET -  ADO.net</A></LI>
+        <LI><A class="left" href="http://www.tutorialspoint.com/asp.net/asp.net_file_uploading.htm" 
+        target="_top">ASP.NET -  File Uploading</A></LI>
+        <LI><A class="left" href="http://www.tutorialspoint.com/asp.net/asp.net_ad_rotator.htm" 
+        target="_top">ASP.NET -  Ad Rotator</A></LI>
+        <LI><A class="left" href="http://www.tutorialspoint.com/asp.net/asp.net_calenders.htm" 
+        target="_top">ASP.NET -  Calendars</A></LI>
+        <LI><A class="left" href="http://www.tutorialspoint.com/asp.net/asp.net_multi_views.htm" 
+        target="_top">ASP.NET -  Multi Views</A></LI>
+        <LI><A class="left" href="http://www.tutorialspoint.com/asp.net/asp.net_panel_controls.htm" 
+        target="_top">ASP.NET -  Panel Controls</A></LI>
+        <LI><A class="left" href="http://www.tutorialspoint.com/asp.net/asp.net_ajax_control.htm" 
+        target="_top">ASP.NET -  AJAX Control</A></LI>
+        <LI><A class="left" href="http://www.tutorialspoint.com/asp.net/asp.net_data_sources.htm" 
+        target="_top">ASP.NET -  Data Sources</A></LI>
+        <LI><A class="left" href="http://www.tutorialspoint.com/asp.net/asp.net_data_binding.htm" 
+        target="_top">ASP.NET -  Data Binding</A></LI>
+        <LI><A class="left" href="http://www.tutorialspoint.com/asp.net/asp.net_custom_controls.htm" 
+        target="_top">ASP.NET -  Custom Controls</A></LI>
+        <LI><A class="left" href="http://www.tutorialspoint.com/asp.net/asp.net_personalization.htm" 
+        target="_top">ASP.NET -  Personalization</A></LI>
+        <LI><A class="left" href="http://www.tutorialspoint.com/asp.net/asp.net_error_handling.htm" 
+        target="_top">ASP.NET -  Error Handling</A></LI>
+        <LI><A class="left" href="http://www.tutorialspoint.com/asp.net/asp.net_debugging.htm" 
+        target="_top">ASP.NET -  Debugging</A></LI>
+        <LI><A class="left" href="http://www.tutorialspoint.com/asp.net/asp.net_linq.htm" 
+        target="_top">ASP.NET -  LINQ</A></LI>
+        <LI><A class="left" href="http://www.tutorialspoint.com/asp.net/asp.net_security.htm" 
+        target="_top">ASP.NET -  Security</A></LI>
+        <LI><A class="left" href="http://www.tutorialspoint.com/asp.net/asp.net_data_caching.htm" 
+        target="_top">ASP.NET -  Data Caching</A></LI>
+        <LI><A class="left" href="http://www.tutorialspoint.com/asp.net/asp.net_web_services.htm" 
+        target="_top"><B>ASP.NET -  Web Services</B></A></LI>
+        <LI><A class="left" href="http://www.tutorialspoint.com/asp.net/asp.net_multi_threading.htm" 
+        target="_top">ASP.NET -  Multi Threading</A></LI>
+        <LI><A class="left" href="http://www.tutorialspoint.com/asp.net/asp.net_configuration.htm" 
+        target="_top">ASP.NET -  Configuration</A></LI>
+        <LI><A class="left" href="http://www.tutorialspoint.com/asp.net/asp.net_deployment.htm" 
+        target="_top">ASP.NET -  Deployment</A></LI></UL></DIV><BR>
+      &nbsp;&nbsp;<B>ASP.NET Quick Guide</B>
+      <DIV class="left">
+      <UL class="menu">
+        <LI><A class="left" href="http://www.tutorialspoint.com/asp.net/asp.net_quick_guide.htm" 
+        target="_top">ASP.NET - Quick Guide</A></LI></UL></DIV><BR>
+      &nbsp;&nbsp;<B>ASP.NET Useful Resources</B>
+      <DIV class="left">
+      <UL class="menu">
+        <LI><A class="left" href="http://www.tutorialspoint.com/asp.net/asp.net_useful_resources.htm" 
+        target="_top">ASP.NET - Useful Resources</A></LI></UL></DIV><BR>
+      &nbsp;&nbsp;<B>Selected Reading</B>
+      <DIV class="left">
+      <UL class="menu">
+        <LI><A class="left" href="http://www.tutorialspoint.com/computer_glossary.htm" 
+        target="_top">Computer Glossary</A></LI>
+        <LI><A class="left" href="http://www.tutorialspoint.com/computer_whoiswho.htm" 
+        target="_top">Who is Who</A></LI></UL></DIV><BR><BR><SMALL>© 2012 
+      TutorialsPoint.COM </SMALL></TD>
+    <TD vAlign="top"><BR><BR>
+      <TABLE cellSpacing="0" cellPadding="0">
+        <TBODY>
+        <TR vAlign="middle">
+          <TD style="width: 20px;"></TD>
+          <TD class="top">&nbsp;&nbsp;<A class="top" href="http://www.tutorialspoint.com/index.htm">Home</A>&nbsp;&nbsp;
+          </TD>
+          <TD style="width: 20px;"></TD>
+          <TD class="top">&nbsp;&nbsp;<A class="top" href="http://www.tutorialspoint.com/references.htm">References</A>&nbsp;&nbsp;
+          </TD>
+          <TD style="width: 20px;"></TD>
+          <TD class="top">&nbsp;&nbsp;<A class="top" href="http://www.tutorialspoint.com/forums/index.php">Discussion 
+            Forums</A>&nbsp;&nbsp;</TD>
+          <TD style="width: 20px;"></TD>
+          <TD class="top">&nbsp;&nbsp;<A class="top" href="http://www.tutorialspoint.com/about/index.htm">About 
+            TP</A>&nbsp;&nbsp;</TD></TR></TBODY></TABLE>
+      <TABLE class="middle" cellSpacing="0" cellPadding="5">
+        <TBODY>
+        <TR>
+          <TD><!-- PRINTING STARTS HERE -->
+            <H1>ASP.NET -  Web Services</H1>
+            <HR>
+            <A href="http://www.tutorialspoint.com/asp.net/asp.net_data_caching.htm"><IMG 
+            border="0" alt="previous" src="ASP_NET%20-%20Web%20Services_files/previous.gif"></A>
+            <A href="http://www.tutorialspoint.com/asp.net/asp.net_multi_threading.htm"><IMG 
+            border="0" alt="next" src="ASP_NET%20-%20Web%20Services_files/next.gif"></A><!-- AddThis Bookmark Button BEGIN -->
+            <A onclick="addthis_url   = location.href; addthis_title = document.title; return addthis_click(this);" 
+            href="http://www.addthis.com/bookmark.php" rel="nofollow" target="_blank"><IMG 
+            border="0" alt="AddThis Social Bookmark Button" src="ASP_NET%20-%20Web%20Services_files/add-this.gif"></A> 
+
+<SCRIPT type="text/javascript">var addthis_pub = 'tutorialspoint';</SCRIPT>
+
+<SCRIPT type="text/javascript" src="ASP_NET%20-%20Web%20Services_files/widget.htm"></SCRIPT>
+            <!-- AddThis Bookmark Button END --><BR><BR>
+            <HR>
+
+            <DIV 
+            style="padding-bottom: 5px; padding-left: 10px;">Advertisements</DIV>
+<SCRIPT type="text/javascript"><!--
+google_ad_client = "pub-7133395778201029";
+google_ad_width = 468;
+google_ad_height = 60;
+google_ad_format = "468x60_as";
+google_ad_type = "image";
+google_ad_channel = "";
+//--></SCRIPT>
+            
+<SCRIPT type="text/javascript" src="ASP_NET%20-%20Web%20Services_files/show_ads.js"></SCRIPT>
+            
+            <HR>
+            
+            <P>A web service is a web-based functionality accessed using the 
+            protocols of the web to be used by the web applications. There are 
+            three aspects of web service development:</P>
+            <UL>
+              <LI>
+              <P>Creating the web service</P></LI>
+              <LI>
+              <P>Creating a proxy</P></LI>
+              <LI>
+              <P>Consuming the web service </P></LI></UL>
+            <H1>Creating the Web Sevice:</H1>
+            <P>A web service is an web application which is basically a class 
+            consisting of methods that could be used by other applications. It 
+            also follows a code-behind architecture like the ASP.Net web pages, 
+            although it does not have an user interface.</P>
+            <P>To understand the concept let us create a web service that will 
+            provide stock price information. The clients can query about the 
+            name and price of a stock based on the stock symbol. To keep this 
+            example simple, the values are hardcoded in a two-dimensional array. 
+            This web service will have three methods:</P>
+            <UL>
+              <LI>
+              <P>A defaullt HelloWorld method</P></LI>
+              <LI>
+              <P>A GetName Method</P></LI>
+              <LI>
+              <P>A GetPrice Method</P></LI></UL>
+            <P>Take the following steps to create the web service:</P>
+            <P><B>Step (1):</B> Select File--&gt; New --&gt; Web Site in Visual 
+            Studio, and then select ASP.Net Web Service. </P>
+            <P><B>Step (2):</B> A web service file called Service.asmx and its 
+            code behind file, Service.cs is created in the App_Code directory of 
+            the project. </P>
+            <P><B>Step (3):</B> Change the names of the files to 
+            StockService.asmx and StockService.cs. </P>
+            <P><B>Step (4):</B> The .asmx file has simply a WebService directive 
+            on it:</P>
+            <TABLE class="src" cellPadding="5">
+              <TBODY>
+              <TR>
+                <TD><PRE>&lt;%@ WebService Language="C#" 
+                  CodeBehind="~/App_Code/StockService.cs" 
+                  Class="StockService" %&gt;
+</PRE></TD></TR>
+              </TBODY></TABLE>
+            <P><B>Step (5):</B> Open the StockService.cs file, the code 
+            generated in it is the basic Hello World service.  The default web 
+            service code behind file looks like the following:</P>
+            <TABLE class="src" cellPadding="5">
+              <TBODY>
+              <TR>
+                <TD><PRE>using System;
+using System.Collections;
+using System.ComponentModel;
+using System.Data;
+using System.Linq;
+using System.Web;
+using System.Web.Services;
+using System.Web.Services.Protocols;
+using System.Xml.Linq;
+namespace StockService
+{
+   /// &lt;summary&gt;
+   /// Summary description for Service1
+   /// &lt;summary&gt;
+   [WebService(Namespace = "http://tempuri.org/")]
+   [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
+   [ToolboxItem(false)]
+   // To allow this Web Service to be called from script, 
+   // using ASP.NET AJAX, uncomment the following line. 
+   // [System.Web.Script.Services.ScriptService]
+   public class Service1 : System.Web.Services.WebService
+   {
+     [WebMethod]
+     public string HelloWorld()
+     {
+        return "Hello World";
+     }
+   }
+}
+</PRE></TD></TR>
+              </TBODY></TABLE>
+            <P><B>Step (6):</B>  Change the code behind file to add the two 
+            dimensional array of strings for stock symbol, name and price and 
+            two web methods for getting the stock information. </P>
+            <TABLE class="src" cellPadding="5">
+              <TBODY>
+              <TR>
+                <TD><PRE>using System;
+using System.Linq;
+using System.Web;
+using System.Web.Services;
+using System.Web.Services.Protocols;
+using System.Xml.Linq;
+
+[WebService(Namespace = "http://tempuri.org/")]
+[WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
+// To allow this Web Service to be called from script, 
+// using ASP.NET AJAX, uncomment the following line. 
+// [System.Web.Script.Services.ScriptService]
+public class StockService : System.Web.Services.WebService
+{
+   public StockService () {
+     //Uncomment the following if using designed components 
+     //InitializeComponent(); 
+   }
+   string[,] stocks =
+   {
+   {"RELIND", "Reliance Industries", "1060.15"},
+   {"ICICI", "ICICI Bank", "911.55"},
+   {"JSW", "JSW Steel", "1201.25"},
+   {"WIPRO", "Wipro Limited", "1194.65"},
+   {"SATYAM", "Satyam Computers", "91.10"}
+   };
+
+   [WebMethod]
+   public string HelloWorld() {
+      return "Hello World";
+   }
+   [WebMethod]
+   public double GetPrice(string symbol)
+   { 
+      //it takes the symbol as parameter and returns price
+      for (int i = 0; i &lt; stocks.GetLength(0); i++)
+      {
+         if (String.Compare(symbol, stocks[i, 0], true) == 0)
+         return Convert.ToDouble(stocks[i, 2]);
+      }
+      return 0;
+   }
+   [WebMethod]
+   public string GetName(string symbol)
+   {
+      // It takes the symbol as parameter and 
+      // returns name of the stock
+      for (int i = 0; i &lt; stocks.GetLength(0); i++)
+      {
+         if (String.Compare(symbol, stocks[i, 0], true) == 0)
+           return stocks[i, 1];
+      }
+      return "Stock Not Found";
+   }
+}
+</PRE></TD></TR>
+              </TBODY></TABLE>
+            <P><B>Step (7) :</B> Running the web service application gives a web 
+            service test page, which allows testing the service methods.</P>
+            <CENTER><IMG alt="Stock Service" src="ASP_NET%20-%20Web%20Services_files/stock_service.jpg">
+            </CENTER>
+            <P><B>Step (8) :</B> Click on a method name, and check whether it 
+            runs properly.</P>
+            <CENTER><IMG alt="Get Name" src="ASP_NET%20-%20Web%20Services_files/get_name_service.jpg">
+            </CENTER>
+            <P><B>Step (9):</B> For testing the GetName method, provide one of 
+            the stock symbols, which are hard coded, it returns the name of the 
+            stock</P>
+            <CENTER><IMG alt="the name of the stock" src="ASP_NET%20-%20Web%20Services_files/name_of_stock.jpg">
+            </CENTER>
+            <H1>Consuming the Web Service:</H1>
+            <P>For using the web service, create a web site under the same 
+            solution. This could be done by right clicking on the Solution name 
+            in the Solution Explorer. The web page calling the web service 
+            should have a label control to display the returned results and two 
+            button controls one for post back and another for calling the 
+            service.</P>
+            <P>The content file for the web application is as follows:</P>
+            <TABLE class="src" cellPadding="5">
+              <TBODY>
+              <TR>
+                <TD><PRE>&lt;%@ Page Language="C#" 
+         AutoEventWireup="true" 
+         CodeBehind="Default.aspx.cs" 
+         Inherits="wsclient._Default" %&gt;
+
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+
+&lt;html xmlns="http://www.w3.org/1999/xhtml" &gt;
+&lt;head runat="server"&gt;
+&lt;title&gt;Untitled Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;form id="form1" runat="server"&gt;
+    &lt;div&gt;
+    &lt;h3&gt;Using the Stock Service&lt;/h3&gt;
+    &lt;br /&gt;
+    &lt;br /&gt;
+    &lt;asp:Label ID="lblmessage" runat="server"&gt;&lt;/asp:Label&gt;
+    &lt;br /&gt;
+    &lt;br /&gt;
+    &lt;asp:Button ID="btnpostback" runat="server" 
+                onclick="Button1_Click" 
+                Text="Post Back" Width="132px" /&gt;
+    &nbsp;&nbsp;&nbsp;
+    &lt;asp:Button ID="btnservice" runat="server" 
+                onclick="btnservice_Click" 
+                Text="Get Stock" Width="99px" /&gt;
+    &lt;/div&gt;
+&lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</PRE></TD></TR></TBODY></TABLE>
+            <P>The code behind file for the web application is as follows:</P>
+            <TABLE class="src" cellPadding="5">
+              <TBODY>
+              <TR>
+                <TD><PRE>using System;
+using System.Collections;
+using System.Configuration;
+using System.Data;
+using System.Linq;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.HtmlControls;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Xml.Linq;
+
+//this is the proxy
+using localhost;
+
+namespace wsclient
+{
+   public partial class _Default : System.Web.UI.Page
+   {
+      protected void Page_Load(object sender, EventArgs e)
+     {
+        if (!IsPostBack)
+           lblmessage.Text = "First Loading Time: " + 
+           DateTime.Now.ToLongTimeString();
+        else
+           lblmessage.Text = "PostBack at: " + 
+           DateTime.Now.ToLongTimeString();
+     }
+     protected void btnservice_Click(object sender, EventArgs e)
+     {
+       StockService proxy = new StockService();
+       lblmessage.Text = String.Format("Current SATYAM Price:{0}",
+       proxy.GetPrice("SATYAM").ToString());
+     }
+   }
+}
+</PRE></TD></TR>
+              </TBODY></TABLE>
+            <H1>Creating the Proxy:</H1>
+            <P>A proxy is a stand-in for the web service codes. Before using the 
+            web service, a proxy must be created. The proxy is registered with 
+            the client application. Then the client application makes the calls 
+            to the web service as it were using a local method.</P>
+            <P>The proxy takes the calls, wraps it in proper format and sends it 
+            as a SOAP request to the server. SOAP stands for Simple Object 
+            Access Protocol. This protocol is used for exchanging web service 
+            data. </P>
+            <P>When the server returns the SOAP package to the client, the proxy 
+            decodes everything and presents it to the client application.</P>
+            <P>Before calling the web service using the btnservice_Click, a web 
+            reference should be added to the application. This creates a proxy 
+            class transparently, which is used by the btnservice_Click event. 
+            </P>
+            <TABLE class="src" cellPadding="5">
+              <TBODY>
+              <TR>
+                <TD><PRE>protected void btnservice_Click(object sender, EventArgs e)
+{
+  StockService proxy = new StockService();
+  lblmessage.Text = String.Format("Current SATYAM Price: {0}", 
+  proxy.GetPrice("SATYAM").ToString());
+}
+</PRE></TD></TR>
+              </TBODY></TABLE>
+            <P>Take the following steps for creating the proxy:</P>
+            <P><B>Step (1):</B> Right click on the web application entry in the 
+            Solution Explorer and click on 'Add Web Reference'.</P>
+            <CENTER><IMG alt="Add Web Reference" src="ASP_NET%20-%20Web%20Services_files/add_web_reference.jpg">
+            </CENTER>
+            <P><B>Step (2):</B> Select 'Web Services in this solution'. It 
+            returns the StockService reference.</P>
+            <CENTER><IMG alt="Select Web Services" src="ASP_NET%20-%20Web%20Services_files/select_web_services.jpg">
+            </CENTER>
+            <P><B>Step (3):</B> Clicking on the service opens the test web page. 
+            By default the proxy created is called 'localhost', you can rename 
+            it. Click on 'Add Reference' to add the proxy to the client 
+            application. </P>
+            <CENTER><IMG alt="Stock Service 2" src="ASP_NET%20-%20Web%20Services_files/stock_service2.jpg">
+            </CENTER>
+            <P>Include the proxy in the code behind file by adding:</P>
+            <TABLE class="src" cellPadding="5">
+              <TBODY>
+              <TR>
+                <TD><PRE> using localhost;
+</PRE></TD></TR></TBODY></TABLE><BR>
+            <HR>
+            <A href="http://www.tutorialspoint.com/asp.net/asp.net_data_caching.htm"><IMG 
+            border="0" alt="previous" src="ASP_NET%20-%20Web%20Services_files/previous.gif"></A>
+            <A href="http://www.tutorialspoint.com/asp.net/asp.net_multi_threading.htm"><IMG 
+            border="0" alt="next" src="ASP_NET%20-%20Web%20Services_files/next.gif"></A>
+            <A href="http://www.tutorialspoint.com/cgi-bin/printversion.cgi?tutorial=asp.net&amp;file=asp.net_web_services.htm" 
+            target="_blank"><IMG border="0" alt="Printer Friendly" src="ASP_NET%20-%20Web%20Services_files/print.gif"></A>
+            <BR>
+            <HR>
+            <!-- PRINTING ENDS HERE -->
+            <DIV 
+            style="padding-bottom: 5px; padding-left: 10px;">Advertisements</DIV>
+<SCRIPT type="text/javascript"><!--
+google_ad_client = "pub-7133395778201029";
+google_ad_width = 336;
+google_ad_height = 280;
+google_ad_format = "336x280_as";
+google_ad_type = "text_image";
+google_ad_channel ="9030538898";
+google_color_border="ffffff";
+google_color_link="900b09";
+google_color_url="000000";
+google_color_text="000000";
+//--></SCRIPT>
+            
+<SCRIPT type="text/javascript" src="ASP_NET%20-%20Web%20Services_files/show_ads.js"></SCRIPT>
+            </TD></TR></TBODY></TABLE></TD>
+    <TD class="right" vAlign="top" align="center"><BR><BR>
+      <TABLE cellSpacing="0" cellPadding="0" width="100%">
+        <TBODY>
+        <TR vAlign="middle">
+          <TD style="border: 0px currentColor;" class="top">&nbsp;&nbsp;</TD></TR>
+        </TBODY></TABLE>
+      <TABLE class="right" cellSpacing="0" cellPadding="0">
+        <TBODY>
+        <TR>
+          <TD class="right" align="center">
+            <P><U>Advertisements</U></P>
+<SCRIPT type="text/javascript"><!--
+google_ad_client = "pub-7133395778201029";
+google_ad_width = 160;
+google_ad_height = 600;
+google_ad_format = "160x600_as";
+google_ad_type = "image";
+google_ad_channel ="";
+//--></SCRIPT>
+            
+<SCRIPT type="text/javascript" src="ASP_NET%20-%20Web%20Services_files/show_ads.js">
+</SCRIPT>
+            <BR><BR></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+</CENTER></BODY></HTML>

@@ -1,0 +1,105 @@
+#ibm-print-masthead {
+	display: block !important;
+}
+#ibm-logo {
+	display: none !important;
+}
+#ibm-geo {
+	display: none !important;
+}
+#ibm-search-form {
+	display: none !important;
+}
+#ibm-universal-nav {
+	display: none !important;
+}
+#ibm-content-sidebar {
+	display: none !important;
+}
+#ibm-navigation {
+	display: none !important;
+}
+.ibm-page-tools {
+	display: none !important;
+}
+#ibm-page-tools {
+	display: none !important;
+}
+#ibm-footer {
+	display: none !important;
+}
+.ibm-no-print {
+	display: none !important;
+}
+.ibm-access {
+	display: none !important;
+}
+#ibm-overlay-top {
+	display: none !important;
+}
+#ibm-navigation-trail {
+	display: none !important;
+}
+#ibm-myinterest-module {
+	display: none !important;
+}
+ul.ibm-portlet-controls {
+	display: none !important;
+}
+#ibm-social-tools {
+	display: none !important;
+}
+.ibm-dyn-tabs .ibm-tab-section {
+	display: none;
+}
+p.ibm-back-to-top.ibm-ind-link {
+	display: none;
+}
+#ibm-content-head h1 {
+	padding-top: 0px; margin-top: 0px;
+}
+#ibm-content-head p {
+	padding-top: 0px; margin-top: 0px;
+}
+h1 {
+	padding-bottom: 0px; margin-bottom: 0px;
+}
+h2 {
+	padding-bottom: 0px; margin-bottom: 0px;
+}
+h3 {
+	padding-bottom: 0px; margin-bottom: 0px;
+}
+#ibm-content-head p em {
+	font-style: normal; font-weight: bold;
+}
+img {
+	border: 0px currentColor;
+}
+a {
+	text-decoration: none;
+}
+ul.ibm-stock-list {
+	margin: 0px; padding: 0px; list-style-type: none;
+}
+ul.ibm-portrait-module-list {
+	margin: 0px; padding: 0px; list-style-type: none;
+}
+table.ibm-data-table {
+	width: 100%;
+}
+table caption em {
+	font-style: normal; font-weight: bold;
+}
+table caption {
+	text-align: left;
+}
+table th {
+	text-align: left;
+}
+table th.ibm-table-row {
+	font-weight: normal;
+}
+.ibm-mobile {
+	display: none;
+}

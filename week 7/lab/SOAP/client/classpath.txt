@@ -1,0 +1,8 @@
+C:\soap\soap-2_2\lib\xerces.jar;
+C:\jdk1.3\bin;
+C:\jdk1.3\lib\tools.jar;
+C:\soap\soap-2_2\lib\mail.jar;
+C:\soap\soap-2_2\lib\soap.jar;
+C:\soap\soap-2_2\lib\activation.jar;
+C:\soap\soap-2_2\lib\soap\soap-2_2\lib.jar;
+.;

@@ -1,0 +1,81 @@
+#ibm-logo {
+	background-color: black;
+}
+#ibm-logo a img {
+	width: 44px; height: 20px;
+}
+.ibm-access {
+	display: none;
+}
+img {
+	border: currentColor; overflow: hidden;
+}
+#ibm-geo-tou {
+	margin: 0px; padding: 0px;
+}
+#ibm-search-form {
+	display: none;
+}
+#ibm-universal-nav {
+	margin: 10px;
+}
+#ibm-footer {
+	margin: 10px;
+}
+#ibm-universal-nav ul {
+	margin: 0px; padding: 0px; font-size: 10px; list-style-type: none;
+}
+#ibm-footer ul {
+	margin: 0px; padding: 0px; font-size: 10px; list-style-type: none;
+}
+#ibm-unav-home div {
+	display: none !important;
+}
+#ibm-unav-solutions div {
+	display: none !important;
+}
+#ibm-unav-services div {
+	display: none !important;
+}
+#ibm-unav-products div {
+	display: none !important;
+}
+#ibm-unav-support div {
+	display: none !important;
+}
+#ibm-unav-myibm div {
+	display: none !important;
+}
+#ibm-search {
+	display: block;
+}
+.ibm-content-subtitle#ibm-content-head h1 {
+	font-size: 20px;
+}
+#ibm-secondary-navigation h2 {
+	font-size: 15px;
+}
+.ibm-content-subtitle#ibm-content-head em {
+	font-size: 15px;
+}
+#ibm-content-main {
+	padding: 5px; font-size: 15px;
+}
+#ibm-primary-links {
+	list-style-type: circle;
+}
+#ibm-navigation ul {
+	font-size: 10px;
+}
+li {
+	white-space: nowrap;
+}
+a {
+	white-space: nowrap;
+}
+p {
+	color: black;
+}
+input.ibm-btn-go {
+	background: url("//1.www.s81c.com/i/v16/buttons/go.gif") no-repeat 0% 30%;
+}

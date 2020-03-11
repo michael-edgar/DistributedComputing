@@ -1,0 +1,1 @@
+java org.apache.soap.server.ServiceManagerClient http://localhost:8080/soap/servlet/rpcrouter list
