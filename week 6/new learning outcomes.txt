@@ -1,0 +1,4 @@
+Understand Apache Thrift
+Understand gRPC
+Understand evolution of RPC
+Run codes in both these RPC frameworks
