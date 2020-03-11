@@ -1,0 +1,7 @@
+1. Understand RPC and RPC execution order
+2. Distinguish between local and remote procedure calls
+3. Understand marshalling process
+4. Build RPC programs using a toolkit (Distinct ONC RPC)
+5. Understand role of IDL, stubs, IDL compiler.
+6. Understand need for portmapper (registry)
+7. Understand Thrift
