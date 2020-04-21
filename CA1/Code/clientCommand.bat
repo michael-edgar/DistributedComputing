@@ -1,0 +1,1 @@
+java -cp . -Djavax.net.ssl.trustStore=public.jks   -Djavax.net.ssl.trustStorePassword=password TwitterClient

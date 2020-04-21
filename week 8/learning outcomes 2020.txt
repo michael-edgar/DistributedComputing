@@ -1,0 +1,9 @@
+1. Understand REST style Web Services
+2. Understand HTTPS
+3. Understand AJAX
+4. Understand WebSockets
+5. Understand JSON
+6. Understand JSONP
+7. Build a RESTful Web Service in Netbeans and look at avaliable APIs on Web
+8. Understand the need for and use of OpenAPI (and Swagger Editor and other Swagger toolds)
+9. Chapter 9 Web Services (http://www.vijayaengineeringcollege.com/ebooks/George-Coulouris-Distributed-Systems-Concepts-and-Design-5th-Edition.pdf))

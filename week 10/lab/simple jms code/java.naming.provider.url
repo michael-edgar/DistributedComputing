@@ -1,0 +1,2 @@
+env.put(Context.PROVIDER_URL, "rmi://server:1099");
+

@@ -1,0 +1,3 @@
+env.put(Context.INITIAL_CONTEXT_FACTORY,
+    "com.sun.jndi.rmi.registry.RegistryContextFactory");
+
